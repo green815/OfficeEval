@@ -1,0 +1,439 @@
+<QuestItem QuestCode="1000001" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Excel.xlsx" ParseType="1" OfficeType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="MergeCells" PropKeyDesc="获取工作表单元格区域是否是合并单元格" SheetName="平均成绩统计表" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，合并单元格A1:G1设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Alignment" PropKeyDesc="获取工作表单元格区域的水平对齐方式(XlHAlign枚举)" SheetName="平均成绩统计表" Row="A1" Range="G1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[-4108]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，A1:G1单元格内容水平居中设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="平均成绩统计表" Row="F5|F13|F16|F25" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[77|69|90|83]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，平均成绩F5|F13|F16|F25单元格计算错误（标准答案:77|69|90|83)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindFormulaLst" PropKeyDesc="指定的单元格是否存在指定的公式或返回单元格公式" SheetName="平均成绩统计表" Row="F5|F13|F16|F25" Find="AVERAGE"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，平均成绩F5|F13|F16|F25单元格公式错误（标准答案:AVERAGE)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindNumberFormatLst" PropKeyDesc="指定的单元格是否存在指定的数字格式" SheetName="平均成绩统计表" Row="F5|F13|F16|F25" Find="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，平均成绩F列数据格式-数值型，保留小数点后0位设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0" IgnorePuncStrings="_&quot;">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindNumberFormatLst" PropKeyDesc="指定的单元格是否存在指定的数字格式" SheetName="平均成绩统计表" Row="F5|F13|F16|F25" Find="."></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[Flase|Flase|Flase|Flase]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，平均成绩F列数据格式-数值型，保留小数点后0位设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0" IgnorePuncStrings="_&quot;">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="平均成绩统计表" Row="G4|G9|G14|G19|G24|G29" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[合格|合格|合格|合格|合格|有不及格]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，备注列G4|G9|G14|G19|G24|G29单元格计算错误（标准答案:合格|合格|合格|合格|合格|有不及格）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindFormulaLst" PropKeyDesc="指定的单元格是否存在指定的公式或返回单元格公式" SheetName="平均成绩统计表" Row="G4|G9|G14|G19|G24|G29" Find="IF"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，备注G列未使用IF函数计算]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="平均成绩统计表" Row="J6|K6|L6" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[77|80|81]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，J6|K6|L6单元格计算错误（标准答案：77|80|81）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindFormulaLst" PropKeyDesc="指定的单元格是否存在指定的公式或返回单元格公式" SheetName="平均成绩统计表" Row="J6|K6|L6" Find="AVERAGEIF"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，J6|K6|L6单元格未使用AVERAGEIF函数]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindNumberFormatLst" PropKeyDesc="指定的单元格是否存在指定的数字格式" SheetName="平均成绩统计表" Row="J6|K6|L6" Find="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，J6|K6|L6单元格格式错误（标准答案：数值型，保留小数点后0位）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0" IgnorePuncStrings="_&quot;">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindNumberFormatLst" PropKeyDesc="指定的单元格是否存在指定的数字格式" SheetName="平均成绩统计表" Row="J6|K6|L6" Find="."></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[Flase|Flase|Flase]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，J6|K6|L6单元格格式错误（标准答案：数值型，保留小数点后0位）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0" IgnorePuncStrings="_&quot;">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="平均成绩统计表" Row="J7|K7|L7" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[80|81|75]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，J7|K7|L7单元格计算错误（标准答案：80|81|75）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindFormulaLst" PropKeyDesc="指定的单元格是否存在指定的公式或返回单元格公式" SheetName="平均成绩统计表" Row="J7|K7|L7" Find="AVERAGEIF"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，J7|K7|L7单元格未使用AVERAGEIF函数]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindNumberFormatLst" PropKeyDesc="指定的单元格是否存在指定的数字格式" SheetName="平均成绩统计表" Row="J7|K7|L7" Find="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，J7|K7|L7单元格格式错误（标准答案：数值型，保留小数点后0位）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0" IgnorePuncStrings="_&quot;">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindNumberFormatLst" PropKeyDesc="指定的单元格是否存在指定的数字格式" SheetName="平均成绩统计表" Row="J7|K7|L7" Find="."></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[Flase|Flase|Flase]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，J7|K7|L7单元格格式错误（标准答案：数值型，保留小数点后0位）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0" IgnorePuncStrings="_&quot;">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="平均成绩统计表" Row="J8|K8|L8" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[74|78|80]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，J8|K8|L8单元格计算错误（标准答案：74|78|80）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindFormulaLst" PropKeyDesc="指定的单元格是否存在指定的公式或返回单元格公式" SheetName="平均成绩统计表" Row="J8|K8|L8" Find="AVERAGEIF"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，J8|K8|L8单元格未使用AVERAGEIF计算]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindNumberFormatLst" PropKeyDesc="指定的单元格是否存在指定的数字格式" SheetName="平均成绩统计表" Row="J8|K8|L8" Find="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，J8|K8|L8单元格格式错误（标准答案：数值型，保留小数点后0位）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0" IgnorePuncStrings="_&quot;">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindNumberFormatLst" PropKeyDesc="指定的单元格是否存在指定的数字格式" SheetName="平均成绩统计表" Row="J8|K8|L8" Find="."></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[Flase|Flase|Flase]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，J8|K8|L8单元格格式错误（标准答案：数值型，保留小数点后0位）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0" IgnorePuncStrings="_&quot;">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="平均成绩统计表" Row="J12|J13|J14" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[6|5|4]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，J12|J13|J14单元格计算错误（标准答案：6|5|4）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindFormulaLst" PropKeyDesc="指定的单元格是否存在指定的公式或返回单元格公式" SheetName="平均成绩统计表" Row="J12|J13|J14" Find="COUNTIFS"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，J12|J13|J14单元格未使用COUNTIFS计算]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat_ColorLst" PropKeyDesc="获取指定单元格的显示格式中的字体颜色" SheetName="平均成绩统计表" Row="F7|F15|F21|F31"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[24832|24832|24832|24832]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，F3:F32单元格条件格式--高于平均值的值设置为“深绿色文本”错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat_FillColorLst" PropKeyDesc="获取指定单元格的显示格式中的填充颜色" SheetName="平均成绩统计表" Row="F7|F15|F21|F31"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[13561798|13561798|13561798|13561798]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，F3:F32单元格条件格式--高于平均值的值设置为“绿填充色”错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat_ColorLst" PropKeyDesc="获取指定单元格的显示格式中的字体颜色" SheetName="平均成绩统计表" Row="F5|F14|F18|F26"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[24832]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，F3:F32单元格条件格式--低于平均值的值设置为“浅红色填充”错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">7</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat_FillColorLst" PropKeyDesc="获取指定单元格的显示格式中的填充颜色" SheetName="平均成绩统计表" Row="F5|F14|F18|F26"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[13561798]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，F3:F32单元格条件格式--低于平均值的值设置为“浅红色填充”错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">7</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat_FillColorLst" PropKeyDesc="获取指定单元格的显示格式中的填充颜色" SheetName="平均成绩统计表" Row="F5|F13|F14|F18|F26|F30"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[13551615|13551615|13551615|13551615|13551615|13551615]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，F3:F32单元格条件格式--高于平均值的值设置为“绿填充色”错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat_FillColorLst" PropKeyDesc="获取指定单元格的显示格式中的填充颜色" SheetName="平均成绩统计表" Row="F6|F8|F21"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[13551615]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，F3:F32单元格条件格式--低于平均值的值设置为“浅红色填充”错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">7</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格" WepType="Table">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="ExcelTableStyle" PropKeyDesc="获取指定的对象序号的样式名称" SheetName="平均成绩统计表" FindTableIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[表样式浅色 9]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，A2:G32单元格区域套用表格样式为“表样式浅色9”错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="1.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ChartType" PropKeyDesc="获取图表类型(返回XlChartType枚举)" SheetName="平均成绩统计表" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlColumnClustered]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，建立"簇状柱形图"错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SeriesXValues" PropKeyDesc="获取图表上指定系列上的X值" SheetName="平均成绩统计表" FndChartIndex="1" Find_SeriesIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[数学平均成绩,物理平均成绩,语文平均成绩]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，图表X轴数据错误（标准答案：数学平均成绩,物理平均成绩,语文平均成绩）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SeriesAllName" PropKeyDesc="获取图表中所有系列的名称" SheetName="平均成绩统计表" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[一班,二班,三班]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，图表图例项数据错误（标准答案：一班,二班,三班）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetHasLegend" PropKeyDesc="获取图表的图例放置的位置" SheetName="平均成绩统计表" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlLegendPositionTop]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，设置图表图例位于顶部错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetChartTitle" PropKeyDesc="获取图表的标题内容" SheetName="平均成绩统计表" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[平均成绩统计图]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，设置图表标题为“平均成绩统计图”错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetTitleOverlay" PropKeyDesc="判断图表标题是否被绘图区覆盖" SheetName="平均成绩统计表" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，设置图表标题在图表上方错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="ChartFill" PropKeyDesc="获取指定图表元素填充格式属性" SheetName="平均成绩统计表" FndChartIndex="1" Find_SeriesIndex="1" SortIndexNum="0" Define1="绘图区：前景色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[14277081]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，设置图表绘图区为纯色填充“白色，背景1,深色15%”错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="IsExistChartOfRange" PropKeyDesc="判断指定的图表是否在指定的单元格区域内" SheetName="平均成绩统计表" FndChartIndex="1" SortIndexNum="0" Define1="I16:N32"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[在"平均成绩统计表"工作表中，将图表插入到“I16:N32”错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="Or" FullScore="1.7" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Wookbook" PropKeyDesc="指定工作表是否存在" SheetName="平均成绩统计表" SheetNameAlias="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[将sheet1工作表命名为“平均成绩统计表”错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="验证筛选" WepType="ParaFont">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CriteriaRange" PropKeyDesc="获取高级筛选条件区域" SheetName="图书销售统计表" SheetNameAlias="2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[A1:G3]]></Value>
+                        <ValueDesc><![CDATA[在"图书销售统计表"工作表中，条件区域设在A1:G3单元格区域设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="AdvancedFiltCriteriaAll" PropKeyDesc="获取高级筛选的引用的单元格区域值" SheetName="图书销售统计表" SheetNameAlias="2" Define1="图书类别^销售额排名|销售额排名^图书类别|生物科学^&lt;|农业科学^&lt;|^&lt;生物科学|^&lt;农业科学"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[图书类别^销售额排名|生物科学^<|农业科学^<]]></Value>
+                        <Value><![CDATA[销售额排名^图书类别|<^生物科学|<^农业科学]]></Value>
+                        <ValueDesc><![CDATA[在"图书销售统计表"工作表中，筛选条件是：图书类别为“生物科学”或“农业科学”且销售额排名在前20名设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="验证筛选" WepType="ParaFont">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsAdvancedFilt" PropKeyDesc="判断是否设置了高级筛选" SheetName="图书销售统计表" SheetNameAlias="2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[在"图书销售统计表"工作表中，未使用高级筛选]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellRowHeightOfRange" PropKeyDesc="判断指定区域的平均行高是否在指定的范围内" SheetName="图书销售统计表" SheetNameAlias="2" Row="A22:A27|A30:A31|A33|A35:A36|A40:A41|A44:A51|A53:A66" Define1="介于0-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"图书销售统计表"工作表中，高级筛选结果错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellRowHeightOfRange" PropKeyDesc="判断指定区域的平均行高是否在指定的范围内" SheetName="图书销售统计表" SheetNameAlias="2" Row="A21|A28:A29|A32|A34|A38:A39|A42:A43|A52|A67" Define1="介于0-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[False|False|False|False|False|False|False|False]]></Value>
+                        <ValueDesc><![CDATA[在"图书销售统计表"工作表中，高级筛选结果错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

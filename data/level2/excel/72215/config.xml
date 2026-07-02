@@ -1,0 +1,533 @@
+<QuestItem QuestCode="XXXXXXX" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Excel.xlsx" ParseType="1" OfficeType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="身份证校对" SheetNameAlias="2" Row="D8|F8|G8|H8|I8|M8|R8|T8|U8"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1|0|1|0|8|8|0|2|9]]></Value>
+                        <ValueDesc><![CDATA[在"身份证校对"工作表中，D8|F8|G8|H8|I8|M8|R8|T8|U8单元格的值错误（标准答案：1|0|1|0|8|8|0|2|9）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="身份证校对" SheetNameAlias="2" Row="D88|F88|G88|H88|I88|M88|R88|T88|U88"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1|0|7|2|4|0|0|7|6]]></Value>
+                        <ValueDesc><![CDATA[在"身份证校对"工作表中，D88|F88|G88|H88|I88|M88|R88|T88|U88单元格的值错误（标准答案：1|0|7|2|4|0|0|7|6）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="身份证校对" SheetNameAlias="2" Row="D108|F108|G108|H108|I108|M108|R108|T108|U108"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1|0|2|2|7|6|1|4|5]]></Value>
+                        <ValueDesc><![CDATA[在"身份证校对"工作表中，D108|F108|G108|H108|I108|M108|R108|T108|U108单元格的值错误（标准答案：1|0|2|2|7|6|1|4|5）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="3.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="身份证校对" SheetNameAlias="2" Row="V8|V28|V48|V68|V98|V118"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[5|X|0|9|3|X]]></Value>
+                        <ValueDesc><![CDATA[在"身份证校对"工作表中，V8|V28|V48|V68|V98|V118单元格的值错误（标准答案：5|X|0|9|3|X）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="身份证校对" SheetNameAlias="2" Row="W8|W28|W48|W68|W98|W118"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[错误|正确|正确|错误|正确|错误]]></Value>
+                        <ValueDesc><![CDATA[在"身份证校对"工作表中，W8|W28|W48|W68|W98|W118单元格的值错误（标准答案：错误|正确|正确|错误|正确|错误）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat_ColorLst" PropKeyDesc="显示颜色" SheetName="身份证校对" SheetNameAlias="2" Row="B7|B8|H8|P8|U8|W8|B68|U68|W68|B75|U75|W75|O86|N91|J117|B118|U118|W118|N37|M115"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0|255|255|255|255|255|255|255|255|255|255|255|255|255|255|255|255|255|0|0]]></Value>
+                        <ValueDesc><![CDATA[在"身份证校对"工作表中，将错误证号所在的数据行以"红色"文字、浅绿类型的颜色填充条件格式设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat_FillColorLst" PropKeyDesc="显示填充颜色" SheetName="身份证校对" SheetNameAlias="2" Row="H8|P8|U8|W8"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[0|0|0]]></Value>
+                        <Value><![CDATA[16777215|16777215|16777215]]></Value>
+                        <ValueDesc><![CDATA[在"身份证校对"工作表中，将错误证号所在的数据行以"红色"文字、浅绿类型的颜色填充条件格式设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">7</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsFormatConditionsFormula" PropKeyDesc="格式条件公式" SheetName="身份证校对" SheetNameAlias="2" Row="B3" Range="W100"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0]]></Value>
+                        <ValueDesc><![CDATA[在"身份证校对"工作表中，将错误证号所在的数据行以"红色"文字、浅绿类型的颜色填充条件格式设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="1">1</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="员工档案" Row="C6|C36|C44|C65|C96|C115"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[110102195709062345|110101196909301513|110108197812120125|110103198111090026|110111198702172242|630102198806100871]]></Value>
+                        <ValueDesc><![CDATA[在"员工档案"工作表中，每位员工的身份证号C6|C36|C44|C65|C96|C115内容错误（标准答案：110102195709062345|110101196909301513|110108197812120125|110103198111090026|110111198702172242|630102198806100871）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsCellValueNullRange" PropKeyDesc="单元格值空范围" SheetName="员工档案" Row="C3" Range="C122"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[全非空值]]></Value>
+                        <ValueDesc><![CDATA[在"员工档案"工作表中，每位员工的身份证号C3:C122内容错误（标准答案：没有空值）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="员工档案" Row="C6|C36|C44|C65|C96|C115"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[110102195709062345|110101196909301513|110108197812120125|110103198111090026|110111198702172242|630102198806100871]]></Value>
+                        <ValueDesc><![CDATA[在"员工档案"工作表中，每位员工的身份证号C6|C36|C44|C65|C96|C115内容错误（标准答案：110102195709062345|110101196909301513|110108197812120125|110103198111090026|110111198702172242|630102198806100871）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="员工档案" Row="L10|L20|L45|L66|L108|L119"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[在职|在职|离职|在职|离职|在职]]></Value>
+                        <ValueDesc><![CDATA[在"员工档案"工作表中，L10|L20|L45|L66|L108|L119单元格内容错误（标准答案：在职|在职|离职|在职|离职|在职）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsCellValueNullRange" PropKeyDesc="单元格值空范围" SheetName="员工档案" Row="L3" Range="L122"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[全非空值]]></Value>
+                        <ValueDesc><![CDATA[【员工档案】L3:L122没有空值]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="3">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="单元格的值" SheetName="员工档案" Row="M10|M20|M45|M80|M108|M119"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[27.5|22.5|8.0|1.0|3.0|2.5]]></Value>
+                        <ValueDesc><![CDATA[在"员工档案"工作表中，M10|M20|M45|M80|M108|M119单元格内容错误（标准答案：27.5|22.5|8.0|1.0|3.0|2.5）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRuleGroup LogicOper="And" FullScore="3" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="FindNumberFormatLst" PropKeyDesc="数字格式设置" SheetName="员工档案" Row="M10|M20|M45|M80|M108|M119" Find="0.0"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[True|True|True|True|True|True]]></Value>
+                            <ValueDesc><![CDATA[在"员工档案"工作表中，M10|M20|M45|M80|M108|M119单元格数字格式错误（标准答案：保留一位小数0.0）]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0" IgnorePuncStrings="_&quot;">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="员工档案" Row="M10|M20|M45|M80|M108|M119" Find="格式|0.0"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[27.5|22.5|8.0|1.0|3.0|2.5]]></Value>
+                            <ValueDesc><![CDATA[在"员工档案"工作表中，M10|M20|M45|M80|M108|M119单元格内容错误（标准答案：27.5|22.5|8.0|1.0|3.0|2.5）]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="员工档案" Row="O68|O79|O97|O100|O114" Find="格式|0.0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[400.0|325.0|225.0|150.0|150.0]]></Value>
+                        <ValueDesc><![CDATA[在"员工档案"工作表中，O68|O79|O97|O100|O114单元格内容错误（标准答案：400.0|325.0|225.0|150.0|150.0）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="员工档案" Row="Q27|Q68|Q79|Q97|Q100|Q114" Find="格式|0.0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[7868.0|4508.0|7135.0|4873.0|5650.0|9555.0]]></Value>
+                        <ValueDesc><![CDATA[在"员工档案"工作表中，Q27|Q68|Q79|Q97|Q100|Q114单元格内容错误（标准答案：7868.0|4508.0|7135.0|4873.0|5650.0|9555.0）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="FindCellValueRange" PropKeyDesc="单元格的值" SheetName="社保计算" SheetNameAlias="5" Row="B4" Range="B103" Find="DF002|DF026|DF063|DF100"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[False]]></Value>
+                            <ValueDesc><![CDATA[在"社保计算"工作表中，筛选出所有"在职"员工的"员工编号"、"姓名"和"工资总额"三列数据，依次填入B、C、D中，并按员工编号由小到大排序设置错误]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="社保计算" SheetNameAlias="5" Row="B25|C25|B45|C45|B85|C85|B100|C100" Find="格式|0.0"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[DF023|巴郎星|DF044|史孟霜|DF096|史小翠|DF117|刘培生]]></Value>
+                            <ValueDesc><![CDATA[在"社保计算"工作表中，B25|C25|B45|C45|B85|C85|B100|C100内容错误（标准答案：DF023|巴郎星|DF044|史孟霜|DF096|史小翠|DF117|刘培生）]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+                <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="FindCellValueRange" PropKeyDesc="单元格的值" SheetName="社保计算" SheetNameAlias="5" Row="B4" Range="B103" Find="DF002|DF026|DF063|DF100"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[False]]></Value>
+                            <ValueDesc><![CDATA[在"社保计算"工作表中，筛选出所有"在职"员工的"员工编号"、"姓名"和"工资总额"三列数据，依次填入B、C、D中，并按员工编号由小到大排序设置错误]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="社保计算" SheetNameAlias="5" Row="B25|C25|B45|C45|B85|C85|B100|C100" Find="格式|0.0"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[DF072|钟阿四|DF091|赤温和|DF110|龙骏|DF113|安奉天]]></Value>
+                            <ValueDesc><![CDATA[在"社保计算"工作表中，B25|C25|B45|C45|B85|C85|B100|C100内容错误（标准答案：DF072|钟阿四|DF091|赤温和|DF110|龙骏|DF113|安奉天）]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FormulaNames" PropKeyDesc="公式名称" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[人均月工资 7086]]></Value>
+                        <ValueDesc><![CDATA[定义常量"人均月工资"=7086]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings=":：">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="社保计算" SheetNameAlias="5" Row="E4|E20|E51|E53|E98|E100" Find="格式|0.00"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[21258.00|4251.60|21258.00|4251.60|4574.00|8283.00]]></Value>
+                        <Value><![CDATA[20833.00|21258.00|4251.60|5481.00|6719.00|8773.00]]></Value>
+                        <ValueDesc><![CDATA[在"社保计算"工作表中，E4|E20|E51|E53|E98|E100内容计算错误（标准答案：21258.00|4251.60|21258.00|4251.60|4574.00|8283.00）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="社保计算" SheetNameAlias="5" Row="F27|F49|F97" Find="格式|0.00"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[1355.65|821.75|1066.47]]></Value>
+                        <Value><![CDATA[2597.68|1723.87|1050.70]]></Value>
+                        <ValueDesc><![CDATA[在"社保计算"工作表中，F27|F49|F97内容计算错误（标准答案：1355.65|821.75|1066.47）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="社保计算" SheetNameAlias="5" Row="G15|G20|G56" Find="格式|0.00"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[1091.76|340.13|725.84]]></Value>
+                        <Value><![CDATA[538.32|1700.64|434.48]]></Value>
+                        <ValueDesc><![CDATA[在"社保计算"工作表中，F27|F49|F97内容计算错误（标准答案：1091.76|340.13|725.84）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="社保计算" SheetNameAlias="5" Row="H78|H89|H103" Find="格式|0.00"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[43.72|48.97|81.64]]></Value>
+                        <Value><![CDATA[40.72|48.97|130.32]]></Value>
+                        <ValueDesc><![CDATA[在"社保计算"工作表中，H78|H89|H103内容计算错误（标准答案：43.72|48.97|81.64）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="社保计算" SheetNameAlias="5" Row="I47|I76|I97" Find="格式|0.00"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[9.27|18.46|11.23]]></Value>
+                        <Value><![CDATA[26.79|9.15|11.06]]></Value>
+                        <ValueDesc><![CDATA[在"社保计算"工作表中，I47|I76|I97内容计算错误（标准答案：9.27|18.46|11.23）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="社保计算" SheetNameAlias="5" Row="J17|J79|J80" Find="格式|0.00"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[21.59|22.19|9.60]]></Value>
+                        <Value><![CDATA[15.05|9.96|9.75]]></Value>
+                        <ValueDesc><![CDATA[在"社保计算"工作表中，J17|J79|J80内容计算错误（标准答案：21.59|22.19|9.60）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="社保计算" SheetNameAlias="5" Row="K37|K96|K102" Find="格式|0.00"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0.00|0.00|0.00]]></Value>
+                        <ValueDesc><![CDATA[在"社保计算"工作表中，K37|K96|K102数字格式错误（标准答案：0.00）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="社保计算" SheetNameAlias="5" Row="L19|L57|L86" Find="格式|0.00"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[162.06|54.56|38.99]]></Value>
+                        <Value><![CDATA[88.76|76.31|66.26]]></Value>
+                        <ValueDesc><![CDATA[在"社保计算"工作表中，L19|L57|L86单元格内容错误（标准答案：162.06|54.56|38.99）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="社保计算" SheetNameAlias="5" Row="M24|M36|M76" Find="格式|0.00"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0.00|0.00|0.00]]></Value>
+                        <ValueDesc><![CDATA[在"社保计算"工作表中，M24|M36|M76数字格式错误（标准答案：0.00）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="社保计算" SheetNameAlias="5" Row="N7|N67|N98" Find="格式|0.00"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[685.40|747.70|457.40]]></Value>
+                        <Value><![CDATA[707.10|516.50|671.90]]></Value>
+                        <ValueDesc><![CDATA[在"社保计算"工作表中，N7|N67|N98单元格内容错误（标准答案：685.40|747.70|457.40）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="社保计算" SheetNameAlias="5" Row="O6|O75|O86" Find="格式|0.00"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[138.08|189.78|100.48]]></Value>
+                        <Value><![CDATA[155.72|149.54|168.66]]></Value>
+                        <ValueDesc><![CDATA[在"社保计算"工作表中，O6|O75|O86单元格内容错误（标准答案：138.08|189.78|100.48）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格" WepType="Table">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="ExcelTableStyle" PropKeyDesc="表格样式" SheetName="社保计算" SheetNameAlias="5" FindTableIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[]]></Value>
+                        <ValueDesc><![CDATA[在"社保计算"工作表中，表格样式设置错误（标准答案：应用表格样式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ColAutoFilter" PropKeyDesc="筛选" SheetName="社保计算" SheetNameAlias="5" FindTableIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[false]]></Value>
+                        <ValueDesc><![CDATA[在"社保计算"工作表中，表格样式设置错误（标准答案：取消筛选）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="透视分析" SheetNameAlias="4" Row="A3|B3|C3|D3"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[社保基数|人数|工资总额(元)|工资总额占比]]></Value>
+                        <Value><![CDATA[社保基数|人数|工资总额（元）|工资总额占比]]></Value>
+                        <ValueDesc><![CDATA[在"透视分析"工作表中，A3|B3|C3|D3内容错误（标准答案：社保基数|人数|工资总额(元)|工资总额占比或者社保基数|人数|工资总额（元）|工资总额占比）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="透视分析" SheetNameAlias="4" Row="A4|A7|A9"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[4200-7200|13200-16200|19200-22200]]></Value>
+                        <ValueDesc><![CDATA[在"透视分析"工作表中，A4|A7|A9内容错误（标准答案：4200-7200|13200-16200|19200-22200）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="透视分析" SheetNameAlias="4" Row="B4|B7|B9"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[53|3|5]]></Value>
+                        <ValueDesc><![CDATA[在"透视分析"工作表中，B4|B7|B9内容错误（标准答案：53|3|5）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="透视分析" SheetNameAlias="4" Row="C4|C7|C9"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[293886|40716|129696]]></Value>
+                        <ValueDesc><![CDATA[在"透视分析"工作表中，C4|C7|C9内容错误（标准答案：293886|40716|129696）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="透视分析" SheetNameAlias="4" Row="D4|D7|D9" Find="格式|0.0000000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0.3522968|0.0488084|0.1554735]]></Value>
+                        <ValueDesc><![CDATA[在"透视分析"工作表中，D4|D7|D9内容错误（标准答案：0.3522968|0.0488084|0.1554735）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.3" NotLeaf="0">
+                <MarkRuleGroup LogicOper="Or" FullScore="0.3" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="FindNumberFormatLst" PropKeyDesc="数字格式设置" SheetName="透视分析" SheetNameAlias="4" Row="C4|C7|C9" Find="#,##0.00_"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[True|True|True]]></Value>
+                            <ValueDesc><![CDATA[在"透视分析"工作表中，C4|C7|C9单元格格式设置错误（标准答案：保留两小数、使用千位分隔符#,##0.00_）]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0" IgnorePuncStrings="_&quot;">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="GetCellTextLst" PropKeyDesc="单元格的值" SheetName="透视分析" SheetNameAlias="4" Row="C4|C7|C9"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[293,886.00 |40,716.00 |129,696.00]]></Value>
+                            <ValueDesc><![CDATA[在"透视分析"工作表中，C4|C7|C9单元格内容错误（标准答案：293,886.00 |40,716.00 |129,696.00）]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+                <MarkRuleGroup LogicOper="Or" FullScore="0.3" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="FindNumberFormatLst" PropKeyDesc="数字格式设置" SheetName="透视分析" SheetNameAlias="4" Row="D4|D7|D9" Find="0.00%"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[True|True|True]]></Value>
+                            <ValueDesc><![CDATA[在"透视分析"工作表中，D4|D7|D9单元格格式设置错误（标准答案：留两小数、百分比0.00%）]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0" IgnorePuncStrings="_&quot;">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="GetCellTextLst" PropKeyDesc="单元格的值" SheetName="透视分析" SheetNameAlias="4" Row="D4|D7|D9"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[35.23%|4.88%|15.55%]]></Value>
+                            <ValueDesc><![CDATA[在"透视分析"工作表中，D4|D7|D9单元格内容错误（标准答案：35.23%|4.88%|15.55%）]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="PivotTableStyle" PropKeyDesc="表格样式" SheetName="透视分析" SheetNameAlias="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[数据透视表样式浅色 16]]></Value>
+                        <ValueDesc><![CDATA[在"透视分析"工作表中，改变数据透视表样式设置错误（标准答案：不等于数据透视表样式浅色 16）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

@@ -1,0 +1,568 @@
+<QuestItem QuestCode="XXXXXXX" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Excel.xlsx" ParseType="1" OfficeType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="4" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="Wookbook" PropKeyDesc="指定工作表是否存在" SheetName="全部统计结果" SheetNum="1" SheetNameAlias="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[将文档中以每位员工姓名命名的5个工作表内容合并到一个名为"全部统计结果"的新工作表错误（标准答案：'全部统计结果'工作表存在）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FindContent" PropKeyDesc="获取工作表指定范围单元格的内容" SheetName="全部统计结果" SheetNameAlias="6" Row="A2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[报告文号]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，A2单元格内容错误（标准答案：报告文号）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FindContent" PropKeyDesc="获取工作表指定范围单元格的内容" SheetName="全部统计结果" SheetNameAlias="6" Row="B2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[客户简称]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，B2单元格内容错误（标准答案：客户简称）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FindContent" PropKeyDesc="获取工作表指定范围单元格的内容" SheetName="全部统计结果" SheetNameAlias="6" Row="C2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[责任人]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，插入一列后C2单元格内容错误（标准答案：责任人）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="验证筛选" WepType="ParaFont">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="DataValidationType" PropKeyDesc="获取指定区域的数据有效性规则的类型" SheetName="全部统计结果" SheetNameAlias="2" Row="C3"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[序列]]></Value>
+                        <ValueDesc><![CDATA[在"产品销售情况表"工作表中，C3单元格数据验证设置错误（标准答案：序列）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="DataValidationContent" PropKeyDesc="获取指定区域的数据有效性规则相关联的值或表达式" SheetName="全部统计结果" SheetNameAlias="2" Row="C3"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[高小丹]]></Value>
+                        <Value><![CDATA[刘君赢]]></Value>
+                        <Value><![CDATA[王铬争]]></Value>
+                        <Value><![CDATA[石明砚]]></Value>
+                        <Value><![CDATA[杨晓柯]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，C3单元格数据验证设置错误（标准答案：高小丹、刘君赢、王铬争、石明砚、杨晓柯）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="DataValidationShowDropDown" PropKeyDesc="判断指定区域的数据有效性规则是否显示含有有效取值的下拉列表" SheetName="全部统计结果" SheetNameAlias="2" Row="C3"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，C3单元格数据验证设置错误（标准答案：提供下拉箭头）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindContent" PropKeyDesc="获取工作表指定范围单元格的内容" SheetName="全部统计结果" SheetNameAlias="6" Row="C5"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[高小丹]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，C5单元格内容设置错误（正确答案：高小丹）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindContent" PropKeyDesc="获取工作表指定范围单元格的内容" SheetName="全部统计结果" SheetNameAlias="6" Row="C16"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[石明砚]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，C16单元格内容设置错误（正确答案：石明砚）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindContent" PropKeyDesc="获取工作表指定范围单元格的内容" SheetName="全部统计结果" SheetNameAlias="6" Row="C25"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[刘君赢]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，C25单元格内容设置错误（正确答案：刘君赢）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="条件格式" WepType="FormatCondition">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FormatConditionsFormula" PropKeyDesc="获取条件格式的设置条件" SheetName="全部统计结果" SheetNameAlias="6" Row="A3" Range="A94" Find_FormatConditionsIndex="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[重复值]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，A列设定条件格式重复值"浅红色填充"错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FormatConditionsInteriorColor" PropKeyDesc="获取条件格式的填充颜色" SheetName="全部统计结果" SheetNameAlias="6" Row="A3" Range="A94" Find_FormatConditionsIndex="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[13551615]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，A列设定条件格式重复值"浅红色填充"错误（标准答案：浅红色填充）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FindContent" PropKeyDesc="获取工作表指定范围单元格的内容" SheetName="全部统计结果" SheetNameAlias="6" Row="B5"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[北京卡罗里尼]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，按"报告文号"升序、"客户简称"笔划降序后B5单元格内容错误（标准答案：北京卡罗里尼）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindContent" PropKeyDesc="获取工作表指定范围单元格的内容" SheetName="全部统计结果" SheetNameAlias="6" Row="A44"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[042(1)]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，A44单元格内容错误（标准答案：042(1)）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindContent" PropKeyDesc="获取工作表指定范围单元格的内容" SheetName="全部统计结果" SheetNameAlias="6" Row="B44"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[新兴时代科技]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，B44单元格内容错误（标准答案：新兴时代科技）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindContent" PropKeyDesc="获取工作表指定范围单元格的内容" SheetName="全部统计结果" SheetNameAlias="6" Row="A45"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[042(2)]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，A45单元格内容错误（标准答案：042(2)）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindContent" PropKeyDesc="获取工作表指定范围单元格的内容" SheetName="全部统计结果" SheetNameAlias="6" Row="B45"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[扬中废物处理]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，B45单元格内容错误（标准答案：扬中废物处理）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FindContent" PropKeyDesc="获取工作表指定范围单元格的内容" SheetName="全部统计结果" SheetNameAlias="6" Row="I2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[完成情况]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，最右侧增加列I2单元格内容错误（标准答案：完成情况）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.6" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValue" PropKeyDesc="获取指定单元格值(Value2值)" SheetName="全部统计结果" SheetNameAlias="6" Row="I8"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[未完成]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，I8单元格内容错误（标准答案：未完成）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="HasFormula" PropKeyDesc="判断指定单元格是否存在公式" SheetName="全部统计结果" SheetNameAlias="6" Row="I8"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，I8单元格内容错误（标准答案：有公式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.7" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValue" PropKeyDesc="获取指定单元格值(Value2值)" SheetName="全部统计结果" SheetNameAlias="6" Row="I48"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[完成]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，I48单元格内容错误（标准答案：完成)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="HasFormula" PropKeyDesc="判断指定单元格是否存在公式" SheetName="全部统计结果" SheetNameAlias="6" Row="I48"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，I48单元格内容错误（标准答案：有公式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.7" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValue" PropKeyDesc="获取指定单元格值(Value2值)" SheetName="全部统计结果" SheetNameAlias="6" Row="I68"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[完成]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，I68单元格内容错误（标准答案：完成）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="HasFormula" PropKeyDesc="判断指定单元格是否存在公式" SheetName="全部统计结果" SheetNameAlias="6" Row="I68"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，I68单元格内容错误（标准答案：有公式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="全部统计结果" SheetNameAlias="6" Row="I28|I49|I72" Find="格式|0.000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[未完成|未完成|未完成]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，将所有"未完成"的单元格以标准红色文本突出显示设置错误（标准答案：抽查I28|I49|I72单元格为:未完成|未完成|未完成）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat_ColorLst" PropKeyDesc="获取指定单元格的显示格式中的字体颜色" SheetName="全部统计结果" SheetNameAlias="6" Row="I28|I49|I72"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255|255|255]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，将所有"未完成"的单元格以标准红色文本突出显示设置错误（标准答案：抽查I28|I49|I72单元格颜色为"红色|红色|红色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FindContent" PropKeyDesc="获取工作表指定范围单元格的内容" SheetName="全部统计结果" SheetNameAlias="6" Row="J2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[报告奖金]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，在完成情况列的右侧增加"报告奖金"列后J2单元格内容错误（标准答案：报告奖金）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.6" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValue" PropKeyDesc="获取指定单元格值(Value2值)" SheetName="全部统计结果" SheetNameAlias="6" Row="J5"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[230]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，J5单元格内容错误（标准答案：230）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="HasFormula" PropKeyDesc="判断指定单元格是否存在公式" SheetName="全部统计结果" SheetNameAlias="6" Row="J5"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，J5单元格内容错误（标准答案：有公式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.6" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValue" PropKeyDesc="获取指定单元格值(Value2值)" SheetName="全部统计结果" SheetNameAlias="6" Row="J17"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[190]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，J17单元格内容错误（标准答案：190）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="HasFormula" PropKeyDesc="判断指定单元格是否存在公式" SheetName="全部统计结果" SheetNameAlias="6" Row="J65"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，J17单元格内容错误（标准答案：有公式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.6" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValue" PropKeyDesc="获取指定单元格值(Value2值)" SheetName="全部统计结果" SheetNameAlias="6" Row="J28"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[184]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，J28单元格内容错误（标准答案：184）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="HasFormula" PropKeyDesc="判断指定单元格是否存在公式" SheetName="全部统计结果" SheetNameAlias="6" Row="J65"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，J28单元格内容错误（标准答案：有公式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.6" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValue" PropKeyDesc="获取指定单元格值(Value2值)" SheetName="全部统计结果" SheetNameAlias="6" Row="J35"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[290]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，J35单元格内容错误（标准答案：290）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="HasFormula" PropKeyDesc="判断指定单元格是否存在公式" SheetName="全部统计结果" SheetNameAlias="6" Row="J35"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，J35单元格内容错误（标准答案：有公式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.6" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValue" PropKeyDesc="获取指定单元格值(Value2值)" SheetName="全部统计结果" SheetNameAlias="6" Row="J65"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[126]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，J65单元格内容错误（标准答案：126）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="HasFormula" PropKeyDesc="判断指定单元格是否存在公式" SheetName="全部统计结果" SheetNameAlias="6" Row="J65"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，J65单元格内容错误（标准答案：有公式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格" WepType="Table">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="ExcelTableStyle" PropKeyDesc="获取指定的对象序号的样式名称" SheetName="全部统计结果" SheetNameAlias="6" FindTableIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，套用表格样式错误（标准答案：套用一个恰当的表格样式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="ColWidth" PropKeyDesc="获取工作表指定范围单元格的列宽" SheetName="全部统计结果" SheetNameAlias="6" Row="D1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[8.38]]></Value>
+                        <ValueDesc><![CDATA[在"全部统计结果"工作表中，D列宽设置错误（标准答案：大于8.38）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">1</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="IsHide" PropKeyDesc="获取指定工作表显示状态" SheetName="员工个人情况统计" SheetNum="1" SheetNameAlias="17"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[Show]]></Value>
+                        <ValueDesc><![CDATA[显示隐藏的工作表"员工个人情况统计"设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FindCellValueRange" PropKeyDesc="工作表指定范围单元格中是否存在指定字符或返回单元格值" SheetName="员工个人情况统计" SheetNameAlias="5" Row="B2" Range="B8"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[撰写报告数|18|18|19|17|20|92]]></Value>
+                        <ValueDesc><![CDATA[在"员工个人情况统计"工作表中，B2:B8单元格计算设置错误（标准答案：撰写报告数|18|18|19|17|20|92）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FindCellValueRange" PropKeyDesc="工作表指定范围单元格中是否存在指定字符或返回单元格值" SheetName="员工个人情况统计" SheetNameAlias="5" Row="H2" Range="H8"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[报告奖金总计|3708|3652|3508|3148|3610|17626]]></Value>
+                        <ValueDesc><![CDATA[在"员工个人情况统计"工作表中，H2:H8单元格计算设置错误（标准答案：报告奖金总计|3708|3652|3508|3148|3610|17626）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FindCellValueRange" PropKeyDesc="工作表指定范围单元格中是否存在指定字符或返回单元格值" SheetName="员工个人情况统计" SheetNameAlias="5" Row="A5" Range="H5"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[刘君赢|19|12|5|2|0|0|3508]]></Value>
+                        <ValueDesc><![CDATA[在"员工个人情况统计"工作表中，第五行单元格计算设置错误（标准答案：刘君赢|19|12|5|2|0|0|3508）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="ChartType" PropKeyDesc="获取图表类型(返回XlChartType枚举)" SheetName="员工个人情况统计" FndChartIndex="1" SheetNameAlias="7" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xl3DPie]]></Value>
+                        <ValueDesc><![CDATA[在"员工个人情况统计"工作表中，图表类型设置错误（标准答案：三维饼图）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="ChartCustomProperties" PropKeyDesc="获取图表的相关属性" SheetName="员工个人情况统计" FndChartIndex="1" SheetNameAlias="7" SortIndexNum="0" Define1="系列：选项|饼图分离程度"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[饼图分离程度:0]]></Value>
+                        <ValueDesc><![CDATA[在"员工个人情况统计"工作表中，饼图分离程度设置错误（标准答案：不等于0）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetChartDataRange" PropKeyDesc="获取图表中指定系列的引用公式" SheetName="员工个人情况统计" FndChartIndex="1" Find_SeriesIndex="1" SheetNameAlias="7" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[C2:G2]]></Value>
+                        <ValueDesc><![CDATA[在"员工个人情况统计"工作表中，图表数据源设置错误（标准答案：C2:G2）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="$">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetChartDataRange" PropKeyDesc="获取图表中指定系列的引用公式" SheetName="员工个人情况统计" FndChartIndex="1" Find_SeriesIndex="1" SheetNameAlias="7" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[C8:G8]]></Value>
+                        <ValueDesc><![CDATA[在"员工个人情况统计"工作表中，图表数据源设置错误（标准答案：C8:G8]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="$">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetHasDataLabel" PropKeyDesc="判断图表的指定系列的指定数据点是否显示数据标签" SheetName="员工个人情况统计" FndChartIndex="1" SheetNameAlias="7" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[在"员工个人情况统计"工作表中，饼图数据标签设置错误（标准答案：添加饼图数据标签）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SeriesPointsDataLabelStyle" PropKeyDesc="获取图表系列中的指定数据点的数据标签属性" SheetName="员工个人情况统计" FndChartIndex="1" PointsFormat="数字格式" SheetNameAlias="7" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0.00%]]></Value>
+                        <ValueDesc><![CDATA[在"员工个人情况统计"工作表中，饼图数据标签格式错误（标准答案：0.00%）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="SeriesValue" PropKeyDesc="获取图表上指定系列上的数据值" SheetName="员工个人情况统计" FndChartIndex="1" Find_SeriesIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[58,20,9,3,2]]></Value>
+                        <ValueDesc><![CDATA[在"员工个人情况统计"工作表中，饼图图表值错误（标准答案：58,20,9,3,2）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

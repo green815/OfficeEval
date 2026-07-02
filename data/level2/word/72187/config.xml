@@ -1,0 +1,256 @@
+<QuestItem QuestCode="1000001" SubjectType="MsOffice">
+    <ScorePointGroup FileName="word.docx" OfficeType="1" ParseType="1">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="PaperSize" PropKeyDesc="纸张大小(WdPaperSize常量)"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdPaperA4]]></Value>
+                        <ValueDesc>纸张大小设置错误，应设置为A4</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="PaperOrientation" PropKeyDesc="页面方向"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdOrientPortrait]]></Value>
+                        <ValueDesc>纸张方向设置错误，应设置为纵向</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1.5">
+                    <FindParams PropKey="Page_MarginCm" PropKeyDesc="页面边距(单位:厘米)"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2.5 2.5 3.2 3.2]]></Value>
+                        <ValueDesc>页边距设置错误，应设置上、下为2.5厘米，左、右为3.2厘米</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="3" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ChartTitleCaption" PropKeyDesc="图表的标题文本" ChartNum="1" Points="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[公司业务指标]]></Value>
+                        <ValueDesc>图表标题设置错误，应设置为"公司业务指标"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ChartType" PropKeyDesc="图表类型" ChartNum="1" Points="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlLine]]></Value>
+                        <ValueDesc>图表类型设置错误，应设置为折线图</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面文档设置" WepType="Document">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="3.2">
+                    <FindParams PropKey="IsStyleExist" PropKeyDesc="样式名称是否存在" Find_Result="标题 1,标题样式一"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc>样式库中未找到样式"标题 1,标题样式一"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面文档设置" WepType="Document">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2.8">
+                    <FindParams PropKey="IsStyleExist" PropKeyDesc="样式名称是否存在" Find_Result="标题 2,标题样式二"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc>样式库中未找到样式"标题 2,标题样式二"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面文档设置" WepType="Document">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="ExistStyleCharacterFirstIndent" PropKeyDesc="指定样式的首行或悬挂缩进的值(以字符为单位)" Find_Result="正文"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2]]></Value>
+                        <ValueDesc>正文样式首行缩进设置错误，应设置为2字符</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="CharacterFirstIndent" PropKeyDesc="首行或悬挂缩进的值 (以字符为单位)" Para="2" Find="迄今为止已实现的目标以及未来的发展方向"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2]]></Value>
+                        <ValueDesc>"迄今为止已实现的目标以及未来的发展方向"首行缩进设置错误，应设置为2字符</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.7">
+                    <FindParams PropKey="ParaStyle" PropKeyDesc="段落的内置样式的名称" Para="-1" Find="企业摘要"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[标题 1,标题样式一]]></Value>
+                        <ValueDesc>"企业摘要"应用样式错误，应设置为"标题1,标题样式一"样式</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.6">
+                    <FindParams PropKey="ParaStyle" PropKeyDesc="段落的内置样式的名称" Para="-1" Find="企业描述"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[标题 1,标题样式一]]></Value>
+                        <ValueDesc>"企业描述"应用样式错误，应设置为"标题1,标题样式一"样式</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.7">
+                    <FindParams PropKey="ParaStyle" PropKeyDesc="段落的内置样式的名称" Para="-1" Find="企业营销"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[标题 1,标题样式一]]></Value>
+                        <ValueDesc>"企业营销"应用样式错误，应设置为"标题1,标题样式一"样式</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.7">
+                    <FindParams PropKey="ParaStyle" PropKeyDesc="段落的内置样式的名称" Para="-1" Find="成功的关键"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[标题 2,标题样式二]]></Value>
+                        <ValueDesc>"成功的关键"应用样式错误，应设置为"标题2,标题样式二"样式</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.6">
+                    <FindParams PropKey="ParaStyle" PropKeyDesc="段落的内置样式的名称" Para="-1" Find="公司所有权/法人实体"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[标题 2,标题样式二]]></Value>
+                        <ValueDesc>"公司所有权/法人实体"应用样式错误，应设置为"标题2,标题样式二"样式</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.7">
+                    <FindParams PropKey="ParaStyle" PropKeyDesc="段落的内置样式的名称" Para="-1" Find="战略和实施方案"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[标题 2,标题样式二]]></Value>
+                        <ValueDesc>"战略和实施方案"应用样式错误，应设置为"标题2,标题样式二"样式</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="IsExists" PropKeyDesc="是否存在指定文本" Para="-1" Find="\v"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[false]]></Value>
+                        <ValueDesc>软回车更改为硬回车设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面文档设置" WepType="Document">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="1.6">
+                    <FindParams PropKey="IsZipPathExist" PropKeyDesc="指定文件压缩包中是否存在指定路径" Find="word.docx" Find_Result="word/charts/"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc>按照数据插入图表设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面文档设置" WepType="Document">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="1.6">
+                    <FindParams PropKey="IsZipPathExist" PropKeyDesc="指定文件压缩包中是否存在指定路径" Find="word.docx" Find_Result="word/embeddings/"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc>按照数据插入图表设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+    <ScorePointGroup FileName="word.docx" OfficeType="1" ParseType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面文档设置" WepType="Document">
+            <MarkRuleGroup LogicOper="And" FullScore="4.8" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetAllHeaderFieldCode" PropKeyDesc="页眉包含的所有域文本"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[STYLEREF]]></Value>
+                        <ValueDesc>标题1,标题样式一的文字自动显示在页眉区域中设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetAllHeaderFieldCode" PropKeyDesc="页眉包含的所有域文本"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[标题 1,标题样式一]]></Value>
+                        <ValueDesc>标题1,标题样式一的文字自动显示在页眉区域中设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

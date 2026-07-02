@@ -1,0 +1,170 @@
+<QuestItem QuestCode="XXXX" SubjectType="MsOffice">
+    <ScorePointGroup FileName="word.docx" OfficeType="1" ParseType="1">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面文档设置" WepType="Document">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="3.2">
+                    <FindParams PropKey="IsStyleExist" PropKeyDesc="样式名称是否存在" Find_Result="报告标题1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc>样式库中未找到样式"报告标题1"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1.7">
+                    <FindParams PropKey="Font" PropKeyDesc="字体" Para="-1" Count="2" Find="致我们的股东"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[黑体]]></Value>
+                        <ValueDesc>"致我们的股东"字体设置错误，应设置为黑体</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1.7">
+                    <FindParams PropKey="FontColorFromScheme" PropKeyDesc="文本颜色格式的主题颜色" Para="-1" Count="2" Find="致我们的股东"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdThemeColorText]]></Value>
+                        <ValueDesc>"致我们的股东"字体颜色设置错误，应设置为黑色</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1.7">
+                    <FindParams PropKey="IsBorderBottomVisible" PropKeyDesc="段落底边框线是否可见" Para="-1" Count="2" Find="致我们的股东"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc>"致我们的股东"边框设置错误，应设置为有下划线边框</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面文档设置" WepType="Document">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="3">
+                    <FindParams PropKey="FindTableOfContentsPageNumber" PropKeyDesc="目录所在页号"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2]]></Value>
+                        <ValueDesc>目录设置错误，应设置为位于第2页</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面文档设置" WepType="Document">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2.5">
+                    <FindParams PropKey="FindTableOfContentParagraphCount" PropKeyDesc="目录段落数"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[8]]></Value>
+                        <ValueDesc>目录设置错误，应设置目录对象中包含7段文字(算上目录就是8段)</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="HeadingFormat" PropKeyDesc="表格标题" Row="1" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1]]></Value>
+                        <ValueDesc>第5页表格未设置跨页显示标题行</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2.5">
+                    <FindParams PropKey="ChartType" PropKeyDesc="图表类型" ChartNum="1" Points="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlPieOfPie]]></Value>
+                        <ValueDesc>图表设置错误，应设置为插入复合饼图</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="3">
+                    <FindParams PropKey="SecondaryPlotCount" PropKeyDesc="数据点位于图表的第二部分中的个数" ChartNum="1" Points="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[4]]></Value>
+                        <ValueDesc>图表设置错误，应设置复合饼图第二绘图区中的值为4</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="IsHeaderExist" PropKeyDesc="是否存在页眉" Define8="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[False]]></Value>
+                        <ValueDesc>页眉设置错误，应设置文档第1页和目录页不包含页眉</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+    <ScorePointGroup FileName="word.docx" OfficeType="1" ParseType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面文档设置" WepType="Document">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="4.5">
+                    <FindParams PropKey="GetAllHeaderFieldCode" PropKeyDesc="页眉包含的所有域文本"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[STYLEREF]]></Value>
+                        <ValueDesc>页眉设置错误，应设置页眉为该页中"报告标题1"样式所示的标题文字</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="3.2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="textpath" PropKeyDesc="水印文字"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[机密]]></Value>
+                        <ValueDesc>水印文字设置错误，应设置为"机密"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="textpathPos" PropKeyDesc="水印版式"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[斜式]]></Value>
+                        <ValueDesc>水印版式设置错误，应设置为斜式</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

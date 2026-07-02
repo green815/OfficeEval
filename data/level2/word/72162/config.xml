@@ -1,0 +1,634 @@
+<QuestItem QuestCode="XXXX" SubjectType="MsOffice">
+    <ScorePointGroup FileName="准考证.docx" OfficeType="1" ParseType="1">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsExistsTableWithRowsColumnsCount" PropKeyDesc="判断指定表格的行列数" Row="9" Col="3" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc>准考证.docx中未找到9行3列的单元格</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellText" PropKeyDesc="指定单元格内容" Row="1" Col="1" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2016年度全国会计专业技术]]></Value>
+                        <ValueDesc>准考证.docx中表格第1行第1列内容错误，应包含文字"2016年度全国会计专业技术"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellText" PropKeyDesc="指定单元格内容" Row="1" Col="1" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[准考证]]></Value>
+                        <ValueDesc>准考证.docx中表格第1行第1列内容错误，应包含文字"准考证"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellText" PropKeyDesc="指定单元格内容" Row="5" Col="1" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[考试科目]]></Value>
+                        <ValueDesc>准考证.docx中表格第5行第1列内容错误，应为"考试科目"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellText" PropKeyDesc="指定单元格内容" Row="9" Col="2" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[准考证正面和背面均不得额外书写任何文字，背面必须保持空白]]></Value>
+                        <ValueDesc>准考证.docx中表格第9行第2列内容错误，应包含文字"准考证正面和背面均不得额外书写任何文字，背面必须保持空白"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellNotExistMayBeCellIsMerge" PropKeyDesc="判断单元格是否被合并" Row="2" Col="4" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc>准考证.docx中合并单元格错误，应将第2到5行的第3列合并</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellNotExistMayBeCellIsMerge" PropKeyDesc="判断单元格是否被合并" Row="5" Col="4" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc>准考证.docx中合并单元格错误，应将第2到5行的第3列合并</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Points" PropKeyDesc="字体大小" Para="-1" Find="2016年度全国会计专业技术"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[10.5]]></Value>
+                        <ValueDesc>准考证.docx中"2016年度全国会计专业技术"字号未适当加大，应设置为大于10.5磅</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">2</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Points" PropKeyDesc="字体大小" Para="-1" Find="2016年度全国会计专业技术"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[22]]></Value>
+                        <ValueDesc>准考证.docx中"2016年度全国会计专业技术"字号未适当加大，应设置为小于22磅</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">4</OperatorParam>
+                </MarkRule>
+                <MarkRuleGroup LogicOper="Or" FullScore="1" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="FontSpacing" PropKeyDesc="字符之间的间距(以磅为单位)" Find="准考证"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[0]]></Value>
+                            <ValueDesc>准考证.docx中"准考证"的字符间距未适当加大，应设置为大于0</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">1</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="FontSpacing" PropKeyDesc="字符之间的间距(以磅为单位)" Para="2" Find="准考证"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[0]]></Value>
+                            <ValueDesc>准考证.docx中"准考证"的字符间距未适当加大，应设置为大于0</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">1</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FindTableAlignmentInDoc" PropKeyDesc="表格整体对齐方式" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdAlignRowCenter]]></Value>
+                        <ValueDesc>准考证.docx中表格对齐方式设置错误，应设置为整体水平、垂直方向均居中</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="Orientation" PropKeyDesc="文字方向" Para="-1" Find="考生须知"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdTextOrientationVerticalFarEast]]></Value>
+                        <ValueDesc>准考证.docx中"考生须知"文字方向设置错误，应设置为竖排</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="0.3" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellParagraphFormatAlignment" PropKeyDesc="指定单元格段落对齐方式" Row="9" Col="1" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdAlignParagraphCenter]]></Value>
+                        <ValueDesc>准考证.docx中第9行第1列单元格"考生须知"对齐方式设置错误，应设置水平、垂直方向均在单元格内居中</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellVerticalAlignment" PropKeyDesc="指定单元格垂直对齐方式" Row="9" Col="1" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdCellAlignVerticalCenter]]></Value>
+                        <ValueDesc>准考证.docx中第9行第1列单元格"考生须知"对齐方式设置错误，应设置水平、垂直方向均在单元格内居中</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="准考证正面和背面均不得额外书写任何文字"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[]]></Value>
+                        <ValueDesc>准考证.docx中"准考证正面和背面均不得额外书写任何文字"未设置自动编号</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="考生在入场时除携带必要的文具外"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[]]></Value>
+                        <ValueDesc>准考证.docx中"考生在入场时除携带必要的文具外"未设置自动编号</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="TableCustomAttr" PropKeyDesc="表格自定义属性" TableNo="1" CellsType="-1" Define1="自动调整"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[根据窗口调整表格]]></Value>
+                        <ValueDesc>准考证.docx中表格宽度设置错误，应设置为根据页面窗口自动调整</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="PreferredWidth" PropKeyDesc="表格的首选的宽度" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[9999999]]></Value>
+                        <Value><![CDATA[100]]></Value>
+                        <ValueDesc>准考证.docx中表格宽度设置错误，应设置为根据页面窗口自动调整</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Table_Shading_Texture" PropKeyDesc="整个表格的底纹纹理" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdTextureNone]]></Value>
+                        <ValueDesc>准考证.docx中底纹设置错误，应设置为表格添加任一图案样式的底纹</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellFieldData" PropKeyDesc="查找指定单元格里的域代码" Row="1" Col="1" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[IF]]></Value>
+                        <ValueDesc>准考证.docx中标题考试级别信息根据报考科目自动生成设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellFieldData" PropKeyDesc="查找指定单元格里的域代码" Row="1" Col="1" TableNo="1" Find="IF.*MERGEFIELD 考试科目.*=.*高级会计实务.*高级.*中级.*考试科目 " CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc>准考证.docx中标题考试级别信息根据报考科目自动生成设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellFieldData" PropKeyDesc="查找指定单元格里的域代码" Row="2" Col="2" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[准考证号]]></Value>
+                        <ValueDesc>准考证.docx中第2行第2列单元格未找到合并域"准考证号"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellFieldData" PropKeyDesc="查找指定单元格里的域代码" Row="3" Col="2" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[考生姓名]]></Value>
+                        <ValueDesc>准考证.docx中第3行第2列单元格未找到合并域"考生姓名"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellFieldData" PropKeyDesc="查找指定单元格里的域代码" Row="4" Col="2" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[证件号码]]></Value>
+                        <ValueDesc>准考证.docx中第4行第2列单元格未找到合并域"证件号码"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellFieldData" PropKeyDesc="查找指定单元格里的域代码" Row="5" Col="2" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[考试科目]]></Value>
+                        <ValueDesc>准考证.docx中第5行第2列单元格未找到合并域"考试科目"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellFieldData" PropKeyDesc="查找指定单元格里的域代码" Row="6" Col="2" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[考试地点]]></Value>
+                        <ValueDesc>准考证.docx中第6行第2列单元格未找到合并域"考试地点"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Font" PropKeyDesc="字体" Para="-1" Find="考试地点"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[微软雅黑]]></Value>
+                        <ValueDesc>准考证.docx中表格第6行第1列文字"考试地点"字体设置错误，应设置为"微软雅黑"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Font" PropKeyDesc="字体" Para="-1" Find="中级"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[微软雅黑]]></Value>
+                        <ValueDesc>准考证.docx中表格第7行第2列文字"中级"字体设置错误，应设置为"微软雅黑"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Font" PropKeyDesc="字体" Para="-1" Find="财务管理"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[微软雅黑]]></Value>
+                        <ValueDesc>准考证.docx中表格第7行第3列文字"财务管理"字体设置错误，应设置为"微软雅黑"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FitTextWidth_Character" PropKeyDesc="文本宽度(字符数)" Para="-1" Find="财务管理"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[6]]></Value>
+                        <ValueDesc>准考证.docx中"财务管理"文字宽度设置错误，应设置为6字符</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FitTextWidth_Character" PropKeyDesc="文本宽度(字符数)" Para="-1" Find="经济法"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[6]]></Value>
+                        <ValueDesc>准考证.docx中"经济法"文字宽度设置错误，应设置为6字符</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FitTextWidth_Character" PropKeyDesc="文本宽度(字符数)" Para="-1" Find="中级会计实务"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[6]]></Value>
+                        <ValueDesc>准考证.docx中"中级会计实务"文字宽度设置错误，应设置为6字符</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="FindCellFieldData" PropKeyDesc="查找指定单元格里的域代码" Row="2" Col="3" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[照片]]></Value>
+                        <ValueDesc>准考证.docx中第2行第3列未找到合并域"照片"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+    <ScorePointGroup FileName="个人准考证.docx" OfficeType="1" ParseType="1">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="3" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="TableCustomAttr" PropKeyDesc="表格自定义属性" TableNo="11" CellsType="-1" Define1="是否存在"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[False]]></Value>
+                        <ValueDesc>个人准考证.docx中表格数量错误，应只存在10个表格</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="TableCustomAttr" PropKeyDesc="表格自定义属性" TableNo="9" CellsType="-1" Define1="起始页|总页数"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[起始页：9|总页数：1]]></Value>
+                        <ValueDesc>个人准考证.docx中每个表格占用一页设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="TableCustomAttr" PropKeyDesc="表格自定义属性" TableNo="10" CellsType="-1" Define1="起始页|总页数"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[起始页：10|总页数：1]]></Value>
+                        <ValueDesc>个人准考证.docx中每个表格占用一页设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindTableTextAndCellShape" PropKeyDesc="指定单元格中的对象属性" Row="2" Col="3" TableNo="1" Count="1" Find="准考证号.*143111651513.*李潇.*110104198710261727.*考试科目.*高级会计实务.*考试地点.*北京大学哲学楼" CellsType="-1" ShapeType="Picture" Define1="宽|高"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[宽：4.0;高：5.1]]></Value>
+                        <ValueDesc>个人准考证.docx中李潇的考生照片保持原图片大小设置错误，应设置为宽度4.0厘米，高度5.1厘米</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindTableTextAndCellShape" PropKeyDesc="指定单元格中的对象属性" Row="2" Col="3" TableNo="999" Count="1" Find="准考证号.*143132153117.*刘蕾琳.*110102198905240421.*考试科目.*高级会计实务.*考试地点.*北京大学哲学楼" CellsType="-1" ShapeType="Picture" Define1="宽|高"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[宽：5.0;高：5.3;]]></Value>
+                        <ValueDesc>个人准考证.docx中刘蕾琳的考生照片保持原图片大小设置错误，应设置为宽度5.0厘米，高度5.3厘米</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindTableTextAndCellShape" PropKeyDesc="指定单元格中的对象属性" Row="2" Col="3" TableNo="999" Count="1" Find="准考证号.*143141141210.*安豪进.*410303199010181021.*考试科目.*中级会计实务.*财务管理.*经济法.*考试地点.*北京交通大学主校区思源西楼" CellsType="-1" ShapeType="Picture" Define1="宽|高"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[宽：3.0;高：5.0;]]></Value>
+                        <ValueDesc>个人准考证.docx中安豪进的考生照片保持原图片大小设置错误，应设置为宽度3.0厘米，高度5.0厘米</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindTableTextAndCellShape" PropKeyDesc="指定单元格中的对象属性" Row="2" Col="3" TableNo="999" Count="1" Find="准考证号.*143122103825.*杨建硕.*420106196303245216.*考试科目.*中级会计实务.*财务管理.*经济法.*考试地点.*北京交通大学主校区思源西楼" CellsType="-1" ShapeType="Picture" Define1="宽|高"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[宽：4.8;高：5.1;]]></Value>
+                        <ValueDesc>个人准考证.docx中杨建硕的考生照片保持原图片大小设置错误，应设置为宽度4.8厘米，高度5.1厘米</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+    <ScorePointGroup FileName="word.docx" OfficeType="1" ParseType="1">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="IsExists" PropKeyDesc="是否存在指定文本" Para="-1" Find="\v"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[false]]></Value>
+                        <ValueDesc>Word.docx中软回车替换为硬回车设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="关于2016年度北京市会计专业技术中、高级资格考试有关事项的通知" Define1="字体|字号|对齐|行距(行)|段前距(行)" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[字体：微软雅黑|字号：16|对齐：wdAlignParagraphCenter|单倍行距|段前距：3行]]></Value>
+                        <ValueDesc>Word.docx中"关于2016年度……的通知"替换同名样式设置错误，替换后格式应为微软雅黑、三号、居中对齐，单倍行距，段前间距3行</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="考试形式" Define1="字体|字号|对齐|左缩进" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[字体：微软雅黑|字号：12|对齐：wdAlignParagraphJustify|左缩进：0]]></Value>
+                        <ValueDesc>Word.docx中"考试形式"替换同名样式设置错误，替换后格式应为微软雅黑、小四、两端对齐，左缩进0字符</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FontSpacing" PropKeyDesc="字符之间的间距(以磅为单位)" Para="-1" Find="考试形式"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0.25]]></Value>
+                        <ValueDesc>Word.docx中"考试形式"替换同名样式设置错误，替换后字符间距应设置为加宽0.25磅</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaStyleDescription" PropKeyDesc="段落的样式的说明" Para="-1" Find="考试形式"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[悬挂缩进: 3.4 字符]]></Value>
+                        <ValueDesc>Word.docx中"考试形式"替换同名样式设置错误，替换后悬挂缩进应设置为3.4字符</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="根据财政部全国会计专业技术资格考试领导小组办公室" Define1="字体|字号|颜色|对齐|首行缩进|行距(磅)|段前距(磅)" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[字体：宋体|字号：10.5|颜色：0|对齐：wdAlignParagraphJustify|缩进：2|行距：12磅|段前距：3磅]]></Value>
+                        <ValueDesc>Word.docx中"根据财政部……办公室"替换同名样式设置错误，替换后格式应为宋体、五号、黑色、两端对齐、首行缩进2字符、行距12磅，段前间距3磅</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="kuaiji.bjcz.gov.cn" Define1="字体|字号|颜色|对齐|首行缩进|行距(磅)|段前距(磅)" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[字体：Cambria|字号：10.5|颜色：0|对齐：wdAlignParagraphJustify|缩进：2|行距：12磅|段前距：3磅]]></Value>
+                        <ValueDesc>Word.docx中"kuaiji.bjcz.gov.cn"替换同名样式设置错误，替换后格式应为Cambria、五号、黑色、两端对齐、首行缩进2字符、行距12磅，段前间距3磅</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="SmartArt图形" WepType="SmartArt">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SmartArtLayout" PropKeyDesc="SmartArt布局名称" SmartArtNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[分段流程]]></Value>
+                        <ValueDesc>Word.docx中SmartArt的布局设置错误，应设置为分段流程</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SmartArtNodeText" PropKeyDesc="SmartArt指定节点文本" SmartArtNum="1" SmartArtNodeNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[网上报名]]></Value>
+                        <ValueDesc>Word.docx中SmartArt第1个形状的文字内容错误，应为"网上报名"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SmartArtNodeText" PropKeyDesc="SmartArt指定节点文本" SmartArtNum="1" SmartArtNodeNum="3"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[网上付费]]></Value>
+                        <ValueDesc>Word.docx中SmartArt第3个形状的文字内容错误，应为"网上付费"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SmartArtNodeText" PropKeyDesc="SmartArt指定节点文本" SmartArtNum="1" SmartArtNodeNum="4"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[网上打印准考证]]></Value>
+                        <ValueDesc>Word.docx中SmartArt第4个形状的文字内容错误，应为"网上打印准考证"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SmartArtNodeFindSubTextColor" PropKeyDesc="查找SmartArt子节点并获取文本颜色" SmartArtNum="1" SmartArtNodeNum="3" Find="网上付费"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[16711680]]></Value>
+                        <ValueDesc>Word.docx中SmartArt颜色设置错误，应设置为"彩色-个性色"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SmartArtNodeFindSubTextColor" PropKeyDesc="查找SmartArt子节点并获取文本颜色" SmartArtNum="1" SmartArtNodeNum="4" Find="网上打印准考证"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[16711680]]></Value>
+                        <ValueDesc>Word.docx中SmartArt颜色设置错误，应设置为"彩色-个性色"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FindHyperlinkAddress" PropKeyDesc="超链接地址" Para="-1" Find="高级资格考试报名条件"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[附件1. 北京市会计专业技术中、高级资格考试报名条件.docx]]></Value>
+                        <ValueDesc>Word.docx中插入超链接设置错误，应将附件1标题链接到考生文件夹下的同名文档</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FindHyperlinkAddress" PropKeyDesc="超链接地址" Para="-1" Find="高级资格考试现场审核地点"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[附件2. 北京市会计专业技术中、高级资格考试现场审核地点.docx]]></Value>
+                        <ValueDesc>Word.docx中插入超链接设置错误，应将附件2标题链接到考生文件夹下的同名文档</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="自定义" WepType="Custom">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRuleGroup LogicOper="Or" FullScore="2" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams WepType="Document" PropKey="DocumentTheme" PropKeyDesc="文档主题"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[msoThemeHyperlink:10498160]]></Value>
+                            <ValueDesc>Word.docx中设置超链接访问前为标准紫色设置错误</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams WepType="ParaFind" PropKey="StyleParaDescription" PropKeyDesc="样式的说明" Find="超链接"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[字体颜色: 紫色]]></Value>
+                            <ValueDesc>Word.docx中设置超链接访问前为标准紫色</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+                <MarkRuleGroup LogicOper="Or" FullScore="2" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams WepType="Document" PropKey="DocumentTheme" PropKeyDesc="文档主题"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[msoThemeFollowedHyperlink:255]]></Value>
+                            <ValueDesc>Word.docx中设置超链接访问后为标准红色设置错误</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams WepType="ParaFind" PropKey="StyleParaDescription" PropKeyDesc="样式的说明" Find="访问过的超链接"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[字体颜色: 红色]]></Value>
+                            <ValueDesc>Word.docx中设置超链接访问后为标准红色设置错误</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsFieldEmbedOrLinkExist" PropKeyDesc="判断嵌入或链接域"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[Word.Document]]></Value>
+                        <ValueDesc>以图标形式将"个人准考证.docx"嵌入到Word.docx中设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsDisplayAsIcon" PropKeyDesc="根据图标文本判断嵌入或链接域的图标是否显示"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc>以图标形式将"个人准考证.docx"嵌入到Word.docx中设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsFieldEmbedOrLinkCodeText" PropKeyDesc="判断嵌入或链接域的代码"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[EMBED Word.Document.12]]></Value>
+                        <ValueDesc>Word.docx中插入对象不勾选链接到文件复选框设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

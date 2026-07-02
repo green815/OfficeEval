@@ -1,0 +1,694 @@
+<QuestItem QuestCode="XXXXXXX" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Excel.xlsx" ParseType="1" OfficeType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="主要城市降水量" Row="A2|A9|A21|A27|A30"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[北京|哈尔滨|南宁|拉萨|西宁]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，将A列数据中城市名称的汉语拼音删除错误（抽查A2|A9|A21|A27|A30的值是北京|哈尔滨|南宁|拉萨|西宁）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncWordStrings="市">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="主要城市降水量" Row="A2|A9|A21|A27|A30"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[北京市|哈尔滨市|南宁市|拉萨市|西宁市]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，将A列数据中城市名后面添加文本"市"，如"北京市"（抽查A2|A9|A21|A27|A30的值是北京市|哈尔滨市|南宁市|拉萨市|西宁市）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格" WepType="Table">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ExcelTableStyle" PropKeyDesc="表格样式" SheetName="主要城市降水量" FindTableIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，将单元格区域A1:P32转换为表，为其套用一种恰当的表格格式--错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ExcelTableRange" PropKeyDesc="查找表格范围" SheetName="主要城市降水量" FindTableIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[A1:P32]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，未将单元格区域A1:P32转换为表]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ExcelTableStyle" PropKeyDesc="Excel风格" SheetName="主要城市降水量" Row="A1" Range="P32"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，A1:P32区域套用表格样式后未取消筛选]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ShowAutoFilterDropDown" PropKeyDesc="显示自动筛选下拉列表" SheetName="主要城市降水量" Row="A1" Range="P32"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[False]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，A1:P32区域套用表格样式后未取消筛选]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ExcelTableStyle" PropKeyDesc="Excel风格" SheetName="主要城市降水量" Row="A1" Range="P32"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，A1:P32区域套用表格样式后未取消镶边行]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ShowTableStyleRowStripes" PropKeyDesc="可显示样式行条纹" SheetName="主要城市降水量" Row="A1" Range="P32"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[False]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，A1:P32区域套用表格样式后未取消镶边行]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格" WepType="Table">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="ExcelTableName" PropKeyDesc="查找表格名称" SheetName="主要城市降水量" FindTableIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[降水量统计]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，A1:P32区域套用表格样式后表名称设置错误（应设置为降水量统计）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="主要城市降水量" Row="B7|B9|C2|C4|C9|D31|L2|L3|L5|L31|M5|M6|M24|M27|M28|M30|M31"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0]]></Value>
+                        <ValueDesc><![CDATA['主要城市降水量'将单元格区域B2:M32中所有的空单元格都填入数值0--错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="3">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="单元格的值" SheetName="主要城市降水量" Row="B7|C9|D31|E6|F6|K27|L29|L31|M5|M6|M17|M30"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[干旱|干旱|干旱|干旱|干旱|干旱|干旱|干旱|干旱|干旱|干旱|干旱]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，B2:M32单元格数字格式，使得值小于15的单元格仅显示文本"干旱")设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="3">
+                    <FindParams PropKey="NumberFormatLst" PropKeyDesc="数字格式设置" SheetName="主要城市降水量" Row="B7|C9|D31|E6|F6|K27|L29|L31|M5|M6|M17|M30"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[[>15]0;[<15]"干旱";0|[>15]0;[<15]"干旱";0|[>15]0;[<15]"干旱";0|[>15]0;[<15]"干旱";0|[>15]0;[<15]"干旱";0|[>15]0;[<15]"干旱";0|[>15]0;[<15]"干旱";0|[>15]0;[<15]"干旱";0|[>15]0;[<15]"干旱";0|[>15]0;[<15]"干旱";0|[>15]0;[<15]"干旱";0|[>15]0;[<15]"干旱";0]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，B2:M32单元格数字格式设置错误，使得值小于15的单元格仅显示文本"干旱")]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="条件格式" WepType="FormatCondition">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FormatConditionsFormula" PropKeyDesc="条件格式值" SheetName="主要城市降水量" Row="B2" Range="M32" Find_FormatConditionsIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[小于15]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，B2:M32条件格式设置错误（条件应为小于15）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FormatConditionsInteriorColor" PropKeyDesc="条件格式填充颜色" SheetName="主要城市降水量" Row="B2" Range="M32" Find_FormatConditionsIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[10284031]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，B2:M32条件格式设置错误（条件应为黄色填充)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FormatConditionsColor" PropKeyDesc="条件格式字体颜色" SheetName="主要城市降水量" Row="B2" Range="M32" Find_FormatConditionsIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[26012]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，B2:M32条件格式设置错误（条件应为深黄色文本)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="主要城市降水量" Row="N2|N9|N21|N27|N30" Find="格式|0.0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[626.3|439.0|1625.0|533.8|378.6]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，N2:N32中计算各城市全年的合计降水量错误（抽查N2|N9|N21|N27|N30的值是626.3|439.0|1625.0|533.8|378.6）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncWordStrings="市">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FindFormulaLst" PropKeyDesc="公式查找" SheetName="主要城市降水量" Row="N2|N9|N21|N27|N30"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[=SUM(降水量统计[@[1月]:[12月]])|=SUM(降水量统计[@[1月]:[12月]])|=SUM(降水量统计[@[1月]:[12月]])|=SUM(降水量统计[@[1月]:[12月]])|=SUM(降水量统计[@[1月]:[12月]])]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，N2:N32中计算各城市全年的合计降水量公式错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="条件格式" WepType="FormatCondition">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FormatConditionsBarFillType" PropKeyDesc="条件格式的数据填充颜色类型" SheetName="主要城市降水量" Row="N2" Range="N32" Find_FormatConditionsIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，N2:N32中条件格式错误（应用实心填充的数据条）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FormatConditionsRange" PropKeyDesc="条件格式单元格区域" SheetName="主要城市降水量" Row="N2" Range="N32" Find_FormatConditionsIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[N2:N32]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，N2:N32中条件格式错误（应用实心填充的数据条）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="条件格式" WepType="FormatCondition">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FormatConditionsShowValue" PropKeyDesc="条件格式的数据填充是否显示值" SheetName="主要城市降水量" Row="N2" Range="N32" Find_FormatConditionsIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[False]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，N2:N32中条件格式错误（不显示数值本身）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="主要城市降水量" Row="O2|O9|O21|O27|O30"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[21|26|3|24|27]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，O2:O32根据"合计降水量"列中的数值进行降序排名错误（抽查O2|O9|O21|O27|O30的值是21|26|3|24|27）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetSparklineGroupType" PropKeyDesc="获取迷你图组属性" SheetName="主要城市降水量" Row="P2" Range="P32"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlSparkColumn]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，P2:P32中，插入迷你图错误（应设置为插入迷你柱形图）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRuleGroup LogicOper="Or" FullScore="0.5" NotLeaf="1">
+                    <MarkRule FullScore="0">
+                        <FindParams PropKey="GetSparklineGroupSourceData_All" PropKeyDesc="单元格的值" SheetName="主要城市降水量" Row="P2" Range="P32" Find="B2:M2|B5:M5|B6:M6|B14:M14|B21:M21|B22:M22|B32:M32"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[True|True|True|True|True|True|True]]></Value>
+                            <ValueDesc><![CDATA[在"主要城市降水量"工作表中，P2:P32中，迷你图的错误范围错误（正确数据分别是B2:M2|B5:M5|B6:M6|B14:M14|B21:M21|B22:M22|B32:M32）]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="0">
+                        <FindParams PropKey="GetSparklineGroupSourceData_All" PropKeyDesc="单元格的值" SheetName="主要城市降水量" Row="P2" Range="P32" Find="B2:M32"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[True]]></Value>
+                            <ValueDesc><![CDATA[在"主要城市降水量"工作表中，P2:P32中，迷你图的错误范围错误（应设置为B2:M32）]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetSparklineGroup_HighpointColor" PropKeyDesc="迷你图组高点颜色" SheetName="主要城市降水量" Row="P2" Range="P32"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，P2:P32中，迷你图的高点颜色设置错误（应设置为红色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="验证筛选" WepType="ParaFont">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="DataValidationFormula" PropKeyDesc="数据验证" SheetName="主要城市降水量" Row="R3"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[=$A$2:$A$32]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，R3数据验证设置错误（应设置为=$A$2:$A$32）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncWordStrings="市">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="DataValidationContent" PropKeyDesc="数据验证" SheetName="主要城市降水量" Row="R3"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[北京市]]></Value>
+                        <Value><![CDATA[天津市]]></Value>
+                        <Value><![CDATA[石家庄市]]></Value>
+                        <Value><![CDATA[太原市]]></Value>
+                        <Value><![CDATA[呼和浩特市]]></Value>
+                        <Value><![CDATA[沈阳市]]></Value>
+                        <Value><![CDATA[长春市]]></Value>
+                        <Value><![CDATA[哈尔滨市]]></Value>
+                        <Value><![CDATA[上海市]]></Value>
+                        <Value><![CDATA[南京市]]></Value>
+                        <Value><![CDATA[杭州市]]></Value>
+                        <Value><![CDATA[合肥市]]></Value>
+                        <Value><![CDATA[福州市]]></Value>
+                        <Value><![CDATA[南昌市]]></Value>
+                        <Value><![CDATA[济南市]]></Value>
+                        <Value><![CDATA[郑州市]]></Value>
+                        <Value><![CDATA[武汉市]]></Value>
+                        <Value><![CDATA[长沙市]]></Value>
+                        <Value><![CDATA[广州市]]></Value>
+                        <Value><![CDATA[南宁市]]></Value>
+                        <Value><![CDATA[海口市]]></Value>
+                        <Value><![CDATA[重庆市]]></Value>
+                        <Value><![CDATA[成都市]]></Value>
+                        <Value><![CDATA[贵阳市]]></Value>
+                        <Value><![CDATA[昆明市]]></Value>
+                        <Value><![CDATA[拉萨市]]></Value>
+                        <Value><![CDATA[西安市]]></Value>
+                        <Value><![CDATA[兰州市]]></Value>
+                        <Value><![CDATA[西宁市]]></Value>
+                        <Value><![CDATA[银川市]]></Value>
+                        <Value><![CDATA[乌鲁木齐市]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，R3数据验证设置错误（应设置为A2:A32中的城市名称）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncWordStrings="市">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="验证筛选" WepType="ParaFont">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="DataValidationFormula" PropKeyDesc="数据验证" SheetName="主要城市降水量" Row="S2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[=$B$1:$M$1]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，S2数据验证设置错误（应设置为=$B$1:$M$1）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncWordStrings="市">2</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="DataValidationContent" PropKeyDesc="数据验证" SheetName="主要城市降水量" Row="S2"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[1月]]></Value>
+                        <Value><![CDATA[2月]]></Value>
+                        <Value><![CDATA[3月]]></Value>
+                        <Value><![CDATA[4月]]></Value>
+                        <Value><![CDATA[5月]]></Value>
+                        <Value><![CDATA[6月]]></Value>
+                        <Value><![CDATA[7月]]></Value>
+                        <Value><![CDATA[8月]]></Value>
+                        <Value><![CDATA[9月]]></Value>
+                        <Value><![CDATA[10月]]></Value>
+                        <Value><![CDATA[11月]]></Value>
+                        <Value><![CDATA[12月]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，S2数据验证设置错误（应设置为B1:M1中的月份名称）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncWordStrings="市">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2.5" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="主要城市降水量" Row="S3|" Find="格式|0.0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[170.3]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，S3单元格值计算错误（正确值是170.3）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="主要城市降水量" Row="S3"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[INDEX]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，S3单元格公式使用错误（应包含INDEX）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="主要城市降水量" Row="S3"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[Match]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，S3单元格公式使用错误（应包含Match）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Wookbook" PropKeyDesc="工作表" SheetName="北京市" SheetNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[找不到"北京市"工作表（正确的是存在北京市工作表)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Wookbook" PropKeyDesc="工作表" SheetName="南昌市" SheetNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[找不到"南昌市"工作表（正确的是存在南昌市工作表)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Wookbook" PropKeyDesc="工作表" SheetName="郑州市" SheetNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[找不到"郑州市"工作表（正确的是存在郑州市工作表)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Wookbook" PropKeyDesc="工作表" SheetName="海口市" SheetNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[找不到"海口市"工作表（正确的是存在海口市工作表)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Wookbook" PropKeyDesc="工作表" SheetName="贵阳市" SheetNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[找不到"贵阳市"工作表（正确的是存在贵阳市工作表)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Wookbook" PropKeyDesc="工作表" SheetName="昆明市" SheetNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[找不到"昆明市"工作表（正确的是存在昆明市工作表)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Wookbook" PropKeyDesc="工作表" SheetName="拉萨市" SheetNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[找不到"拉萨市"工作表（正确的是存在拉萨市工作表)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Wookbook" PropKeyDesc="工作表" SheetName="西安市" SheetNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[找不到"西安市"工作表（正确的是存在西安市工作表)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Wookbook" PropKeyDesc="工作表" SheetName="兰州市" SheetNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[找不到"兰州市"工作表（正确的是存在兰州市工作表)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Wookbook" PropKeyDesc="工作表" SheetName="乌鲁木齐市" SheetNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[找不到"乌鲁木齐市"工作表（正确的是存在乌鲁木齐市工作表)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="北京市" SheetNameAlias="2" Row="A9|B9|C9|A13|B13|C13" Find="格式|0.000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[6月|125.300|0.200|10月|31.100|0.050]]></Value>
+                        <ValueDesc><![CDATA[北京市工作表内容错误（抽查A9|B9|C9|A13|B13|C13的值是6月|125.300|0.200|10月|31.100|0.050）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncWordStrings="市">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="南昌市" Row="A9|B9|C9|A13|B13|C13" Find="格式|0.000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[6月|427.600|0.315|10月|16.600|0.012]]></Value>
+                        <ValueDesc><![CDATA[南昌市工作表内容错误（抽查A9|B9|C9|A13|B13|C13的值是6月|427.600|0.315|10月|16.600|0.012）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncWordStrings="市">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="郑州市" Row="A9|B9|C9|A13|B13|C13" Find="格式|0.000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[6月|24.600|0.037|10月|13.300|0.020]]></Value>
+                        <ValueDesc><![CDATA[郑州市工作表内容错误（抽查A9|B9|C9|A13|B13|C13的值是6月|24.600|0.037|10月|13.300|0.020）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncWordStrings="市">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="海口市" Row="A9|B9|C9|A13|B13|C13" Find="格式|0.000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[6月|227.300|0.095|10月|901.200|0.377]]></Value>
+                        <ValueDesc><![CDATA[海口市工作表内容错误（抽查A9|B9|C9|A13|B13|C13的值是6月|227.300|0.095|10月|901.200|0.377）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncWordStrings="市">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="贵阳市" Row="A9|B9|C9|A13|B13|C13" Find="格式|0.000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[6月|89.900|0.066|10月|106.100|0.077]]></Value>
+                        <ValueDesc><![CDATA[贵阳市工作表内容错误（抽查A9|B9|C9|A13|B13|C13的值是6月|89.900|0.066|10月|106.100|0.077）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncWordStrings="市">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="昆明市" Row="A9|B9|C9|A13|B13|C13" Find="格式|0.000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[6月|133.500|0.136|10月|49.400|0.050]]></Value>
+                        <ValueDesc><![CDATA[昆明市工作表内容错误（抽查A9|B9|C9|A13|B13|C13的值是6月|133.500|0.136|10月|49.400|0.050）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncWordStrings="市">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="拉萨市" Row="A9|B9|C9|A13|B13|C13" Find="格式|0.000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[6月|63.000|0.118|10月|10.900|0.020]]></Value>
+                        <ValueDesc><![CDATA[拉萨市工作表内容错误（抽查A9|B9|C9|A13|B13|C13的值是6月|63.000|0.118|10月|10.900|0.020）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncWordStrings="市">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="西安市" Row="A9|B9|C9|A13|B13|C13" Find="格式|0.000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[6月|59.800|0.114|10月|73.100|0.139]]></Value>
+                        <ValueDesc><![CDATA[西安市工作表内容错误（抽查A9|B9|C9|A13|B13|C13的值是6月|59.800|0.114|10月|73.100|0.139）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncWordStrings="市">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="兰州市" Row="A9|B9|C9|A13|B13|C13" Find="格式|0.000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[6月|30.400|0.100|10月|23.500|0.077]]></Value>
+                        <ValueDesc><![CDATA[兰州市工作表内容错误（抽查A9|B9|C9|A13|B13|C13的值是6月|30.400|0.100|10月|23.500|0.077）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncWordStrings="市">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="乌鲁木齐市" Row="A9|B9|C9|A13|B13|C13" Find="格式|0.000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[6月|8.900|0.052|10月|12.800|0.075]]></Value>
+                        <ValueDesc><![CDATA[乌鲁木齐市工作表内容错误（抽查A9|B9|C9|A13|B13|C13的值是6月|8.900|0.052|10月|12.800|0.075）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncWordStrings="市">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="PaperOrientation" PropKeyDesc="页面方向" SheetName="主要城市降水量" Define1="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlLandscape]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，纸张方向设置错误（应设置为横向）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作簿" WepType="Workbook">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="CustomDocumentProperties" PropKeyDesc="自定义文档属性"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[Name:索引|Value:水资源|Type:4]]></Value>
+                        <ValueDesc><![CDATA[为文档添加名称为"索引"，类型为"文本"，值为"水资源"的自定义属性]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+    <ScorePointGroup FileName="Excel.xlsx" ParseType="2" OfficeType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="PrintSetting" PropKeyDesc="打印设置" SheetName="主要城市降水量" SheetNameAlias="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[工作表调为一页]]></Value>
+                        <ValueDesc><![CDATA[在"主要城市降水量"工作表中，打印设置错误（应设置打印时数据始终显示在一页内）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

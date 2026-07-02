@@ -1,0 +1,346 @@
+<QuestItem QuestCode="XXXXXXX" SubjectType="MsOffice">
+    <ScorePointGroup FileName="EXCEL.XLSX" ParseType="1" OfficeType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="MergeCells" PropKeyDesc="合并单元格"  SheetName="某单位人员工资统计表" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[【某单位人员工资统计表】A1：D1单元格设置错误，应将A1：D1合并为一个单元格]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Alignment" PropKeyDesc="段落的对齐方式(WdParagraphAlignment常量)"  SheetName="某单位人员工资统计表" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[-4108]]></Value>
+                        <ValueDesc><![CDATA[【某单位人员工资统计表】A1：D1单元格对齐方式设置错误，应将A1：D1设置成水平居中]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值"  SheetName="某单位人员工资统计表" Row="G5|G6|G7" Find="格式|0" Define1="COUNTIF"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[8|9|3]]></Value>
+                        <ValueDesc><![CDATA[【某单位人员工资统计表】COUNTIF函数计算G5:G7错误，G5:G7数据正确值为8|9|3）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="单元格的值"  SheetName="某单位人员工资统计表" Row="H5|H6|H7" Define1="AVERAGEIF"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[8338|6722|5100]]></Value>
+                        <ValueDesc><![CDATA[【某单位人员工资统计表】AVERAGEIF函数计算H5:H7错误，正确数据值[8338|6722|5100]]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值"  SheetName="某单位人员工资统计表" Row="H5|H6|H7" Find="格式|0" Define1="AVERAGEIF"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[8338|6722|5100]]></Value>
+                        <ValueDesc><![CDATA[【某单位人员工资统计表】用AVERAGEIF函数计算H5:H7，并设置数值型，保留小数点后0位错误，正确数据值是8338|6722|5100]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="单元格的值"  SheetName="某单位人员工资统计表" Row="L3|L5|L7|L8" Define1="AVERAGEIFS"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[8333|5100|6760|5100]]></Value>
+                        <ValueDesc><![CDATA[【某单位人员工资统计表】AVERAGEIFS函数计算L3:L8错误（抽查L3|L5|L7|L8的正确值是8333|5100|6760|5100）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值"  SheetName="某单位人员工资统计表" Row="L3|L5|L7|L8" Find="格式|0" Define1="AVERAGEIFS"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[8333|5100|6760|5100]]></Value>
+                        <ValueDesc><![CDATA[【某单位人员工资统计表】用AVERAGEIFS函数计算L3:L8，并设置数值型，保留小数点后0位设置错误（抽查L3|L5|L7|L8的正确值是8333|5100|6760|5100）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="FormatConditionsFormula" PropKeyDesc="是否设置条件格式"  SheetName="某单位人员工资统计表" Row="F4" Range="F7"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[三色刻度-8109667|8711167|7039480]]></Value>
+                        <ValueDesc><![CDATA[【某单位人员工资统计表】利用条件格式对F4:H7单元格区域设置"红-黄-绿色阶"错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetChartDataRange" PropKeyDesc="图表数据源" SheetName="某单位人员工资统计表" FndChartIndex="1" Find_SeriesIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[G5:G7]]></Value>
+                        <ValueDesc><![CDATA[【某单位人员工资统计表】图例数据源人数列选取错误，应选取G5:G7]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="$">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetChartDataRange" PropKeyDesc="图表数据源" SheetName="某单位人员工资统计表" FndChartIndex="1" Find_SeriesIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[F5:F7]]></Value>
+                        <ValueDesc><![CDATA[【某单位人员工资统计表】图例数据源基本工资平均值列选取错误，应选取F5:F7]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="$">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SeriesName" PropKeyDesc="系列名称" SheetName="某单位人员工资统计表" FndChartIndex="1" Find_SeriesIndex="2" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[基本工资平均值（元）]]></Value>
+                        <ValueDesc><![CDATA[【某单位人员工资统计表】主坐标系列设置错误，应设置"基本工资平均值"系列为主坐标]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetPrimarySecondaryAxisOfSeries" PropKeyDesc="一次二次轴系列" SheetName="某单位人员工资统计表" FndChartIndex="1" Find_SeriesIndex="2" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlPrimary]]></Value>
+                        <ValueDesc><![CDATA[【某单位人员工资统计表】设置"基本工资平均值"系列错误，应设置为主坐标]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SeriesChartType" PropKeyDesc="图表值" SheetName="某单位人员工资统计表" FndChartIndex="1" Find_SeriesIndex="2" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlColumnClustered]]></Value>
+                        <ValueDesc><![CDATA[【某单位人员工资统计表】"基本工资平均值"系列的图表类型设置错误，应选择"簇状柱形图"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SeriesName" PropKeyDesc="系列名称" SheetName="某单位人员工资统计表" FndChartIndex="1" Find_SeriesIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[人数]]></Value>
+                        <ValueDesc><![CDATA[【某单位人员工资统计表】次坐标系列选择错误，应设置"人数"系列为次坐标]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetPrimarySecondaryAxisOfSeries" PropKeyDesc="一次二次轴系列" SheetName="某单位人员工资统计表" FndChartIndex="1" Find_SeriesIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlSecondary]]></Value>
+                        <ValueDesc><![CDATA[【某单位人员工资统计表】"人数"系列设置错误，应设置为次坐标]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SeriesChartType" PropKeyDesc="图表值" SheetName="某单位人员工资统计表" FndChartIndex="1" Find_SeriesIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlLine]]></Value>
+                        <ValueDesc><![CDATA[【某单位人员工资统计表】"人数"系列的图表类型设置错误，应设置为"折线图"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.3">
+                    <FindParams PropKey="GetTitleOverlay" PropKeyDesc="标题相对图表位置" SheetName="某单位人员工资统计表" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0]]></Value>
+                        <ValueDesc><![CDATA[【某单位人员工资统计表】图表标题位置错误，应设置图表标题位于图表上方]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.3">
+                    <FindParams PropKey="GetChartTitle" PropKeyDesc="图表标题" SheetName="某单位人员工资统计表" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[人员工资统计图]]></Value>
+                        <ValueDesc><![CDATA[【某单位人员工资统计表】图表标题设置错误，应设置为"人员工资统计图]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetDataTableShowType" PropKeyDesc="显示模拟运算表和图例项标示" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[显示模拟运算表]]></Value>
+                        <ValueDesc><![CDATA[【某单位人员工资统计表】设置"显示图例项标示"错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.6">
+                    <FindParams PropKey="GetChartColor" PropKeyDesc="获取图表颜色" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[11]]></Value>
+                        <ValueDesc><![CDATA[【某单位人员工资统计表】设置图表颜色为"彩色/颜色2"错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="ChartFill" PropKeyDesc="图表绘图区填充" FndChartIndex="1" SortIndexNum="0" Define1="绘图区：图案填充"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[msoPatternDottedGrid]]></Value>
+                        <ValueDesc><![CDATA[【某单位人员工资统计表】设置绘图区填充格式为"图案填充/虚线网格"错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.3">
+                    <FindParams PropKey="IsExistChartOfRange" PropKeyDesc="图表的单元格区域设置" SheetName="某单位人员工资统计表" FndChartIndex="1" SortIndexNum="0" Define1="E8:L25"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[【某单位人员工资统计表】图表位置错误，应将图插入到表F9:K24单元格区域]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Sheet">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Wookbook" PropKeyDesc="工作表" SheetName="某单位人员工资统计表"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[sheet1工作表命名错误，应重命名为"某单位人员工资统计表"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="PivotCustomAttr" PropKeyDesc="数据透视自定义属性" SheetName="产品销售情况表" SheetNameAlias="2" ExcelFieldType="行数据源"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[行：季度]]></Value>
+                        <ValueDesc><![CDATA[【产品销售情况表】数据透视表行选择错误，应选择"季度"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="PivotCustomAttr" PropKeyDesc="数据透视自定义属性" SheetName="产品销售情况表" SheetNameAlias="2" ExcelFieldType="列数据源"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[列：产品类别]]></Value>
+                        <ValueDesc><![CDATA[【产品销售情况表】数据透视表列选择错误，应选择"产品类别"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="PivotCustomAttr" PropKeyDesc="数据透视自定义属性" SheetName="产品销售情况表" SheetNameAlias="2" ExcelFieldType="值数据源"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[值：销售额（万元）]]></Value>
+                        <ValueDesc><![CDATA[【产品销售情况表】数据透视表数据选择错误，应选择为"销售额（万元）"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="PivotCustomAttr" PropKeyDesc="数据透视自定义属性" SheetName="产品销售情况表" SheetNameAlias="2" ExcelFieldType="值汇总方式"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[销售额（万元）：xlSum]]></Value>
+                        <ValueDesc><![CDATA[【产品销售情况表】数据透视表数据汇总方式错误，应选择"销售额（万元）"，汇总项是求和]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="IsExistPivotOfRange" PropKeyDesc="是否存在数据透视表范围" SheetName="产品销售情况表" SheetNameAlias="0" PivotTablesNum="0" Range="I10:N15"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[【产品销售情况表】数据透视表位置错误，应置于I10:N15单元格区域]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncWordStrings="市">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Sheet">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Wookbook" PropKeyDesc="工作表" SheetName="产品销售情况表"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[sheet2工作表命名错误，应重命名为"产品销售情况表"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

@@ -1,0 +1,831 @@
+<QuestItem QuestCode="zh6502010001" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Excel.xlsx" ParseType="1" OfficeType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FindContent" PropKeyDesc="查找单元格格式" SheetName="2012级法律" Row="M2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>总分</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，M2单元格内容错误（标准答案：总分）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FindContent" PropKeyDesc="查找单元格格式" SheetName="2012级法律" Row="N2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>平均分</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，N2单元格内容错误（标准答案：平均分）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FindContent" PropKeyDesc="查找单元格格式" SheetName="2012级法律" Row="O2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>年级排名</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，O2单元格内容错误（标准答案：年级排名）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Alignment" PropKeyDesc="段落的对齐方式(WdParagraphAlignment常量)" SheetName="2012级法律" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>-4108</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，A1单元格对齐方式错误（标准答案：居中）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="NotFont" PropKeyDesc="字体" SheetName="2012级法律" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>宋体</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，A1单元格字体错误（标准答案：不等于宋体）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.3">
+                    <FindParams PropKey="Points" PropKeyDesc="字体大小" SheetName="2012级法律" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>12</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，A1单元格字号错误（标准答案：大于12）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">1</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格" WepType="Table">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="ExcelTableStyle" PropKeyDesc="表格样式" SheetName="2012级法律" FindTableIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>表样式中等深浅 15</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，表格样式错误（标准答案：表样式中等深浅 15）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="Alignment" PropKeyDesc="段落的对齐方式(WdParagraphAlignment常量)" SheetName="2012级法律" Row="A2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>-4108</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，A2单元格对齐方式错误（标准答案：居中）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="NumberFormat" PropKeyDesc="数字格式设ShowTotals置" SheetName="2012级法律" Row="M14"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>0.0_</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，M14单元格格式错误（标准答案：数值保留1位小数0.0_）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="NumberFormat" PropKeyDesc="数字格式设ShowTotals置" SheetName="2012级法律" Row="M91"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>0.0_</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，M91单元格格式错误（标准答案：数值保留1位小数0.0_）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="NumberFormat" PropKeyDesc="数字格式设ShowTotals置" SheetName="2012级法律" Row="N14"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>0.0_</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，N14单元格格式错误（标准答案：数值保留1位小数0.0_）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="NumberFormat" PropKeyDesc="数字格式设ShowTotals置" SheetName="2012级法律" Row="N91"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>0.0_</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，N91单元格格式错误（标准答案：数值保留1位小数0.0_）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="NumberFormat" PropKeyDesc="数字格式设ShowTotals置" SheetName="2012级法律" Row="O14"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>0_</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，O14单元格格式错误（标准答案：整数0_）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.3">
+                    <FindParams PropKey="NumberFormat" PropKeyDesc="数字格式设ShowTotals置" SheetName="2012级法律" Row="O91"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>0_</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，O91单元格格式错误（标准答案：整数0_）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.3" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="2012级法律" Row="M10"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>SUM</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，M10单元格公式错误（标准答案：包含SUM）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="2012级法律" Row="M10"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>730.9</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，M10单元格内容错误（标准答案：730.9）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.3" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="2012级法律" Row="M71"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>SUM</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，M71单元格公式错误（标准答案：包含SUM）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="2012级法律" Row="M71"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>804.6</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，M71单元格公式错误（标准答案：包含804.6]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.4" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="2012级法律" Row="M99"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>SUM</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，M99单元格公式错误（标准答案：包含SUM）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="2012级法律" Row="M99"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>713.2</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，M99单元格公式错误（标准答案：包含713.2]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.3" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="2012级法律" Row="N10"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>AVERAGE</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，N10单元格公式错误（标准答案：包含AVERAGE)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="2012级法律" Row="N10"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>81.2</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，N10单元格公式错误（标准答案：包含81.2]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.3" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="2012级法律" Row="N71"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>AVERAGE</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，N71单元格公式错误（标准答案：包含AVERAGE)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="2012级法律" Row="N71"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>89.4</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，N71单元格公式错误（标准答案：包含89.4]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.4" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="2012级法律" Row="N99"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>AVERAGE</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，N99单元格公式错误（标准答案：包含AVERAGE)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="2012级法律" Row="N99"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>79.2</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，N99单元格公式错误（标准答案：包含79.2]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.3" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="2012级法律" Row="O10"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>RANK</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，O10单元格公式错误（标准答案：包含RANK)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="2012级法律" Row="O10"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>75</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，O10单元格公式错误（标准答案：包含75]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.3" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="2012级法律" Row="O71"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>RANK</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，O71单元格公式错误（标准答案：包含RANK)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="2012级法律" Row="O71"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>1</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，O71单元格公式错误（标准答案：包含1]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.4" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="2012级法律" Row="O99"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>RANK</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，O99单元格公式错误（标准答案：包含RANK)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="2012级法律" Row="O99"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>94</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，O99单元格公式错误（标准答案：包含94]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="条件格式" WepType="FormatCondition">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="FormatConditionsFormula" PropKeyDesc="条件格式值" SheetName="2012级法律" Row="D3" Range="L102" Find_FormatConditionsIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>小于60</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，D3:L102单元格条件格式错误（标准答案：小于60）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="FormatConditionsInteriorColor" PropKeyDesc="条件格式填充颜色" SheetName="2012级法律" Row="D3" Range="L102" Find_FormatConditionsIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>65535</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，D3:L102单元格条件格式错误（标准答案：填充颜色黄色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="FormatConditionsColor" PropKeyDesc="条件格式字体颜色" SheetName="2012级法律" Row="D3" Range="L102" Find_FormatConditionsIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>255</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，D3:L102单元格条件格式错误（标准答案：字体颜色红色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FindContent" PropKeyDesc="查找单元格格式" SheetName="2012级法律" Row="A7"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>法律一班</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，A7单元格内容错误（标准答案：法律一班）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="2012级法律" Row="A7"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>MID</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，A7单元格公式错误（标准答案：包含MID）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FindContent" PropKeyDesc="查找单元格格式" SheetName="2012级法律" Row="A25"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>法律一班</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，A25单元格内容错误（标准答案：法律一班)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="2012级法律" Row="A25"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>MID</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，A25单元格公式错误（标准答案：包含MID）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FindContent" PropKeyDesc="查找单元格格式" SheetName="2012级法律" Row="A67"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>法律三班</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，A67单元格内容错误（标准答案：法律三班)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="2012级法律" Row="A67"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>MID</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，A67单元格公式错误（标准答案：包含MID）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FindContent" PropKeyDesc="查找单元格格式" SheetName="2012级法律" Row="A100"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>法律四班</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，A100单元格内容错误（标准答案：法律四班)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="2012级法律" Row="A100"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>MID</Value>
+                        <ValueDesc><![CDATA[在"2012级法律"工作表中，A100单元格公式错误（标准答案：包含MID）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="WorkSheetTabColor" PropKeyDesc="工作表标签颜色" SheetName="班级平均分" SheetNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>255</Value>
+                        <ValueDesc><![CDATA[在"班级平均分"工作表中，工作表标签颜色错误（标准答案：红色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="IsExistRowField" PropKeyDesc="行" SheetName="班级平均分" ExcelFieldName="班级"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>true</Value>
+                        <ValueDesc><![CDATA[在"班级平均分"工作表中，数据透视表的行标签错误（标准答案：班级）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="IsExistColField" PropKeyDesc="列" SheetName="班级平均分" ExcelFieldName="值"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>true</Value>
+                        <ValueDesc><![CDATA[在"班级平均分"工作表中，数据透视表的列标签错误（标准答案：数值）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="DataItems" PropKeyDesc="数据集合" SheetName="班级平均分" ExcelFieldName="班级"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>法律二班,法律三班,法律四班,法律一班</Value>
+                        <ValueDesc><![CDATA[在"班级平均分"工作表中，数据透视表的行标签内容错误（标准答案：法律二班,法律三班,法律四班,法律一班）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="DataItems" PropKeyDesc="数据集合" SheetName="班级平均分" ExcelFieldName="值"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>平均值项:英语,平均值项:体育,平均值项:计算机,平均值项:近代史,平均值项:法制史,平均值项:刑法,平均值项:民法,平均值项:法律英语,平均值项:立法法</Value>
+                        <ValueDesc><![CDATA[在"班级平均分"工作表中，数据透视表的值内容错误（标准答案：平均值项:英语,平均值项:体育,平均值项:计算机,平均值项:近代史,平均值项:法制史,平均值项:刑法,平均值项:民法,平均值项:法律英语,平均值项:立法法）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.6">
+                    <FindParams PropKey="PivoTableData" PropKeyDesc="判断数据透视表的指定数据字段是否存在" SheetName="班级平均分"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value>数据</Value>
+                        <Value>表1</Value>
+                        <ValueDesc><![CDATA[在"班级平均分"工作表中，数据透视表的平均值项:英语内容错误（标准答案：数据）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.6">
+                    <FindParams PropKey="PivoTableData" PropKeyDesc="判断数据透视表的指定数据字段是否存在" SheetName="班级平均分"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value>数据</Value>
+                        <Value>表1</Value>
+                        <ValueDesc><![CDATA[在"班级平均分"工作表中，数据透视表的平均值项:计算机内容错误（标准答案：数据）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.6">
+                    <FindParams PropKey="PivoTableData" PropKeyDesc="判断数据透视表的指定数据字段是否存在" SheetName="班级平均分"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value>数据</Value>
+                        <Value>表1</Value>
+                        <ValueDesc><![CDATA[在"班级平均分"工作表中，数据透视表的平均值项:法制史内容错误（标准答案：数据）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.6">
+                    <FindParams PropKey="PivoTableData" PropKeyDesc="判断数据透视表的指定数据字段是否存在" SheetName="班级平均分"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value>数据</Value>
+                        <Value>表1</Value>
+                        <ValueDesc><![CDATA[在"班级平均分"工作表中，数据透视表的平均值项:民法内容错误（标准答案：数据）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.6">
+                    <FindParams PropKey="PivoTableData" PropKeyDesc="判断数据透视表的指定数据字段是否存在" SheetName="班级平均分"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value>数据</Value>
+                        <Value>表1</Value>
+                        <ValueDesc><![CDATA[在"班级平均分"工作表中，数据透视表的平均值项:立法法内容错误（标准答案：数据）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="PivotTableStyle" PropKeyDesc="表格样式" SheetName="班级平均分" SheetNameAlias="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>数据透视表样式中等深浅 15</Value>
+                        <ValueDesc><![CDATA[在"班级平均分"工作表中，数据透视表表格样式名称错误（标准答案：数据透视表样式中等深浅 15）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="0.2" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="LabelRangeAlignment" PropKeyDesc="LabelRange对齐方式" SheetName="班级平均分" ExcelFieldName="班级"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>-4108</Value>
+                        <ValueDesc><![CDATA[在"班级平均分"工作表中，数据透视表班级字段对齐方式错误（标准答案：居中）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="DataRangeAlignment" PropKeyDesc="数据范围对齐" SheetName="班级平均分" ExcelFieldName="班级"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>-4108</Value>
+                        <ValueDesc><![CDATA[在"班级平均分"工作表中，数据透视表班级字段对齐方式错误（标准答案：居中）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.1">
+                    <FindParams PropKey="DataRangeAlignment" PropKeyDesc="数据范围对齐" SheetName="班级平均分" ExcelFieldName="值"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>-4108</Value>
+                        <ValueDesc><![CDATA[在"班级平均分"工作表中，数据透视表值字段对齐方式错误（标准答案：居中）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="0.2" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="LabelRangeAlignment" PropKeyDesc="LabelRange对齐方式" SheetName="班级平均分" ExcelFieldName="平均值项:民法"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>-4108</Value>
+                        <ValueDesc><![CDATA[在"班级平均分"工作表中，数据透视表平均值项:民法对齐方式错误（标准答案：居中）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="DataRangeAlignment" PropKeyDesc="数据范围对齐" SheetName="班级平均分" ExcelFieldName="平均值项:民法"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>-4108</Value>
+                        <ValueDesc><![CDATA[在"班级平均分"工作表中，数据透视表平均值项:民法对齐方式错误（标准答案：居中）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="0.1" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="LabelRangeAlignment" PropKeyDesc="LabelRange对齐方式" SheetName="班级平均分" ExcelFieldName="平均值项:近代史"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>-4108</Value>
+                        <ValueDesc><![CDATA[在"班级平均分"工作表中，数据透视表平均值项:近代史对齐方式错误（标准答案：居中）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="DataRangeAlignment" PropKeyDesc="数据范围对齐" SheetName="班级平均分" ExcelFieldName="平均值项:近代史"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>-4108</Value>
+                        <ValueDesc><![CDATA[在"班级平均分"工作表中，数据透视表平均值项:近代史对齐方式错误（标准答案：居中）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="DataRangeNumberFormat" PropKeyDesc="DataRange数字格式" SheetName="班级平均分" ExcelFieldName="平均值项:民法"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>0.0_</Value>
+                        <ValueDesc><![CDATA[在"班级平均分"工作表中，数据透视表平均值项:民法数字格式错误（标准答案：数值保留1位小数0.0_）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="DataRangeNumberFormat" PropKeyDesc="DataRange数字格式" SheetName="班级平均分" ExcelFieldName="平均值项:近代史"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>0.0_</Value>
+                        <ValueDesc><![CDATA[在"班级平均分"工作表中，数据透视表平均值项:近代史数字格式错误（标准答案：数值保留1位小数0.0_）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="ChartType" PropKeyDesc="图表类型" SheetName="班级平均分" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>xlcolumnclustered</Value>
+                        <ValueDesc><![CDATA[在"班级平均分"工作表中，图表类型错误（标准答案：二维的簇状柱形图）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="ChartRange_1" PropKeyDesc="图表起始位置" SheetName="班级平均分" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>10</Value>
+                        <ValueDesc><![CDATA[在"班级平均分"工作表中，图表位置错误（标准答案：A10:H30）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="1">2</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SeriesXValues" PropKeyDesc="图表值" SheetName="班级平均分" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>法律二班,法律三班,法律四班,法律一班</Value>
+                        <ValueDesc><![CDATA[在"班级平均分"工作表中，图表值错误（标准答案：法律二班,法律三班,法律四班,法律一班）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="SeriesValue" PropKeyDesc="图表值" SheetName="班级平均分" FndChartIndex="1" Find_SeriesIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>83.01,81.14,82.14,80.7</Value>
+                        <ValueDesc><![CDATA[在"班级平均分"工作表中，图表值错误（标准答案：83.01,81.14,82.14,80.7）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.3">
+                    <FindParams PropKey="SeriesValue" PropKeyDesc="图表值" SheetName="班级平均分" FndChartIndex="1" Find_SeriesIndex="4" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>80.88,77.88,77.18,78.34</Value>
+                        <ValueDesc><![CDATA[在"班级平均分"工作表中，图表值错误（标准答案：80.88,77.88,77.18,78.34）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorkSheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Wookbook" PropKeyDesc="工作表" SheetName="班级平均分" SheetNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>true</Value>
+                        <ValueDesc><![CDATA[工作表重命名错误（标准答案：班级平均分）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

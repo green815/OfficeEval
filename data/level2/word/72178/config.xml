@@ -1,0 +1,690 @@
+<QuestItem QuestCode="XXXXXXX" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Word1.docx" OfficeType="1" ParseType="1">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="PaperWidth" PropKeyDesc="页面宽度"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[21]]></Value>
+                        <ValueDesc>Word1.docx中纸张大小设置错误，应设置为A4</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="PaperHeight" PropKeyDesc="页面高度"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[29.7]]></Value>
+                        <ValueDesc>Word1.docx中纸张大小设置错误，应设置为A4</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="MirrorMargins" PropKeyDesc="对称页边距"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1]]></Value>
+                        <ValueDesc>Word1.docx中未设置对称页边距</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="PageCustomAttr" PropKeyDesc="页面属性" Define1="页面边距：上边距|下边距|左边距|右边距"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2.50|2.00|2.50|2.00]]></Value>
+                        <ValueDesc>Word1.docx中页边距设置错误，应设置上边距2.5厘米、下边距2厘米，内侧边距2.5厘米、外侧边距2厘米</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Page_GutterCm" PropKeyDesc="装订线(单位:厘米)"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1]]></Value>
+                        <ValueDesc>Word1.docx中装订线设置错误，应设置为1厘米</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Page_HeaderDistanceCm" PropKeyDesc="页眉距顶端边界(单位:厘米)"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1.5]]></Value>
+                        <ValueDesc>Word1.docx中页眉距离边界设置错误，应设置为1.5厘米</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Page_FooterDistanceCm" PropKeyDesc="页脚距底部边界(单位:厘米)"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1.5]]></Value>
+                        <ValueDesc>Word1.docx中页脚距离边界设置错误，应设置为1.5厘米</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaStyle" PropKeyDesc="段落的内置样式的名称" Para="-1" Find="北京住房公积金缴存管理办法"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[标题 1]]></Value>
+                        <ValueDesc>Word1.docx中"北京住房公积金缴存管理办法"应用样式设置错误，应设置为"标题1"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaStyle" PropKeyDesc="段落的内置样式的名称" Para="-1" Find="北京住房公积金提取管理办法"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[标题 1]]></Value>
+                        <ValueDesc>Word1.docx中"北京住房公积金提取管理办法"应用样式设置错误，应设置为"标题1"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaStyle" PropKeyDesc="段落的内置样式的名称" Para="-1" Find="有关问题的通知"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[标题 1]]></Value>
+                        <ValueDesc>Word1.docx中"有关问题的通知"应用样式设置错误，应设置为"标题1"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaStyle" PropKeyDesc="段落的内置样式的名称" Para="-1" Find="总则"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[标题 2]]></Value>
+                        <ValueDesc>Word1.docx中"总则"应用样式设置错误，应设置为"标题2"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaStyle" PropKeyDesc="段落的内置样式的名称" Para="-1" Find="附则"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[标题 2]]></Value>
+                        <ValueDesc>Word1.docx中"附则"应用样式设置错误，应设置为"标题2"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaStyle" PropKeyDesc="段落的内置样式的名称" Para="-1" Find="贷款偿还与回收"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[标题 2]]></Value>
+                        <ValueDesc>Word1.docx中"贷款偿还与回收"应用样式设置错误，应设置为"标题2"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaStyle" PropKeyDesc="段落的内置样式的名称" Para="-1" Find="贷款档案管理"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[标题 2]]></Value>
+                        <ValueDesc>Word1.docx中"贷款档案管理"应用样式设置错误，应设置为"标题2"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumber_TrailingCharacter" PropKeyDesc="编号列表的插入字符类型" Para="-1" Find="总则"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[空格]]></Value>
+                        <ValueDesc>Word1.docx中"总则"自动编号设置错误，应设置编号和后续文本以一个西文空格分隔</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumber_TrailingCharacter" PropKeyDesc="编号列表的插入字符类型" Para="-1" Find="贷款偿还与回收"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[空格]]></Value>
+                        <ValueDesc>Word1.docx中"贷款偿还与回收"自动编号设置错误，应设置编号和后续文本以一个西文空格分隔</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="总则"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第一章]]></Value>
+                        <ValueDesc>Word1.docx中"总则"自动编号设置错误，应设置为"第一章"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="附则"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第六章]]></Value>
+                        <ValueDesc>Word1.docx中"附则"自动编号设置错误，应设置为"第六章"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="提取额度"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第三章]]></Value>
+                        <ValueDesc>Word1.docx中"提取额度"自动编号设置错误，应设置为"第三章"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="贷款偿还与回收"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第七章]]></Value>
+                        <ValueDesc>Word1.docx中"贷款偿还与回收"自动编号设置错误，应设置为"第七章"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="贷款档案管理"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第十章]]></Value>
+                        <ValueDesc>Word1.docx中"贷款档案管理"自动编号设置错误，应设置为"第十章"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumber_TrailingCharacter" PropKeyDesc="编号列表的插入字符类型" Para="-1" Find="符合下列情形的"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[空格]]></Value>
+                        <ValueDesc>Word1.docx中"符合下列情形的"自动编号设置错误，应设置编号和后续文本以一个西文空格分隔</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumber_TrailingCharacter" PropKeyDesc="编号列表的插入字符类型" Para="-1" Find="借款人须具备下列条件"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[空格]]></Value>
+                        <ValueDesc>Word1.docx中"借款人须具备下列条件"自动编号设置错误，应设置编号和后续文本以一个西文空格分隔</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="本办法适用于北京市行政区域内住房公积金的缴存管理"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第二条]]></Value>
+                        <ValueDesc>Word1.docx中"本办法……缴存管理"自动编号设置错误，应设置为"第二条"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="单位应为其建立住房公积金"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第九条]]></Value>
+                        <ValueDesc>Word1.docx中"单位应为其建立住房公积金"自动编号设置错误，应设置为"第九条"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="管理中心应每年与缴存单位和职工对账"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第四十一条]]></Value>
+                        <ValueDesc>Word1.docx中"管理中心应每年与缴存单位和职工对账"自动编号设置错误，应设置为"第四十一条"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="职工有下列情形之一的"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第四条]]></Value>
+                        <ValueDesc>Word1.docx中"职工有下列情形之一的"自动编号设置错误，应设置为"第四条"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="职工配偶提取住房公积金"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第十五条]]></Value>
+                        <ValueDesc>Word1.docx中"职工配偶提取住房公积金"自动编号设置错误，应设置为"第十五条"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="借款人须具备下列条件"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第七条]]></Value>
+                        <ValueDesc>Word1.docx中"借款人须具备下列条件"自动编号设置错误，应设置为第七条</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="受托人发放的贷款及形成的担保债权"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第二十九条]]></Value>
+                        <ValueDesc>Word1.docx中"受托人发放的贷款及形成的担保债权"自动编号设置错误，应设置为"第二十九条"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="受托人可依法采取下列一种或数种处置措施"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第三十六条]]></Value>
+                        <ValueDesc>Word1.docx中"受托人可依法采取下列一种或数种处置措施"自动编号设置错误，应设置为"第三十六条"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Count="2" Find="总则"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第一章]]></Value>
+                        <ValueDesc>Word1.docx中"总则"自动编号设置错误，应设置为"第一章"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Count="3" Find="总则"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第一章]]></Value>
+                        <ValueDesc>Word1.docx中"总则"自动编号设置错误，应设置为"第一章"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="为了加强住房公积金缴存管理"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第一条]]></Value>
+                        <ValueDesc>Word1.docx中"为了加强住房公积金缴存管理"自动编号设置错误，应设置为"第一条"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="为了加强住房公积金提取管理"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第一条]]></Value>
+                        <ValueDesc>Word1.docx中"为了加强住房公积金提取管理"自动编号设置错误，应设置为"第一条"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="为进一步深化城镇住房制度改革"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第一条]]></Value>
+                        <ValueDesc>Word1.docx中"为进一步深化城镇住房制度改革"自动编号设置错误，应设置为"第一条"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="职工住房公积金转入集中封存库管理的"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第三十六条]]></Value>
+                        <ValueDesc>Word1.docx中"职工住房公积金转入集中封存库管理的"自动编号设置错误，应设置为"第三十六条"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="追究借款人的法律责任"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第三十六条]]></Value>
+                        <ValueDesc>Word1.docx中"追究借款人的法律责任"自动编号设置错误，应设置为"第三十六条"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Count="2" Find="与本办法相抵触的规定"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第三十六条]]></Value>
+                        <ValueDesc>Word1.docx中"与本办法相抵触的规定"自动编号设置错误，应设置为"第三十六条"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="IsExists" PropKeyDesc="是否存在指定文本" Para="-1" Find="章  "></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[false]]></Value>
+                        <ValueDesc>Word1.docx中删除手动纯文本编号设置错误，应不存在手动编号"章"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="IsExists" PropKeyDesc="是否存在指定文本" Para="-1" Find="条  "></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[false]]></Value>
+                        <ValueDesc>Word1.docx中删除手动纯文本编号设置错误，应不存在手动编号"条"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="Or" FullScore="1" NotLeaf="0">
+                <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="HeaderFields" PropKeyDesc="页眉域代码" Define8="0"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[STYLEREF  "标题 1"]]></Value>
+                            <ValueDesc>Word1.docx中页眉设置错误，应设置为插入标题1的标题内容</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="HeaderProperties" PropKeyDesc="页眉属性(字体|字号|文字颜色|加粗|对齐|页眉类型|内边框|形状)" Define1="对齐" Define8="0"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[wdAlignParagraphCenter]]></Value>
+                            <ValueDesc>Word1.docx中页眉对齐方式设置错误，应设置为居中对齐</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="HeaderFields" PropKeyDesc="页眉域代码" Define8="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[STYLEREF  "标题 1"]]></Value>
+                        <ValueDesc>Word1.docx中页眉设置错误，应设置为插入标题1的标题内容</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="1.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="HeaderProperties" PropKeyDesc="页眉属性(字体|字号|文字颜色|加粗|对齐|页眉类型|内边框|形状)" Define1="形状：相对垂直位置|水平对#齐|相对水平位置|垂直对#齐|固定类型：msoShapeOval" Define8="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdRelativeVerticalPositionOuterMarginArea#4#wdRelativeHorizontalPositionOuterMarginArea#4]]></Value>
+                        <ValueDesc>Word1.docx中页码设置错误，应设置为在页面的右边距内插入格式为"圆（右侧）"、自1开始的连续页号，位置在水平、垂直方向上均相对于外边距居中排列</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="HeaderProperties" PropKeyDesc="页眉属性(字体|字号|文字颜色|加粗|对齐|页眉类型|内边框|形状)" Define1="形状域代码|固定类型：msoShapeOval" Define8="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[PAGE]]></Value>
+                        <ValueDesc>Word1.docx中页码设置错误，应设置为在页面的右边距内插入格式为"圆（右侧）"、自1开始的连续页号，位置在水平、垂直方向上均相对于外边距居中排列</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="StartingNumber" PropKeyDesc="页脚页码起始编号" Define8="0"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[0]]></Value>
+                        <Value><![CDATA[1]]></Value>
+                        <ValueDesc>Word1.docx中起始页码设置错误，应设置为1</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+    <ScorePointGroup FileName="Word2.docx" OfficeType="1" ParseType="1">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="IsExists" PropKeyDesc="是否存在指定文本" Para="-1" Find="\v" Define3="忽略文档最后符号"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[false]]></Value>
+                        <ValueDesc>Word2.docx中手动换行符替换为段落标记设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="1.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="HeaderBorderBottomStyle" PropKeyDesc="页眉下边框线型" Define8="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdLineStyleNone]]></Value>
+                        <ValueDesc>Word2.docx中页眉设置错误，应设置为无下边框</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="HeaderText" PropKeyDesc="页眉文字" Define8="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[]]></Value>
+                        <ValueDesc>Word2.docx中页眉内容设置错误，应设置为空</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WaterMarkText" PropKeyDesc="水印文本信息" Define1="字体|版式"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[公开]]></Value>
+                        <ValueDesc>Word2.docx中文字水印设置错误，应设置为"公开"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WaterMarkText" PropKeyDesc="水印文本信息" HeaderFooterIndex="2" Define1="字体|版式"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[公开]]></Value>
+                        <ValueDesc>Word2.docx中文字水印设置错误，应设置为"公开"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WaterMarkText" PropKeyDesc="水印文本信息" HeaderFooterIndex="3" Define1="字体|版式"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[公开]]></Value>
+                        <ValueDesc>Word2.docx中文字水印设置错误，应设置为"公开"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="形状" WepType="Shape">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="ShapeAttr" PropKeyDesc="获取形状属性" Define2="宽：0.71-0.71、高:0.71-0.71" Define3="图形数量"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1]]></Value>
+                        <ValueDesc>Word2.docx中插入图标"button.gif"设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="1">2</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="形状" WepType="Shape">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="ShapeAttr" PropKeyDesc="获取形状属性" Define2="宽：0.71-0.71、高:0.71-0.71" Define3="HyperlinkAddress|ScreenTip"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[图形超链接地址:Word1.docx]]></Value>
+                        <ValueDesc>Word2.docx中将文档Word1.docx链接到图标"button.gif"上设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="形状" WepType="Shape">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="ShapeAttr" PropKeyDesc="获取形状属性" Define2="宽：0.71-0.71、高:0.71-0.71" Define3="HyperlinkAddress|ScreenTip"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[屏幕提示文字:单击打开附件]]></Value>
+                        <ValueDesc>Word2.docx中图标"button.gif"的屏幕提示文字设置错误，应设置为"单击打开附件"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetFieldCodeOfAll" PropKeyDesc="获取所有域代码" Define1="MERGEFIELD.*名称.*MERGEFIELD.*名称"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc>Word2.docx中未找到合并域"名称"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetFieldCodeOfAll" PropKeyDesc="获取所有域代码" Define1="MERGEFIELD.*电话"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc>Word2.docx中未找到合并域"电话"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetFieldCodeOfAll" PropKeyDesc="获取所有域代码" Define1="MERGEFIELD.*地址"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc>Word2.docx中未找到合并域"地址"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+    <ScorePointGroup FileName="通知.docx" OfficeType="1" ParseType="1">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="3" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="TableCustomAttr" PropKeyDesc="表格自定义属性" TableNo="20" CellsType="-1" Define1="是否存在"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[False]]></Value>
+                        <ValueDesc>通知.docx中通知个数设置错误，应共有19份独立的通知文档</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="TableCustomAttr" PropKeyDesc="表格自定义属性" TableNo="5" CellsType="-1" Define1="起始页|总页数"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[起始页：5|总页数：1]]></Value>
+                        <ValueDesc>通知.docx中每份文档占用一页设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="TableCustomAttr" PropKeyDesc="表格自定义属性" TableNo="15" CellsType="-1" Define1="起始页|总页数"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[起始页：15|总页数：1]]></Value>
+                        <ValueDesc>通知.docx中每份文档占用一页设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellText" PropKeyDesc="指定单元格内容" Row="1" Col="2" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[中共中央直属机关分中心]]></Value>
+                        <ValueDesc>通知.docx中第1个表格的第1行第2列内容错误，应为"中共中央直属机关分中心"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellText" PropKeyDesc="指定单元格内容" Row="1" Col="2" TableNo="4" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[方庄管理部]]></Value>
+                        <ValueDesc>通知.docx中第4个表格的第1行第2列内容错误，应为"方庄管理部"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellText" PropKeyDesc="指定单元格内容" Row="3" Col="2" TableNo="10" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[北京市石景山区石景山路22号北京万商大厦四层]]></Value>
+                        <ValueDesc>通知.docx中第10个表格的第3行第2列内容错误，应为"北京市石景山区石景山路22号北京万商大厦四层"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellText" PropKeyDesc="指定单元格内容" Row="3" Col="2" TableNo="12" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[大兴区黄村兴丰大街中段132号]]></Value>
+                        <ValueDesc>通知.docx中第12个表格的第3行第2列内容错误，应为"大兴区黄村兴丰大街中段132号"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellText" PropKeyDesc="指定单元格内容" Row="3" Col="2" TableNo="19" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[海淀区学院路35号北航世宁大厦11层1108]]></Value>
+                        <ValueDesc>通知.docx中第19个表格的第3行第2列内容错误，应为"海淀区学院路35号北航世宁大厦11层1108"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="3" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="TableCustomAttr" PropKeyDesc="表格自定义属性" TableNo="20" CellsType="-1" Define1="是否存在"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[false]]></Value>
+                        <ValueDesc>通知.docx中通知个数设置错误，应共有19份独立的通知文档</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellFieldData" PropKeyDesc="查找指定单元格里的域代码" Row="4" Col="2" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[01.jpg]]></Value>
+                        <ValueDesc>通知.docx中表格1地图设置错误，应设置为01.jpg</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellFieldData" PropKeyDesc="查找指定单元格里的域代码" Row="4" Col="2" TableNo="4" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[04.jpg]]></Value>
+                        <ValueDesc>通知.docx中表格4地图设置错误，应设置为04.jpg</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellFieldData" PropKeyDesc="查找指定单元格里的域代码" Row="4" Col="2" TableNo="10" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[10.jpg]]></Value>
+                        <ValueDesc>通知.docx中表格10地图设置错误，应设置为10.jpg</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="TableCustomAttr" PropKeyDesc="表格自定义属性" TableNo="12" CellsType="-1" Define1="起始页|总页数"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[起始页：12|总页数：1]]></Value>
+                        <ValueDesc>通知.docx中每份文档占用一页设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="TableCustomAttr" PropKeyDesc="表格自定义属性" TableNo="19" CellsType="-1" Define1="起始页|总页数"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[起始页：19|总页数：1]]></Value>
+                        <ValueDesc>通知.docx中每份文档占用一页设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

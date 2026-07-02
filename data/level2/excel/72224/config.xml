@@ -1,0 +1,624 @@
+<QuestItem QuestCode="zh6502010001" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Excel.xlsx" ParseType="1" OfficeType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1.5">
+                    <FindParams PropKey="Alignment" PropKeyDesc="段落的对齐方式(WdParagraphAlignment常量)" SheetName="2014年3月" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[-4108]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，A1单元格对齐方式错误（标准答案：居中对齐）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Points" PropKeyDesc="字体大小" SheetName="2014年3月" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[11]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，A1单元格字号错误（标准答案：大于11）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">1</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="NotFont" PropKeyDesc="字体" SheetName="2014年3月" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[宋体]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，A1单元格字体错误（标准答案：不等于宋体）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.8">
+                    <FindParams PropKey="NumberFormat" PropKeyDesc="数字格式设ShowTotals置" SheetName="2014年3月" Row="A3" Range="A17"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0_ ]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，"序号"A列数字格式错误（标准答案：数值、保留0位小数）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1.5">
+                    <FindParams PropKey="AutoFillValue" PropKeyDesc="自动填充值" SheetName="2014年3月" Row="A2" FindParams="15" FormatString="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，"序号"A列数字填充错误（标准答案：在"序号"列中分别填入1到15）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.7">
+                    <FindParams PropKey="Alignment" PropKeyDesc="段落的对齐方式(WdParagraphAlignment常量)" SheetName="2014年3月" Row="A3"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[-4108]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，"序号"A列对齐方式错误（标准答案：居中）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="NumberFormat" PropKeyDesc="数字格式设ShowTotals置" SheetName="2014年3月" Row="E3" Range="G17"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[_ * #,##0.00_]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，E3:G17单元格格式错误（标准答案：会计专用格式、保留2位小数、无货币符号_ * #,##0.00_）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="(">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="NumberFormat" PropKeyDesc="数字格式设ShowTotals置" SheetName="2014年3月" Row="H3" Range="J17"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[_ * #,##0.00_]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，H3:J17单元格格式错误（标准答案：会计专用格式、保留2位小数、无货币符号_ * #,##0.00_）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="(">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="NumberFormat" PropKeyDesc="数字格式设ShowTotals置" SheetName="2014年3月" Row="K3" Range="M17"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[_ * #,##0.00_]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，K3:M17单元格格式错误（标准答案：会计专用格式、保留2位小数、无货币符号_ * #,##0.00_）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="(">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="ColWidth" PropKeyDesc="列宽" SheetName="2014年3月" Row="D3" Range="D17"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[3]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，D3:D17列宽设置错误（标准答案：大于3）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">1</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="ColWidth" PropKeyDesc="列宽" SheetName="2014年3月" Row="E3" Range="E17"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[6]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，E3:E17列宽设置错误（标准答案：大于6）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">1</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="ColWidth" PropKeyDesc="列宽" SheetName="2014年3月" Row="H3" Range="H17"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[6]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，H3:H17列宽设置错误（标准答案：大于6）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">1</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="ColWidth" PropKeyDesc="列宽" SheetName="2014年3月" Row="I3" Range="I17"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[9]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，I3:I17列宽设置错误（标准答案：大于9）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">1</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="PaperSize" PropKeyDesc="纸张大小(WdPaperSize常量)" SheetName="2014年3月" Define1="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlPaperA4]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，页面大小设置错误（标准答案：A4）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="PaperOrientation" PropKeyDesc="页面方向" SheetName="2014年3月" Define1="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA['xlLandscape']]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，页面方向设置错误（标准答案：横向）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1.3" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="2014年3月" Row="L3"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[IF]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，L3单元格公式设置错误（标准答案：包含IF）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="2014年3月" Row="L3"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[8396]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，L3单元格公式设置错误（标准答案：8396）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1.3" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="2014年3月" Row="L7"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[IF]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，L7单元格公式设置错误（标准答案：包含IF）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="2014年3月" Row="L7"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[157.1]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，L7单元格公式设置错误（标准答案：包含157.1）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1.3" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="2014年3月" Row="L10"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[IF]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，L10单元格公式设置错误（标准答案：包含IF）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="2014年3月" Row="L10"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2081.75]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，L10单元格公式设置错误（标准答案：包含2081.75]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1.3" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="2014年3月" Row="L13"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[IF]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，L13单元格公式设置错误（标准答案：包含IF）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="2014年3月" Row="L13"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[47.1]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，L13单元格公式设置错误（标准答案：包含47.1]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1.3" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="2014年3月" Row="L17"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[IF]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，L17单元格公式设置错误（标准答案：包含IF）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="2014年3月" Row="L17"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[695.2]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，L17单元格公式设置错误（标准答案：包含695.2]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="2014年3月" Row="M3"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[I3-J3-L3]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，M3单元格公式设置错误（标准答案：I3-J3-L3）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="2014年3月" Row="M3"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[32274]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，M3单元格公式设置错误（标准答案：32274]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="2014年3月" Row="M10"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[I10-J10-L10]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，M10单元格公式设置错误（标准答案：I10-J10-L10]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="2014年3月" Row="M10"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[13765.25]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，M10单元格公式设置错误（标准答案：13765.25]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="2014年3月" Row="M17"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[I17-J17-L17]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，M17单元格公式设置错误（标准答案：I17-J17-L17]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="2014年3月" Row="M17"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[9055.8]]></Value>
+                        <ValueDesc><![CDATA["2014年3月"工作表中，M17单元格公式设置错误（标准答案：9055.8]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1.5">
+                    <FindParams PropKey="Wookbook" PropKeyDesc="工作表" SheetName="分类汇总" SheetNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[工作表命名错误(标准答案：分类汇总）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Alignment" PropKeyDesc="段落的对齐方式(WdParagraphAlignment常量)" SheetName="分类汇总" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[-4108]]></Value>
+                        <ValueDesc><![CDATA[在"分类汇总"工作表中，A1单元格对齐方式错误（标准答案：居中对齐）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Points" PropKeyDesc="字体大小" SheetName="分类汇总" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[11]]></Value>
+                        <ValueDesc><![CDATA[在"分类汇总"工作表中，A1单元格字号错误（标准答案：大于11）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">1</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="NotFont" PropKeyDesc="字体" SheetName="分类汇总" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[宋体]]></Value>
+                        <ValueDesc><![CDATA[在"分类汇总"工作表中，A1单元格字体设置错误（标准答案：不等于宋体）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.4" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="分类汇总" Row="I9"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[SUBTOTAL]]></Value>
+                        <ValueDesc><![CDATA[在"分类汇总"工作表中，I9单元格错误（标准答案：包含SUBTOTAL关键字）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="分类汇总" Row="I9"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[85728]]></Value>
+                        <ValueDesc><![CDATA[在"分类汇总"工作表中，I9单元格错误（标准答案：包含85728]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.4" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="分类汇总" Row="M9"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[SUBTOTAL]]></Value>
+                        <ValueDesc><![CDATA[在"分类汇总"工作表中，M9单元格错误（标准答案：包含SUBTOTAL关键字）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="分类汇总" Row="M9"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[72331.65]]></Value>
+                        <ValueDesc><![CDATA[在"分类汇总"工作表中，M9单元格错误（标准答案：包含72331.65]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.4" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="分类汇总" Row="I12"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[SUBTOTAL]]></Value>
+                        <ValueDesc><![CDATA[在"分类汇总"工作表中，I12单元格错误（标准答案：包含SUBTOTAL关键字）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="分类汇总" Row="I12"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[18320]]></Value>
+                        <ValueDesc><![CDATA[在"分类汇总"工作表中，I12单元格错误（标准答案：包含18320]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.4" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="分类汇总" Row="M12"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[SUBTOTAL]]></Value>
+                        <ValueDesc><![CDATA[在"分类汇总"工作表中，M12单元格错误（标准答案：包含SUBTOTAL关键字）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="分类汇总" Row="M12"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[16352.12]]></Value>
+                        <ValueDesc><![CDATA[在"分类汇总"工作表中，M12单元格错误（标准答案：包含16352.12]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.4" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="分类汇总" Row="I14"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[SUBTOTAL]]></Value>
+                        <ValueDesc><![CDATA[在"分类汇总"工作表中，I14单元格错误（标准答案：包含SUBTOTAL关键字）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="分类汇总" Row="I14"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[6180]]></Value>
+                        <ValueDesc><![CDATA[在"分类汇总"工作表中，I14单元格错误（标准答案：包含6180]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.4" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="分类汇总" Row="M14"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[SUBTOTAL]]></Value>
+                        <ValueDesc><![CDATA[在"分类汇总"工作表中，M14单元格错误（标准答案：包含SUBTOTAL关键字）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="分类汇总" Row="M14"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[5693]]></Value>
+                        <ValueDesc><![CDATA[在"分类汇总"工作表中，M14单元格错误（标准答案：包含5693]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.4" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="分类汇总" Row="I17"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[SUBTOTAL]]></Value>
+                        <ValueDesc><![CDATA[在"分类汇总"工作表中，I17单元格错误（标准答案：包含SUBTOTAL关键字）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="分类汇总" Row="I17"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[9670]]></Value>
+                        <ValueDesc><![CDATA[在"分类汇总"工作表中，I17单元格错误（标准答案：包含9670]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.4" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="分类汇总" Row="M17"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[SUBTOTAL]]></Value>
+                        <ValueDesc><![CDATA[在"分类汇总"工作表中，M17单元格错误（标准答案：包含SUBTOTAL关键字）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="分类汇总" Row="M17"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[9027.77]]></Value>
+                        <ValueDesc><![CDATA[在"分类汇总"工作表中，M17单元格错误（标准答案：包含9027.77]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.4" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="分类汇总" Row="I22"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[SUBTOTAL]]></Value>
+                        <ValueDesc><![CDATA[在"分类汇总"工作表中，I22单元格错误（标准答案：包含SUBTOTAL关键字）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="分类汇总" Row="I22"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[31860]]></Value>
+                        <ValueDesc><![CDATA[在"分类汇总"工作表中，I22单元格错误（标准答案：包含31860]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.4" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="分类汇总" Row="M22"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[SUBTOTAL]]></Value>
+                        <ValueDesc><![CDATA[在"分类汇总"工作表中，M22单元格错误（标准答案：包含SUBTOTAL关键字）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextAndRemoveAllComma" PropKeyDesc="获取单元格文本删除" SheetName="分类汇总" Row="M22"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[28326.55]]></Value>
+                        <ValueDesc><![CDATA[在"分类汇总"工作表中，M22单元格错误（标准答案：包含28326.55]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

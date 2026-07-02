@@ -1,0 +1,598 @@
+<QuestItem QuestCode="XXXXXXX" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Excel.xlsx" ParseType="1" OfficeType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="成本分析" Row="F3|F7|F10|F12|F14|F15" Find="格式|0.000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[37500.000|12500.000|8333.333|6818.182|5769.231|5357.143]]></Value>
+                        <ValueDesc><![CDATA[在"成本分析"工作表中，F3:F15年订货成本单元格计算错误（抽查F3|F7|F10|F12|F14|F15的值是37500.000|12500.000|8333.333|6818.182|5769.231|5357.143）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FindNumberFormatLst" PropKeyDesc="数字格式设置" SheetName="成本分析" Row="F3|F7|F10|F12|F14|F15" Find="$"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"成本分析"工作表中，F3:F15年订货成本单元格格式错误（应用货币格式$）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FindCellTextLst" PropKeyDesc="单元格值" SheetName="成本分析" Row="F3|F7|F10|F12|F14|F15" Find="$"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"成本分析"工作表中，F3:F15年订货成本单元格格式错误（应用货币格式$）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FindCellTextLst" PropKeyDesc="单元格值" SheetName="成本分析" Row="F3|F7|F10|F12|F14|F15" Find="."></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[Flase|Flase|Flase|Flase|Flase|Flase]]></Value>
+                        <ValueDesc><![CDATA[在"成本分析"工作表中，F3:F15年订货成本单元格格式错误（保留整数）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="成本分析" Row="G3|G7|G10|G12|G14|G15" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[3000|9000|13500|16500|19500|21000]]></Value>
+                        <ValueDesc><![CDATA[在"成本分析"工作表中，G3:G15年存储成本单元格计算错误（抽查G3|G7|G10|G12|G14|G15的值是3000|9000|13500|16500|19500|21000）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FindNumberFormatLst" PropKeyDesc="数字格式设置" SheetName="成本分析" Row="G3|G7|G10|G12|G14|G15" Find="$"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"成本分析"工作表中，G3:G15年存储成本单元格格式错误（应用货币格式$）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FindCellTextLst" PropKeyDesc="单元格值" SheetName="成本分析" Row="G3|G7|G10|G12|G14|G15" Find="$"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"成本分析"工作表中，G3:G15年存储成本单元格格式错误（应用货币格式$）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FindCellTextLst" PropKeyDesc="单元格值" SheetName="成本分析" Row="F3|F7|F10|F12|F14|F15" Find="."></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[Flase|Flase|Flase|Flase|Flase|Flase]]></Value>
+                        <ValueDesc><![CDATA[在"成本分析"工作表中，G3:G15年存储成本单元格格式错误（保留整数）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="成本分析" Row="H3|H7|H10|H12|H14|H15" Find="格式|0.000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[40500.000|21500.000|21833.333|23318.182|25269.231|26357.143]]></Value>
+                        <ValueDesc><![CDATA[在"成本分析"工作表中，H3:H15年总成本单元格计算错误（抽查H3|H7|H10|H12|H14|H15的值是40500.000|21500.000|21833.333|23318.182|25269.231|26357.143）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FindNumberFormatLst" PropKeyDesc="数字格式设置" SheetName="成本分析" Row="H3|H7|H10|H12|H14|H15" Find="$"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"成本分析"工作表中，H3:H15年总成本单元格格式错误（货币格式$）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FindCellTextLst" PropKeyDesc="单元格值" SheetName="成本分析" Row="H3|H7|H10|H12|H14|H15" Find="$"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"成本分析"工作表中，H3:H15年总成本单元格格式错误（货币格式$）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FindCellTextLst" PropKeyDesc="单元格值" SheetName="成本分析" Row="H3|H7|H10|H12|H14|H15" Find="."></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[Flase|Flase|Flase|Flase|Flase|Flase]]></Value>
+                        <ValueDesc><![CDATA[在"成本分析"工作表中，H3:H15年总成本单元格格式错误（保留整数）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="IsExistTable" PropKeyDesc="是否表格" SheetName="成本分析" Row="E2" Range="H15" FindTableIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[在"成本分析"工作表中，E2:H15未套用一种表格格式]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="ExcelTableName" PropKeyDesc="查找表格名称" SheetName="成本分析" Row="E2" Range="H15" FindTableIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[成本分析]]></Value>
+                        <ValueDesc><![CDATA[在"成本分析"工作表中，E2:H15套用表格样式后，修改表名称错误（表名称修改为"成本分析"）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ChartType" PropKeyDesc="图表类型" SheetName="成本分析" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlXYScatterSmoothNoMarkers]]></Value>
+                        <ValueDesc><![CDATA[在"成本分析"工作表中，创建图表类型错误（图表类型为"带平滑线的散点图"）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ChartRange" PropKeyDesc="图表的单元格区域设置" SheetName="成本分析" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[J2:Q18]]></Value>
+                        <ValueDesc><![CDATA[在"成本分析"工作表中，图表位置设置错误（图表移动到J2:Q18）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetChartTitle" PropKeyDesc="图表标题" SheetName="成本分析" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[采购成本分析]]></Value>
+                        <ValueDesc><![CDATA[在"成本分析"工作表中，图表标题设置错误（图表标题：采购成本分析）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetHasLegend" PropKeyDesc="图例放置的位置" SheetName="成本分析" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlLegendPositionBottom]]></Value>
+                        <ValueDesc><![CDATA[在"成本分析"工作表中，图例位置设置错误（图例位置靠下）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetMinimumScale" PropKeyDesc="数值轴刻度最小值" SheetName="成本分析" FndChartIndex="1" SeriesName="Y"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0]]></Value>
+                        <ValueDesc><![CDATA[在"成本分析"工作表中，图表数值Y轴主要刻度最小值设置错误（最小值为0）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetMaximumScale" PropKeyDesc="数值轴刻度最大值" SheetName="成本分析" FndChartIndex="1" SeriesName="Y"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[45000]]></Value>
+                        <ValueDesc><![CDATA[在"成本分析"工作表中，图表数值Y轴主要刻度最大值设置错误（最大值为45000）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetMinorUnit" PropKeyDesc="次要刻度单位" FndChartIndex="1" SeriesName="Y"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1800]]></Value>
+                        <ValueDesc><![CDATA[在"成本分析"工作表中，图表数值Y轴次要刻度单位设置错误（应设置为1800）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetMinimumScale" PropKeyDesc="数值轴刻度最小值" FndChartIndex="1" SeriesName="X"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[200]]></Value>
+                        <ValueDesc><![CDATA[在"成本分析"工作表中，图表数值X轴主要刻度最小值设置错误（应设置为200）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetMaximumScale" PropKeyDesc="数值轴刻度最大值" FndChartIndex="1" SeriesName="X"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1400]]></Value>
+                        <ValueDesc><![CDATA[在"成本分析"工作表中，图表数值X轴主要刻度最大值设置错误（应设置为1400）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetMinorUnit" PropKeyDesc="次要刻度单位" FndChartIndex="1" SeriesName="X"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[60]]></Value>
+                        <ValueDesc><![CDATA[在"成本分析"工作表中，图表数值X轴主要刻度单位设置错误（应设置为60）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="1.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GerMajorTickMark" PropKeyDesc="刻度线标记" SheetName="成本分析" FndChartIndex="1" SeriesName="Y"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlTickMarkNone]]></Value>
+                        <ValueDesc><![CDATA[在"成本分析"工作表中，图表数值Y轴刻度线标记设置错误（应设置为无）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GerMajorTickMark" PropKeyDesc="刻度线标记" SheetName="成本分析" FndChartIndex="1" SeriesName="X"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlTickMarkNone]]></Value>
+                        <ValueDesc><![CDATA[在"成本分析"工作表中，图表数值X轴刻度线标记设置错误（应设置为无）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="CellAlignLst" PropKeyDesc="单元格对齐" SheetName="经济订货批量分析" SheetNameAlias="2" Row="B2|B3|B4|B5" Find="水平"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[-4108|-4108|-4108|-4108]]></Value>
+                        <ValueDesc><![CDATA[工作表"经济订货批量分析"中，B2:B5单元格对齐方式设置错误（应设置为居中对齐）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="经济订货批量分析" SheetNameAlias="2" Row="B2|B3|B4|B5" Find="显示换行|移除前后换行符"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[年需求量\n（单位：个）|单次订货成本\n（单位：元）|单位年储存成本\n（单位：元）|经济订货批量\n（单位：个）]]></Value>
+                        <ValueDesc><![CDATA[工作表"经济订货批量分析"中，B2:B5单元格分两行显示设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="经济订货批量分析" SheetNameAlias="2" Row="C5" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[707]]></Value>
+                        <ValueDesc><![CDATA[工作表"经济订货批量分析"中，C5单元格的值错误（正确的是707）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FindCellTextLst" PropKeyDesc="单元格值" SheetName="经济订货批量分析" SheetNameAlias="2" Row="C5" Find="."></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[Flase]]></Value>
+                        <ValueDesc><![CDATA[工作表"经济订货批量分析"中，C5单元格的格式设置错误（保留整数）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="3" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="HasFormula" PropKeyDesc="是否有公式" SheetName="经济订货批量分析" SheetNameAlias="2" Row="B7"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[工作表"经济订货批量分析"中，B7:M27创建模拟运算表设置错误（B7单元格有公式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="经济订货批量分析" SheetNameAlias="2" Row="B7|C8|C12|D13|E19|E23|F10|F15|G16|G20|H21|H24|I17|I19|J12|J25|K24|K26|L26|L27|M8|M24" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[707|690|632|650|612|577|752|681|695|651|664|637|730|707|825|669|697|679|698|689|976|735]]></Value>
+                        <ValueDesc><![CDATA[工作表"经济订货批量分析"中，B7:M27创建模拟运算表数值计算错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindFormulaLst" PropKeyDesc="公式查找" SheetName="经济订货批量分析" SheetNameAlias="2" Row="C8|C12|D13|E19|E23|F10|F15|G16" Find="=TABLE"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[工作表"经济订货批量分析"中，B7:M27创建模拟运算表数值计算错误（包括关键字TABLE）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FindCellTextLst" PropKeyDesc="单元格值" SheetName="经济订货批量分析" SheetNameAlias="2" Row="D10" Find="."></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[Flase]]></Value>
+                        <ValueDesc><![CDATA[工作表"经济订货批量分析"中，D10单元格的格式设置错误（保留整数）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1.5" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="IsFormatConditionsFormula" PropKeyDesc="格式条件公式" SheetName="经济订货批量分析" SheetNameAlias="2" Row="C8" Range="M27"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0]]></Value>
+                        <ValueDesc><![CDATA[工作表"经济订货批量分析"的单元格区域C8:M27应用条件格式设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="1">1</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="CellDisplayFormat_ColorLst" PropKeyDesc="显示颜色" SheetName="经济订货批量分析" SheetNameAlias="2" Row="C8:C10|G12:G20|J18:J27|L21:L27|M23:M27"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[16777215|16777215|16777215|16777215|16777215]]></Value>
+                        <ValueDesc><![CDATA[【经济订货批量分析】将所有小于等于750且大于等于650的值所在单元格字体颜色设置为"白色，背景1"错误(抽查C8:C10|G12:G20|J18:J27|L21:L27|M23:M27白色)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="CellDisplayFormat_FillColorLst" PropKeyDesc="显示填充颜色" SheetName="经济订货批量分析" SheetNameAlias="2" Row="C8:C10|G12:G20|J18:J27|L21:L27|M23:M27"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255|255|255|255|255]]></Value>
+                        <ValueDesc><![CDATA[【经济订货批量分析】将所有小于等于750且大于等于650的值所在单元格的底纹设置为红色--错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="CellDisplayFormat_ColorLst" PropKeyDesc="显示颜色" SheetName="经济订货批量分析" SheetNameAlias="2" Row="C7|C11|G11|G21|J17|L20|M21"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[16777215]]></Value>
+                        <ValueDesc><![CDATA[【经济订货批量分析】将所有小于等于750且大于等于650的值所在单元格字体颜色设置为"白色，背景1"错误（抽查C7|C11|G11|G21|J17|L20|M21为白色)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">7</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="ScenariosValue" PropKeyDesc="方案值" SheetName="经济订货批量分析" SheetNameAlias="2" Find="需求下降"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[10000|600|35]]></Value>
+                        <ValueDesc><![CDATA[工作表"经济订货批量分析"的需求下降方案值设置错误（数值为10000|600|35）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="FindCellTextRange" PropKeyDesc="查找单元格文本范围" SheetName="方案摘要" SheetNameAlias="3" Row="B10" Range="E10" Find="586"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[工作表方案摘要中E10单元格的值错误（正确值是586）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="ScenariosValue" PropKeyDesc="方案值" SheetName="经济订货批量分析" SheetNameAlias="2" Find="需求持平"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[15000|500|30]]></Value>
+                        <ValueDesc><![CDATA[工作表"经济订货批量分析"的需求持平方案值设置错误（数值为15000|500|30）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="FindCellTextRange" PropKeyDesc="查找单元格文本范围" SheetName="方案摘要" SheetNameAlias="3" Row="B10" Range="F10" Find="707"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[工作表方案摘要中F10单元格的值错误（正确值是707）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="ScenariosValue" PropKeyDesc="方案值" SheetName="经济订货批量分析" SheetNameAlias="2" Find="需求上升"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[20000|450|27]]></Value>
+                        <ValueDesc><![CDATA[工作表"经济订货批量分析"的需求上升方案值设置错误（数值为20000|450|27）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="FindCellTextRange" PropKeyDesc="查找单元格文本范围" SheetName="方案摘要" SheetNameAlias="3" Row="B10" Range="G10" Find="816"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[工作表方案摘要中G10单元格的值错误（正确值是816）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="IsFormulaNameAndRef" PropKeyDesc="公式名称" SheetName="经济订货批量分析" Row="C2" Range="C5" Find="单次订货成本 经济订货批量分析!C3|单位年储存成本 经济订货批量分析!C4|经济订货批量 经济订货批量分析!C5|年需求量 经济订货批量分析!C2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在工作表"经济订货批量分析"中，单元格C2:C5定义名称错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings=":：">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="WookbookLst" PropKeyDesc="查找工作薄" SheetName="经济订货批量分析|方案摘要" SheetNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[经济订货批量分析|方案摘要]]></Value>
+                        <ValueDesc><![CDATA['经济订货批量分析'在'方案摘要'的左边]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="PrintArea" PropKeyDesc="打印区域" SheetName="方案摘要" SheetNameAlias="3" Define1="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[B2:G10]]></Value>
+                        <ValueDesc><![CDATA[工作表【方案摘要】打印区域设置错误,应设置为B2:G10]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="$()">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="PaperOrientation" PropKeyDesc="页面方向" SheetName="方案摘要" SheetNameAlias="3" Define1="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlLandscape]]></Value>
+                        <ValueDesc><![CDATA["方案摘要" 页面方向设置错误,应设置为横向]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="Header" PropKeyDesc="页眉" SheetName="方案摘要" SheetNameAlias="3" Define1="2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[不同方案比较分析]]></Value>
+                        <ValueDesc><![CDATA[工作表【方案摘要】页眉设置错误,应设置为"不同方案比较分析"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="CenterHorizontally" PropKeyDesc="打印居中" SheetName="方案摘要" SheetNameAlias="3" Define1="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA['方案摘要'打印设置错误,应设置在整个页面水平居中]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="CenterVertically" PropKeyDesc="是否垂直居中打印在纸上" SheetName="方案摘要" SheetNameAlias="3" Define1="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA['方案摘要'打印设置错误,应设置在整个页面垂直居中]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Zoom" PropKeyDesc="视图缩放比例" SheetName="方案摘要" SheetNameAlias="3" Define1="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[200]]></Value>
+                        <ValueDesc><![CDATA[在"方案摘要"工作表中，缩放比例设置错误,应设置为为正常尺寸的200%]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="HeaderMargin" PropKeyDesc="缩放比例" SheetName="方案摘要" SheetNameAlias="3" Define1="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2.99]]></Value>
+                        <ValueDesc><![CDATA["方案摘要" 将页眉到上边距的距离设置错误,应设置为3]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

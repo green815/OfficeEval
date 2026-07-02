@@ -1,0 +1,373 @@
+<QuestItem QuestCode="XXXXXXX" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Excel.xlsx" ParseType="1" OfficeType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Wookbook" PropKeyDesc="工作表" SheetName="第六次普查数据" SheetNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[工作表Sheet1重命名错误（将工作表Sheet1更名为"第六次普查数据"）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="第六次普查数据" Row="B1|A1|A5|A10|A21|A36"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2010年人口数（万人）|地区|山西省|上海市|广西壮族自治区|中国人民解放军现役军人]]></Value>
+                        <ValueDesc><![CDATA[在"第六次普查数据"工作表中，A1:B37值错误（抽查A1|B1|A5|A10|A21|A36的值为地区|2010年人口数（万人）|山西省|上海市|广西壮族自治区|中国人民解放军现役军人]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsCellValueNullRange" PropKeyDesc="单元格值空范围" SheetName="第六次普查数据" Row="C1" Range="C37"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[全空值]]></Value>
+                        <ValueDesc><![CDATA[在"第六次普查数据"工作表中，未删除C列内容]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="单元格的值" SheetName="第六次普查数据" Row="B2|B5|B9|B12|B17|B21|B26|B30|B34|B37"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1,961|3,571|3,831|5,443|9,402|4,603|4,597|563|55|465]]></Value>
+                        <ValueDesc><![CDATA[在"第六次普查数据"工作表中，B列中的数值统一缩小10000倍设置错误（抽查B2|B5|B9|B12|B17|B21|B26|B30|B34|B37的值为1,961|3,571|3,831|5,443|9,402|4,603|4,597|563|55|46）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings=",()">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="WorkBookModel" PropKeyDesc="工作簿模型" Define1="数据模型|记录数"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[数据模型：2010年|记录数：36]]></Value>
+                        <ValueDesc><![CDATA[数据模型2010年,记录数36]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="|_">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="WorkBookConnections" PropKeyDesc="工作簿连接" Define1="名称"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2000年]]></Value>
+                        <ValueDesc><![CDATA[创建一个名称为"2000年"新查询]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="|_">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="第五次普查数据" SheetNameAlias="2" Row="A1|A5|A10|A21|A30|A36|B1|B9|B17|B26|B30|B37"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[地区|甘肃省|河北省|青海省|云南省|中国人民解放军现役军人|2000年人口数（万人）|787|4140|8329|4288|105]]></Value>
+                        <ValueDesc><![CDATA[在"第五次普查数据"工作表中数据错误（抽查A1|A5|A10|A21|A30|A36|B1|B9|B17|B26|B30|B37的值为地区|甘肃省|河北省|青海省|云南省|中国人民解放军现役军人|2000年人口数（万人）|787|4140|8329|4288|10）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="TableAddress" PropKeyDesc="表格地址" SheetName="第五次普查数据" SheetNameAlias="2" Row="A1" Range="B50" FindTableIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[A1:B37]]></Value>
+                        <ValueDesc><![CDATA[在"第五次普查数据"工作表中数据错误（第五次普查数据的范围是A1:B37）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="IsCellValueNullRange" PropKeyDesc="单元格值空范围" SheetName="第五次普查数据" SheetNameAlias="2" Row="A1" Range="B37"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[全非空值]]></Value>
+                        <ValueDesc><![CDATA[在"第五次普查数据"工作表中数据错误（A1:B37数据内容不为空）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="WorkBookModel" PropKeyDesc="工作簿模型" Define1="数据模型|记录数"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[数据模型：2000年|记录数：36]]></Value>
+                        <ValueDesc><![CDATA[数据模型2000年,记录数:36]]></ValueDesc>
+                    </StdAnswer>
+
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="|_">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="ModelRelationships" PropKeyDesc="模型关系"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[主表：2000年|从表：2010年|主键：地区|外键：地区]]></Value>
+                        <Value><![CDATA[主表：2010年|从表：2000年|主键：地区|外键：地区]]></Value>
+                        <ValueDesc><![CDATA[在数据模型表"2000年"和"2010年"之间建立关系,主键:地址]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="|_">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="PivotRange" PropKeyDesc="数据透视范围" SheetName="透视分析" SheetNameAlias="0" PivotTablesNum="0" Range="A1:I50"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[B3]]></Value>
+                        <ValueDesc><![CDATA[在"透视分析"工作表中，透视表范围错误（单元格B3开始生成数据透视表）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetPivotCellValueLst" PropKeyDesc="获取数据透视表单元格值" SheetName="透视分析" SheetNameAlias="0" PivotTablesNum="0" Row="B3|C3|D3|E3|F3"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[地区|2000年人口数|2000年大陆人口比重|2010年人口数|2010年大陆人口比重]]></Value>
+                        <ValueDesc><![CDATA[在"透视分析"工作表中，透视表中的值错误（抽查B3|C3|D3|E3|F3的值为地区|2000年人口数|2000年大陆人口比重|2010年人口数|2010年大陆人口比重）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetPivotCellValueLst" PropKeyDesc="获取数据透视表单元格值" SheetName="透视分析" SheetNameAlias="0" PivotTablesNum="0" Row="B4|C4|E4|B9|C9|E9|B15|C15|E15|B23|E23|B30|C30|B37|E37"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[北京市|1382|1961|辽宁省|4238|4375|安徽省|5986|5950|广西壮族自治区|4603|陕西省|3605|总计|133973]]></Value>
+                        <ValueDesc><![CDATA[在"透视分析"工作表中，透视表中的值错误（抽查B4|C4|E4|B9|C9|E9|B15|C15|E15|B23|E23|B30|C30|B37|E37----北京市|1382|1961|辽宁省|4238|4375|安徽省|5986|5950|广西壮族自治区|4603|陕西省|3605|总计|133973）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetPivotCellValueLst" PropKeyDesc="获取数据透视表单元格值" SheetName="透视分析" SheetNameAlias="0" PivotTablesNum="0" Row="D5|F5|D10|D16|F24|F31|D36|F36" Find="格式|0.0000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0.0079|0.0097|0.0216|0.0274|0.0065|0.0191|0.0008|0.0035]]></Value>
+                        <ValueDesc><![CDATA[在"透视分析"工作表中，透视表中的值错误（抽查D5|F5|D10|D16|F24|F31|D36|F36的值为0.0079|0.0097|0.0216|0.0274|0.0065|0.0191|0.0008|0.0035）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetPivotCellValueLst" PropKeyDesc="获取数据透视表单元格值" SheetName="透视分析" SheetNameAlias="0" PivotTablesNum="0" Row="G3|G8|G14|G22|G29|G37"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[人口增长数|95|766|1788|38|7390]]></Value>
+                        <ValueDesc><![CDATA[在"透视分析"工作表中，透视表中的值错误（抽查G3|G8|G14|G22|G29|G37----人口增长数|95|766|1788|38|7390）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetPivotCellValueLst" PropKeyDesc="获取数据透视表单元格值" SheetName="透视分析" SheetNameAlias="0" PivotTablesNum="0" Row="H3|H9|H17|H25|H31|H37" Find="格式|0.0000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[人口增长率|0.0323|0.0766|-0.0663|-0.0016|0.0584]]></Value>
+                        <ValueDesc><![CDATA[在"透视分析"工作表中，透视表中的值错误（抽查H3|H9|H17|H25|H31|H37----人口增长率|0.0323|0.0766|-0.0663|-0.0016|0.0584）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetPivotCellTextLst" PropKeyDesc="获取数据透视单元格文本" SheetName="透视分析" SheetNameAlias="0" PivotTablesNum="0" Row="C13|C25|E25|E34|G37"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[7,438|3,090|2,885|2,181|7,390]]></Value>
+                        <ValueDesc><![CDATA[在"透视分析"工作表中，透视表中的值错误（抽查C13|C25|E25|E34|G37----7,438|3,090|2,885|2,181|7,390）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="PivotTableStyle" PropKeyDesc="表格样式" SheetName="透视分析" SheetNameAlias="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[]]></Value>
+                        <ValueDesc><![CDATA[在"透视分析"工作表中，数据透视表样式错误（改变数据透视表样式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="统计数据" SheetNameAlias="4" Row="C3" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[129533]]></Value>
+                        <ValueDesc><![CDATA[在"统计数据"工作表中，C3单元格的值错误（应为129533）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="统计数据" SheetNameAlias="4" Row="D3" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[137054]]></Value>
+                        <ValueDesc><![CDATA[在"统计数据"工作表中，D3单元格的值错误（应为137054）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="统计数据" SheetNameAlias="4" Row="D4" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[7521]]></Value>
+                        <ValueDesc><![CDATA[在"统计数据"工作表中，D4单元格的值错误（应为7521）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="统计数据" SheetNameAlias="4" Row="C5" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[河南省]]></Value>
+                        <ValueDesc><![CDATA[在"统计数据"工作表中，C5单元格的值错误（应为河南省）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="统计数据" SheetNameAlias="4" Row="C6" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[西藏自治区]]></Value>
+                        <ValueDesc><![CDATA[在"统计数据"工作表中，C6单元格的值错误（应为西藏自治区）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="统计数据" SheetNameAlias="4" Row="D5" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[广东省]]></Value>
+                        <ValueDesc><![CDATA[在"统计数据"工作表中，D5单元格的值错误（应为广东省）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="统计数据" SheetNameAlias="4" Row="D6" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[西藏自治区]]></Value>
+                        <ValueDesc><![CDATA[在"统计数据"工作表中，D6单元格的值错误（应为西藏自治区）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="统计数据" SheetNameAlias="4" Row="D7" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[北京市]]></Value>
+                        <ValueDesc><![CDATA[在"统计数据"工作表中，D7单元格的值错误（应为北京市）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="统计数据" SheetNameAlias="4" Row="D8" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[重庆市]]></Value>
+                        <ValueDesc><![CDATA[在"统计数据"工作表中，D8单元格的值错误（应为重庆市）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="统计数据" SheetNameAlias="4" Row="D9" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[6]]></Value>
+                        <ValueDesc><![CDATA[在"统计数据"工作表中，D9单元格的值错误（应为6）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

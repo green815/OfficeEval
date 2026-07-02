@@ -1,0 +1,300 @@
+<QuestItem QuestCode="XXXXXXX" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Excel.xlsx" ParseType="1" OfficeType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="FindCellValueRange" PropKeyDesc="单元格的值" SheetName="19年入职" SheetNameAlias="3" Row="A2" Range="A7" Find="83、84、82、81、85、86"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[【19年入职】A2：A7的数据错误（正确值83、84、82、81、85、86）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="FindCellValueRange" PropKeyDesc="单元格的值" SheetName="19年入职" SheetNameAlias="3" Row="B2" Range="B7" Find="路思虎、胡宇豪、胡天赐、武睿敏、王心敏、曹凯瑞"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[【19年入职】B2：B7单元格值错误（正确值：路思虎、胡宇豪、胡天赐、武睿敏、王心敏、曹凯瑞）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="FindCellValueRange" PropKeyDesc="单元格的值" SheetName="19年离职" SheetNameAlias="4" Row="A2" Range="A11" Find="16、61、22、26、8、10、48、52、55、3"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[【19年离职】A2：A11单元格值错误（正确值：16、61、22、26、8、10、48、52、55、3）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="FindCellValueRange" PropKeyDesc="单元格的值" SheetName="19年离职" SheetNameAlias="4" Row="B2" Range="B11" Find="黄玉婷、曹玉朋、崔嘉豪、高欣怡、龚芯蕊、武睿婕、夏清宇、高欣阳、胡静欣、何优优"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[【19年离职】B2：B11单元格值错误（正确值：黄玉婷、曹玉朋、崔嘉豪、高欣怡、龚芯蕊、武睿婕、夏清宇、高欣阳、胡静欣、何优优）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="19年入职" SheetNameAlias="3" Row="B3|B4|B5|B6|B7"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[胡宇豪|胡天赐|武睿敏|王心敏|曹凯瑞]]></Value>
+                        <ValueDesc><![CDATA[【19年入职】按照部门拼音首字母升序排序，如果部门相同则按照工号升序排序后，B列单元格的值错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="19年离职" SheetNameAlias="4" Row="B2|B3|B5|B7|B10|B11"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[黄玉婷|曹玉朋|高欣怡|武睿婕|胡静欣|何优优]]></Value>
+                        <ValueDesc><![CDATA[【19年离职】按照部门拼音首字母升序排序，如果部门相同则按照工号升序排序后，B列单元格的值错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="单元格的值" SheetName="19年末" SheetNameAlias="2" Row="H11|H12|H27|H37"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1977年7月14日|1974年4月4日|1978年5月4日|1979年3月25日]]></Value>
+                        <ValueDesc><![CDATA[【19年末】将"出生日期"H列中的数据转换为日期格式，如"1968年10月9日"设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="NumberFormatLst" PropKeyDesc="数字格式设置" SheetName="19年末" SheetNameAlias="2" Row="H2:H51"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[yyyy"年"m"月"d"日"]]></Value>
+                        <ValueDesc><![CDATA[【19年末】H2:H51数字格式设置错误,应设置为yyyy"年"m"月"d"日"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0" IgnorePuncStrings="_&quot;">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="3">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="19年末" SheetNameAlias="2" Row="I7|I17|I27|I45|I50"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[39岁8个月|41岁4个月|41岁7个月|38岁10个月|46岁0个月]]></Value>
+                        <ValueDesc><![CDATA[【19年末】年龄计算错误,(抽查I7|I17|I27|I45|I50单元格的值[39岁8个月|41岁4个月|41岁7个月|38岁10个月|46岁0个月]]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="3">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="19年末" SheetNameAlias="2" Row="G3|G4|G17|G18|G48|G49"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[手机|座机|座机|手机|手机|座机]]></Value>
+                        <ValueDesc><![CDATA[【19年末】电话类型G列计算错误(抽查G3|G4|G17|G18|G48|G49单元格的值[手机|座机|座机|手机|手机|座机]]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="3" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="19年末" SheetNameAlias="2" Row="F3|F17|F44|F45"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[12477170997|15023336|12680694204|34257346]]></Value>
+                        <ValueDesc><![CDATA[【19年末】电话F列计算错误(抽查F3|F17|F44|F45单元格的值[12477170997|15023336|12680694204|34257346]]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="单元格的值" SheetName="19年末" SheetNameAlias="2" Row="F3|F17|F44|F45|F46"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[***********|********|***********|********|***********]]></Value>
+                        <ValueDesc><![CDATA[【19年末】电话列单元格格式设置错误(抽查F3|F17|F44|F45|F46单元格的值[***********|********|***********|********|***********]]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetPivotCellTextLst" PropKeyDesc="获取数据透视单元格文本" SheetName="员工数据分析" SheetNameAlias="0" PivotTablesNum="0" Row="A7|B7|C7|A9|B9|C9"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[销售部|1|50%|总计|2|100%]]></Value>
+                        <ValueDesc><![CDATA[【员工数据分析】A7|B7|C7|A9|B9|C9的值错误,正确值:销售部|1|50%|总计|2|100%]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetPivotCellTextLst" PropKeyDesc="获取数据透视单元格文本" SheetName="员工数据分析" SheetNameAlias="0" PivotTablesNum="0" Row="A7|B7|C7|A13|B13|C13|A14|B14|C14"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[国际贸易部|3|25%|总经理办公室|1|8%|总计|12|100%]]></Value>
+                        <ValueDesc><![CDATA[【员工数据分析】透视表中的A7|B7|C7|A13|B13|C13|A14|B14|C14值错误，正确值是：国际贸易部|3|25%|总经理办公室|1|8%|总计|12|100%]]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetPivotCellTextLst" PropKeyDesc="获取数据透视单元格文本" SheetName="员工数据分析" SheetNameAlias="0" PivotTablesNum="0" Row="A7|B7|C7|A13|B13|C13|A16|B16|C16"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[财务部|5|15%|销售部|6|18%|总计|34|100%]]></Value>
+                        <Value><![CDATA[财务部|5|10%|销售部|9|18%|总计|50|100%]]></Value>
+                        <ValueDesc><![CDATA[【员工数据分析】透视表中的A7|B7|C7|A13|B13|C13|A16|B16|C16值错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetPivotCellTextLst" PropKeyDesc="获取数据透视单元格文本" SheetName="员工数据分析" SheetNameAlias="0" PivotTablesNum="0" Row="A7|B7|C7|A8|B8|C8"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[后勤部|1|100%|总计|1|100%]]></Value>
+                        <Value><![CDATA[销售部|1|100%|总计|1|100%]]></Value>
+                        <ValueDesc><![CDATA[【员工数据分析】透视表中的A7|B7|C7|A8|B8|C8值错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetPivotCellValueLst" PropKeyDesc="获取数据透视表单元格值" SheetName="员工数据分析" SheetNameAlias="0" PivotTablesNum="0" Row="A6|B6|C6"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[部门|人数|占比]]></Value>
+                        <ValueDesc><![CDATA[【员工数据分析】透视表中的A6|B6|C6值设置错误，正确值为：部门|人数|占比]]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="3" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="SeriesChartType" PropKeyDesc="图表值" SheetName="员工数据分析" FndChartIndex="1" Find_SeriesIndex="1" SheetNameAlias="5" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlColumnClustered]]></Value>
+                        <ValueDesc><![CDATA[【员工数据分析】图表系列1的图表类型选择错误，应设置为三维簇状柱形图]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="SeriesChartType" PropKeyDesc="图表值" SheetName="员工数据分析" FndChartIndex="1" Find_SeriesIndex="2" SheetNameAlias="5" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlLineMarkers]]></Value>
+                        <ValueDesc><![CDATA[【员工数据分析】图表系列2-图表类型错误，应设置为：带数据标记的折线图]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetHasLegend" PropKeyDesc="图例放置的位置" SheetName="员工数据分析" FndChartIndex="1" SheetNameAlias="5" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlLegendPositionBottom]]></Value>
+                        <ValueDesc><![CDATA[【员工数据分析】图例位置设置错误，应设置图例在底部]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="ShowAllFieldButtons" PropKeyDesc="是否隐藏所有字段按钮" SheetName="员工数据分析" FndChartIndex="1" SheetNameAlias="5" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[False]]></Value>
+                        <ValueDesc><![CDATA[【员工数据分析】图表未删除所有字段按钮]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="4">
+                    <FindParams PropKey="SlicerCaches" PropKeyDesc="切片" SheetName="员工数据分析" SheetNameAlias="5" Row="A1:F6" Define1="切片字段|显示列数|切片值"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[切片字段：学历|显示列数：5|切片值：博士、硕士、本科、大专、中专]]></Value>
+                        <ValueDesc><![CDATA[【员工数据分析】"学历"字段插入切片器错误，应设置为显示为5列1行，且按钮从左到右按照"博士、硕士、本科、大专和中专"的顺序显示]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="PrintArea" PropKeyDesc="打印区域" SheetName="员工数据分析" SheetNameAlias="5" Define1="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[A1:L17]]></Value>
+                        <ValueDesc><![CDATA[【员工数据分析】打印区域设置错误，应选择A1:L17]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="$()">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="PaperOrientation" PropKeyDesc="页面方向" SheetName="员工数据分析" SheetNameAlias="5" Define1="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlLandscape]]></Value>
+                        <ValueDesc><![CDATA[【员工数据分析】页面方向设置错误，应设置为横向]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="CenterHorizontally" PropKeyDesc="打印居中" SheetName="员工数据分析" SheetNameAlias="5" Define1="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[【员工数据分析】对齐方式设置错误，应设置显示内容在整个页面水平居中]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="CenterVertically" PropKeyDesc="是否垂直居中打印在纸上" SheetName="员工数据分析" SheetNameAlias="5" Define1="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[【员工数据分析】显示内容位置设置错误，应设置在整个页面垂直居中]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="3" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="FormulaHidden" PropKeyDesc="隐藏的公式" SheetName="19年末" SheetNameAlias="2" Row="F2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA['19年末'F2~F51未设置保护隐藏，应设置为保护]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="ExcelProtect" PropKeyDesc="是否锁定" SheetName="19年末" SheetNameAlias="2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA['19年末'未设置保护工作表]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

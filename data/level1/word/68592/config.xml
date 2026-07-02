@@ -1,0 +1,962 @@
+<QuestItem QuestCode="A115056H003003_171120cao01" SubjectType="MsOffice">
+    <ScorePointGroup FileName="WORD.docx" OfficeType="1" ParseType="1">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="Points" PropKeyDesc="字体大小" Para="-1" Find="模型变量构建"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[22]]></Value>
+                        <ValueDesc>标题段字号设置错误，应设置为二号</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="Font" PropKeyDesc="字体" Para="-1" Find="模型变量构建"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[微软雅黑]]></Value>
+                        <ValueDesc>标题段字体设置错误，应设置为微软雅黑</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="自定义" WepType="Custom">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.8">
+                    <FindParams WepType="ParaFind" PropKey="ParaStyle" PropKeyDesc="段落的内置样式的名称" Para="-1" Find="模型变量构建" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[标题2]]></Value>
+                        <ValueDesc>标题段样式设置错误，应设置为应用“标题2”样式</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落格式" WepType="FormatParaGraph">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="Alignment" PropKeyDesc="段落的对齐方式" Para="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdAlignParagraphCenter]]></Value>
+                        <ValueDesc>标题段未设置为居中</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="FontSpacing" PropKeyDesc="字符之间的间距(以磅为单位)" Para="-1" Find="模型变量构建"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2.2]]></Value>
+                        <ValueDesc>标题段字符间距设置错误，应设置为加宽2.2磅</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.6">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="模型变量构建" Define1="Font" Define2="Color" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[-721354753]]></Value>
+                        <ValueDesc>标题段文字颜色设置错误，应设置为“蓝色，个性色1，深色25%”</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.8">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="模型变量构建" Define1="Font" Define2="Fill.Type|Fill.ForeColor.RGB|Fill.BackColor.RGB|Fill.ForeColor.TintAndShade" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[3|9737945|2763895|0.4]]></Value>
+                        <ValueDesc>标题段的文本效果设置错误，应设置为“渐变填充/预设渐变/底部聚光灯 - 个性色2/类型/路径”、透明度为20%、亮度为40%，</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="模型变量构建" Define1="Font" Define2="TextShadow.Type|TextShadow.Style" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0|2]]></Value>
+                        <ValueDesc>标题段的阴影效果设置错误，应设置为“预设/透视/左上对角透视”、阴影颜色为“水绿色，个性色 5 ，淡色40%”、“模糊/6磅，角度/120°”</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="模型变量构建" Define1="Font" Define2="TextShadow.ForeColor.RGB" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[14536083]]></Value>
+                        <ValueDesc>标题段的阴影效果设置错误，应设置为“预设/透视/左上对角透视”、阴影颜色为“水绿色，个性色 5 ，淡色40%”、“模糊/6磅，角度/120°”</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="模型变量构建" Define1="Font" Define2="TextShadow.Blur" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[6]]></Value>
+                        <ValueDesc>标题段的阴影效果设置错误，应设置为“预设/透视/左上对角透视”、阴影颜色为“水绿色，个性色 5 ，淡色40%”、“模糊/6磅，角度/120°”</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="模型变量构建" Define1="Font" Define2="TextShadow.OffsetX" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[-12]]></Value>
+                        <ValueDesc>标题段的阴影效果设置错误，应设置为“预设/透视/左上对角透视”、阴影颜色为“水绿色，个性色 5 ，淡色40%”、“模糊/6磅，角度/120°”</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="模型变量构建" Define1="Paragraphs" Define2="LineSpacingRule" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1]]></Value>
+                        <ValueDesc>标题段的行距设置错误，应设置为1.5倍行距</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="模型变量构建" Define1="Paragraphs" Define2="SpaceAfter" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[6]]></Value>
+                        <ValueDesc>标题段的段后间距设置错误，应设置为6磅</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面文档设置" WepType="Document">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="BuiltInDocumentProperties" PropKeyDesc="内置文档属性" Find="Title|Authors|Company"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[Name:Author|Value:NCRER]]></Value>
+                        <ValueDesc>文档属性信息设置错误，应设置作者为NCRER</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面文档设置" WepType="Document">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="BuiltInDocumentProperties" PropKeyDesc="内置文档属性" Find="Title|Authors|Company"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[Name:Company|Value:NCRE]]></Value>
+                        <ValueDesc>文档属性信息设置错误，应设置单位为NCRE</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面文档设置" WepType="Document">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="BuiltInDocumentProperties" PropKeyDesc="内置文档属性" Find="Title|Authors|Company"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[Name:Title|Value:模型变量构建]]></Value>
+                        <ValueDesc>文档属性信息设置错误，应设置标题为模型变量构建</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="按照非专业投资者项目投资决策模型" Define1="Font" Define2="Size" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[12]]></Value>
+                        <ValueDesc>“按照非专业投资者项目投资决策模型”字号设置错误，应设置为小四号</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="综上所述" Define1="Font" Define2="Size" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[12]]></Value>
+                        <ValueDesc>“综上所述”字号设置错误，应设置为小四号</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="按照非专业投资者项目投资决策模型" Define1="Font" Define2="Name" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[宋体]]></Value>
+                        <ValueDesc>“按照非专业投资者项目投资决策模型”中文字体设置错误，应设置为宋体</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="综上所述" Define1="Font" Define2="Name" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[宋体]]></Value>
+                        <ValueDesc>“综上所述”中文字体设置错误，应设置为宋体</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="按照非专业投资者项目投资决策模型" Define1="Font" Define2="NameAscii" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[TimesNewRoman]]></Value>
+                        <ValueDesc>“按照非专业投资者项目投资决策模型”西文字体设置错误，应设置为Times New Roman</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="综上所述" Define1="Font" Define2="NameAscii" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[TimesNewRoman]]></Value>
+                        <ValueDesc>“综上所述”西文字体设置错误，应设置为Times New Roman</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="按照非专业投资者项目投资决策模型" Define1="Paragraphs" Define2="LineSpacing" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[15.1]]></Value>
+                        <ValueDesc>“按照非专业投资者项目投资决策模型”行距设置错误，应设置为1.26倍行距</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="综上所述" Define1="Paragraphs" Define2="LineSpacing" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[15.1]]></Value>
+                        <ValueDesc>“综上所述”行距设置错误，应设置为1.26倍行距</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="按照非专业投资者项目投资决策模型" Define1="Paragraphs" Define2="LineUnitBefore" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0.3]]></Value>
+                        <ValueDesc>“按照非专业投资者项目投资决策模型”段前间距设置错误，应设置为0.3行</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="综上所述" Define1="Paragraphs" Define2="LineUnitBefore" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0.3]]></Value>
+                        <ValueDesc>“综上所述”段前间距设置错误，应设置为0.3行</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="按照非专业投资者项目投资决策模型" Define1="Paragraphs" Define2="CharacterUnitFirstLineIndent" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2]]></Value>
+                        <ValueDesc>“按照非专业投资者项目投资决策模型”所在段落的首行缩进设置错误，应设置为2字符</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="综上所述" Define1="Paragraphs" Define2="CharacterUnitFirstLineIndent" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2]]></Value>
+                        <ValueDesc>“综上所述”所在段落的首行缩进设置错误，应设置为2字符</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="ParaNumberStyle" PropKeyDesc="段落列表格式编号样式(WdListNumberStyle常量)" Para="-1" Find="行为来解释"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdListNumberStyleNone]]></Value>
+                        <ValueDesc>“行为来解释”所在段落的项目符号样式设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="ParaNumberToInt" PropKeyDesc="编号列表值转换为数字" Para="-1" Find="行为来解释"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[61521]]></Value>
+                        <ValueDesc>“行为来解释”所在段落的项目符号样式设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="ParaNumberToInt" PropKeyDesc="编号列表值转换为数字" Para="-1" Find="外部环境影响"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[61521]]></Value>
+                        <ValueDesc>“外部环境影响”所在段落的项目符号样式设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="ParaNumberToInt" PropKeyDesc="编号列表值转换为数字" Para="-1" Find="测量维度"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[61521]]></Value>
+                        <ValueDesc>“测量维度”所在段落的项目符号样式设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图片格式" WepType="FormatPicture">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.6">
+                    <FindParams PropKey="ShapeCount" PropKeyDesc="绘图层中的对象数" Define1="msoPicture|wdInlineShapePicture"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1]]></Value>
+                        <ValueDesc>插入考生文件夹下的图片“图3.2”错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">2</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图片格式" WepType="FormatPicture">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="WrapFormat" PropKeyDesc="图片文字环绕类型"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdWrapTopBottom]]></Value>
+                        <ValueDesc>图片的文字环绕方式设置错误，应设置为“上下型”</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图片格式" WepType="FormatPicture">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="PicWidth_CM" PropKeyDesc="图片宽度(单位：厘米)" Define2="001"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[13-13.5]]></Value>
+                        <ValueDesc>图片大小缩放设置错误，应设置为高度80%， 宽度80%</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2" IgnorePuncStrings="|">8</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图片格式" WepType="FormatPicture">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="PicHeight_CM" PropKeyDesc="图片高度(单位：厘米)" Define2="001"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[9-9.5]]></Value>
+                        <ValueDesc>图片大小缩放设置错误，应设置为高度80%， 宽度80%</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2" IgnorePuncStrings="|">8</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图片格式" WepType="FormatPicture">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1.2">
+                    <FindParams PropKey="PicStyle" PropKeyDesc="获取指定样式类型的属性" Define1="图片格式：艺术效果" Define2="msoPicture|wdInlineShapePicture"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[Transparency:0.8|Detail:3]]></Value>
+                        <ValueDesc>图片艺术效果设置错误，应设置为“影印/透明度/80%”</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图片格式" WepType="FormatPicture">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.8">
+                    <FindParams PropKey="PicStyle" PropKeyDesc="获取指定样式类型的属性" Define1="图片格式：艺术效果" Define2="msoPicture|wdInlineShapePicture"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[ColorTemperature:5300|Saturation:3]]></Value>
+                        <ValueDesc>图片颜色设置错误，应设置为“颜色饱和度预设/300%、色调预设/色温：5300K”</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图片格式" WepType="FormatPicture">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.6">
+                    <FindParams PropKey="PicStyle" PropKeyDesc="获取指定样式类型的属性" Define1="形状轮廓：形状边框类型形状边框宽度形状边框颜色" Define2="msoPicture|wdInlineShapePicture"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[形状边框：类型:msoLineSingle|宽度:1|颜色:255]]></Value>
+                        <ValueDesc>为图片加1磅红色（标准色）实线线条设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="0.4" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="FooterFields" PropKeyDesc="页脚域代码" HeaderFooterIndex="2" Define8="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[PAGE]]></Value>
+                        <ValueDesc>在页面底端插入“滚动”样式页码设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="FooterProperties" PropKeyDesc="页脚属性(字体|字号|文字颜色|加粗|对齐|页眉类型|内边框|形状)" Define1="字体|字号|文字颜色|加粗|对齐" Define8="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[Cambria|9|0|0|wdAlignParagraphLeft]]></Value>
+                        <ValueDesc>在页面底端插入“滚动”样式页码设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="FooterPageNumbersStyle" PropKeyDesc="页脚页码编号样式" HeaderFooterIndex="2" Define8="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdPageNumberStyleNumberInDash]]></Value>
+                        <ValueDesc>页码编号格式设置错误，应设置为“- 1 -、- 2 -、- 3 -、…”</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="StartingNumber" PropKeyDesc="页脚页码起始编号" HeaderFooterIndex="2" Define8="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[5]]></Value>
+                        <ValueDesc>起始页码设置错误，应设置为“- 5 -”</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="HeaderBuiltIn" PropKeyDesc="页眉部件"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[文档部件个数:2|部件:标题|日期]]></Value>
+                        <ValueDesc>在页面顶端插入“怀旧”型页眉设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="HeaderText" PropKeyDesc="页眉文字" Define8="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2021-1-1]]></Value>
+                        <ValueDesc>页眉日期为“2021-1-1”设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="WaterMarkText" PropKeyDesc="水印文本信息"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[课程大作业]]></Value>
+                        <ValueDesc>文字水印设置错误，应为“课程大作业”</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="WaterMarkText" PropKeyDesc="水印文本信息" Define1="字体"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[楷体]]></Value>
+                        <ValueDesc>文字水印字体设置错误，应为楷体</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="WaterMarkText" PropKeyDesc="水印文本信息" Define1="字号"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[60]]></Value>
+                        <ValueDesc>文字水印字号设置错误，应为60</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面文档设置" WepType="Document">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.8">
+                    <FindParams PropKey="BackgroundForeColor" PropKeyDesc="文档背景前景色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[13434879]]></Value>
+                        <ValueDesc>页面颜色填充效果设置错误，应设置为“纹理/羊皮纸”</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="0.8" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellText" PropKeyDesc="指定单元格内容" Row="2" Col="2" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[领投人尽职调查]]></Value>
+                        <ValueDesc>表格第2行第2列单元格内容错误，应为“领投人尽职调查”</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellText" PropKeyDesc="指定单元格内容" Row="7" Col="3" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[项目吸引的领投人数量]]></Value>
+                        <ValueDesc>表格第7行第3列单元格内容错误，应为“项目吸引的领投人数量”</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="0.2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellNotExistMayBeCellIsMerge" PropKeyDesc="判断单元格是否被合并" Row="3" Col="1" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc>合并单元格设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellNotExistMayBeCellIsMerge" PropKeyDesc="判断单元格是否被合并" Row="6" Col="1" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc>合并单元格设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="0.2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellNotExistMayBeCellIsMerge" PropKeyDesc="判断单元格是否被合并" Row="8" Col="1" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc>合并单元格设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellNotExistMayBeCellIsMerge" PropKeyDesc="判断单元格是否被合并" Row="9" Col="1" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc>合并单元格设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="0.2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellNotExistMayBeCellIsMerge" PropKeyDesc="判断单元格是否被合并" Row="11" Col="1" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc>合并单元格设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellNotExistMayBeCellIsMerge" PropKeyDesc="判断单元格是否被合并" Row="12" Col="1" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc>合并单元格设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="Tab_Style" PropKeyDesc="获取表格的样式名称" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[网格表5深色-着色6]]></Value>
+                        <ValueDesc>表格样式设置错误，应设置为“网格表 5 深色-着色6”</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="0.2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellTextFontSize" PropKeyDesc="指定单元格字号" Row="1" Col="2" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[12]]></Value>
+                        <ValueDesc>表格第1行第2列单元格字号设置错误，应设置为小四</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellTextFontSize" PropKeyDesc="指定单元格字号" Row="1" Col="4" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[12]]></Value>
+                        <ValueDesc>表格第1行第4列单元格字号设置错误，应设置为小四</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="0.2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellTextFontName" PropKeyDesc="指定单元格字体" Row="1" Col="1" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[华文新魏]]></Value>
+                        <ValueDesc>表格第1行第1列单元格字体设置错误，应设置为华文新魏</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellTextFontName" PropKeyDesc="指定单元格字体" Row="1" Col="3" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[华文新魏]]></Value>
+                        <ValueDesc>表格第1行第3列单元格字体设置错误，应设置为华文新魏</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="FindTableAlignmentInDoc" PropKeyDesc="表格整体对齐方式" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdAlignRowCenter]]></Value>
+                        <ValueDesc>表格整体对齐方式设置错误，应设置为居中</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="FindCellParagraphFormatAlignment" PropKeyDesc="指定单元格段落对齐方式" Row="1" Col="1" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdAlignParagraphCenter]]></Value>
+                        <ValueDesc>表格第1行第1列单元格内容对齐方式设置错误，应设置为水平居中</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="FindCellParagraphFormatAlignment" PropKeyDesc="指定单元格段落对齐方式" Row="1" Col="4" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdAlignParagraphCenter]]></Value>
+                        <ValueDesc>表格第1行第4列单元格内容对齐方式设置错误，应设置为水平居中</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="ColumnWidth" PropKeyDesc="指定列的宽度" Col="1" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2.2]]></Value>
+                        <ValueDesc>表格第1列的列宽设置错误，应设置为2.2厘米</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="ColumnWidth" PropKeyDesc="指定列的宽度" Col="4" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2.2]]></Value>
+                        <ValueDesc>表格第4列的列宽设置错误，应设置为2.2厘米</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.6">
+                    <FindParams PropKey="OutsideLineWidth" PropKeyDesc="表格外部边框的线条宽度" TableNo="1" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdLineWidth150pt]]></Value>
+                        <ValueDesc>表格外框线宽度设置错误，应设置为1.5磅</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-999" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="WTableFind" PropKeyDesc="获取表格对象的属性" Define1="Cell(1,1)" Define2="Borders[-1].Color" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[-654262273]]></Value>
+                        <ValueDesc>表格外框线颜色设置错误，应设置为“橙色，个性色6，深色25%”</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-999" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="WTableFind" PropKeyDesc="获取表格对象的属性" Define1="Cell(1,2)" Define2="Borders[-1].Color" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[-654262273]]></Value>
+                        <ValueDesc>表格外框线颜色设置错误，应设置为“橙色，个性色6，深色25%”</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-999" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="WTableFind" PropKeyDesc="获取表格对象的属性" Define1="Cell(1,3)" Define2="Borders[-1].Color" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[-654262273]]></Value>
+                        <ValueDesc>表格外框线颜色设置错误，应设置为“橙色，个性色6，深色25%”</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-999" NotLeaf="0">
+                <MarkRule FullScore="0.8">
+                    <FindParams PropKey="WTableFind" PropKeyDesc="获取表格对象的属性" Define1="Cell(1,1).Range.Font" Define2="Name|Size" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[华文新魏|12]]></Value>
+                        <ValueDesc>表格第一行文字属性设置错误，应设置为小四号、华文新魏</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="变量选取一览表" Define1="Font" Define2="Fill.Type" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[3]]></Value>
+                        <ValueDesc>表标题文本填充效果设置错误，应设置为“渐变填充/径向渐变-个性色6，类型/矩形，方向/从中心”、颜色为“紫色，个性色4，深色25%”</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="变量选取一览表" Define1="Font" Define2="Fill.Type" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[3]]></Value>
+                        <ValueDesc>表标题文本填充效果设置错误，应设置为“渐变填充/径向渐变-个性色6，类型/矩形，方向/从中心”、颜色为“紫色，个性色4，深色25%”</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="变量选取一览表" Define1="Font" Define2="Fill.GradientStyle" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[7]]></Value>
+                        <ValueDesc>表标题文本填充效果设置错误，应设置为“渐变填充/径向渐变-个性色6，类型/矩形，方向/从中心”、颜色为“紫色，个性色4，深色25%”</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="变量选取一览表" Define1="Font" Define2="Fill.ForeColor.RGB|Fill.BackColor.RGB" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[8079968|615893]]></Value>
+                        <ValueDesc>表标题文本填充效果设置错误，应设置为“渐变填充/径向渐变-个性色6，类型/矩形，方向/从中心”、颜色为“紫色，个性色4，深色25%”</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

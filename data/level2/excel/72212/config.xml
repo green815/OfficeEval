@@ -1,0 +1,499 @@
+<QuestItem QuestCode="*******" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Excel.xlsx" ParseType="1" OfficeType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Text值)" SheetName="费用报销管理" Row="A3|A101|A127|A388|A401"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>2023年1月15日,星期日|2023年6月18日,星期日|2023年6月30日,星期五|2023年11月6日,星期一|2023年12月11日,星期一</Value>
+                        <ValueDesc><![CDATA[在"费用报销管理"工作表中，"日期"列A3|A101|A127|A388|A401单元格计算错误（标准答案是：2023年1月15日,星期日|2023年6月18日,星期日|2023年6月30日,星期五|2023年11月6日,星期一|2023年12月11日,星期一）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings=",，">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FindNumberFormatLst" PropKeyDesc="指定的单元格是否存在指定的数字格式" SheetName="费用报销管理" Row="A3|A101|A127|A388|A401" Find="aaaa"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>True|True|True|True|True</Value>
+                        <ValueDesc><![CDATA[在"费用报销管理"工作表中，"日期"列A3|A101|A127|A388|A401单元格格式错误（标准答案是：包含aaaa）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="_&quot;">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Text值)" SheetName="费用报销管理" Row="H3|H101|H127|H388|H401"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>是|是|否|否|否</Value>
+                        <ValueDesc><![CDATA[在"费用报销管理"工作表中，"是否加班"列H3|H101|H127|H388|H401单元格计算错误（标准答案：是|是|否|否|否）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FindFormulaLst" PropKeyDesc="指定的单元格是否存在指定的公式或返回单元格公式" SheetName="费用报销管理" Row="H3|H101|H127|H388|H401" Find="=IF"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>True|True|True|True|True</Value>
+                        <ValueDesc><![CDATA[在"费用报销管理"工作表中，"是否加班"列H3|H101|H127|H388|H401单元格公式错误（标准答案：公式中应包含if）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Text值)" SheetName="费用报销管理" Row="D3|D101|D127|D388|D401"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>上海市|山西省|浙江省|江苏省|吉林省</Value>
+                        <ValueDesc><![CDATA[在"费用报销管理"工作表中，"地区"列D3|D101|D127|D388|D401单元格计算错误（标准答案：上海市|山西省|浙江省|江苏省|吉林省）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FindFormulaLst" PropKeyDesc="指定的单元格是否存在指定的公式或返回单元格公式" SheetName="费用报销管理" Row="D3|D101|D127|D388|D401" Find="="></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>True|True|True|True|True</Value>
+                        <ValueDesc><![CDATA[在"费用报销管理"工作表中，"地区"列D3|D101|D127|D388|D401单元格公式错误（标准答案：应使用公式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Text值)" SheetName="费用报销管理" Row="F3|F101|F127|F388|F401"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>餐饮费|火车票|其他|其他|其他</Value>
+                        <ValueDesc><![CDATA[在"费用报销管理"工作表中，"费用类别"列F3|F101|F127|F388|F401单元格计算错误（标准答案：餐饮费|火车票|其他|其他|其他）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FindFormulaLst" PropKeyDesc="指定的单元格是否存在指定的公式或返回单元格公式" SheetName="费用报销管理" Row="F3|F101|F127|F388|F401" Find="="></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>True|True|True|True|True</Value>
+                        <ValueDesc><![CDATA[在"费用报销管理"工作表中，"费用类别"列F3|F101|F127|F388|F401单元格公式错误（标准答案：应使用公式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Text值)" SheetName="费用报销管理" Row="B144|B146|B165|B167|B337|B339"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>方文成|赵琳艳|王海德|张哲宇|关天胜|谢丽秋</Value>
+                        <ValueDesc><![CDATA[在"费用报销管理"工作表中，"报销人"列B144|B146|B165|B167|B337|B339单元格计算错误（标准答案：方文成|赵琳艳|王海德|张哲宇|关天胜|谢丽秋）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SheetDynamic" PropKeyDesc="获取Sheet相关属性反射调用" SheetName="费用报销管理" Define7="1|" Define8="ListObjects[]|ShowTableStyleRowStripes"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>False</Value>
+                        <ValueDesc><![CDATA[在"费用报销管理"工作表中，套用表格格式设置错误（标准答案：取消镶边行的显示）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="ExcelTableName" PropKeyDesc="工作表上的表对象名称" SheetName="费用报销管理" Row="A1" Range="H401"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>差旅报销数据</Value>
+                        <ValueDesc><![CDATA[在"费用报销管理"工作表中，表格的表名称设置错误（标准答案：差旅报销数据）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="条件格式" WepType="FormatCondition">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FormatConditionsFormula" PropKeyDesc="获取条件格式的设置条件" SheetName="费用报销管理" Row="A1" Range="H401" Find_FormatConditionsIndex="1"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value>大于1500元</Value>
+                        <Value><![CDATA[AND($F3="餐饮费",$G3>1500)]]></Value>
+                        <Value><![CDATA[$G3>1500]]></Value>
+                        <ValueDesc><![CDATA[在"费用报销管理"工作表中，条件格式设置错误（标准答案：将差旅费大于1500元的数据所在行的数据，用标准红色、并加粗加以显示）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1.5">
+                    <FindParams PropKey="FreezePanesPosition" PropKeyDesc="工作表冻结窗格" SheetName="费用报销管理" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>C3</Value>
+                        <ValueDesc><![CDATA[在"费用报销管理"工作表中，前两行和两列被冻结设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings=":：">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="SlicerCaches" PropKeyDesc="与工作簿关联的切片器属性" SheetName="费用报销管理" Row="I2:M15" Define1="显示列数"></FindParams>
+
+                    <StdAnswer AnsType="0">
+                        <Value>显示列数：3</Value>
+                        <ValueDesc><![CDATA[在"费用报销管理"工作表中，切片器设置错误（标准答案：分三列显示所有报销人）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SlicerCaches" PropKeyDesc="与工作簿关联的切片器属性" SheetName="费用报销管理" Row="I2:M15" Define1="切片值"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>切片值：边金双、陈祥通、方嘉康、方文成、关天胜、黎浩然、李晓梅、李雅洁、刘露露、刘长辉、孟天祥、钱顺卓、唐雅林、王崇江、王海德、王天宇、王欣荣、王炫皓、王雅林、谢丽秋、徐亚楠、徐志晨、杨国强、余雅丽、张哲宇、赵琳艳、邹佳楠</Value>
+                        <ValueDesc><![CDATA[在"费用报销管理"工作表中，切片器的值错误（标准答案：边金双、陈祥通、方嘉康、方文成、关天胜、黎浩然、李晓梅、李雅洁、刘露露、刘长辉、孟天祥、钱顺卓、唐雅林、王崇江、王海德、王天宇、王欣荣、王炫皓、王雅林、谢丽秋、徐亚楠、徐志晨、杨国强、余雅丽、张哲宇、赵琳艳、邹佳楠）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SlicerCaches" PropKeyDesc="与工作簿关联的切片器属性" SheetName="费用报销管理" Row="I2:M15" Define1="切片字段"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>切片字段：报销人</Value>
+                        <ValueDesc><![CDATA[在"费用报销管理"工作表中，切片器的值错误（标准答案：切片字段为报销人）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Text值)" SheetName="按类别统计" SheetNameAlias="3" Row="B2|B3|B4|B5|B6|B7"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>19|22|12|21|24|12</Value>
+                        <ValueDesc><![CDATA[在"按类别统计"工作表中，"报销人数"列B2|B3|B4|B5|B6|B7单元格计算错误（标准答案：19|22|12|21|24|12）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1.5">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Text值)" SheetName="按类别统计" SheetNameAlias="3" Row="C2|C3|C4|C5|C6|C7"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>37|36|18|64|65|18</Value>
+                        <ValueDesc><![CDATA[在"按类别统计"工作表中，"报销笔数"列C2|C3|C4|C5|C6|C7单元格计算错误（标准答案：37|36|18|64|65|18）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Text值)" SheetName="按类别统计" SheetNameAlias="3" Row="D2|D3|D4|D5|D6|D7"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>&#xa5;29,726.93|&#xa5;23,297.07|&#xa5;13,257.80|&#xa5;48,669.03|&#xa5;42,066.53|&#xa5;15,842.40</Value>
+                        <ValueDesc><![CDATA[在"按类别统计"工作表中，"报销金额"列D2|D3|D4|D5|D6|D7单元格计算错误（标准答案：￥29,726.93|￥23,297.07|￥13,257.80|￥48,669.03|￥42,066.53|￥15,842.40）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Text值)" SheetName="按类别统计" SheetNameAlias="3" Row="E2|E3|E4|E5|E6|E7"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>&#xa5;803.43|&#xa5;647.14|&#xa5;736.54|&#xa5;760.45|&#xa5;647.18|&#xa5;880.13</Value>
+                        <ValueDesc><![CDATA[在"按类别统计"工作表中，"平均每笔报销金额"列E2|E3|E4|E5|E6|E7单元格计算错误（标准答案：￥803.43|￥647.14|￥736.54|￥760.45|￥647.18|￥880.13）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Text值)" SheetName="按类别统计" SheetNameAlias="3" Row="F2|F3|F4|F5|F6|F7"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>&#xa5;1,564.58|&#xa5;1,058.96|&#xa5;1,104.82|&#xa5;2,317.57|&#xa5;1,752.77|&#xa5;1,320.20</Value>
+                        <ValueDesc><![CDATA[在"按类别统计"工作表中，"平均每人报销金额"列F2|F3|F4|F5|F6|F7单元格计算错误（标准答案：￥1,564.58|￥1,058.96|￥1,104.82|￥2,317.57|￥1,752.77|￥1,320.20）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FindNumberFormatLst" PropKeyDesc="指定的单元格是否存在指定的数字格式" SheetName="按类别统计" Row="D3|E4|F5|D6|E7|F8" Find="#,##0.00_"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>True|True|True|True|True|True</Value>
+                        <ValueDesc><![CDATA[在"按类别统计"工作表中，D列到F列单元格的数据格式设置错误（标准答案：显示两位小数的货币格式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0" IgnorePuncStrings="_&quot;">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Text值)" SheetName="按月份统计" SheetNameAlias="4" Row="B2|K13|C2|F3|J12"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>&#xa5;3,000.00|---|---|---|---</Value>
+                        <ValueDesc><![CDATA[在"按月份统计"工作表中，单元格B2|K13|C2|F3|J12计算错误（标准答案：￥3,000.00|---|---|---|---）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Text值)" SheetName="按月份统计" SheetNameAlias="4" Row="L2|L13|L3|L12"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>&#xa5;3,000.00|&#xa5;3,486.83|&#xa5;522.00|&#xa5;11,719.37</Value>
+                        <ValueDesc><![CDATA[在"按月份统计"工作表中，"合计"列单元格L2|L13|L3|L12计算错误（标准答案：￥3,000.00|￥3,486.83|￥522.00|￥11,719.37）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="ChartType" PropKeyDesc="获取图表类型(返回XlChartType枚举)" SheetName="按月份统计" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>xlLineMarkers</Value>
+                        <ValueDesc><![CDATA[在"按月份统计"工作表中，图表类型设置错误（标准答案：带数据标记的折线图）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetMinimumScale" PropKeyDesc="获取图表的数值轴上的最小值" SheetName="按月份统计" FndChartIndex="1" SeriesName="Y" SheetNameAlias="3" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>100</Value>
+                        <ValueDesc><![CDATA[在"按月份统计"工作表中，图表的Y轴主要刻度设置错误（标准答案：最小值100）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetMinorUnit" PropKeyDesc="获取图表中数值轴的次要单位" SheetName="按月份统计" FndChartIndex="1" SeriesName="Y" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>10</Value>
+                        <ValueDesc><![CDATA[在"按月份统计"工作表中，图表的Y轴主要刻度单位设置错误（标准答案：底数为10）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetChartTitle" PropKeyDesc="获取图表的标题内容" SheetName="按月份统计" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>各月报销费用比较</Value>
+                        <ValueDesc><![CDATA[在"按月份统计"工作表中，图表的标题设置错误（标准答案：各月报销费用比较）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetGridlines" PropKeyDesc="获取图表中的坐标轴网格线的情况" SheetName="按月份统计" FndChartIndex="1" SheetNameAlias="3" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>主轴主要水平网格线_False|主轴主要垂直网格线_False|主轴次要水平网格线_False|主轴次要垂直网格线_False</Value>
+                        <ValueDesc><![CDATA[在"按月份统计"工作表中，图表的网格线设置错误（标准答案：没有网格线）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="SheetDynamic" PropKeyDesc="获取Sheet相关属性反射调用" SheetName="打印内容" SheetNameAlias="5" Find="格式|0" Define7="1|" Define8="Shapes[]|Type"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>13</Value>
+                        <ValueDesc><![CDATA[在"打印内容"工作表中，图片的数据源错误（标准答案："按类别统计"工作表中的A1:F11单元格区域和"按月份统计"工作表中的A1:L13单元格区域）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="IsExistShape" PropKeyDesc="判断工作表指定范围单元格内中指定类型的Shape是否存在" SheetName="打印内容" SheetNameAlias="5" Row="A1" Range="N13" Define1="Picture"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>True</Value>
+                        <ValueDesc><![CDATA[在"打印内容"工作表中，未找到图片]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="IsExistShape" PropKeyDesc="判断工作表指定范围单元格内中指定类型的Shape是否存在" SheetName="打印内容" SheetNameAlias="5" Row="A12" Range="P26" Define1="Picture"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>True</Value>
+                        <ValueDesc><![CDATA[在"打印内容"工作表中，未找到图片]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="PaperOrientation" PropKeyDesc="获取纵向或横向打印模式(XlPageOrientation常量)" SheetName="打印内容" SheetNameAlias="5"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>xlLandscape</Value>
+                        <ValueDesc><![CDATA[在"打印内容"工作表中，纸张方向设置错误（标准答案：横向）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SheetDynamic" PropKeyDesc="获取Sheet相关属性反射调用" SheetName="打印内容" Find="格式|0" Define8="PageSetUp|Zoom"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>False</Value>
+                        <ValueDesc><![CDATA[在"打印内容"工作表中，大小设置错误（标准答案：1页高和1页宽）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SheetDynamic" PropKeyDesc="获取Sheet相关属性反射调用" SheetName="打印内容" Find="格式|0" Define8="PageSetUp|FitToPagesWide"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>1</Value>
+                        <ValueDesc><![CDATA[在"打印内容"工作表中，大小设置错误（标准答案：1页高和1页宽）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SheetDynamic" PropKeyDesc="获取Sheet相关属性反射调用" SheetName="打印内容" Find="格式|0" Define8="PageSetUp|FitToPagesTall"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>1</Value>
+                        <ValueDesc><![CDATA[在"打印内容"工作表中，大小设置错误（标准答案：1页高和1页宽）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CenterVertically" PropKeyDesc="判断是否在页面的垂直居中位置打印指定工作表" SheetName="打印内容"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>True</Value>
+                        <ValueDesc><![CDATA[在"打印内容"工作表中，对齐方式设置错误（标准答案：在页面水平和垂直都居中对齐）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CenterHorizontally" PropKeyDesc="判断是否在页面的水平居中位置打印指定工作表" SheetName="打印内容"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>True</Value>
+                        <ValueDesc><![CDATA[在"打印内容"工作表中，对齐方式设置错误（标准答案：在页面水平和垂直都居中对齐）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Header" PropKeyDesc="获取页眉的对齐情况" SheetName="打印内容" SheetNameAlias="5" Define1="2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>2023年报销费用统计</Value>
+                        <ValueDesc><![CDATA[在"打印内容"工作表中,页眉设置错误（标准答案：在页眉正中输入文本"2023年报销费用统计"）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

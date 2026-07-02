@@ -1,0 +1,352 @@
+<QuestItem QuestCode="XXXXXXX" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Excel.xlsx" ParseType="1" OfficeType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="MergeCells" PropKeyDesc="获取工作表单元格区域是否是合并单元格" SheetName="近三年气温统计表" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[在"近三年气温统计表"工作表中，将A1:G1单元格合并为一个单元格设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Alignment" PropKeyDesc="获取工作表单元格区域的水平对齐方式(XlHAlign枚举)" SheetName="近三年气温统计表" Row="A1" Range="G1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[-4108]]></Value>
+                        <ValueDesc><![CDATA[在"近三年气温统计表"工作表中，将A1:G1居中对齐设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="近三年气温统计表" Row="H6|H10|H12|H15" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[15|32|27|3]]></Value>
+                        <ValueDesc><![CDATA[在"近三年气温统计表"工作表中，平均高温平均值H列计算错误（标准答案：H6|H10|H12|H15的值15|32|27|3）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindFormulaLst" PropKeyDesc="指定的单元格是否存在指定的公式或返回单元格公式" SheetName="近三年气温统计表" Row="H6|H10|H12|H15" Find="AVERAGE"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"近三年气温统计表"工作表中，利用AVERAGE函数计算近三年每月平均高温的平均值置于"平均高温平均值"H列错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="近三年气温统计表" Row="I6|I10|I12|I15" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2|23|17|-7]]></Value>
+                        <ValueDesc><![CDATA[在"近三年气温统计表"工作表中，近三年每月平均低温的平均值I列计算错误（标准答案：I6|I10|I12|I15的值2|23|17|-7）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindFormulaLst" PropKeyDesc="指定的单元格是否存在指定的公式或返回单元格公式" SheetName="近三年气温统计表" Row="I6|I10|I12|I15" Find="AVERAGE"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"近三年气温统计表"工作表中，未使用AVERAGE函数计算近三年每月平均低温的平均值I列]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="近三年气温统计表" Row="J6|J10|J12|J15" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[16|33|29|4]]></Value>
+                        <ValueDesc><![CDATA[在"近三年气温统计表"工作表中，利用MAX函数计算近三年每月平均高温的最高值J列错误（标准答案：J6|J10|J12|J15的值16|33|29|4）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindFormulaLst" PropKeyDesc="指定的单元格是否存在指定的公式或返回单元格公式" SheetName="近三年气温统计表" Row="J6|J10|J12|J15" Find="MAX"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"近三年气温统计表"工作表中，未使用MAX函数计算近三年每月平均高温的最高值J列]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="近三年气温统计表" Row="K6|K10|K12|K15" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2|22|16|-7]]></Value>
+                        <ValueDesc><![CDATA[在"近三年气温统计表"工作表中，利用MIN函数计算近三年每月平均低温的最低值K列错误（标准答案：K6|K10|K12|K15的值2|22|16|-7）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindFormulaLst" PropKeyDesc="指定的单元格是否存在指定的公式或返回单元格公式" SheetName="近三年气温统计表" Row="K6|K10|K12|K15" Find="MIN"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"近三年气温统计表"工作表中，未利用MIN函数计算近三年每月平均低温的最低值K列]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="条件格式" WepType="FormatCondition">
+            <MarkRuleGroup LogicOper="And" FullScore="1.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FormatConditionsFormula" PropKeyDesc="获取条件格式的设置条件" SheetName="近三年气温统计表" Row="B4" Range="G51" Find_FormatConditionsIndex="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[大于28]]></Value>
+                        <ValueDesc><![CDATA[在"近三年气温统计表"工作表中，利用条件格式修饰B4:G15单元格区域，值大于28的单元格设置为"浅红填充色深红色文本"错误（标准答案：大于28）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FormatConditionsInteriorColor" PropKeyDesc="获取条件格式的填充颜色" SheetName="近三年气温统计表" Row="B4" Range="G51" Find_FormatConditionsIndex="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[13551615]]></Value>
+                        <ValueDesc><![CDATA[在"近三年气温统计表"工作表中，利用条件格式修饰B4:G15单元格区域，值大于28的单元格设置为"浅红填充色深红色文本"错误（标准答案：浅红填充）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FormatConditionsColor" PropKeyDesc="获取条件格式的字体颜色" SheetName="近三年气温统计表" Row="B4" Range="G51" Find_FormatConditionsIndex="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[393372]]></Value>
+                        <ValueDesc><![CDATA[在"近三年气温统计表"工作表中，利用条件格式修饰B4:G15单元格区域，值大于28的单元格设置为"浅红填充色深红色文本"错误（标准答案：深红色文本）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="条件格式" WepType="FormatCondition">
+            <MarkRuleGroup LogicOper="And" FullScore="1.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FormatConditionsFormula" PropKeyDesc="获取条件格式的设置条件" SheetName="近三年气温统计表" Row="B4" Range="G51" Find_FormatConditionsIndex="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[小于12]]></Value>
+                        <ValueDesc><![CDATA[在"近三年气温统计表"工作表中，利用条件格式修饰B4:G15单元格区域，值小于12的单元格设置为"绿填充色深绿色文本"错误（标准答案：小于12）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FormatConditionsInteriorColor" PropKeyDesc="获取条件格式的填充颜色" SheetName="近三年气温统计表" Row="B4" Range="G51" Find_FormatConditionsIndex="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[13551615]]></Value>
+                        <ValueDesc><![CDATA[在"近三年气温统计表"工作表中，利用条件格式修饰B4:G15单元格区域，值小于12的单元格设置为"绿填充色深绿色文本"错误（标准答案：绿填充色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FormatConditionsColor" PropKeyDesc="获取条件格式的字体颜色" SheetName="近三年气温统计表" Row="B4" Range="G51" Find_FormatConditionsIndex="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[393372]]></Value>
+                        <ValueDesc><![CDATA[在"近三年气温统计表"工作表中，利用条件格式修饰B4:G15单元格区域，值小于12的单元格设置为"绿填充色深绿色文本"错误（标准答案：深绿色文本）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="条件格式" WepType="FormatCondition">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FormatConditionsBarColor" PropKeyDesc="数据条条件格式中的条形颜色" SheetName="近三年气温统计表" Row="H4" Range="K15" Find_FormatConditionsIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[16171736]]></Value>
+                        <ValueDesc><![CDATA[在"近三年气温统计表"工作表中，利用条件格式修饰H4:K15单元格区域，数据条填充颜色错误（标准答案：颜色（RGB：216,194,246)）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="条件格式" WepType="FormatCondition">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="1.5">
+                    <FindParams PropKey="FormatConditionsBarFillType" PropKeyDesc="获取数据条条件格式的数据栏填充颜色" SheetName="近三年气温统计表" Row="H4" Range="K15" Find_FormatConditionsIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0]]></Value>
+                        <ValueDesc><![CDATA[在"近三年气温统计表"工作表中，利用条件格式修饰H4:K15单元格区域错误（标准答案：实心填充数据条）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="ChartType" PropKeyDesc="获取图表类型(返回XlChartType枚举)" SheetName="近三年气温统计表" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlLine]]></Value>
+                        <ValueDesc><![CDATA[在"近三年气温统计表"工作表中，图表类型错误（标准答案：折线图）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetChartDataRange" PropKeyDesc="获取图表中指定系列的引用公式" SheetName="近三年气温统计表" FndChartIndex="1" Find_SeriesIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[A4:A15]]></Value>
+                        <ValueDesc><![CDATA[在"近三年气温统计表"工作表中，图表数据源错误（标准答案：A4:A15）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="$">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetChartStyle" PropKeyDesc="获取图表样式" SheetName="近三年气温统计表" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[230]]></Value>
+                        <ValueDesc><![CDATA[在"近三年气温统计表"工作表中，图表样式错误（标准答案：样式3）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="0.9" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="AxisTitle" PropKeyDesc="获取图表的指定坐标轴的标题内容" SheetName="近三年气温统计表" FndChartIndex="1" SeriesName="Y" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[单位（度）]]></Value>
+                        <ValueDesc><![CDATA[在"近三年气温统计表"工作表中，图表垂直坐标轴标题设置错误（标准答案：单位（度））]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="()（）">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetChartTitle" PropKeyDesc="获取图表的标题内容" SheetName="近三年气温统计表" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[近三年气温统计图]]></Value>
+                        <ValueDesc><![CDATA[在"近三年气温统计表"工作表中，图表标题设置错误（标准答案：近三年气温统计图）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="IsExistChartOfRange" PropKeyDesc="判断指定的图表是否在指定的单元格区域内" SheetName="近三年气温统计表" FndChartIndex="1" SortIndexNum="0" Define1="A17:H33"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[在"近三年气温统计表"工作表中，将图表插入到当前工作表的"A17:H33"单元格区域内错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="Or" FullScore="1.7" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Wookbook" PropKeyDesc="指定工作表是否存在" SheetName="近三年气温统计表" SheetNum="1" SheetNameAlias="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[将Sheet1工作表命名为"近三年气温统计表"错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="验证筛选" WepType="ParaFont">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SortFieldKey" PropKeyDesc="获取指定区域或自动筛选或工作表的排序字段" SheetName="产品销售情况表" SortIndexNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[分公司]]></Value>
+                        <ValueDesc><![CDATA[在"产品销售情况表"工作表中，排序的主要关键字错误（标准答案：分公司）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SortFieldOrder" PropKeyDesc="获取指定排序字段进行排序的自定义次序" SheetName="产品销售情况表" SheetNameAlias="2" SortIndexNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlAscending]]></Value>
+                        <ValueDesc><![CDATA[在"产品销售情况表"工作表中，未按主要关键字升序排序]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="验证筛选" WepType="ParaFont">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SortFieldKey" PropKeyDesc="获取指定区域或自动筛选或工作表的排序字段" SheetName="产品销售情况表" SheetNameAlias="2" SortIndexNum="2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[季度]]></Value>
+                        <ValueDesc><![CDATA[在"产品销售情况表"工作表中，排序的次关键字错误（标准答案：季度）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SortFieldOrder" PropKeyDesc="获取指定排序字段进行排序的自定义次序" SheetName="产品销售情况表" SheetNameAlias="2" SortIndexNum="2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlAscending]]></Value>
+                        <ValueDesc><![CDATA[在"产品销售情况表"工作表中，未按次要关键字升序排序]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="验证筛选" WepType="ParaFont">
+            <MarkRuleGroup LogicOper="Or" FullScore="1.5" NotLeaf="0">
+                <MarkRule FullScore="1.5">
+                    <FindParams PropKey="RangeFiltCriteria" PropKeyDesc="获取指定区域内的自动筛选的筛选条件" SheetName="产品销售情况表" SheetNameAlias="2" Row="A2" Col="4" Define1="G98"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[=电冰箱=电视机=空调=数码相机]]></Value>
+                        <ValueDesc><![CDATA[在"产品销售情况表"工作表中，排序后的数据进行筛选错误（标准答案：=电冰箱=电视机=空调=数码相机）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="验证筛选" WepType="ParaFont">
+            <MarkRuleGroup LogicOper="Or" FullScore="1.5" NotLeaf="0">
+                <MarkRule FullScore="1.5">
+                    <FindParams PropKey="RangeFiltCriteria" PropKeyDesc="获取指定区域内的自动筛选的筛选条件" SheetName="产品销售情况表" SheetNameAlias="2" Row="A2" Col="7" Define1="G98"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[<=30]]></Value>
+                        <ValueDesc><![CDATA[在"产品销售情况表"工作表中，排序后的数据进行筛选错误（标准答案：销售额排名小于或等于30）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

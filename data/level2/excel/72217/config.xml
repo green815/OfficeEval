@@ -1,0 +1,380 @@
+<QuestItem QuestCode="XXXXXXX" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Excel.xlsx" ParseType="1" OfficeType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Wookbook" PropKeyDesc="工作表" SheetName="品名" SheetNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[在工作表"年度销售汇总"右侧插入一个名为"品名"的工作表错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2.5" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="RangeConnection" PropKeyDesc="范围连接" SheetName="品名" SheetNameAlias="3" Row="A1" Range="A10"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[TEXT;品名表.txt]]></Value>
+                        <ValueDesc><![CDATA[将以逗号"，"分隔的文本文件"品名表.txt"中的数据自A1单元格开始导入到工作表"品名"中设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="|_">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="品名" SheetNameAlias="3" Row="A1|B1|C1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[商品代码|品牌|商品名称]]></Value>
+                        <ValueDesc><![CDATA[在"品名"工作表中，A1|B1|C1单元格内容错误（标准答案：商品代码|品牌|商品名称）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1.5" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="品名" SheetNameAlias="3" Row="C18|C30|C98"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[ChangHong KFR-23GW/DHT1(W1-G)+T空调|ASUS R557LP4030-554KSF52X10 轻薄笔记本|Hisense LED50K320DX3D 50英寸3D液晶电视]]></Value>
+                        <ValueDesc><![CDATA[在"品名"工作表中，C18|C30|C98单元格内容错误（标准答案：ChangHong KFR-23GW/DHT1(W1-G)+T空调|ASUS R557LP4030-554KSF52X10 轻薄笔记本|Hisense LED50K320DX3D 50英寸3D液晶电视）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="FindCellTextRange" PropKeyDesc="查找单元格文本范围" SheetName="品名" SheetNameAlias="3" Row="A2" Range="A140" Find="TC014"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[Flase]]></Value>
+                        <ValueDesc><![CDATA[在"品名"工作表中，删除工作表中"商品名称"重复的记录设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="品名" SheetNameAlias="3" Row="A3|B3|C3|A33|B33|C33|A63|B63|C63|A105|B105|C105|A151|B151|C151"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[AC002|TCL|KFRd-72LW/FC13空调|NC012|戴尔|Dell Ins15CR-4528B 15.6英寸笔记本电脑|RF008|海尔|Haier BCD-231WDBB 冰箱|TV013|康佳|KONKA LED32E220CE平板电视|WM019|小鸭|XPB36-1803 3.6公斤 单缸半自动洗衣机]]></Value>
+                        <Value><![CDATA[AC002|TCL|KFRd-72LW/FC13空调|NC006|Apple|MacBook Pro MJLQ2CH/A 15.4英寸笔记本电脑|PC009|联想|Lenovo IdeaCentre C560 一体机|TC010|华为|Huawei M2-803L 4G 64GB 八核平板电脑手机 香槟金|WH009|海尔|Haier JSQ24-A2(12T)燃气热水器]]></Value>
+                        <ValueDesc><![CDATA[在"品名"工作表中，按"商品代码"升序对商品信息进行排列错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="|_">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="RangeConnection" PropKeyDesc="范围连接" SheetName="品名" SheetNameAlias="3" Row="A1" Range="A10"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[TEXT;品名表.txt]]></Value>
+                        <ValueDesc><![CDATA[在"品名"工作表中，删除与源数据"品名表.txt"的链接错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="|_">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="WorkBookConnections" PropKeyDesc="工作簿连接" SheetName="品名" SheetNameAlias="0" Define1="类型"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlConnectionTypeTEXT]]></Value>
+                        <ValueDesc><![CDATA[在"品名"工作表中，删除与源数据"品名表.txt"的链接错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="|_">7</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Alignment" PropKeyDesc="段落的对齐方式(WdParagraphAlignment常量)" SheetName="年度销售汇总" SheetNameAlias="2" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[7]]></Value>
+                        <ValueDesc><![CDATA[在"年度销售汇总"工作表中，A1单元格格式错误（标准答案：跨列居中）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="ExcelCellStyle" PropKeyDesc="区域公式" SheetName="年度销售汇总" SheetNameAlias="2" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[标题 1]]></Value>
+                        <ValueDesc><![CDATA[在"年度销售汇总"工作表中，A1单元格样式错误（标准答案：标题1）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="NumberFormatLst" PropKeyDesc="数字格式设置" SheetName="年度销售汇总" SheetNameAlias="2" Row="A5|A50|A100|A200|A300"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[@]]></Value>
+                        <ValueDesc><![CDATA[在"年度销售汇总"工作表中，A5|A50|A100|A200|A300单元格格式错误（标准答案：以"0001"式的格式显示）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">7</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="单元格的值" SheetName="年度销售汇总" SheetNameAlias="2" Row="A5|A9|A30"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0002|0006|0027]]></Value>
+                        <ValueDesc><![CDATA[在"年度销售汇总"工作表中，A5|A9|A30单元格内容错误（标准答案：0002|0006|0027）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="年度销售汇总" SheetNameAlias="2" Row="C4|C50|C111|C204|C306"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[Apple|索尼|戴尔|戴尔|三洋]]></Value>
+                        <ValueDesc><![CDATA[在"年度销售汇总"工作表中，C4|C50|C111|C204|C306单元格内容错误（标准答案：Apple|索尼|戴尔|戴尔|三洋）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="年度销售汇总" SheetNameAlias="2" Row="D5|D55|D125|D215|D335"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[Dell Vostro 5480R-3528SS 14英寸笔记本电脑 银色|ChangHong KFR-23GW/DHT1(W1-G)+T空调|sigma 家用除菌全自动滚筒干衣机|SIEMENS KG23N1116W冰箱|Galanz XQG60-A708 6公斤云滚筒洗衣机]]></Value>
+                        <ValueDesc><![CDATA[在"年度销售汇总"工作表中，D5|D55|D125|D215|D335单元格内容错误（标准答案：Dell Vostro 5480R-3528SS 14英寸笔记本电脑 银色|ChangHong KFR-23GW/DHT1(W1-G)+T空调|sigma 家用除菌全自动滚筒干衣机|SIEMENS KG23N1116W冰箱|Galanz XQG60-A708 6公斤云滚筒洗衣机）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="年度销售汇总" SheetNameAlias="2" Row="E12|D52|E92|E120|E150|E260|E300|E370"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[空调|Sharp LCD-40DS30A平板电视|热水器|冰箱|计算机|计算机|冰箱|空调]]></Value>
+                        <ValueDesc><![CDATA[在"年度销售汇总"工作表中，E12|D52|E92|E120|E150|E260|E300|E370单元格内容错误（标准答案：空调|Sharp LCD-40DS30A平板电视|热水器|冰箱|计算机|计算机|冰箱|空调）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="年度销售汇总" SheetNameAlias="2" Row="J2|J50|J111|J204|J306"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[5499|3149|5799|1718]]></Value>
+                        <ValueDesc><![CDATA[在"年度销售汇总"工作表中，J2|J50|J111|J204|J306单元格内容错误（标准答案：5499|3149|5799|1718）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="年度销售汇总" SheetNameAlias="2" Row="K5|K55|K125|K215|K335"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[83980|48250|46159|69975|48951]]></Value>
+                        <ValueDesc><![CDATA[在"年度销售汇总"工作表中，K5|K55|K125|K215|K335单元格内容错误（标准答案：83980|48250|46159|69975|48951）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="年度销售汇总" SheetNameAlias="2" Row="L12|L92|L150|L260|L300" Find="格式|0.00"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[93086.88|90246.00|27822.60|72987.12|51814.08]]></Value>
+                        <ValueDesc><![CDATA[在"年度销售汇总"工作表中，L12|L92|L150|L260|L300单元格内容错误（标准答案：93086.88|90246.00|27822.60|72987.12|51814.08）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="NumberFormatLst" PropKeyDesc="数字格式设置" SheetName="年度销售汇总" SheetNameAlias="2" Row="J10|K30|L50"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[#,##0.00_|#,##0.00_|#,##0.00_]]></Value>
+                        <ValueDesc><![CDATA[在"年度销售汇总"工作表中，单价、销售额和进货成本3列数字格式错误（标准答案：保留两位小数、使用千位分隔的数值格式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="ExcelTableStyle" PropKeyDesc="Excel风格" SheetName="年度销售汇总" SheetNameAlias="2" Row="A3" Range="L374"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[]]></Value>
+                        <ValueDesc><![CDATA[在"年度销售汇总"工作表中，为整个数据区域套用一个表格格式错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="ColWidth" PropKeyDesc="列宽" SheetName="年度销售汇总" SheetNameAlias="2" Row="D1" Range="D80"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[43]]></Value>
+                        <ValueDesc><![CDATA[在"年度销售汇总"工作表中，D列宽设置错误（标准答案：大于43）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">1</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FreezePanesPosition" PropKeyDesc="工作表冻结窗格" SheetName="年度销售汇总" SheetNameAlias="2" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[E4]]></Value>
+                        <ValueDesc><![CDATA[在"年度销售汇总"工作表中，锁定工作表的1-3行和A-D列，使之始终可见设置错误（标准答案：冻结拆分窗格位置E4）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings=":：">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="透视分析" Row="D3|C4|F4|I4|L4|N4|A5|B5" Find="显示换行|移除前后换行符"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[销售情况|1月|2月|3月|销售额\n（千元）汇总|毛利\n（千元）汇总|销售渠道|分部]]></Value>
+                        <ValueDesc><![CDATA[在"透视分析"工作表中，D3|C4|F4|I4|L4|N4|A5|B5单元格内容未设置换行显示]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="PivotMergeLabels" PropKeyDesc="合并且居中排列带标签的单元格" SheetName="透视分析" Find="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[在"透视分析"工作表中，数据透视表中未设置合并且居中排列带标签的单元格]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="透视分析" Row="A5|A6|A14" Find="格式|0.00"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[销售渠道|实体店|网店]]></Value>
+                        <ValueDesc><![CDATA[在"透视分析"工作表中，A5|A6|A14单元格的内容错误（标准答案：销售渠道|实体店|网店）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="PivotMergeLabels" PropKeyDesc="合并且居中排列带标签的单元格" SheetName="透视分析" Find="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[在"透视分析"工作表中，数据透视表中未设置合并且居中排列带标签的单元格]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="透视分析" Row="C6|D8|E10|F12|G14|K16|L18|M20|N22" Find="格式|0.00"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[955557.00|740053.33|96185.66|292724.00|52825.53|42893.04|485346.47|868770.98|1938743.93]]></Value>
+                        <Value><![CDATA[955557.00|652914.34|94698.44|317956.00|52825.53|59885.74|592138.00|362302.27|1938743.93]]></Value>
+                        <Value><![CDATA[867412.20|526058.56|96185.66|243979.00|15133.23|68733.23|485346.47|356682.67|1938743.93]]></Value>
+                        <ValueDesc><![CDATA[在"透视分析"工作表中，C6|D8|E10|F12|G14|K16|L18|M20|N22单元格的数字格式错误（标准答案：以千元为单位显示，且保留两位小数）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="PivotItemsVisible" PropKeyDesc="总计行" SheetName="透视分析" Find="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[商品类别]]></Value>
+                        <ValueDesc><![CDATA[在"透视分析"工作表中，报表筛选项字段错误（标准答案：商品类别）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="透视分析" Row="B6|B8|B11|B15|B17|B18" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[北京总公司|重庆分公司|上海分公司|长沙分公司|广州分公司|南宁分公司]]></Value>
+                        <Value><![CDATA[北京总公司|南宁分公司|郑州分公司|广州分公司|上海分公司|长沙分公司]]></Value>
+                        <ValueDesc><![CDATA[在"透视分析"工作表中，B列的分部名称按汉字的字母顺序升序排列错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="FindNumberFormatLst" PropKeyDesc="数字格式设置" SheetName="透视分析" SheetNameAlias="3" Row="C6|D7|E8|F9|G10|H11|I12|J13|K15|L17|M19|N22" Find="0.00,"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True|True|True|True|True|True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"透视分析"工作表中，C6|D7|E8|F9|G10|H11|I12|J13|K15|L17|M19|N22单元格的数字格式错误（标准答案：以千元为单位显示，且保留两位小数）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="单元格的值" SheetName="透视分析" SheetNameAlias="3" Row="G10|I13|K17|M22"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[207.22|2472.92|31.64|11301.62]]></Value>
+                        <Value><![CDATA[137.68|2472.92|26.60|11301.62]]></Value>
+                        <ValueDesc><![CDATA[在"透视分析"工作表中，G10|I13|K17|M22单元格的内容错误（标准答案：207.22|2472.92|31.64|11301.62或137.68|2472.92|26.60|11301.62）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="[]()!,-">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="PivotTableStyle" PropKeyDesc="表格样式" SheetName="透视分析" SheetNameAlias="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[]]></Value>
+                        <ValueDesc><![CDATA[在"透视分析"工作表中，未适当改变透视表样式]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

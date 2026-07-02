@@ -1,0 +1,632 @@
+<QuestItem QuestCode="XXXXXXX" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Excel.xlsx" ParseType="1" OfficeType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="各省市选票抽样率" SheetNameAlias="8" Row="B4|B17|B24|B31"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[4998759|11122455|1783352|7114]]></Value>
+                        <ValueDesc><![CDATA[在"各省市选票抽样率"工作表中，B4|B17|B24|B31单元格内容错误（标准答案：4998759|11122455|1783352|7114）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="各省市选票抽样率" SheetNameAlias="8" Row="C4|C17|C24|C31"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[97813|153415|64385|4000]]></Value>
+                        <ValueDesc><![CDATA[在"各省市选票抽样率"工作表中，C4|C17|C24|C31单元格内容错误（标准答案：97813|153415|64385|4000）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="各省市选票抽样率" SheetNameAlias="8" Row="D4|D17|D24|D31" Find="格式|0.000000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0.019567|0.013793|0.036103|0.562272]]></Value>
+                        <ValueDesc><![CDATA[在"各省市选票抽样率"工作表中，D4|D17|D24|D31单元格内容错误（标准答案：0.019567|0.013793|0.036103|0.562272）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格" WepType="Table">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="ExcelTableStyle" PropKeyDesc="表格样式" SheetName="各省市选票抽样率" FindTableIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[]]></Value>
+                        <ValueDesc><![CDATA[在"各省市选票抽样率"工作表中，设置一个美观的表样式错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsFormatConditionsFormula" PropKeyDesc="格式条件公式" SheetName="各省市选票抽样率" SheetNameAlias="8" Row="D2" Range="D32"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0]]></Value>
+                        <ValueDesc><![CDATA[在"各省市选票抽样率"工作表中，D2:D32单元格中条件格式设置错误（标准答案：有条件格式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="1">1</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsEqualsTwoFillDisplayFormat" PropKeyDesc="显示格式" SheetName="各省市选票抽样率" SheetNameAlias="8" Row="D15" Range="D13"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[False]]></Value>
+                        <ValueDesc><![CDATA[在"各省市选票抽样率"工作表中，以三种不同的字体颜色和单元格底纹在"抽样率"列分别标记出最高值、最低值和高于平均抽样率值的单元格--设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsEqualsTwoFillDisplayFormat" PropKeyDesc="显示格式" SheetName="各省市选票抽样率" SheetNameAlias="8" Row="D15" Range="B15"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[False]]></Value>
+                        <ValueDesc><![CDATA[在"各省市选票抽样率"工作表中，以三种不同的字体颜色和单元格底纹在"抽样率"列分别标记出最高值、最低值和高于平均抽样率值的单元格--设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsFormatConditionsFormula" PropKeyDesc="格式条件公式" SheetName="各省市选票抽样率" SheetNameAlias="8" Row="D2" Range="D32"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0]]></Value>
+                        <ValueDesc><![CDATA[在"各省市选票抽样率"工作表中，D2:D32单元格中条件格式设置错误（标准答案：有条件格式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="1">1</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsEqualsTwoFillDisplayFormat" PropKeyDesc="显示格式" SheetName="各省市选票抽样率" SheetNameAlias="8" Row="D22" Range="B22"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[False]]></Value>
+                        <ValueDesc><![CDATA[在"各省市选票抽样率"工作表中，以三种不同的字体颜色和单元格底纹在"抽样率"列分别标记出最高值、最低值和高于平均抽样率值的单元格--设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsEqualsTwoFillDisplayFormat" PropKeyDesc="显示格式" SheetName="各省市选票抽样率" SheetNameAlias="8" Row="D30" Range="B30"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[False]]></Value>
+                        <ValueDesc><![CDATA[在"各省市选票抽样率"工作表中，以三种不同的字体颜色和单元格底纹在"抽样率"列分别标记出最高值、最低值和高于平均抽样率值的单元格--设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsFormatConditionsFormula" PropKeyDesc="格式条件公式" SheetName="各省市选票抽样率" SheetNameAlias="8" Row="D2" Range="D32"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0]]></Value>
+                        <ValueDesc><![CDATA[在"各省市选票抽样率"工作表中，D2:D32单元格中条件格式设置错误（标准答案：有条件格式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="1">1</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsEqualsTwoFillDisplayFormat" PropKeyDesc="显示格式" SheetName="各省市选票抽样率" SheetNameAlias="8" Row="D12" Range="B12"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[False]]></Value>
+                        <ValueDesc><![CDATA[在"各省市选票抽样率"工作表中，以三种不同的字体颜色和单元格底纹在"抽样率"列分别标记出最高值、最低值和高于平均抽样率值的单元格--设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsEqualsTwoFillDisplayFormat" PropKeyDesc="显示格式" SheetName="各省市选票抽样率" SheetNameAlias="8" Row="D27" Range="B27"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[False]]></Value>
+                        <ValueDesc><![CDATA[在"各省市选票抽样率"工作表中，以三种不同的字体颜色和单元格底纹在"抽样率"列分别标记出最高值、最低值和高于平均抽样率值的单元格--设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="候选人得票情况" SheetNameAlias="9" Row="B8|B27|B56|B65"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[王燕娜|李丽|黄久生|德央]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票情况"工作表中，B8|B27|B56|B65单元格内容错误（标准答案：王燕娜|李丽|黄久生|德央）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="候选人得票情况" SheetNameAlias="9" Row="AH8|AH27|AH56|AH65"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[16974|9453|105561|10491]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票情况"工作表中，AH8|AH27|AH56|AH65单元格内容错误（标准答案：16974|9453|105561|10491）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="候选人得票情况" SheetNameAlias="9" Row="J8|J37|J42|J49"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[13|15|9|6]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票情况"工作表中，J8|J37|J42|J49单元格内容错误（标准答案：13|15|9|6）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="候选人得票情况" SheetNameAlias="9" Row="N6|N28|N46|N58"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[48|53|58|128]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票情况"工作表中，N6|N28|N46|N58单元格内容错误（标准答案：48|53|58|128）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="候选人得票情况" SheetNameAlias="9" Row="R8|R18|R48|R58"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1620|1178|561|1273]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票情况"工作表中，R8|R18|R48|R58单元格内容错误（标准答案：1620|1178|561|1273）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="候选人得票情况" SheetNameAlias="9" Row="V7|V12|V36|V52"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[41|12|31|27]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票情况"工作表中，V7|V12|V36|V52单元格内容错误（标准答案：41|12|31|27）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="候选人得票情况" SheetNameAlias="9" Row="AA9|AA19|AA39|AA59"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[271|213|157|282]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票情况"工作表中，AA9|AA19|AA39|AA59单元格内容错误（标准答案：271|213|157|282）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="候选人得票情况" SheetNameAlias="9" Row="AF6|AF16|AF28|AF57"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[95|49|53|82]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票情况"工作表中，AA9|AA19|AA39|AA59单元格内容错误（标准答案：95|49|53|82）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FreezePanesPosition" PropKeyDesc="冻结窗格" SheetName="候选人得票情况" SheetNameAlias="9" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[C3]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票情况"工作表中，锁定工作表的前两行和前两列设置错误（标准答案：冻结前两行和前两列C3）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings=":：">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="HasFormulaLst" PropKeyDesc="单元格是否有公式" SheetName="候选人得票情况" SheetNameAlias="9" Row="AI26|AI45|AI53|AI62"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票情况"工作表中，AI26|AI45|AI53|AI62利用公式计算各候选人的得票数排名错误（标准答案：有公式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="候选人得票情况" SheetNameAlias="9" Row="AI26|AI45|AI53|AI62|AI1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[64|5|23|36|排名]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票情况"工作表中，AI26|AI45|AI53|AI62|AI1单元格计算错误（标准答案：64|5|23|36|排名）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="候选人得票率" SheetNameAlias="10" Row="C1|AH1|AH2|AI1|AI2"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[候选人在各地区的得票率||总得票率|得票率最高的地区]]></Value>
+                        <Value><![CDATA[候选人在各地区的得票率|总得票率||得票率最高的地区]]></Value>
+                        <Value><![CDATA[候选人在各地区的得票率|总得票率|||得票率最高的地区]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，C1|AH1|AH2|AI1|AI2单元格计算错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="HasFormulaLst" PropKeyDesc="单元格是否有公式" SheetName="候选人得票率" SheetNameAlias="10" Row="J8|J37|J42|J49"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，J8|J37|J42|J49单元格计算错误（标准答案：有公式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="候选人得票率" SheetNameAlias="10" Row="J8|J37|J42|J49" Find="格式|0.00000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0.00763|0.00880|0.00528|0.00352]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，J8|J37|J42|J49单元格计算错误（标准答案：0.00763|0.00880|0.00528|0.00352）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="HasFormulaLst" PropKeyDesc="单元格是否有公式" SheetName="候选人得票率" SheetNameAlias="10" Row="N6|N28|N46|N58"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，N6|N28|N46|N58单元格计算错误（标准答案：有公式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="候选人得票率" SheetNameAlias="10" Row="N6|N28|N46|N58" Find="格式|0.00000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0.00623|0.00688|0.00753|0.01662]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，N6|N28|N46|N58单元格计算错误（标准答案：0.00623|0.00688|0.00753|0.01662）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="HasFormulaLst" PropKeyDesc="单元格是否有公式" SheetName="候选人得票率" SheetNameAlias="10" Row="R8|R18|R48|R58"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，R8|R18|R48|R58单元格计算错误（标准答案：有公式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="候选人得票率" SheetNameAlias="10" Row="R8|R18|R48|R58" Find="格式|0.00000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0.02652|0.01928|0.00918|0.02084]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，R8|R18|R48|R58单元格计算错误（标准答案：0.02652|0.01928|0.00918|0.02084）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="HasFormulaLst" PropKeyDesc="单元格是否有公式" SheetName="候选人得票率" SheetNameAlias="10" Row="V7|V12|V36|V52"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，V7|V12|V36|V52单元格计算错误（标准答案：有公式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="候选人得票率" SheetNameAlias="10" Row="V7|V12|V36|V52" Find="格式|0.00000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0.01025|0.00300|0.00775|0.00675]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，V7|V12|V36|V52单元格计算错误（标准答案：0.01025|0.00300|0.00775|0.00675）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="HasFormulaLst" PropKeyDesc="单元格是否有公式" SheetName="候选人得票率" SheetNameAlias="10" Row="AA9|AA19|AA39|AA59"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，AA9|AA19|AA39|AA59单元格计算错误（标准答案：有公式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="候选人得票率" SheetNameAlias="10" Row="AA9|AA19|AA39|AA59" Find="格式|0.00000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0.01495|0.01175|0.00866|0.01556]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，AA9|AA19|AA39|AA59单元格计算错误（标准答案：0.01495|0.01175|0.00866|0.01556）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="HasFormulaLst" PropKeyDesc="单元格是否有公式" SheetName="候选人得票率" SheetNameAlias="10" Row="AH6|AH16|AH28|AH57"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，AH6|AH16|AH28|AH57单元格计算错误（标准答案：有公式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="候选人得票率" SheetNameAlias="10" Row="AH6|AH16|AH28|AH57" Find="格式|0.00000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0.01319|0.02141|0.02195|0.02266]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，AH6|AH16|AH28|AH57单元格计算错误（标准答案：0.01319|0.02141|0.02195|0.02266）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.25">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="候选人得票率" SheetNameAlias="10" Row="AI4"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[安徽]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，AI4单元格计算错误（标准答案：安徽）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.25">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="候选人得票率" SheetNameAlias="10" Row="AI14"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[江西]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，AI14单元格计算错误（标准答案：江西）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.25">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="候选人得票率" SheetNameAlias="10" Row="AI20"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[福建]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，AI20单元格计算错误（标准答案：福建）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.25">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="候选人得票率" SheetNameAlias="10" Row="AI24"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[吉林]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，AI24单元格计算错误（标准答案：吉林）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.25">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="候选人得票率" SheetNameAlias="10" Row="AI34"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[江苏]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，AI34单元格计算错误（标准答案：江苏）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.25">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="候选人得票率" SheetNameAlias="10" Row="AI42"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[四川]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，AI42单元格计算错误（标准答案：四川）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.25">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="候选人得票率" SheetNameAlias="10" Row="AI52"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[重庆]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，AI52单元格计算错误（标准答案：重庆）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.25">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="候选人得票率" SheetNameAlias="10" Row="AI65"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[西藏]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，AI65单元格计算错误（标准答案：西藏）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="IsFormatConditionsFormula" PropKeyDesc="格式条件公式" SheetName="候选人得票率" SheetNameAlias="10" Row="C19" Range="AG19"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，突出显示每个候选人得票率最高的两个地区条件格式设置错误（标准答案：第19行有条件格式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">1</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="IsFormatConditionsFormula" PropKeyDesc="格式条件公式" SheetName="候选人得票率" SheetNameAlias="10" Row="C24" Range="AG24"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，突出显示每个候选人得票率最高的两个地区条件格式设置错误（标准答案：第24行有条件格式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">1</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="IsFormatConditionsFormula" PropKeyDesc="格式条件公式" SheetName="候选人得票率" SheetNameAlias="10" Row="C56" Range="AG56"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，突出显示每个候选人得票率最高的两个地区条件格式设置错误（标准答案：第56行有条件格式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">1</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="CellDisplayFormat_ColorLst" PropKeyDesc="显示颜色" SheetName="候选人得票率" SheetNameAlias="10" Row="W19|X19|F20|Q24|M56|X56|E52"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[65535|65535|65535|65535|65535|65535|65535]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，突出显示每个候选人得票率最高的两个地区条件格式设置错误（标准答案：W19|X19|F20|Q24|M56|X56|E52单元格为黄色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="CellDisplayFormat_FillColorLst" PropKeyDesc="显示填充颜色" SheetName="候选人得票率" SheetNameAlias="10" Row="W19|X19|F20|Q24|M56|X56|E52"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255|255|255|255|255|255|255]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，突出显示每个候选人得票率最高的两个地区条件格式设置错误（标准答案：W19|X19|F20|Q24|M56|X56|E52单元格为红色背景色填充）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FindNumberFormatLst" PropKeyDesc="数字格式设置" SheetName="候选人得票率" SheetNameAlias="10" Row="J4|N7|R8|V10|AF36|AH47" Find="0.00%"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，J4|N7|R8|V10|AF36|AH47数据格式设置错误（标准答案：百分比样式，并保留2位小数）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="_&quot;">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="单元格的值" SheetName="候选人得票率" SheetNameAlias="10" Row="J4|N7|R8|V10|AF36|AH47"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0.00%|0.78%|2.65%|0.75%|10.24%|0.89%]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，J4|N7|R8|V10|AF36|AH47数据格式设置错误（标准答案：0.00%|0.78%|2.65%|0.75%|10.24%|0.89%）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncWordStrings="市">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="3" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="ChartType" PropKeyDesc="图表类型" SheetName="候选人得票率" FndChartIndex="1" SheetNameAlias="10" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlColumnClustered]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，图表类型设置错误（标准答案：二维柱状图）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="SeriesPointsDataLabelStyle" PropKeyDesc="显示数据标签" SheetName="候选人得票率" FndChartIndex="1" PointsFormat="值" SheetNameAlias="10" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，图表数据标签设置错误（标准答案：显示值）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="SeriesPointsDataLabelStyle" PropKeyDesc="显示数据标签" SheetName="候选人得票率" FndChartIndex="1" PointsFormat="标签位置" SheetNameAlias="10" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[数据标签外]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，图表数据标签位置设置错误（标准答案：数据标签外）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="SeriesName" PropKeyDesc="系列名称" SheetName="候选人得票率" FndChartIndex="1" Find_SeriesIndex="1" SheetNameAlias="10" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[总得票率]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，图表系列名称设置错误（标准答案：总得票率）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="SeriesXValues" PropKeyDesc="图表值" SheetName="候选人得票率" FndChartIndex="1" Find_SeriesIndex="1" SheetNameAlias="10" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[徐进仓,徐茂,袁茵,康金环,黄一志]]></Value>
+                        <ValueDesc><![CDATA[在"候选人得票率"工作表中，图表行值设置错误（标准答案：徐进仓,徐茂,袁茵,康金环,黄一志）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

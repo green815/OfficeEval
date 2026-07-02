@@ -1,0 +1,496 @@
+<QuestItem QuestCode="XXXX" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Word.docx" OfficeType="1" ParseType="1">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="PageNums" PropKeyDesc="文档页数"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1]]></Value>
+                        <ValueDesc>页面数量设置错误，应设置为1</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="1">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="PaperSize" PropKeyDesc="纸张大小(WdPaperSize常量)"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdPaperA4]]></Value>
+                        <ValueDesc>纸张大小设置错误，应设置为A4</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="Page_MarginCm" PropKeyDesc="页面边距(单位:厘米)"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2.5 2.5 3.2 3.2]]></Value>
+                        <ValueDesc>页边距设置错误，应设置上、下为2.5厘米，左、右为3.2厘米</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="形状" WepType="Shape">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.7">
+                    <FindParams PropKey="FillForeColor" PropKeyDesc="形状填充前景色" ShapeNum="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[49407]]></Value>
+                        <ValueDesc>插入橙色矩形设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="形状" WepType="Shape">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.8">
+                    <FindParams PropKey="FillForeColor" PropKeyDesc="形状填充前景色" ShapeNum="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[16777215]]></Value>
+                        <ValueDesc>插入白色矩形设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="形状" WepType="Shape">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="ShapeWidth_CM" PropKeyDesc="形状宽度(单位：厘米)" ShapeNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[15]]></Value>
+                        <ValueDesc>橙色矩形占满A4幅面设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">2</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="ShapeWidth_CM" PropKeyDesc="形状宽度(单位：厘米)" ShapeNum="2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[15]]></Value>
+                        <ValueDesc>橙色矩形占满A4幅面设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">2</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="形状" WepType="Shape">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="ShapeHeight_CM" PropKeyDesc="形状高度(单位：厘米)" ShapeNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[24.5]]></Value>
+                        <ValueDesc>橙色矩形占满A4幅面设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">2</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="ShapeHeight_CM" PropKeyDesc="形状高度(单位：厘米)" ShapeNum="2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[24.5]]></Value>
+                        <ValueDesc>橙色矩形占满A4幅面设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">2</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="文档查找与替换" WepType="TextFrameFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ShapeFillForeColor" PropKeyDesc="文本框填充前景色" Find_TextFrameNum="-1" Count="1" Find="实习经验"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[49407]]></Value>
+                        <ValueDesc>插入橙色圆角矩形并加文字"实习经验"设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="AutoShapeType" PropKeyDesc="文本框的图形类型" Find_TextFrameNum="-1" Count="1" Find="实习经验"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[msoShapeRoundedRectangle]]></Value>
+                        <ValueDesc>插入橙色圆角矩形并添加文字"实习经验"设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="形状" WepType="Shape">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="AutoShapeType_LineDashStyle" PropKeyDesc="图形类型和线条的虚线样式" ShapeNum="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[msoShapeRoundedRectangle_msoLineDash]]></Value>
+                        <ValueDesc>插入短划线的虚线圆角矩形框设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="形状" WepType="Shape">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1.5">
+                    <FindParams PropKey="AutoShapeType_FillForeColor" PropKeyDesc="图形类型和线条的虚线样式" ShapeNum="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[msoShapeUpArrow_49407]]></Value>
+                        <ValueDesc>插入橙色箭头设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="文档查找与替换" WepType="TextFrameFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="Points" PropKeyDesc="文本框中字体大小" Find_TextFrameNum="-1" Count="1" Find="张静"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[20]]></Value>
+                        <ValueDesc>"张静"字号设置错误，应设置为大于等于20</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">2</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="文档查找与替换" WepType="TextFrameFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1.5">
+                    <FindParams PropKey="FontColor" PropKeyDesc="文本框中字体颜色" Find_TextFrameNum="-1" Count="1" Find="张静"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[49407]]></Value>
+                        <ValueDesc>"张静"字体颜色设置错误，应设置为橙色</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="文档查找与替换" WepType="TextFrameFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="Points" PropKeyDesc="文本框中字体大小" Find_TextFrameNum="-1" Count="1" Find="武汉大学"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[22]]></Value>
+                        <ValueDesc>"武汉大学"字号设置错误，应设置为小于等于22</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">4</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="文档查找与替换" WepType="TextFrameFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="Points" PropKeyDesc="文本框中字体大小" Find_TextFrameNum="-1" Count="1" Find="QQ"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[22]]></Value>
+                        <ValueDesc>"QQ"字号设置错误，应设置为小于等于22</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">4</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="文档查找与替换" WepType="TextFrameFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="Points" PropKeyDesc="文本框中字体大小" Find_TextFrameNum="-1" Count="1" Find="促销活动分析"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[12]]></Value>
+                        <ValueDesc>"促销活动分析"字号设置错误，应设置为大于12</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">1</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="文档查找与替换" WepType="TextFrameFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="IsExists" PropKeyDesc="指定文本框是否存在" Find_TextFrameNum="-1" Count="1" Find="2012.10-2012.12"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc>未找到文本框"2012.10-2012.12"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="文档查找与替换" WepType="TextFrameFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="ParaNumberStyle" PropKeyDesc="文本框中编号样式" Find_TextFrameNum="-1" Count="1" Para="-1" Find="促销活动分析"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdListNumberStyleBullet]]></Value>
+                        <ValueDesc>"促销活动分析"自动编号样式未设置与示例相同</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="SmartArt图形" WepType="SmartArt">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="IsExistsSmartArt" PropKeyDesc="SmartArt是否存在" SmartArtNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc>未找到SmartArt图形</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="SmartArt图形" WepType="SmartArt">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="SmartArtLayout" PropKeyDesc="SmartArt布局名称" SmartArtNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[步骤上移流程]]></Value>
+                        <ValueDesc>SmartArt布局设置错误，应设置为步骤上移流程</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="SmartArt图形" WepType="SmartArt">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="3">
+                    <FindParams PropKey="SmartArtColor" PropKeyDesc="SmartArt颜色样式名称" SmartArtNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[彩色填充 - 个性色 2]]></Value>
+                        <ValueDesc>SmartArt颜色设置错误，应设置为彩色填充 - 个性色 2</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="SmartArt图形" WepType="SmartArt">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SmartArtNodeFindSubTextColor" PropKeyDesc="查找SmartArt子节点并获取文本颜色" SmartArtNum="1" SmartArtNodeNum="1" Find="?"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255]]></Value>
+                        <ValueDesc>"五角星"颜色设置错误，应设置为标准色红色</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SmartArtNodeFindSubTextColor" PropKeyDesc="查找SmartArt子节点并获取文本颜色" SmartArtNum="1" SmartArtNodeNum="1" Find="★"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255]]></Value>
+                        <ValueDesc>"五角星"颜色设置错误，应设置为标准色红色</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SmartArtNodeFindSubTextColor" PropKeyDesc="查找SmartArt子节点并获取文本颜色" SmartArtNum="1" SmartArtNodeNum="1" Find="?"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255]]></Value>
+                        <ValueDesc>"五角星"颜色设置错误，应设置为标准色红色</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SmartArtNodeFindSubTextColor" PropKeyDesc="查找SmartArt子节点并获取文本颜色" SmartArtNum="1" SmartArtNodeNum="1" Find="?"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255]]></Value>
+                        <ValueDesc>"五角星"颜色设置错误，应设置为标准色红色</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SmartArtNodeFindSubTextColor" PropKeyDesc="查找SmartArt子节点并获取文本颜色" SmartArtNum="1" SmartArtNodeNum="1" Find="?"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255]]></Value>
+                        <ValueDesc>"五角星"颜色设置错误，应设置为标准色红色</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="SmartArt图形" WepType="SmartArt">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SmartArtNodeFindSubTextColor" PropKeyDesc="查找SmartArt子节点并获取文本颜色" SmartArtNum="1" SmartArtNodeNum="2" Find="★"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255]]></Value>
+                        <ValueDesc>"五角星"颜色设置错误，应设置为标准色红色</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SmartArtNodeFindSubTextColor" PropKeyDesc="查找SmartArt子节点并获取文本颜色" SmartArtNum="1" SmartArtNodeNum="2" Find="?"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255]]></Value>
+                        <ValueDesc>"五角星"颜色设置错误，应设置为标准色红色</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SmartArtNodeFindSubTextColor" PropKeyDesc="查找SmartArt子节点并获取文本颜色" SmartArtNum="1" SmartArtNodeNum="2" Find="?"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255]]></Value>
+                        <ValueDesc>"五角星"颜色设置错误，应设置为标准色红色</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SmartArtNodeFindSubTextColor" PropKeyDesc="查找SmartArt子节点并获取文本颜色" SmartArtNum="1" SmartArtNodeNum="2" Find="?"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255]]></Value>
+                        <ValueDesc>"五角星"颜色设置错误，应设置为标准色红色</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SmartArtNodeFindSubTextColor" PropKeyDesc="查找SmartArt子节点并获取文本颜色" SmartArtNum="1" SmartArtNodeNum="2" Find="?"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255]]></Value>
+                        <ValueDesc>"五角星"颜色设置错误，应设置为标准色红色</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="SmartArt图形" WepType="SmartArt">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SmartArtNodeFindSubTextColor" PropKeyDesc="查找SmartArt子节点并获取文本颜色" SmartArtNum="1" SmartArtNodeNum="3" Find="★"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255]]></Value>
+                        <ValueDesc>"五角星"颜色设置错误，应设置为标准色红色</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SmartArtNodeFindSubTextColor" PropKeyDesc="查找SmartArt子节点并获取文本颜色" SmartArtNum="1" SmartArtNodeNum="3" Find="?"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255]]></Value>
+                        <ValueDesc>"五角星"颜色设置错误，应设置为标准色红色</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SmartArtNodeFindSubTextColor" PropKeyDesc="查找SmartArt子节点并获取文本颜色" SmartArtNum="1" SmartArtNodeNum="3" Find="?"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255]]></Value>
+                        <ValueDesc>"五角星"颜色设置错误，应设置为标准色红色</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SmartArtNodeFindSubTextColor" PropKeyDesc="查找SmartArt子节点并获取文本颜色" SmartArtNum="1" SmartArtNodeNum="3" Find="?"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255]]></Value>
+                        <ValueDesc>"五角星"颜色设置错误，应设置为标准色红色</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SmartArtNodeFindSubTextColor" PropKeyDesc="查找SmartArt子节点并获取文本颜色" SmartArtNum="1" SmartArtNodeNum="3" Find="?"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255]]></Value>
+                        <ValueDesc>"五角星"颜色设置错误，应设置为标准色红色</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="SmartArt图形" WepType="SmartArt">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SmartArtNodeFindSubTextColor" PropKeyDesc="查找SmartArt子节点并获取文本颜色" SmartArtNum="1" SmartArtNodeNum="4" Find="★"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255]]></Value>
+                        <ValueDesc>"五角星"颜色设置错误，应设置为标准色红色</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SmartArtNodeFindSubTextColor" PropKeyDesc="查找SmartArt子节点并获取文本颜色" SmartArtNum="1" SmartArtNodeNum="4" Find="?"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255]]></Value>
+                        <ValueDesc>"五角星"颜色设置错误，应设置为标准色红色</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SmartArtNodeFindSubTextColor" PropKeyDesc="查找SmartArt子节点并获取文本颜色" SmartArtNum="1" SmartArtNodeNum="1" Find="?"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255]]></Value>
+                        <ValueDesc>"五角星"颜色设置错误，应设置为标准色红色</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SmartArtNodeFindSubTextColor" PropKeyDesc="查找SmartArt子节点并获取文本颜色" SmartArtNum="1" SmartArtNodeNum="1" Find="?"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255]]></Value>
+                        <ValueDesc>"五角星"颜色设置错误，应设置为标准色红色</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SmartArtNodeFindSubTextColor" PropKeyDesc="查找SmartArt子节点并获取文本颜色" SmartArtNum="1" SmartArtNodeNum="1" Find="?"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255]]></Value>
+                        <ValueDesc>"五角星"颜色设置错误，应设置为标准色红色</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+    <ScorePointGroup FileName="Word.docx" OfficeType="1" ParseType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="文档查找与替换" WepType="TextFrameFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2.5">
+                    <FindParams PropKey="PresetTextWrap" PropKeyDesc="预设扭曲形状" Find="寻求能够不断学习进步"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[textArchUp]]></Value>
+                        <ValueDesc>"寻求能够不断学习进步"  艺术字效果设置错误，应设置为"上弯弧"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图片格式" WepType="FormatPicture">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="3">
+                    <FindParams PropKey="PictureCount" PropKeyDesc="获取文档图片个数"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[4]]></Value>
+                        <ValueDesc>文档中图片数量错误，应为4张图片</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

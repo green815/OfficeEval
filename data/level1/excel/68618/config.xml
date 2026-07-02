@@ -1,0 +1,327 @@
+<QuestItem QuestCode="XXXXXXX" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Excel.xlsx" ParseType="1" OfficeType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="MergeCells" PropKeyDesc="合并单元格"  SheetName="学生选课成绩表" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[工作表【学生选课成绩表】合并单元格错误，应将A1:E1合并成一个单元格]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Alignment" PropKeyDesc="段落的对齐方式(WdParagraphAlignment常量)"  SheetName="学生选课成绩表" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[-4108]]></Value>
+                        <ValueDesc><![CDATA[工作表【学生选课成绩表】A1:E1单元格对齐方式设置错误，应设置为水平居中]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="3" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值"  SheetName="学生选课成绩表" Row="D8|D14|D20|D28" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[RJ1702|RJ1701|RJ1702|WL1701]]></Value>
+                        <ValueDesc><![CDATA[【学生选课成绩表】利用VLOOKUP函数计算班级列D3:D34错误（抽查D8|D14|D20|D28的正确值是RJ1702|RJ1701|RJ1702|WL1701）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="FindFormulaLst" PropKeyDesc="公式查找"  SheetName="学生选课成绩表" Row="D8|D14|D20|D28" Find="VLOOKUP"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[【学生选课成绩表】计算班级列D3:D34公式设置错误，公式中应包含VLOOKUP]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="3" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值"  SheetName="学生选课成绩表" Row="E4|E7|E20|E33" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[A|B|F|F]]></Value>
+                        <ValueDesc><![CDATA[【学生选课成绩表】利用IF函数计算成绩等级E3:E34错误（抽查E4|E7|E20|E33的正确值是A|B|F|F）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="FindFormulaLst" PropKeyDesc="公式查找"  SheetName="学生选课成绩表" Row="E4|E7|E20|E33" Find="IF"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[【学生选课成绩表】计算成绩等级E3:E34公式错误，公式中应包含IF]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值"  SheetName="学生选课成绩表" Row="H11|H12|H13|H14" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[84|78|78|76]]></Value>
+                        <ValueDesc><![CDATA[【学生选课成绩表】利用AVERAGEIF计算平均成绩置于H11:H14错误（抽查H11|H12|H13|H14的正确值是84|78|78|76）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="FindFormulaLst" PropKeyDesc="公式查找"  SheetName="学生选课成绩表" Row="H11|H12|H13|H14" Find="AVERAGEIF"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[【学生选课成绩表】平均成绩H11:H14公式设置错误，公式中应包含AVERAGEIF]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值"  SheetName="学生选课成绩表" Row="H19|H21|H23" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[5|5|6]]></Value>
+                        <ValueDesc><![CDATA[【学生选课成绩表】利用COUNTIF计算各班级选课人数H18:H23错误（抽查H19|H21|H23的值是5|5|6）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="FindFormulaLst" PropKeyDesc="公式查找"  SheetName="学生选课成绩表" Row="H19|H21|H23" Find="COUNTIF"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True]]></Value>
+                        <ValueDesc><![CDATA[【学生选课成绩表】各班级选课人数H18:H23公式错误，公式中应包含COUNTIF]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="条件格式" WepType="FormatCondition">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="FormatConditionsFormula" PropKeyDesc="条件格式值" SheetName="学生选课成绩表" Row="E3" Range="E34"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA["A"]]></Value>
+                        <ValueDesc><![CDATA[【学生选课成绩表】E3:E34条件格式设置错误(条件格式的条件是成绩等级列内容为"A"单元格)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="FormatConditionsInteriorColor" PropKeyDesc="条件格式填充颜色" SheetName="学生选课成绩表" Row="G3" Range="E34"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[13561798]]></Value>
+                        <ValueDesc><![CDATA[【学生选课成绩表】E3:E34条件格式设置错误，应设置绿填充色深绿色文本]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="条件格式" WepType="FormatCondition">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="FormatConditionsFormula" PropKeyDesc="条件格式值" SheetName="学生选课成绩表" Row="E3" Range="E34"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA["B"]]></Value>
+                        <ValueDesc><![CDATA[【学生选课成绩表】E3:E34条件格式设置错误(条件格式的条件是成绩等级列内容为"B"单元格)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="FormatConditionsInteriorColor" PropKeyDesc="条件格式填充颜色" SheetName="学生选课成绩表" Row="G3" Range="E34"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[13551615]]></Value>
+                        <ValueDesc><![CDATA[【学生选课成绩表】E3:E34条件格式填充颜色设置错误，应设置为"浅红填充色深红色文本"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="ChartType" PropKeyDesc="图表类型" SheetName="学生选课成绩表" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlBarClustered]]></Value>
+                        <ValueDesc><![CDATA[【学生选课成绩表】图表类型设置错误，应设置为"簇状条形图"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetChartDataRange" PropKeyDesc="图表数据源" SheetName="学生选课成绩表" FndChartIndex="1" Find_SeriesIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[G11:G14]]></Value>
+                        <ValueDesc><![CDATA[【学生选课成绩表】图表数据源设置错误，应选取课程号列G11:G14]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="$">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetChartDataRange" PropKeyDesc="图表数据源" SheetName="学生选课成绩表" FndChartIndex="1" Find_SeriesIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[H11:H14]]></Value>
+                        <ValueDesc><![CDATA[【学生选课成绩表】图表数据源选择错误，应选取平均成绩列H11:H14]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="$">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="SeriesXValues" PropKeyDesc="图表值" SheetName="学生选课成绩表" FndChartIndex="1" Find_SeriesIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[C01,C02,C03,C04]]></Value>
+                        <ValueDesc><![CDATA[【学生选课成绩表】图表行值选择错误，应选取C01、C02、C03、C04]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetChartTitle" PropKeyDesc="图表标题" SheetName="学生选课成绩表" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[平均成绩统计图]]></Value>
+                        <ValueDesc><![CDATA[【学生选课成绩表】图表标题设置错误，应设置为"平均成绩统计图"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetHasLegend" PropKeyDesc="图例放置的位置" SheetName="学生选课成绩表" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[]]></Value>
+                        <ValueDesc><![CDATA[【学生选课成绩表】布局样式设置错误，应选择("布局5")]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetHasDataLabel" PropKeyDesc="显示数据标签" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[False]]></Value>
+                        <ValueDesc><![CDATA[【学生选课成绩表】数据标签显示错误，应设置为不显示数据标签]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetTitleOverlay" PropKeyDesc="标题相对图表位置" SheetName="学生选课成绩表" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0]]></Value>
+                        <ValueDesc><![CDATA[【学生选课成绩表】图表标题位置错误，应设置标题在图表上方]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetDataTableShowType" PropKeyDesc="显示模拟运算表和图例项标示" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[显示模拟运算表和图例项标示]]></Value>
+                        <ValueDesc><![CDATA[【学生选课成绩表】未显示模拟运算表和图例项标示，应设置显示模拟运算表和图例项标示]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetChartStyle" PropKeyDesc="图表样式" SheetName="学生选课成绩表" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[221]]></Value>
+                        <ValueDesc><![CDATA[【学生选课成绩表】图表样式选择错误，应选择"样式6"修饰图表]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="ChartFill" PropKeyDesc="图表绘图区填充" SheetName="学生选课成绩表" FndChartIndex="1" SortIndexNum="0" Define1="系列：前景色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[5880731]]></Value>
+                        <ValueDesc><![CDATA[【学生选课成绩表】图表数据条颜色选择错误，应选择"单色-颜色7"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表标签" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Wookbook" PropKeyDesc="工作表" SheetName="学生选课成绩表" SheetNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[Sheet1工作表命名错误，应命名为"学生选课成绩表"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找数据" WepType="ParaFont">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="CriteriaRange" PropKeyDesc="条件区域设置" SheetName="图书销售统计表" SheetNameAlias="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[A1:G3]]></Value>
+                        <ValueDesc><![CDATA[【图书销售统计表】高级筛选条件区域设置错误，应选择A1:G3]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="AdvancedFiltCriteriaAll" PropKeyDesc="高级筛选条件" SheetName="图书销售统计表" SheetNameAlias="0" Define2="按列读取筛选条件"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[图书类别：农业科学^销售数量排名：<50]]></Value>
+                        <Value><![CDATA[销售数量排名：<50^图书类别：农业科学]]></Value>
+                        <ValueDesc><![CDATA[【图书销售统计表】高级筛选条件错误，应设置为："农业科学"类图书，并且销售数量排名小于50或者销售额排名小于50]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找数据" WepType="ParaFont">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1.5">
+                    <FindParams PropKey="AdvancedFiltCriteriaAll" PropKeyDesc="高级筛选条件" SheetName="图书销售统计表" SheetNameAlias="0" Define2="按列读取筛选条件"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[图书类别：农业科学^销售数量排名：<50]]></Value>
+                        <Value><![CDATA[销售数量排名：<50^图书类别：农业科学]]></Value>
+                        <ValueDesc><![CDATA[【图书销售统计表】高级筛选条件错误，应设置为："农业科学"类图书，并且销售数量排名小于50或者销售额排名小于50]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找数据" WepType="ParaFont">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1.5">
+                    <FindParams PropKey="AdvancedFiltCriteriaAll" PropKeyDesc="高级筛选条件" SheetName="图书销售统计表" SheetNameAlias="0" Define2="按列读取筛选条件"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[图书类别：农业科学^销售额排名：<50]]></Value>
+                        <Value><![CDATA[销售额排名：<50^图书类别：农业科学]]></Value>
+                        <ValueDesc><![CDATA[【图书销售统计表】高级筛选条件错误，应设置为："农业科学"类图书，并且销售数量排名小于50或者销售额排名小于50]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

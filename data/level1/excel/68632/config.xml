@@ -1,0 +1,312 @@
+<QuestItem QuestCode="A115047H004004_1504000047" SubjectType="MsOffice">
+    <ScorePointGroup FileName="EXCEL.XLSX" ParseType="1" OfficeType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="MergeCells" PropKeyDesc="获取工作表单元格区域是否是合并单元格" SheetName="Sheet1" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>True</Value>
+                        <ValueDesc><![CDATA[工作表【Sheet1】合并单元格A1:D1设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Alignment" PropKeyDesc="获取工作表单元格区域的水平对齐方式(XlHAlign枚举)" SheetName="Sheet1" Row="A1" Range="D1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>-4108</Value>
+                        <ValueDesc><![CDATA[工作表【Sheet1】A1:D1单元格内容水平居中设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="Sheet1" Row="C3|C6|C7|C10" Find="格式|0" Define1="VLOOKUP"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>2133E|1833Y|1721X|1936S</Value>
+                        <ValueDesc><![CDATA["Sheet1"工作表中C3|C6|C7|C10单元格使用公式计算错误（标准答案：公式为VLOOKUP，值为2133E|1833Y|1721X|1936S）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="Sheet1" Row="G4|G6|G7|G5" Find="格式|0" Define1="SUMIF"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>410|469|384|551</Value>
+                        <ValueDesc><![CDATA["Sheet1"工作表中G4|G6|G7|G5单元格使用公式计算错误（标准答案：公式为SUMIF，值为410|469|384|551）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="Sheet1" Row="H4|H6|H7|H5" Find="格式|0" Define1="IF"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>B |A|B |A</Value>
+                        <ValueDesc><![CDATA["Sheet1"工作表中H4|H6|H7|H5单元格使用公式计算错误（标准答案：公式为IF，值为B|A|B|A）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格" WepType="Table">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="ExcelTableStyle" PropKeyDesc="获取指定的对象序号的样式名称" SheetName="Sheet1" FindTableIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>表样式浅色 2</Value>
+                        <ValueDesc><![CDATA["Sheet1"工作表中表格样式应用错误（标准答案：表样式浅色2）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="条件格式" WepType="FormatCondition">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="FormatConditionsAttr" PropKeyDesc="获取指定格式条件的底纹图案颜色或样式" SheetName="Sheet1" Row="D3" Range="D36" Find_FormatConditionsIndex="1" Define1="底纹：图案颜色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>底纹图案颜色：3421846</Value>
+                        <ValueDesc><![CDATA["Sheet1"工作表中D3:D36单元格的条件格式设置错误（标准答案：填充的图案颜色为"红色、个性色2、深色25%"）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="条件格式" WepType="FormatCondition">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FormatConditionsAttr" PropKeyDesc="获取指定格式条件的底纹图案颜色或样式" SheetName="Sheet1" Row="D3" Range="D36" Find_FormatConditionsIndex="1" Define1="底纹：图案样式"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>底纹图案样式：17</Value>
+                        <ValueDesc><![CDATA["Sheet1"工作表中D3:D36单元格的条件格式设置错误（标准答案：填充的图案样式为"12.5%灰色"）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="ChartType" PropKeyDesc="获取图表类型(返回XlChartType枚举)" SheetName="sheet1" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>xlPie</Value>
+                        <ValueDesc><![CDATA["Sheet1"工作表中的图表类型设置错误（标准答案：饼图）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetChartDataRange" PropKeyDesc="获取图表中指定系列的引用公式" SheetName="Sheet1" FndChartIndex="1" Find_SeriesIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>=SERIES(产品销售统计表!$G$3,产品销售统计表!$F$4:$F$7,产品销售统计表!$G$4:$G$7,1)</Value>
+                        <ValueDesc><![CDATA["Sheet1"工作表中的图表数据源设置错误（标准答案：F3:F7和G3:G7）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="$">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetChartTitle" PropKeyDesc="获取图表的标题内容" SheetName="Sheet1" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>部门销售统计图</Value>
+                        <ValueDesc><![CDATA["Sheet1"工作表中的图表标题设置错误（标准答案：部门销售统计图）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SheetDynamic" PropKeyDesc="获取Sheet相关属性反射调用" SheetName="Sheet1" Find="格式|0" Define7="1|||" Define8="ChartObjects()|Chart|Legend|Name"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>图例</Value>
+                        <ValueDesc><![CDATA["Sheet1"工作表中的图表设置错误（标准答案：图例为"销售部门"）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetHasLegend" PropKeyDesc="获取图表的图例放置的位置" SheetName="Sheet1" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>xlLegendPositionBottom</Value>
+                        <ValueDesc><![CDATA["Sheet1"工作表中的图表设置错误（标准答案：图例位置靠下"）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetChartStyle" PropKeyDesc="获取图表样式" SheetName="Sheet1" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>344</Value>
+                        <ValueDesc><![CDATA["Sheet1"工作表中的图表设置错误（标准答案：图表样式为"样式12"）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SeriesPointsDataLabelStyle" PropKeyDesc="获取图表系列中的指定数据点的数据标签属性" SheetName="Sheet1" FndChartIndex="1" PointsFormat="百分比" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>True</Value>
+                        <ValueDesc><![CDATA["Sheet1"工作表中的图表设置错误（标准答案：数据标签包括值和百分比）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="SeriesPointsDataLabelStyle" PropKeyDesc="获取图表系列中的指定数据点的数据标签属性" SheetName="Sheet1" FndChartIndex="1" PointsFormat="值" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>True</Value>
+                        <ValueDesc><![CDATA["Sheet1"工作表中的图表设置错误（标准答案：数据标签包括值和百分比）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="SeriesPointsDataLabelStyle" PropKeyDesc="获取图表系列中的指定数据点的数据标签属性" SheetName="Sheet1" FndChartIndex="1" PointsFormat="标签位置" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>数据标签外</Value>
+                        <ValueDesc><![CDATA["Sheet1"工作表中的图表设置错误（标准答案：标签的位置为"数据标签外"）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="ChartRange" PropKeyDesc="获取图表存放的单元格区域" SheetName="销售情况统计表" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value>F10:I25</Value>
+                        <Value>E10:I25</Value>
+                        <ValueDesc><![CDATA["Sheet1"工作表中的图表位置设置错误（标准答案：F10:I25）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Wookbook" PropKeyDesc="指定工作表是否存在" SheetName="产品销售统计表" SheetNameAlias="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>true</Value>
+                        <ValueDesc><![CDATA[将sheet1工作表命名为"产品销售统计表"设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="PivotCustomAttr" PropKeyDesc="获取数据透视表的自定义属性" SheetName="图书销售情况表" ExcelFieldType="数据源：行" Range="A1:G81"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>行：图书类别</Value>
+                        <ValueDesc><![CDATA["图书销售情况表"中数据透视表设置错误（标准答案：行标签为"图书类别"）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncWordStrings="市">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="PivotCustomAttr" PropKeyDesc="获取数据透视表的自定义属性" SheetName="图书销售情况表" ExcelFieldType="数据源：列" Range="A1:G81"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>列：经销部门</Value>
+                        <ValueDesc><![CDATA["图书销售情况表"中数据透视表设置错误（标准答案：列标签为"经销部门"）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncWordStrings="市">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="PivotCustomAttr" PropKeyDesc="获取数据透视表的自定义属性" SheetName="图书销售情况表" ExcelFieldType="数据源：值" Range="A1:G81"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>值：销售额(元)</Value>
+                        <ValueDesc><![CDATA["图书销售情况表"中数据透视表设置错误（标准答案：求和值为"销售额（元）"）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncWordStrings="市">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="PivotTableStyle" PropKeyDesc="获取数据透视表样式的名称" SheetName="图书销售情况表" SheetNameAlias="4"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>数据透视表样式浅色 26</Value>
+                        <ValueDesc><![CDATA["图书销售情况表"中数据透视表设置错误（标准答案：样式为"数据透视表样式浅色26"）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="自定义" WepType="Custom">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams WepType="PivotTable" PropKey="IsExistPivotOfRange" PropKeyDesc="判断指定单元格区域内是否存在数据透视表" SheetName="图书销售情况表" PivotTablesNum="0" Range="H4:O13"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>True</Value>
+                        <ValueDesc><![CDATA["图书销售情况表"中数据透视表位置错误（标准答案：从I5开始）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncWordStrings="市">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

@@ -1,0 +1,499 @@
+<QuestItem QuestCode="XXXXXXX" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Word1.docx" OfficeType="1" ParseType="1">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-999" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKeyDesc="获取指定的属性" Define1="Paragraphs.Last.Range" Define2="get_Information(3)" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>2</Value>
+                        <ValueDesc>Word1.docx中页面数量错误，应设置为2页</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-999" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKeyDesc="获取指定的属性" Define1="Sections[1].PageSetup" Define2="RightMargin|LeftMargin|BottomMargin|TopMargin|PageHeight|PageWidth" Define3="TOCM|NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>3.0|3.0|5.0|5.0|35.0|27.0</Value>
+                        <ValueDesc>Word1.docx中页面属性设置错误，应设置页面高35厘米、宽27厘米；上下页边距均为5厘米，左右页边距均为3厘米</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="领慧讲堂" Define1="Style.NameLocal" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>标题</Value>
+                        <ValueDesc>Word1.docx中""领慧讲堂"就业讲座"的样式设置错误，应设置为"标题"样式</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WStyleFind" PropKeyDesc="获取样式对象的属性" Find="标题" Define1="Font" Define2="Name|Bold|Size|Color" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value>微软雅黑|-1|55|255|</Value>
+                        <Value>微软雅黑|-1|55|255</Value>
+                        <ValueDesc>将"样式.docx"中的"标题"样式复制到Word1.docx中设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WStyleFind" PropKeyDesc="获取样式对象的属性" Find="标题" Define1="Description" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>阴影</Value>
+                        <ValueDesc>将"样式.docx"中的"标题"样式复制到Word1.docx中设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WStyleFind" PropKeyDesc="获取样式对象的属性" Find="标题" Define1="ParagraphFormat" Define2="Alignment" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>1</Value>
+                        <ValueDesc>将"样式.docx"中的"标题"样式复制到Word1.docx中设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="报告题目：" Define1="Style.NameLocal" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>文字1</Value>
+                        <ValueDesc>Word1.docx中"报告题目："的样式设置错误，应设置为"文字1"样式</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="报告日期：" Define1="Style.NameLocal" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>文字1</Value>
+                        <ValueDesc>Word1.docx中"报告日期："的样式设置错误，应设置为"文字1"样式</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WStyleFind" PropKeyDesc="获取样式对象的属性" Find="文字1" Define1="Font" Define2="Name|Size|Color" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>微软雅黑|26|6299648</Value>
+                        <ValueDesc>将"样式.docx"中的"文字1"样式复制到Word1.docx中设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="19:30" Define1="Style.NameLocal" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>文字2</Value>
+                        <ValueDesc>Word1.docx中"19:30-21:30"的样式设置错误，应设置为"文字2"样式</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="年4月" Define1="Style.NameLocal" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>文字2</Value>
+                        <ValueDesc>Word1.docx中"2010年4月29日"的样式设置错误，应设置为"文字2"样式</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WStyleFind" PropKeyDesc="获取样式对象的属性" Find="文字2" Define1="Font" Define2="Name|Size|Color" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>微软雅黑|26|65535</Value>
+                        <ValueDesc>将"样式.docx"中的"文字2"样式复制到Word1.docx中设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FitTextWidth_Character" PropKeyDesc="文本宽度(字符数)" Para="-1" Find="报告题目"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>6-6.1</Value>
+                        <ValueDesc>Word1.docx中"报告题目"的字符宽度设置错误，应设置为6字符</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">8</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FitTextWidth_Character" PropKeyDesc="文本宽度(字符数)" Para="-1" Find="报告日期"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>6-6.1</Value>
+                        <ValueDesc>Word1.docx中"报告日期"的字符宽度设置错误，应设置为6字符</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">8</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FitTextWidth_Character" PropKeyDesc="文本宽度(字符数)" Para="-1" Find="报告时间"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>6-6.1</Value>
+                        <ValueDesc>Word1.docx中"报告时间"的字符宽度设置错误，应设置为6字符</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">8</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FitTextWidth_Character" PropKeyDesc="文本宽度(字符数)" Para="-1" Find="报告地点"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>6-6.1</Value>
+                        <ValueDesc>Word1.docx中"报告地点"的字符宽度设置错误，应设置为6字符</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">8</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1.5">
+                    <FindParams PropKey="WFieldFind" PropKeyDesc="获取字段对象的属性" Find="蕈" Define1="Code.Text" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>x&#xf9;n</Value>
+                        <ValueDesc>Word1.docx中"赵蕈"上方添加汉语拼音设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="欢迎大家踊跃参加" Define1="Font" Define2="TextShadow.ForeColor.RGB|Size|Name" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>255|42|方正舒体</Value>
+                        <ValueDesc>Word1.docx中"欢迎大家踊跃参加！"字体设置错误，应设置为：方正舒体、初号；白色填充、橙色边框、带阴影的文本效果，且阴影颜色为标准红色</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="欢迎大家踊跃参加" Define1="Font.TextShadow" Define2="Transparency|OffsetX|OffsetY|Blur" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>0|0|0|0</Value>
+                        <ValueDesc>Word1.docx中"欢迎大家踊跃参加！"字体设置错误，应设置为：方正舒体、初号；白色填充、橙色边框、带阴影的文本效果，且阴影颜色为标准红色</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-999" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="欢迎大家踊跃参加" Define1="Paragraphs" Define2="Alignment|LineUnitAfter|LineUnitBefore" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>1|1.5|1.5</Value>
+                        <ValueDesc>Word1.docx中"欢迎大家踊跃参加！"段落格式设置错误，应设置为：段前段后间距均为1.5行，居中对齐</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-999" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="校学工处" Define1="Paragraphs" Define2="Alignment" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>2</Value>
+                        <ValueDesc>Word1.docx中"主办：校学工处"段落右对齐设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="1.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKeyDesc="获取指定的属性" Define1="Sections[2].PageSetup" Define2="Orientation|TopMargin|BottomMargin|LeftMargin|RightMargin|PaperSize" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value>1|72|72|89.85|89.85|7</Value>
+                        <Value>1|72|72|90|90|7</Value>
+                        <ValueDesc>Word1.docx中第2页的页面设置错误，应设置纸张大小为A4，纸张方向为"横向"，页边距为"普通"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKeyDesc="获取指定的属性" Define1="Sections[1].PageSetup" Define2="Orientation" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>0</Value>
+                        <ValueDesc>Word1.docx中另起一页设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-999" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="WTableFind" PropKeyDesc="获取表格对象的属性" Para="-1" Find="主题" Define2="Rows.Count|Columns.Count" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>5|3</Value>
+                        <ValueDesc>Word1.docx中蓝色文本转换为表格设置错误，应生成5行3列的表格</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WTableFind" PropKeyDesc="获取表格对象的属性" Para="-1" Find="主题" Define2="PreferredWidthType" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>2</Value>
+                        <ValueDesc>Word1.docx中表格宽度设置错误，应设置为始终与窗口等宽</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WTableFind" PropKeyDesc="获取表格对象的属性" Para="-1" Find="主题" Define2="Style.NameLocal" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value></Value>
+                        <ValueDesc>Word1.docx中表格宽度设置错误，应设置为始终与窗口等宽</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WShapeFind" PropKeyDesc="获取形状对象的属性" ShapeType="wdInlineShapeSmartArt" Define1="SmartArt" Define2="Layout.Name" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>连续块状流程</Value>
+                        <ValueDesc>Word1.docx中SmartArt图形设置错误，应设置为"连续块状流程"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WShapeFind" PropKeyDesc="获取形状对象的属性" ShapeType="wdInlineShapeSmartArt" Define1="SmartArt" Define2="Nodes[1].TextFrame2.TextRange.Text|Nodes[2].TextFrame2.TextRange.Text" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>学工处报名|确认坐席</Value>
+                        <ValueDesc>Word1.docx中SmartArt图形内容错误，应包含文字"学工处报名、确认坐席、领取资料、领取门票"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="资深媒体人" Define1="Paragraphs[1].DropCap.LinesToDrop"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>2</Value>
+                        <ValueDesc>Word1.docx中最后一段文字的首字下沉设置错误，应设置为下沉2行，且"赵先生"三字与正文距离大于0</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WTextFind" PropKeyDesc="获取文本对象的属性" Para="-1" Find="资深媒体人" Define1="Paragraphs[1].DropCap.DistanceFromText" Define3="TOCM"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>0</Value>
+                        <ValueDesc>Word1.docx中最后一段文字的首字下沉设置错误，应设置为下沉2行，且"赵先生"三字与正文距离大于0</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">1</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WShapeFind" PropKeyDesc="获取形状对象的属性" ShapeType="msoPicture" Define2="Width" Define3="TOCM|NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>3.0</Value>
+                        <ValueDesc>Word1.docx中替换图片设置错误，应保持图片样式不变</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WShapeFind" PropKeyDesc="获取形状对象的属性" ShapeType="msoPicture" Define1="ThreeD" Define2="BevelTopType|BevelTopInset|BevelTopDepth|BevelBottomType|BevelBottomInset|BevelBottomDepth" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>12|24|12|1|0|0</Value>
+                        <ValueDesc>Word1.docx中替换图片设置错误，应保持图片样式不变</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+    <ScorePointGroup FileName="Word2.docx" OfficeType="1" ParseType="1">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-999" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="WTableFind" PropKeyDesc="获取表格对象的属性" Para="-1" Find="参会证" Define1="Cell(1,1)" Define2="Width" Define3="TOCM|NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>10.0</Value>
+                        <ValueDesc>Word2.docx中标签设置错误，应设置标签宽度为10厘米</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WTableFind" PropKeyDesc="获取表格对象的属性" Para="-1" Find="参会证" Define1="Cell(1,1).Range" Define2="Text" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>“领慧讲堂”就业讲座</Value>
+                        <ValueDesc>Word2.docx中标签文本内容错误，应包含文字：“领慧讲堂”就业讲座</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WTableFind" PropKeyDesc="获取表格对象的属性" Para="-1" Find="参会证" Define1="Cell(1,1).Range" Define2="Text" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>姓名</Value>
+                        <ValueDesc>Word2.docx中标签文本内容错误，应包含文字：姓名</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WTableFind" PropKeyDesc="获取表格对象的属性" Para="-1" Find="参会证" Define1="Cell(1,1).Range" Define2="Text" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>具体日程安排</Value>
+                        <ValueDesc>Word2.docx中标签文本内容错误，应包含文字：具体日程安排</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="WFieldFind" PropKeyDesc="获取字段对象的属性" Find="INCLUDEPICTURE" Define1="Code.Text" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value>编号</Value>
+                        <Value>INCLUDEPICTURE</Value>
+                        <ValueDesc>Word2.docx中"插入照片"设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="WShapeFind" PropKeyDesc="获取形状对象的属性" ShapeType="wdInlineShapeEmbeddedOLEObject" Define1="OLEFormat" Define2="IconLabel" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value></Value>
+                        <ValueDesc>Word2.docx中插入图标对象设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="WShapeFind" PropKeyDesc="获取形状对象的属性" ShapeType="wdInlineShapeEmbeddedOLEObject" Define1="OLEFormat" Define2="IconLabel|IconName" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>日程安排|wordicon.exe</Value>
+                        <ValueDesc>Word2.docx中图标对象的名称设置错误，应设置为"日程安排"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+    <ScorePointGroup FileName="参会证.docx" OfficeType="1" ParseType="1">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Common">
+            <MarkRuleGroup LogicOper="And" FullScore="3" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKeyDesc="获取指定的属性" Define1="Paragraphs.Last.Range" Define2="get_Information(3)" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>3</Value>
+                        <ValueDesc>参会证.docx中的页面数量错误，应为3页</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WTableFind" PropKeyDesc="获取表格对象的属性" Para="-1" Find="李辉" Define1="Cell(1,1).Range" Define2="Text" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>上海交大</Value>
+                        <ValueDesc>参会证.docx中第一页的第一张标签内容错误，应包含文字"上海交大"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WTableFind" PropKeyDesc="获取表格对象的属性" Para="-1" Find="李辉" Define1="Cell(3,1).Range" Define2="Text" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>郝艳芬</Value>
+                        <ValueDesc>参会证.docx中第一页的第三张标签内容错误，应包含文字"郝艳芬"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WTableFind" PropKeyDesc="获取表格对象的属性" Para="-1" Find="杨伟健" Define1="Cell(1,1).Range" Define2="Text" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>杨伟健</Value>
+                        <ValueDesc>参会证.docx中第二页的第一张标签内容错误，应包含文字"杨伟健"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WTableFind" PropKeyDesc="获取表格对象的属性" Para="-1" Find="杨伟健" Define1="Cell(3,1).Range" Define2="Text" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>陈玉美</Value>
+                        <ValueDesc>参会证.docx中第二页的第三张标签内容错误，应包含文字"陈玉美"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WTableFind" PropKeyDesc="获取表格对象的属性" Para="-1" Find="胡继尧" Define1="Cell(1,1).Range" Define2="Text" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>胡继尧</Value>
+                        <ValueDesc>参会证.docx中第三页的第一张标签内容错误，应包含文字"胡继尧"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WTableFind" PropKeyDesc="获取表格对象的属性" Para="-1" Find="胡继尧" Define1="Cell(3,1).Range" Define2="Text" Define3="NOKEY"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>徐文彬</Value>
+                        <ValueDesc>参会证.docx中第三页的第三张标签内容错误，应包含文字"徐文彬"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+    <ScorePointGroup FileName="word1.docx" OfficeType="1" ParseType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="BackgroundFrameTitle" PropKeyDesc="页面背景图片"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>W背景图片</Value>
+                        <ValueDesc>Word1.docx中海报背景设置错误，应设置为"W背景图片.jpg"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

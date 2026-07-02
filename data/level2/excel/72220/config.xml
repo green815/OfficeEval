@@ -1,0 +1,682 @@
+<QuestItem QuestCode="XXXXXXX" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Excel.xlsx" ParseType="2" OfficeType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作簿" WepType="Workbook">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="Theme" PropKeyDesc="主题" Find="小赵的美好生活"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[Office 主题]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，工作表应用一种主题错误（标准答案：不等于office主题)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">7</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="分类汇总" WepType="Subtotal">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="SummaryItem" PropKeyDesc="汇总项" SheetName="按季度汇总" SheetNameAlias="2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[服装服饰、饮食、水电气房租、交通、通信、阅读培训、社交应酬、医疗保健、休闲旅游、个人兴趣、公益活动]]></Value>
+                        <ValueDesc><![CDATA[在工作表"按季度汇总"中，汇总项错误（标准答案：服装服饰、饮食、水电气房租、交通、通信、阅读培训、社交应酬、医疗保健、休闲旅游、个人兴趣、公益活动)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="分类汇总" WepType="Subtotal">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="SummaryWay" PropKeyDesc="汇总方式" SheetName="按季度汇总" SheetNameAlias="2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1]]></Value>
+                        <ValueDesc><![CDATA[在工作表"按季度汇总"中，汇总方式错误（标准答案：平均值)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+    <ScorePointGroup FileName="Excel.xlsx" ParseType="1" OfficeType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="验证筛选" WepType="ParaFont">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="Alignment" PropKeyDesc="对齐方式" SheetName="小赵的美好生活" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[-4108]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，A1：N1单元格对齐方式错误（标准答案：水平居中)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.3">
+                    <FindParams PropKey="MergeCells" PropKeyDesc="合并单元格" SheetName="小赵的美好生活" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，A1：N1合并单元格错误（标准答案：合并成一个单元格)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FindContent" PropKeyDesc="查找单元格格式" SheetName="小赵的美好生活" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[小赵2013年开支明细表]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，A1：N1单元格内容错误（标准答案：小赵2013年开支明细表)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.3">
+                    <FindParams PropKey="NotFont" PropKeyDesc="字体" SheetName="小赵的美好生活" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[宋体]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，A1：N1单元格字体错误（标准答案：不等于宋体)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="Points" PropKeyDesc="字体大小" SheetName="小赵的美好生活" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[11]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，A1：N1单元格字号错误（标准答案：不等于11)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Points" PropKeyDesc="字体大小" SheetName="小赵的美好生活" Row="A2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[11]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，A2:N15单元格字号错误（标准答案：大于11)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">1</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="RowHeight" PropKeyDesc="行高" SheetName="小赵的美好生活" Row="A2" Range="N15"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[14]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，A2:N15单元格行高错误（标准答案：大于14)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">1</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.1">
+                    <FindParams PropKey="ColWidth" PropKeyDesc="列宽" SheetName="小赵的美好生活" Row="C2" Range="C15"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[8.5]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，C2:C15单元格列宽错误（标准答案：大于8.5)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">1</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="ColWidth" PropKeyDesc="列宽" SheetName="小赵的美好生活" Row="H2" Range="K15"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[8.5]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，H2:K15单元格列宽错误（标准答案：大于8.5)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">1</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="边框" WepType="Border">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="BorderSize" PropKeyDesc="边框大小" SheetName="小赵的美好生活" Row="A2" Range="N15" BorderType="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，A2:N15单元格边框错误（标准答案：添加边框)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="边框" WepType="Border">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="BorderSize" PropKeyDesc="边框大小" SheetName="小赵的美好生活" Row="A16" Range="N16" BorderType="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[-4142]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，A16:N16单元格边框错误（标准答案：无边框)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="BorderSize" PropKeyDesc="边框大小" SheetName="小赵的美好生活" Row="A16" Range="N16" BorderType="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[-4142]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，O2:O16单元格边框错误（标准答案：无边框)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="NumberFormat" PropKeyDesc="数字格式设ShowTotals置" SheetName="小赵的美好生活" Row="C3" Range="N14"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[￥]]></Value>
+                        <Value><![CDATA[$]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，C3:N14单元格数字格式错误（标准答案：人民币货币)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="NumberFormat" PropKeyDesc="数字格式设ShowTotals置" SheetName="小赵的美好生活" Row="C3" Range="N14"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[#,##0]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，C3:N14单元格数字格式错误（标准答案：无小数)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1.5">
+                    <FindParams PropKey="FormulaRange" PropKeyDesc="区域公式" SheetName="小赵的美好生活" Row="N3" Range="N14" FindParams="SUM" FindReault="CM"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[CM]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，总支出列N3:N14公式错误（标准答案：SUM函数)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="小赵的美好生活" Row="C15" Find="345"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[AVERAGE]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，C15单元格公式错误（标准答案：AVERAGE)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="小赵的美好生活" Row="H15" Find="271"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[AVERAGE]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，H15单元格公式错误（标准答案：AVERAGE )]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Formula" PropKeyDesc="区域公式" SheetName="小赵的美好生活" Row="L15" Find="448"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[AVERAGE]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，L15单元格公式错误（标准答案：AVERAGE )]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="验证筛选" WepType="ParaFont">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SortFieldOrder" PropKeyDesc="主关键字排序次序" SheetName="小赵的美好生活" SortIndexNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlAscending]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，工作表排序错误（标准答案：按总支出升序 )]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValue" PropKeyDesc="查找单元格内容" SheetName="小赵的美好生活" Row="N10"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[4046]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，按总支出升序进行排序后N10单元格内容错误（标准答案：4046)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValue" PropKeyDesc="查找单元格内容" SheetName="小赵的美好生活" Row="N15"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[4161]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，按总支出升序进行排序后N15单元格内容错误（标准答案：4161)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="条件格式" WepType="FormatCondition">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FormatConditionsFormula" PropKeyDesc="条件格式值" SheetName="小赵的美好生活" Row="C3" Range="M14"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[大于1000]]></Value>
+                        <Value><![CDATA[$N3>1000]]></Value>
+                        <Value><![CDATA[1000<$N3]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，C3:M14条件格式错误（标准答案：大于1000)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="$,()">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="条件格式" WepType="FormatCondition">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FormatConditionsInteriorColor" PropKeyDesc="条件格式填充颜色" SheetName="小赵的美好生活" Row="C3" Range="M14" Find_FormatConditionsIndex="1"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[16777215]]></Value>
+                        <Value><![CDATA[0]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，C3:M14条件格式错误（标准答案：填充颜色不等于白色或黑色)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="条件格式" WepType="FormatCondition">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FormatConditionsColor" PropKeyDesc="条件格式字体颜色" SheetName="小赵的美好生活" Row="C3" Range="M14"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[16777215]]></Value>
+                        <Value><![CDATA[0]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，C3:M14条件格式错误（标准答案：字体颜色不等于白色或黑色)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="条件格式" WepType="FormatCondition">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FormatConditionsFormula" PropKeyDesc="条件格式值" SheetName="小赵的美好生活" Row="N3" Range="N14"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[大于N15*1.1]]></Value>
+                        <Value><![CDATA[大于1.1*N15]]></Value>
+                        <Value><![CDATA[$N3>N15*1.1]]></Value>
+                        <Value><![CDATA[$N3>1.1*N15]]></Value>
+                        <Value><![CDATA[N15*1.1<$N3]]></Value>
+                        <Value><![CDATA[1.1*N15<$N3]]></Value>
+                        <Value><![CDATA[$N3>($N$15*1.1)]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，N3:N14条件格式错误（标准答案：大于月均总支出110%)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="$,()">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="条件格式" WepType="FormatCondition">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FormatConditionsInteriorColor" PropKeyDesc="条件格式填充颜色" SheetName="小赵的美好生活" Row="N3" Range="N14" Find_FormatConditionsIndex="1"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[16777215]]></Value>
+                        <Value><![CDATA[0]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，N3:N14条件格式错误（标准答案：填充颜色不等于白色或黑色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="条件格式" WepType="FormatCondition">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FormatConditionsColor" PropKeyDesc="条件格式字体颜色" SheetName="小赵的美好生活" Row="N3" Range="N14"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[16777215]]></Value>
+                        <Value><![CDATA[0]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，N3:N14条件格式错误（标准答案：字体颜色不等于白色或黑色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValue" PropKeyDesc="查找单元格内容" SheetName="小赵的美好生活" Row="B3"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[4季度]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，B3单元格值错误（标准答案：4季度）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="HasFormula" PropKeyDesc="是否有公式" SheetName="小赵的美好生活" Row="B3"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，B3单元格公式错误（标准答案：存在公式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValue" PropKeyDesc="查找单元格内容" SheetName="小赵的美好生活" Row="B5"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1季度]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，B5单元格值错误（标准答案：1季度）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="HasFormula" PropKeyDesc="是否有公式" SheetName="小赵的美好生活" Row="B5"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，B5单元格公式错误（标准答案：存在公式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValue" PropKeyDesc="查找单元格内容" SheetName="小赵的美好生活" Row="B7"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2季度]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，B7单元格值错误（标准答案：2季度）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="HasFormula" PropKeyDesc="是否有公式" SheetName="小赵的美好生活" Row="B7"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，B7单元格公式错误（标准答案：存在公式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValue" PropKeyDesc="查找单元格内容" SheetName="小赵的美好生活" Row="B13"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[3季度]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，B13单元格值错误（标准答案：3季度）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="HasFormula" PropKeyDesc="是否有公式" SheetName="小赵的美好生活" Row="B13"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[在工作表"小赵的美好生活"中，B13单元格公式错误（标准答案：存在公式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="WookbookNum" PropKeyDesc="工作薄编号" SheetNum="2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[按季度汇总]]></Value>
+                        <ValueDesc><![CDATA[查找的第2个工作薄是【按季度汇总】]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="WorkSheetTabColor" PropKeyDesc="工作表标签颜色" SheetName="按季度汇总" SheetNum="1" SheetNameAlias="2"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[16777215]]></Value>
+                        <Value><![CDATA[0]]></Value>
+                        <ValueDesc><![CDATA[在工作表"按季度汇总"中，标签颜色设置错误（标准答案：不等于白色或黑色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValue" PropKeyDesc="查找单元格内容" SheetName="按季度汇总" SheetNameAlias="2" Row="B6"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[1季度 平均值]]></Value>
+                        <Value><![CDATA[4季度 平均值]]></Value>
+                        <ValueDesc><![CDATA[在工作表"按季度汇总"中，分类汇总后B6单元格值错误（标准答案：1季度 平均值或4季度 平均值）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValue" PropKeyDesc="查找单元格内容" SheetName="按季度汇总" SheetNameAlias="2" Row="B18"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[4季度 平均值]]></Value>
+                        <Value><![CDATA[1季度 平均值]]></Value>
+                        <ValueDesc><![CDATA[在工作表"按季度汇总"中，分类汇总后B18单元格值错误（标准答案：1季度 平均值或4季度 平均值）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="ChartType" PropKeyDesc="图表类型" SheetName="图表" FndChartIndex="1" SheetNameAlias="3" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlLineMarkers]]></Value>
+                        <ValueDesc><![CDATA[在"图表"工作表中，图表类型设置错误（标准答案：带数据标记的折线图）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.2">
+                    <FindParams PropKey="SeriesName" PropKeyDesc="系列名称" SheetName="图表" FndChartIndex="1" Find_SeriesIndex="1" SheetNameAlias="3" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[1季度 平均值]]></Value>
+                        <Value><![CDATA[4季度 平均值]]></Value>
+                        <ValueDesc><![CDATA[在"图表"工作表中，图表系列名称(第1列)设置错误（标准答案：1季度 平均值或4季度 平均值）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="SeriesValue" PropKeyDesc="图表值" SheetName="图表" FndChartIndex="1" Find_SeriesIndex="1" SheetNameAlias="3" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[516.67,716.67,1000,520,200,53.33,833.33,83.33,326.67,366.67]]></Value>
+                        <Value><![CDATA[200,950,1033.33,250,0,43.33,366.67,53.33,200,390]]></Value>
+                        <ValueDesc><![CDATA[在"图表"工作表中，图表列值(第1列)设置错误（标准答案：[516.67,716.67,1000,520,200,53.33,833.33,83.33,326.67,366.67]或[200,950,1033.33,250,0,43.33,366.67,53.33,200,390]）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="SeriesXValues" PropKeyDesc="图表值" SheetName="图表" FndChartIndex="1" Find_SeriesIndex="1" SheetNameAlias="3" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[服装服饰,饮食,水电气房租,交通,通信,阅读培训,社交应酬,医疗保健,休闲旅游,个人兴趣,公益活动]]></Value>
+                        <ValueDesc><![CDATA[在"图表"工作表中，图表行值设置错误（标准答案：服装服饰,饮食,水电气房租,交通,通信,阅读培训,社交应酬,医疗保健,休闲旅游,个人兴趣,公益活动）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SeriesName" PropKeyDesc="系列名称" SheetName="图表" FndChartIndex="1" Find_SeriesIndex="2" SheetNameAlias="3" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[2季度 平均值]]></Value>
+                        <Value><![CDATA[3季度 平均值]]></Value>
+                        <ValueDesc><![CDATA[在"图表"工作表中，图表系列名称(第2列)设置错误（标准答案：2季度 平均值或3季度 平均值）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SeriesValue" PropKeyDesc="图表值" SheetName="图表" FndChartIndex="1" Find_SeriesIndex="2" SheetNameAlias="3" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[150,850,1016.67,216.67,133.33,60,366.67,110,110,416.67]]></Value>
+                        <Value><![CDATA[500,833.33,1066.67,216.67,300,926.67,233.33,93.33,60,616.67]]></Value>
+                        <ValueDesc><![CDATA[在"图表"工作表中，图表列值(第2列)设置错误（标准答案：[150,850,1016.67,216.67,133.33,60,366.67,110,110,416.67]或[500,833.33,1066.67,216.67,300,926.67,233.33,93.33,60,616.67]）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SeriesName" PropKeyDesc="系列名称" SheetName="图表" FndChartIndex="1" Find_SeriesIndex="4" SheetNameAlias="3" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[4季度 平均值]]></Value>
+                        <Value><![CDATA[1季度 平均值]]></Value>
+                        <ValueDesc><![CDATA[在"图表"工作表中，图表系列名称(第4列)设置错误（标准答案：4季度 平均值或1季度 平均值）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SeriesValue" PropKeyDesc="图表值" SheetName="图表" FndChartIndex="1" Find_SeriesIndex="4" SheetNameAlias="3" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[200,950,1033.33,250,0,43.33,366.67,53.33,200,390]]></Value>
+                        <Value><![CDATA[516.67,716.67,1000,520,200,53.33,833.33,83.33,326.67,366.67,66]]></Value>
+                        <ValueDesc><![CDATA[在"图表"工作表中，图表列值(第4列)设置错误（标准答案：[200,950,1033.33,250,0,43.33,366.67,53.33,200,390]或[516.67,716.67,1000,520,200,53.33,833.33,83.33,326.67,366.67,66]）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="SeriesPointsHasDataLabel" PropKeyDesc="显示数据标签" SheetName="图表" FndChartIndex="1" Find_SeriesIndex="1" SheetNameAlias="3" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[1,4,7,9]]></Value>
+                        <Value><![CDATA[2]]></Value>
+                        <ValueDesc><![CDATA[在"图表"工作表中，给每类的"最高季度月均支出值"添加数据标签错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="SeriesPointsHasDataLabel" PropKeyDesc="显示数据标签" SheetName="图表" FndChartIndex="1" Find_SeriesIndex="2" SheetNameAlias="3" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[8]]></Value>
+                        <Value><![CDATA[3,5,6,10]]></Value>
+                        <ValueDesc><![CDATA[在"图表"工作表中，给每类的"最高季度月均支出值"添加数据标签错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="SeriesPointsHasDataLabel" PropKeyDesc="显示数据标签" SheetName="图表" FndChartIndex="1" Find_SeriesIndex="4" SheetNameAlias="3" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[2]]></Value>
+                        <Value><![CDATA[2,11]]></Value>
+                        <Value><![CDATA[1,4,7,9]]></Value>
+                        <Value><![CDATA[1,4,7,9,11]]></Value>
+                        <ValueDesc><![CDATA[在"图表"工作表中，给每类的"最高季度月均支出值"添加数据标签错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

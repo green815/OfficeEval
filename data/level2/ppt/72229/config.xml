@@ -1,0 +1,814 @@
+<QuestItem QuestCode="A265027H003003_hl_1703113" SubjectType="MsOffice">
+    <ScorePointGroup FileName="ppt.pptx" OfficeType="3" ParseType="1">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="主体" WepType="Body">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SlideSize" PropKeyDesc="幻灯片大小" SlideNum="1" SectionNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[ppSlideSizeOnScreen16x9]]></Value>
+                        <ValueDesc><![CDATA[幻灯片的大小设置错误,应为"全屏显示(16:9)"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="幻灯片母版" WepType="SlideMasterEffect">
+            <MarkRuleGroup LogicOper="And" FullScore="1.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SlideMasterTitleFontNameFarEast" PropKeyDesc="母版中指定的文字框架中的文本中文字体名称" ShapeNum="1" Define1="标题样式"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[雅黑]]></Value>
+                        <ValueDesc><![CDATA[母版标题占位符的中文字体设置错误,应为微软雅黑]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SlideMasterTitleFontName" PropKeyDesc="母版中指定的文字框架中的文本字体名称" ShapeNum="1" Define1="标题样式"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[Arial]]></Value>
+                        <ValueDesc><![CDATA[母版标题的占位符西文字体设置错误,应为Arial]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SlideMasterTitleArtStyle" PropKeyDesc="母版中指定艺术字的样式" ShapeNum="1" Define1="标题样式"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[msoTextEffectMixed]]></Value>
+                        <ValueDesc><![CDATA[母版标题应用一种恰当的艺术字样式]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SlideMasterTitleFontNameFarEast" PropKeyDesc="母版中指定的文字框架中的文本中文字体名称" ShapeNum="1" Define1="文本样式"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[幼圆]]></Value>
+                        <ValueDesc><![CDATA[母版内容占位符的中文字体设置错误,应为幼圆]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SlideMasterTitleFontName" PropKeyDesc="母版中指定的文字框架中的文本字体名称" ShapeNum="1" Define1="文本样式"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[Arial]]></Value>
+                        <ValueDesc><![CDATA[母版内容占位符的西文字体设置错误,应为Arial]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="幻灯片母版" WepType="SlideMasterEffect">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SlideMasterCustomLayoutIsPicBackGrd" PropKeyDesc="自定义版式是否为图片背景" ShapeNum="1" Define1="标题幻灯片"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[标题幻灯片版式背景设置错误,应使用考生文件夹下的"Ppic01.png"图片作为"标题幻灯片"版式的背景]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SlideMasterCustomLayoutIsPicBackGrd" PropKeyDesc="自定义版式是否为图片背景" ShapeNum="1" Define1="标题和内容"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[标题和内容版式背景设置错误,应使用"Ppic02.png"图片作为"标题和内容"版式的背景]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SlideMasterCustomLayoutIsPicBackGrd" PropKeyDesc="自定义版式是否为图片背景" ShapeNum="1" Define1="内容与标题"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[内容与标题版式背景设置错误,应使用"Ppic02.png"图片作为"内容与标题"版式的背景]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SlideMasterCustomLayoutIsPicBackGrd" PropKeyDesc="自定义版式是否为图片背景" ShapeNum="1" Define1="两栏内容"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[两栏内容版式背景设置错误,应使用"Ppic02.png"图片作为"两栏内容"版式的背景]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="SmartArt图形" WepType="SmartArt">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SmartArtLayout" PropKeyDesc="SmartArt布局名称" SlideNum="2" SmartArtNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[梯形列表]]></Value>
+                        <ValueDesc><![CDATA[幻灯片2,SmartArt布局名称设置错误,应为梯形列表]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SmartArtColorName" PropKeyDesc="SmartArt颜色样式名称" SlideNum="2" SmartArtNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[彩色轮廓]]></Value>
+                        <ValueDesc><![CDATA[幻灯片2,SmartArt主题颜色设置错误,应为"彩色轮廓-个性色1"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SmartArtNodeShapeStyle" PropKeyDesc="节点形状样式" SlideNum="2" SmartArtNum="1" Find="云服务概述"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[msoShapeStylePreset27]]></Value>
+                        <ValueDesc><![CDATA[幻灯片2,"云服务概述"所在形状的形状样式设置错误,应设置为"细微效果-水绿色，强调颜色5"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SmartArtLayout" PropKeyDesc="SmartArt布局名称" SlideNum="6" SmartArtNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[梯形列表]]></Value>
+                        <ValueDesc><![CDATA[幻灯片6,SmartArt布局名称设置错误,应为梯形列表]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SmartArtColorName" PropKeyDesc="SmartArt颜色样式名称" SlideNum="6" SmartArtNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[彩色轮廓]]></Value>
+                        <ValueDesc><![CDATA[幻灯片6,SmartArt主题颜色设置错误,应为"彩色轮廓-个性色1"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SmartArtNodeShapeStyle" PropKeyDesc="节点形状样式" SlideNum="6" SmartArtNum="1" Find="云服务行业及市场分析"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[msoShapeStylePreset27]]></Value>
+                        <ValueDesc><![CDATA[幻灯片6,'云服务行业及市场分析'所在形状的形状样式设置错误,应为"细微效果-水绿色，强调颜色5"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SmartArtLayout" PropKeyDesc="SmartArt布局名称" SlideNum="9" SmartArtNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[梯形列表]]></Value>
+                        <ValueDesc><![CDATA[幻灯片9,SmartArt布局名称设置错误,应为梯形列表]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SmartArtColorName" PropKeyDesc="SmartArt颜色样式名称" SlideNum="9" SmartArtNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[彩色轮廓]]></Value>
+                        <ValueDesc><![CDATA[幻灯片9，SmartArt主题颜色设置错误,应为"彩色轮廓-个性色1"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SmartArtNodeShapeStyle" PropKeyDesc="节点形状样式" SlideNum="9" SmartArtNum="1" Find="云服务发展趋势分析"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[msoShapeStylePreset27]]></Value>
+                        <ValueDesc><![CDATA[幻灯片9,'云服务发展趋势分析'所在形的形状样式设置错误,应为"细微效果-水绿色，强调颜色5"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="SmartArt图形" WepType="SmartArt">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SmartArtLayout" PropKeyDesc="SmartArt布局名称" SlideNum="3" SmartArtNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[水平项目符号列表]]></Value>
+                        <ValueDesc><![CDATA[幻灯片3，SmartArt布局名称设置错误,应为水平项目符号列表]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SmartArtQuickStyle" PropKeyDesc="快速样式名称" SlideNum="3" SmartArtNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[简单填充]]></Value>
+                        <ValueDesc><![CDATA[幻灯片3,SmartArt图形样式设置错误,应设置除了简单填充之外的样式]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="背景" WepType="Transition">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.3">
+                    <FindParams PropKey="Layout" PropKeyDesc="幻灯片版式" SlideNum="4"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[35]]></Value>
+                        <ValueDesc><![CDATA[幻灯片4,版式设置错误,应为内容与标题]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="1">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="幻灯片查找" WepType="SlideFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.3" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsExistsText" PropKeyDesc="查找是否存在指定文字" SlideNum="4" TextFrame="-1" TextCharactor="云服务包括随时接入"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[幻灯片4,内容文本设置错误,应包含'云服务包括随时接入']]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsExistsText" PropKeyDesc="查找是否存在指定文字" SlideNum="4" TextFrame="-1" TextCharactor="仍有相当大的价值和市场"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[幻灯片4,内容文本设置错误,应包含'仍有相当大的价值和市场']]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="SmartArt图形" WepType="SmartArt">
+            <MarkRuleGroup LogicOper="And" FullScore="0.4" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SmartArtLayout" PropKeyDesc="SmartArt布局名称" SlideNum="4" SmartArtNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[圆箭头流程]]></Value>
+                        <ValueDesc><![CDATA[幻灯片4,SmartArt布局名称设置错误,应为圆箭头流程]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SmartArtQuickStyle" PropKeyDesc="快速样式名称" SlideNum="4" SmartArtNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[简单填充]]></Value>
+                        <ValueDesc><![CDATA[幻灯片4,SmartArt图形样式设置错误,应设置除了简单填充之外的样式]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="背景" WepType="Transition">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.25">
+                    <FindParams PropKey="Layout" PropKeyDesc="幻灯片版式" SlideNum="7"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[29]]></Value>
+                        <ValueDesc><![CDATA[幻灯片7,版式设置错误,应为两栏内容]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="1">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.25">
+                    <FindParams PropKey="ChartCount" PropKeyDesc="图表数量" SlideNum="7"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2]]></Value>
+                        <ValueDesc><![CDATA[幻灯片7,将上下方表格中的数据转换为图表设置错误，应有两个图表]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="1">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRuleGroup LogicOper="And" FullScore="2.5" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="ChartSeriesName" PropKeyDesc="图表系列名称" SlideNum="7" ChartNum="2" Define1="1"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[市场规模（亿元）]]></Value>
+                            <ValueDesc><![CDATA[幻灯片7,柱形图与折线图图表主坐标轴设置错误,应为"市场规模（亿元）"]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="ChartSeriesName" PropKeyDesc="图表系列名称" SlideNum="7" ChartNum="2" Define1="2"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[同比增长率（%）]]></Value>
+                            <ValueDesc><![CDATA[幻灯片7,柱形图与折线图图表次坐标轴设置错误,应为"同比增长率（%）"]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="ChartTitle" PropKeyDesc="图表的标题文本" SlideNum="7" ChartNum="2"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[2016年中国企业云服务整体市场规模]]></Value>
+                            <ValueDesc><![CDATA[幻灯片7,柱形图与折线图图表标题设置错误,应为"2016年中国企业云服务整体市场规模"]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="ChartLegendPosition" PropKeyDesc="图例在图表上的位置" SlideNum="7" ChartNum="2"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[xlLegendPositionBottom]]></Value>
+                            <ValueDesc><![CDATA[幻灯片7,柱形图与折线图图表图例位置设置错误,应为底部]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+                <MarkRuleGroup LogicOper="And" FullScore="2.5" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="ChartSeriesName" PropKeyDesc="图表系列名称" SlideNum="7" ChartNum="1" Define1="1"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[市场规模（亿元）]]></Value>
+                            <ValueDesc><![CDATA[幻灯片7,柱形图与折线图图表主坐标轴设置错误,应为"市场规模（亿元）"]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="ChartSeriesName" PropKeyDesc="图表系列名称" SlideNum="7" ChartNum="1" Define1="2"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[同比增长率（%）]]></Value>
+                            <ValueDesc><![CDATA[幻灯片7,柱形图与折线图图表次坐标轴设置错误,应为"同比增长率（%）"]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="ChartTitle" PropKeyDesc="图表的标题文本" SlideNum="7" ChartNum="1"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[2016年中国企业云服务整体市场规模]]></Value>
+                            <ValueDesc><![CDATA[幻灯片7,柱形图与折线图图表标题设置错误,应为"2016年中国企业云服务整体市场规模"]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="ChartLegendPosition" PropKeyDesc="图例在图表上的位置" SlideNum="7" ChartNum="1"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[xlLegendPositionBottom]]></Value>
+                            <ValueDesc><![CDATA[幻灯片7,柱形图与折线图图表图例位置设置错误,应为底部]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="ChartSeriesPointsDataLabelStyle" PropKeyDesc="数据标签属性" SlideNum="7" ChartNum="1" Define1="1" Define2="1" Define3="类别名称"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[true]]></Value>
+                            <ValueDesc><![CDATA[幻灯片7,饼图图表数据标签设置错误,应包括类别名称]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="ChartSeriesPointsDataLabelStyle" PropKeyDesc="数据标签属性" SlideNum="7" ChartNum="1" Define1="1" Define2="1" Define3="百分比"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[true]]></Value>
+                            <ValueDesc><![CDATA[幻灯片7,饼图图表数据标签设置错误,应包括百分比]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="HasLegend" PropKeyDesc="是否有图例" SlideNum="7" ChartNum="1"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[false]]></Value>
+                            <ValueDesc><![CDATA[幻灯片7,饼图不显示图表图例]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="ChartTitle" PropKeyDesc="图表的标题文本" SlideNum="7" ChartNum="1"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[2016年中国公有云市场占比]]></Value>
+                            <ValueDesc><![CDATA[幻灯片7,饼图图表标题设置错误,应为"2016年中国公有云市场占比"]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+                <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="ChartSeriesPointsDataLabelStyle" PropKeyDesc="数据标签属性" SlideNum="7" ChartNum="2" Define1="1" Define2="1" Define3="类别名称"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[true]]></Value>
+                            <ValueDesc><![CDATA[幻灯片7,饼图图表数据标签设置错误,应包括类别名称]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="ChartSeriesPointsDataLabelStyle" PropKeyDesc="数据标签属性" SlideNum="7" ChartNum="2" Define1="1" Define2="1" Define3="百分比"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[true]]></Value>
+                            <ValueDesc><![CDATA[幻灯片7,饼图图表数据标签设置错误,应包括百分比]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="HasLegend" PropKeyDesc="是否有图例" SlideNum="7" ChartNum="2"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[false]]></Value>
+                            <ValueDesc><![CDATA[幻灯片7,饼图不显示图表图例]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="ChartTitle" PropKeyDesc="图表的标题文本" SlideNum="7" ChartNum="2"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[2016年中国公有云市场占比]]></Value>
+                            <ValueDesc><![CDATA[幻灯片7,饼图图表标题设置错误,应为"2016年中国公有云市场占比"]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格" WepType="Table">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="TableStyleOptions_HeaderRow" PropKeyDesc="获取指定序号的表格是否第一行的特殊格式" SlideNum="12" TableNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[false]]></Value>
+                        <ValueDesc><![CDATA[幻灯片12,表格第一行无特殊格式（取消勾选标题行复选框）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="TableStyle" PropKeyDesc="获取指定序号的表格样式名称" SlideNum="12" TableNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[]]></Value>
+                        <ValueDesc><![CDATA[幻灯片12,表格样式设置错误,应为表格应用恰当的表格样式]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="背景" WepType="Transition">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.25">
+                    <FindParams PropKey="Layout" PropKeyDesc="幻灯片版式" SlideNum="13"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[12]]></Value>
+                        <ValueDesc><![CDATA[幻灯片13,版式设置错误,应为空白]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="1">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="背景" WepType="Transition">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.25">
+                    <FindParams PropKey="SlideForeColor" PropKeyDesc="幻灯片背景填充的前景色" SlideNum="13"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[15918812]]></Value>
+                        <ValueDesc><![CDATA[幻灯片13,背景颜色设置错误,应为"蓝色，个性色1，淡色80%"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="1">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="幻灯片查找" WepType="SlideFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ShapeAttrOfType" PropKeyDesc="Shape属性" SlideNum="13" Define1="msoFreeform" Define2="形状类型|分割类型"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[msoFreeform|SegmentType:msoSegmentLine|msoSegmentCurve]]></Value>
+                        <ValueDesc><![CDATA[幻灯片13,徽标图形设置错误，应为由一个正圆形和一个"太阳形"构成的不可分离的完整图形]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ShapeAttrOfType" PropKeyDesc="Shape属性" SlideNum="13" Define1="msoFreeform" Define2="形状预设样式"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[msoShapeStyleNotAPreset]]></Value>
+                        <ValueDesc><![CDATA[幻灯片13,组合形状的形状预设样式未设置,应为其添加合适的形状样式]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">7</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ShapeAttrOfType" PropKeyDesc="Shape属性" SlideNum="13" Define1="msoFreeform" Define2="宽度"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[6]]></Value>
+                        <ValueDesc><![CDATA[幻灯片13,组合形状的宽度设置错误,应为6厘米]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ShapeAttrOfType" PropKeyDesc="Shape属性" SlideNum="13" Define1="msoFreeform" Define2="高度"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[6]]></Value>
+                        <ValueDesc><![CDATA[幻灯片13，组合形状的高度设置错误,应为6厘米]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="形状" WepType="Shape">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="ShapeHoriCenter" PropKeyDesc="形状水平居中" SlideNum="13" ShapeNum="2"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[true]]></Value>
+                            <ValueDesc><![CDATA[幻灯片13,组合形状在幻灯片中对齐方式设置错误,应为水平居中对齐]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="ShapeTop" PropKeyDesc="形状顶部边距" SlideNum="13" ShapeNum="2"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[2.5]]></Value>
+                            <ValueDesc><![CDATA[幻灯片13,组合形状垂直距幻灯片上侧边缘设置错误,应为2.5厘米]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">0</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+                <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="ShapeHoriCenter" PropKeyDesc="形状水平居中" SlideNum="13" ShapeNum="1"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[true]]></Value>
+                            <ValueDesc><![CDATA[幻灯片13,组合形状在幻灯片中对齐方式设置错误,应为水平居中对齐]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="ShapeTop" PropKeyDesc="形状顶部边距" SlideNum="13" ShapeNum="1"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[2.5]]></Value>
+                            <ValueDesc><![CDATA[幻灯片13,组合形状垂直距幻灯片上侧边缘设置错误,应为2.5厘米]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">0</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="自定义" WepType="SlideCustom">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams WepType="TextEffect" PropKey="ShapeTop" PropKeyDesc="获取指定文本内容或顺序号的对象顶部边距" SlideNum="13" ShapeNum="-1" TextCharactor="CLOUDSHARE"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[9.5]]></Value>
+                        <ValueDesc><![CDATA[幻灯片13,艺术字垂直距幻灯片上侧边缘设置错误,应为9.5厘米]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams WepType="Shape" PropKey="ShapeHoriCenter" PropKeyDesc="形状水平居中" SlideNum="13" ShapeNum="1" Find="CLOUDSHARE"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[幻灯片13,艺术字在幻灯片中对齐方式设置错误,应为水平居中对齐]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="艺术字" WepType="TextEffect">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="PresetTextEffect" PropKeyDesc="获取指定文本内容或顺序号的对象艺术字的样式" SlideNum="13" ShapeNum="-1" TextCharactor="CLOUDSHARE"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[13]]></Value>
+                        <ValueDesc><![CDATA[幻灯片13,文本"CLOUD SHARE"未应用艺术字样式,应为其应用合适的艺术字样式]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="主体" WepType="Body">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindSectionName" PropKeyDesc="获取节名称" SlideNum="1" SectionNum="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[封面,云服务概述,云服务行业及市场分析,云服务发展趋势分析,结束页]]></Value>
+                        <ValueDesc><![CDATA[幻灯片分节,节名分别为封面、云服务概述、云服务行业及市场分析、云服务发展趋势分析、结束页]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SectionSlidesCount" PropKeyDesc="指定节的幻灯片个数" SlideNum="1" SectionNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1]]></Value>
+                        <ValueDesc><![CDATA[第1节的幻灯片数量等于1]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SectionSlidesCount" PropKeyDesc="指定节的幻灯片个数" SlideNum="1" SectionNum="2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[4]]></Value>
+                        <ValueDesc><![CDATA[第2节的幻灯片数量等于4]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SectionSlidesCount" PropKeyDesc="指定节的幻灯片个数" SlideNum="1" SectionNum="3"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[3]]></Value>
+                        <ValueDesc><![CDATA[第3节的幻灯片数量等于3]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SectionSlidesCount" PropKeyDesc="指定节的幻灯片个数" SlideNum="1" SectionNum="4"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[4]]></Value>
+                        <ValueDesc><![CDATA[第4节的幻灯片数量等于4]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SectionSlidesCount" PropKeyDesc="指定节的幻灯片个数" SlideNum="1" SectionNum="5"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1]]></Value>
+                        <ValueDesc><![CDATA[第5节的幻灯片数量等于1]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="主体" WepType="Body">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="EntryEffectNotRepeatNums" PropKeyDesc="幻灯片不重复切换方式数量" SlideNum="1" SectionNum="2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1]]></Value>
+                        <ValueDesc><![CDATA[第2节应用一种单独的切换效果设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="1">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="EntryEffectNotRepeatNums" PropKeyDesc="幻灯片不重复切换方式数量" SlideNum="1" SectionNum="3"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1]]></Value>
+                        <ValueDesc><![CDATA[第3节应用一种单独的切换效果设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="1">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="EntryEffectNotRepeatNums" PropKeyDesc="幻灯片不重复切换方式数量" SlideNum="1" SectionNum="4"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1]]></Value>
+                        <ValueDesc><![CDATA[第4节应用一种单独的切换效果设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="1">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="SmartArt图形" WepType="SmartArt">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.25">
+                    <FindParams PropKey="SmartArtEffectType" PropKeyDesc="动画效果的类型" SlideNum="4" SmartArtNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[msoAnimEffectFade]]></Value>
+                        <ValueDesc><![CDATA[幻灯片4,SmartArt图形动画设置错误,应为淡出]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="Or" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="ChartAnimationEffect" PropKeyDesc="动画的特殊效果" SlideNum="7" ChartNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[ppEffectWipeUp]]></Value>
+                        <ValueDesc><![CDATA[幻灯片7,柱形图与折线图图表动画效果设置错误,应为擦除]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="ChartAnimationEffect" PropKeyDesc="动画的特殊效果" SlideNum="7" ChartNum="2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[ppEffectWipeUp]]></Value>
+                        <ValueDesc><![CDATA[幻灯片7,柱形图与折线图图表动画效果设置错误,应为擦除]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="文本框动画" WepType="AnimationSetting">
+            <MarkRuleGroup LogicOper="And" FullScore="1.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="AnimDirection2" PropKeyDesc="指定显示名称或顺序的动画效果的方向" SlideNum="7" MainSequenceIndex="1" Define1="系列 1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[msoAnimDirectionDown]]></Value>
+                        <ValueDesc><![CDATA[幻灯片7,柱形图与折线图图表动画方向设置错误,应为自底部]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="AnimTriggerDelayTime2" PropKeyDesc="指定显示名称或顺序的启用动画触发器后的延时" SlideNum="7" MainSequenceIndex="1" Define1="系列 2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2]]></Value>
+                        <ValueDesc><![CDATA[幻灯片7,柱形图与折线图--系列"同比增长率（%）"动画延迟时间设置错误,应为2秒]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="AnimDirection2" PropKeyDesc="指定显示名称或顺序的动画效果的方向" SlideNum="7" MainSequenceIndex="1" Define1="系列 2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[msoAnimDirectionLeft]]></Value>
+                        <ValueDesc><![CDATA[幻灯片7，柱形图与折线图--系列"同比增长率（%）"动画效果设置错误,应为自左侧]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="AnimTriggerType2" PropKeyDesc="指定显示名称或顺序的启动动画的触发器类型" SlideNum="7" MainSequenceIndex="1" Define1="系列 2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[msoAnimTriggerAfterPrevious]]></Value>
+                        <ValueDesc><![CDATA[幻灯片7，柱形图与折线图--系列"同比增长率（%）"动画触发类型设置错误,应为在上一动画之后]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="Or" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="ChartAnimationEffect" PropKeyDesc="动画的特殊效果" SlideNum="7" ChartNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[ppEffectWheel1Spoke]]></Value>
+                        <ValueDesc><![CDATA[幻灯片7,饼图动画效果设置错误,应为"轮子"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="ChartAnimationEffect" PropKeyDesc="动画的特殊效果" SlideNum="7" ChartNum="2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[ppEffectWheel1Spoke]]></Value>
+                        <ValueDesc><![CDATA[幻灯片7,饼图动画效果设置错误,应为"轮子"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="幻灯片查找" WepType="SlideFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetSlideComments" PropKeyDesc="获得所有批注" SlideNum="3"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[]]></Value>
+                        <ValueDesc><![CDATA[删除演示文稿中的批注设置错误，应为：幻灯片3,无批注]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+    <ScorePointGroup FileName="ppt.pptx" OfficeType="3" ParseType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="SmartArt图形" WepType="SmartArt">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.25">
+                    <FindParams PropKey="SmartArtEffectOptions_Sequence_Xml" PropKeyDesc="SmartArt对象的动画组合图形" SlideNum="4"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[逐个]]></Value>
+                        <ValueDesc><![CDATA[幻灯片4,SmartArt图形动画效果选项设置错误,应为"逐个"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="Or" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="ChartAnimationEffectOptions_Sequence" PropKeyDesc="动画效果选项" SlideNum="7" ChartNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[series]]></Value>
+                        <ValueDesc><![CDATA[幻灯片7,柱形图与折线图擦除动画效果选项设置错误,应为"按系列"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="ChartAnimationEffectOptions_Sequence" PropKeyDesc="动画效果选项" SlideNum="7" ChartNum="2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[series]]></Value>
+                        <ValueDesc><![CDATA[幻灯片7,柱形图与折线图擦除动画效果选项设置错误,应为"按系列"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="ChartAnimationEffectOptions_Sequence" PropKeyDesc="动画效果选项" SlideNum="7" ChartNum="3"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[series]]></Value>
+                        <ValueDesc><![CDATA[幻灯片7,柱形图与折线图擦除动画效果选项设置错误,应为"按系列"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

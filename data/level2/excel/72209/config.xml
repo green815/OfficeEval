@@ -1,0 +1,430 @@
+<QuestItem QuestCode="********" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Excel.xlsx" ParseType="1" OfficeType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WookbookNum" PropKeyDesc="获取指定工作表序号的名称" SheetNum="1" SheetNameAlias="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[员工基础档案]]></Value>
+                        <ValueDesc><![CDATA[在最左侧插入一个空白工作表，重命名错误（标准答案：员工基础档案）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WorkSheetTabColor" PropKeyDesc="获取工作表的选项卡颜色" SheetName="员工基础档案" SheetNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255]]></Value>
+                        <ValueDesc><![CDATA[在"员工基础档案"中，工作表标签颜色设置错误（标准答案：红色(标准色)）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="3">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="员工基础档案" Row="E2|E6|E32|E37|E63|E100" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[110108196301020119|110101197209021144|420016198409183216|110108197001020119|210205197909078231|110108197809020379]]></Value>
+                        <ValueDesc><![CDATA[在"员工基础档案"中，身份证号E2|E6|E32|E37|E63|E100单元格内容设置错误（标准答案：110108196301020119|110101197209021144|420016198409183216|110108197001020119|210205197909078231|110108197809020379）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="3">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="员工基础档案" Row="D2|D6|D32|D37|D63|D100" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[110108196301020119|110101197209021144|420016198409183216|110108197001020119|210205197909078231|110108197809020379]]></Value>
+                        <ValueDesc><![CDATA[在"员工基础档案"中，身份证号D2|D6|D32|D37|D63|D100单元格内容设置错误（标准答案：110108196301020119|110101197209021144|420016198409183216|110108197001020119|210205197909078231|110108197809020379）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="员工基础档案" Row="A1|B1|A3|B3|A10|B10|A34|B34|A56|B56|A79|B79|A97|B97" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[工号|姓名|TPY002|丁春秋|TPY009|风波恶|TPY033|左子穆|TPY055|耶律洪基|TPY078|范骅|TPY096|钟万仇]]></Value>
+                        <ValueDesc><![CDATA[在"员工基础档案"中，A1|B1|A3|B3|A10|B10|A34|B34|A56|B56|A79|B79|A97|B97单元格内容设置错误（标准答案：工号|姓名|TPY002|丁春秋|TPY009|风波恶|TPY033|左子穆|TPY055|耶律洪基|TPY078|范骅|TPY096|钟万仇）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindNumberFormatLst" PropKeyDesc="指定的单元格是否存在指定的数字格式" SheetName="员工基础档案" Row="L2:M102" Find="#,##0" Define1="$"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[在"员工基础档案"中，L2:M102单元格格式设置错误（标准答案：不带货币符号的会计专用类型格式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindNumberFormatLst" PropKeyDesc="指定的单元格是否存在指定的数字格式" SheetName="员工基础档案" Row="L2:M102" Find="0.00" Define1="0.000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[在"员工基础档案"中，L2:M102单元格格式设置错误（标准答案：保留2位小数）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="员工基础档案" Row="A2:J100" Define1="单元格字体|单元格字号"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[微软雅黑|10]]></Value>
+                        <ValueDesc><![CDATA[在"员工基础档案"中，A2:J100单元格格式设置错误（标准答案：微软雅黑"、10磅）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="自定义" WepType="Custom">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams WepType="Table" PropKey="ExcelTableName" PropKeyDesc="获取指定的对象序号的名称" SheetName="员工基础档案" FindTableIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[档案]]></Value>
+                        <ValueDesc><![CDATA[在"员工基础档案"中，A1:N102表名称设置错误（标准答案：档案）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams WepType="Table" PropKey="ExcelTableShowHeaders" PropKeyDesc="判断指定的对象序号是否显示标题信息" SheetName="员工基础档案" FindTableIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[在"员工基础档案"中，A1:N102表格样式设置错误（标准答案：包含标题的"表"）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams WepType="Table" PropKey="ExcelTableRange" PropKeyDesc="获取指定的对象序号所适用的单元格区域" SheetName="员工基础档案" FindTableIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[A1:N102]]></Value>
+                        <ValueDesc><![CDATA[在"员工基础档案"中，A1:N102表格范围设置错误（标准答案：区域A1:N102）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams WepType="ParaFind" PropKey="WorkBookConnections" PropKeyDesc="工作簿连接外部数据源的属性" SheetName="员工基础档案" Define1="名称"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[员工档案]]></Value>
+                        <ValueDesc><![CDATA[在"员工基础档案"中，A1:N102表格样式设置错误（标准答案：删除外部链接）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="|_">7</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="员工基础档案" Row="F2|F6|F32|F37|F63|F100" Find="格式|0" Define1="IF"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[男|女|男|男|男|男]]></Value>
+                        <ValueDesc><![CDATA[在"员工基础档案"中，性别F2|F6|F32|F37|F63|F100单元格设置错误（标准答案：男|女|男|男|男|男）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="员工基础档案" Row="E2|E6|E32|E37|E63|E100" Find="格式|0" Define1="IF"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[男|女|男|男|男|男]]></Value>
+                        <ValueDesc><![CDATA[在"员工基础档案"中，性别E2|E6|E32|E37|E63|E100单元格设置错误（标准答案：男|女|男|男|男|男）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Text值)" SheetName="员工基础档案" Row="G2|G6|G32|G37|G63|G100" Define1="="></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1963年01月02日|1972年09月02日|1984年09月18日|1970年01月02日|1979年09月07日|1978年09月02日]]></Value>
+                        <ValueDesc><![CDATA[在"员工基础档案"中，出生日期（G列）G2|G6|G32|G37|G63|G100单元格设置错误（标准答案：1963年01月02日|1972年09月02日|1984年09月18日|1970年01月02日|1979年09月07日|1978年09月02日）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Text值)" SheetName="员工基础档案" Row="F2|F6|F32|F37|F63|F100" Define1="="></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1963年01月02日|1972年09月02日|1984年09月18日|1970年01月02日|1979年09月07日|1978年09月02日]]></Value>
+                        <ValueDesc><![CDATA[在"员工基础档案"中，出生日期（F列）F2|F6|F32|F37|F63|F100单元格设置错误（标准答案：1963年01月02日|1972年09月02日|1984年09月18日|1970年01月02日|1979年09月07日|1978年09月02日）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="员工基础档案" Row="H2|H6|H32|H37|H63|H100" Find="格式|0" Define1="="></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[52|43|31|45|36|37]]></Value>
+                        <ValueDesc><![CDATA[在"员工基础档案"中，年龄（H列）H2|H6|H32|H37|H63|H100单元格设置错误（标准答案：52|43|31|45|36|37）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="员工基础档案" Row="G2|G6|G32|G37|G63|G100" Find="格式|0" Define1="="></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[52|43|31|45|36|37]]></Value>
+                        <ValueDesc><![CDATA[在"员工基础档案"中，年龄G2|G6|G32|G37|G63|G100单元格设置错误（标准答案：52|43|31|45|36|37）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="员工基础档案" Row="M2|M6|M32|M37|M63|M100" Find="格式|0" Define1="="></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1700|420|80|630|40|120]]></Value>
+                        <ValueDesc><![CDATA[在"员工基础档案"中，工龄工资M2|M6|M32|M37|M63|M100单元格设置错误（标准答案：1700|420|80|630|40|120）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="员工基础档案" Row="L2|L6|L32|L37|L63|L100" Find="格式|0" Define1="="></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1700|420|80|630|40|120]]></Value>
+                        <ValueDesc><![CDATA[在"员工基础档案"中，工龄工资L2|L6|L32|L37|L63|L100单元格设置错误（标准答案：1700|420|80|630|40|120）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="员工基础档案" Row="N2|N6|N32|N37|N63|N100" Find="格式|0" Define1="="></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[41700|6620|8080|11630|6040|6120]]></Value>
+                        <ValueDesc><![CDATA[在"员工基础档案"中，基本月工资N2|N6|N32|N37|N63|N100单元格设置错误（标准答案：41700|6620|8080|11630|6040|6120）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="员工基础档案" Row="M2|M6|M32|M37|M63|M100" Find="格式|0" Define1="="></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[41700|6620|8080|11630|6040|6120]]></Value>
+                        <ValueDesc><![CDATA[在"员工基础档案"中，基本月工资M2|M6|M32|M37|M63|M100单元格设置错误（标准答案：41700|6620|8080|11630|6040|6120）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="年终奖金" SheetNameAlias="2" Row="B6|B32|B37|B63" Define1="="></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[马小翠|刘竹庄|孟来福|赵钱孙]]></Value>
+                        <ValueDesc><![CDATA[在"年终奖金"中，姓名B6|B32|B37|B63单元格设置错误（标准答案：马小翠|刘竹庄|孟来福|赵钱孙）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="年终奖金" SheetNameAlias="2" Row="C6|C32|C37|C63" Define1="="></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[管理|研发|销售|财务]]></Value>
+                        <ValueDesc><![CDATA[在"年终奖金"中，部门C6|C32|C37|C63单元格设置错误（标准答案：管理|研发|销售|财务）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="年终奖金" SheetNameAlias="2" Row="D6|D32|D37|D63" Define1="="></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[12360|6100|5060|18300]]></Value>
+                        <ValueDesc><![CDATA[在"年终奖金"中，月基本工资D6|D32|D37|D63单元格设置错误（标准答案：12360|6100|5060|18300）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="3">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="年终奖金" SheetNameAlias="2" Row="G4|G18|G39|G63" Find="格式|0.0" Define1="="></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[14457.0|410.4|2785.8|3189.0]]></Value>
+                        <ValueDesc><![CDATA[在"年终奖金"中，应交个税G4|G18|G39|G63单元格设置错误（标准答案：14457.0|410.4|2785.8|3189.0）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="12月工资表" SheetNameAlias="3" Row="M9|M29|M49|M69" Find="格式|0.0" Define1="="></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[45475.3|16366.2|13818.8|16570.7]]></Value>
+                        <ValueDesc><![CDATA[在"12月工资表"中，实发工资奖金（M列）M9|M29|M49|M69单元格设置错误（标准答案：45475.3|16366.2|13818.8|16570.7）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="4" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="工资条" SheetNameAlias="5" Row="A3|B3|C3|D3|M2|A66|B66|C66|D66|M65" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[TPY001|刀白凤|管理|41700|实发工资奖金|TPY031|叶二娘|研发|8080|实发工资奖金]]></Value>
+                        <ValueDesc><![CDATA[在"工资条"中，A3|B3|C3|D3|M2|A66|B66|C66|D66|M65单元格值错误（标准答案：TPY001|刀白凤|管理|41700|实发工资奖金|TPY031|叶二娘|研发|8080|实发工资奖金）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="工资条" SheetNameAlias="5" Row="A81|B81|C81|D81|M80|A201|B201|C201|D201|M200" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[TPY036|李春来|研发|11630|实发工资奖金|TPY099|康广陵|人事|6120|实发工资奖金]]></Value>
+                        <ValueDesc><![CDATA[在"工资条"中，A81|B81|C81|D81|M80|A201|B201|C201|D201|M200单元格值错误（标准答案：TPY036|李春来|研发|11630|实发工资奖金|TPY099|康广陵|人事|6120|实发工资奖金）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="验证筛选" WepType="ParaFont">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="CellRowHeightOfRange" PropKeyDesc="判断指定区域的平均行高是否在指定的范围内" SheetName="工资条" SheetNameAlias="5" Row="A4|A49|A94|A118" Define1="介于39-41"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[在"工资条"中，A4|A49|A94|A118单元格行高错误（标准答案：40）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="工资条" SheetNameAlias="5" Row="A80|A81|M200" Define1="CustomBorder：上边框线存在|右边框线存在"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[上边框存在|右边框存在|上边框存在|右边框存在|上边框存在|右边框存在]]></Value>
+                        <ValueDesc><![CDATA[在"工资条"中，A80|A81|M200单元格边框线错误（标准答案：上边框存在|右边框存在|上边框存在|右边框存在|上边框存在|右边框存在）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="工资条" SheetNameAlias="5" Row="A76|A82|A91" Define1="CustomBorder：上边框线存在|右边框线存在"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[上边框存在|右边框不存在|上边框存在|右边框不存在|上边框存在|右边框不存在]]></Value>
+                        <ValueDesc><![CDATA[在"工资条"中，A76|A82|A91单元格边框线错误（标准答案：上边框存在|右边框不存在|上边框存在|右边框不存在|上边框存在|右边框不存在）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="工资条" SheetNameAlias="5" Row="M200" Define1="单元格字号"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[10]]></Value>
+                        <ValueDesc><![CDATA[在"工资条"中，M200单元格字号设置错误（标准答案：字号大于等于10磅）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">2</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ColWidth" PropKeyDesc="获取工作表指定范围单元格的列宽" SheetName="工资条" SheetNameAlias="5" Row="D1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[7]]></Value>
+                        <ValueDesc><![CDATA[在"工资条"中，D列列宽设置错误（标准答案：大于等于7）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">2</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ColWidth" PropKeyDesc="获取工作表指定范围单元格的列宽" SheetName="工资条" SheetNameAlias="5" Row="M1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[10]]></Value>
+                        <ValueDesc><![CDATA[在"工资条"中，M列列宽设置错误（标准答案：大于等于10）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">2</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="PaperOrientation" PropKeyDesc="获取纵向或横向打印模式(XlPageOrientation常量)" SheetName="工资条" SheetNameAlias="5"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA['xlLandscape']]></Value>
+                        <ValueDesc><![CDATA[在"工资条"中，页面方向设置错误（标准答案：横向）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="CenterHorizontally" PropKeyDesc="判断是否在页面的水平居中位置打印指定工作表" SheetName="工资条" SheetNameAlias="5"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[在"工资条"中，页面打印设置错误（标准答案：水平居中打印）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+    <ScorePointGroup FileName="Excel.xlsx" ParseType="2" OfficeType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="PrintSetting" PropKeyDesc="获取工作表打印缩放设置情况" SheetName="工资表" SheetNameAlias="5"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[工作表列调为一页]]></Value>
+                        <ValueDesc><![CDATA[在"工资条"中，页面设置错误（标准答案：一页）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

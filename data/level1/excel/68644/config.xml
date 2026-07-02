@@ -1,0 +1,359 @@
+<QuestItem QuestCode="XXXXXXX" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Excel.xlsx" ParseType="1" OfficeType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="MergeCells" PropKeyDesc="合并单元格"  SheetName="选修课程统计表" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[【选修课程统计表】未将A1：E1单元格合并为一个单元格]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Alignment" PropKeyDesc="段落的对齐方式(WdParagraphAlignment常量)"  SheetName="选修课程统计表" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[-4108]]></Value>
+                        <ValueDesc><![CDATA[【选修课程统计表】未设置A1：E1单元格内容水平居中]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="3">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值"  SheetName="选修课程统计表" Row="B35|B36|B67|B68" Find="格式|0" Define1="VLOOKUP"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[一班|二班|二班|三班]]></Value>
+                        <ValueDesc><![CDATA[【选修课程统计表】利用VLOOKUP计算班级列错误（抽查B35|B36|B67|B68的正确值：一班|二班|二班|三班）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值"  SheetName="选修课程统计表" Row="E11|E12|E20|E44|E100" Find="格式|0" Define1="IF"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[A|B|C|F|B]]></Value>
+                        <ValueDesc><![CDATA[【选修课程统计表】利用IF函数计算"成绩等级"列的内容错误(抽查E11|E12|E20|E44|E100的值[A|B|C|F|B]）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值"  SheetName="选修课程统计表" Row="H14|H16|H17" Find="格式|0" Define1="COUNTIFS"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[7|11|11]]></Value>
+                        <ValueDesc><![CDATA[【选修课程统计表】利用COUNTIFS函数计算H14:H17错误（抽查H14|H16|H17的值[7|11|11]）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值"  SheetName="选修课程统计表" Row="I15|I16|I17" Find="格式|0" Define1="COUNTIFS"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[5|10|10]]></Value>
+                        <ValueDesc><![CDATA[【选修课程统计表】利用COUNTIFS函数计算I14:I17错误（抽查I15|I16|I17的值[5|10|10]）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值"  SheetName="选修课程统计表" Row="J14|J15|J17" Find="格式|0" Define1="COUNTIFS"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[8|5|17]]></Value>
+                        <ValueDesc><![CDATA[【选修课程统计表】利用COUNTIFS函数计算J14:J17错误（抽查J14|J15|J17的值[8|5|17]）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="单元格的值"  SheetName="选修课程统计表" Row="K14|K15|K17" Define1="AVERAGEIF"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[81.7|85.1|79.3]]></Value>
+                        <ValueDesc><![CDATA[【选修课程统计表】利用AVERAGEIF函数计算K14:K17错误（抽查K14|K15|K17的值[81.7|85.1|79.3]）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值"  SheetName="选修课程统计表" Row="K14|K15|K17" Find="格式|0.00" Define1="AVERAGEIF"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[81.70|85.10|79.30]]></Value>
+                        <Value><![CDATA[81.73|85.14|79.34]]></Value>
+                        <ValueDesc><![CDATA[【选修课程统计表】利用AVERAGEIF函数计算K14:K17，并设置数值型，保留小数点后1位错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="自定义约定" WepType="Custom">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="FormatConditionsFormula" PropKeyDesc="条件格式值" SheetName="选修课程统计表" Row="E3" Range="E110" WepType="FormatCondition"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[NOT(ISERROR(SEARCH("A",E3)))]]></Value>
+                            <ValueDesc><![CDATA[【选修课程统计表】条件格式修饰成绩等级E3:E110为"A"的单元格设置错误]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="FormatConditionsAttr" PropKeyDesc="格式条件属性" SheetName="选修课程统计表" Define1="底纹：图案颜色|图案样式" WepType="FormatCondition"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[底纹图案颜色：14470546|图案样式：-4124]]></Value>
+                            <ValueDesc><![CDATA[【选修课程统计表】成绩等级为"A"的单元格设置颜色为"水绿色、个性色5、淡色40%"、样式为"25%灰色"的图案填充设置错误]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+                <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="IsFormatConditionsFormula" PropKeyDesc="格式条件公式"  SheetName="选修课程统计表" Row="E3" Range="E110" BorderType="0" WepType="ParaFind"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[0]]></Value>
+                            <ValueDesc><![CDATA[【选修课程统计表】条件格式修饰成绩等级E3:E110单元格设置错误]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="1">1</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="CellDisplayFormat" PropKeyDesc="单元格显示格式"  SheetName="选修课程统计表" Row="E3:E11|E13|E15:E16|E53:E59" BorderType="0" Define1="显示底纹(图案颜色|图案样式)" WepType="ParaFind"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[14470546|-4124|14470546|-4124|14470546|-4124]]></Value>
+                            <ValueDesc><![CDATA[【选修课程统计表】成绩等级为"A"的单元格设置颜色为"水绿色、个性色5、淡色40%"、样式为"25%灰色"的图案填充设置错误]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="CellDisplayFormat" PropKeyDesc="单元格显示格式"  SheetName="选修课程统计表" Row="E12|E14|E50:E52|E83:E92" BorderType="0" Define1="显示底纹(图案颜色)" WepType="ParaFind"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[14470546]]></Value>
+                            <ValueDesc><![CDATA[【选修课程统计表】成绩等级为"A"的单元格设置颜色为"水绿色、个性色5、淡色40%"的图案填充设置错误]]></ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">7</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格" WepType="Table">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="ExcelTableStyle" PropKeyDesc="表格样式" SheetName="选修课程统计表" FindTableIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[表样式浅色 2]]></Value>
+                        <ValueDesc><![CDATA[【选修课程统计表】将G13:K17单元格区域表格样式设置错误，应设置为"表样式浅色2"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ChartType" PropKeyDesc="图表类型" SheetName="选修课程统计表" FndChartIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[xlColumnClustered]]></Value>
+                        <ValueDesc><![CDATA[【选修课程统计表】图表类型设置错误，应建立"簇状柱形图"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SeriesXValues" PropKeyDesc="图表值" SheetName="选修课程统计表" FndChartIndex="1" Find_SeriesIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[一班选课人数,二班选课人数,三班选课人数]]></Value>
+                        <ValueDesc><![CDATA[【选修课程统计表】图表数据选取错误，应选择"一班选课人数"列、"二班选课人数"列 、"三班选课人数"列]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SeriesAllName" PropKeyDesc="系列名称" SheetName="选修课程统计表" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[C012,C016,C020,C026]]></Value>
+                        <ValueDesc><![CDATA[【选修课程统计表】图表图例项选择错误，应选择C012、C016、C020、C026]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetHasLegend" PropKeyDesc="图例放置的位置" SheetName="选修课程统计表" FndChartIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[]]></Value>
+                        <ValueDesc><![CDATA[【选修课程统计表】图例设置错误，应设置图例为四门课程的课程号]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetChartTitle" PropKeyDesc="图表标题" SheetName="选修课程统计表" FndChartIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[各班选课人数统计图]]></Value>
+                        <ValueDesc><![CDATA[【选修课程统计表】图表标题设置错误，应设置为"各班选课人数统计图"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetChartStyle" PropKeyDesc="图表样式" SheetName="选修课程统计表" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[208]]></Value>
+                        <ValueDesc><![CDATA[【选修课程统计表】图表样式设置错误，应选择"样式7"修饰图表]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="IsExistChartOfRange" PropKeyDesc="图表的单元格区域设置" SheetName="选修课程统计表" FndChartIndex="1" SortIndexNum="0" Define1="F8:L35"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[【选修课程统计表】图表位置放置错误，应将图插入到G19:K34单元格区域]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="" WepType="Sheet">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Wookbook" PropKeyDesc="工作表" SheetName="选修课程统计表"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[Sheet1工作表重命名错误，应将工作表命名为"选修课程统计表"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.3">
+                    <FindParams PropKey="PivotCustomAttr" PropKeyDesc="数据透视自定义属性" SheetName="产品销售情况表" SheetNameAlias="3" ExcelFieldType="行数据源"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[行：分公司]]></Value>
+                        <ValueDesc><![CDATA[【产品销售情况表】数据透视表行选择错误，应选择"分公司"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.3">
+                    <FindParams PropKey="PivotCustomAttr" PropKeyDesc="数据透视自定义属性" SheetName="产品销售情况表" SheetNameAlias="3" ExcelFieldType="列数据源"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[列：季度]]></Value>
+                        <ValueDesc><![CDATA[【产品销售情况表】数据透视表列选择错误，应选择"季度"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.4">
+                    <FindParams PropKey="PivotCustomAttr" PropKeyDesc="数据透视自定义属性" SheetName="产品销售情况表" SheetNameAlias="3" ExcelFieldType="值数据源"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[值：销售额（万元）]]></Value>
+                        <ValueDesc><![CDATA[【产品销售情况表】数据透视表数值选择错误，应选择"销售额（万元）"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="PivotCustomAttr" PropKeyDesc="数据透视自定义属性" SheetName="产品销售情况表" SheetNameAlias="3" ExcelFieldType="值汇总方式"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[销售额（万元）：xlSum]]></Value>
+                        <ValueDesc><![CDATA[【产品销售情况表】数据透视表汇总方式错误，应设置：求和]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="PivotStyleAttr" PropKeyDesc="数据透视样式属性" SheetName="产品销售情况表" SheetNameAlias="3" Find="表格样式|镶边行|镶边列"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[表格样式：数据透视表样式浅色 9]]></Value>
+                        <ValueDesc><![CDATA[【产品销售情况表】数据透视表样式设置错误，应选择"数据透视表样式浅色9"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="PivotStyleAttr" PropKeyDesc="数据透视样式属性" SheetName="产品销售情况表" SheetNameAlias="3" Find="镶边行|镶边列"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[镶边行：True|镶边列：True]]></Value>
+                        <ValueDesc><![CDATA[【产品销售情况表】数据透视表表样式设置错误，应勾选"镶边行"和"镶边列"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="IsExistPivotOfRange" PropKeyDesc="是否存在数据透视表范围" SheetName="产品销售情况表" SheetNameAlias="0" PivotTablesNum="0" Range="I2:M20"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[【产品销售情况表】数据透视表位置错误，应将数据透视表置于I2:M20]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncWordStrings="市">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+</ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

@@ -1,0 +1,439 @@
+<QuestItem QuestCode="XXXXXXX" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Word.docx" OfficeType="1" ParseType="1">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="1.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="PaperWidth" PropKeyDesc="页面宽度"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[14]]></Value>
+                        <ValueDesc>Word.docx中纸张大小设置错误，应设置为高20厘米，宽14厘米</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="PaperHeight" PropKeyDesc="页面高度"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[19.5-20.5]]></Value>
+                        <ValueDesc>Word.docx中纸张大小设置错误，应设置为高20厘米，宽14厘米</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">8</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Page_MarginCm" PropKeyDesc="页面边距(单位:厘米)"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1.5 1.5 1.5 1.5]]></Value>
+                        <ValueDesc>Word.docx中页边距设置错误，应设置上下左右各为1.5厘米</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面文档设置" WepType="Document">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="BuiltInDocumentProperties" PropKeyDesc="内置文档属性" Find="Title"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[Name:Title|Value:黑客技术|Type:4]]></Value>
+                        <ValueDesc>Word.docx中封面的"标题"设置错误，应设置为"黑客技术"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="黑客技术属科学技术的范畴" Define1="字体|字号|样式|段前距(行)|段后距(行)" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[字体：黑体|字号：14|样式：标题 1|段前距：0.5行|段后距：0.5行]]></Value>
+                        <ValueDesc>Word.docx中"黑客技术属科学技术的范畴"格式设置错误，应设置为应用样式"标题1"、黑体、四号、段前段后间距0.5行</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="现代国家的网络无法完全" Define1="字体|字号|样式|段前距(行)|段后距(行)" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[字体：黑体|字号：14|样式：标题 1|段前距：0.5行|段后距：0.5行]]></Value>
+                        <ValueDesc>Word.docx中"现代国家的网络无法完全"格式设置错误，应设置为应用样式"标题1"、黑体、四号、段前段后间距0.5行</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="发展有中国特色的网络安全" Define1="字体|字号|样式|段前距(行)|段后距(行)" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[字体：黑体|字号：14|样式：标题 1|段前距：0.5行|段后距：0.5行]]></Value>
+                        <ValueDesc>Word.docx中"发展有中国特色的网络安全"格式设置错误，应设置为应用样式"标题1"、黑体、四号、段前段后间距0.5行</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="黑客技术属科学技术的范畴" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[一]]></Value>
+                        <ValueDesc>Word.docx中"黑客技术属科学技术的范畴"自动编号样式设置错误，应设置为"一"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="发展有中国特色的网络安全" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[七]]></Value>
+                        <ValueDesc>Word.docx中"发展有中国特色的网络安全"自动编号样式设置错误，应设置为"七"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumber_TrailingCharacter" PropKeyDesc="编号列表的插入字符类型" Para="-1" Find="有利于国家安全的" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[不特别标注]]></Value>
+                        <ValueDesc>Word.docx中"有利于国家安全的"编号和后面文字分隔设置错误，应设置为“不特别标注”</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumber_TrailingCharacter" PropKeyDesc="编号列表的插入字符类型" Para="-1" Find="发展有中国特色的网络安全" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[不特别标注]]></Value>
+                        <ValueDesc>Word.docx中"发展有中国特色的网络安全"编号和后面文字分隔设置错误，应设置为“不特别标注”</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="黑客技术和网络安全是分不开的" Define1="字体|字号|样式|段前距(行)|段后距(行)|倾斜" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[字体：等线|字号：10.5|倾斜：1|样式：标题 2|段前距：0.5行|段后距：0.5行]]></Value>
+                        <ValueDesc>Word.docx中"黑客技术和网络安全是分不开的"格式设置错误，应设置为应用标题2样式、宋体、五号、倾斜、段前段后间距0.5行</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="全世界对黑客技术的研究显得严重不足" Define1="字体|字号|样式|段前距(行)|段后距(行)|倾斜" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[字体：等线|字号：10.5|倾斜：1|样式：标题 2|段前距：0.5行|段后距：0.5行]]></Value>
+                        <ValueDesc>Word.docx中"全世界对黑客技术的研究显得严重不足"格式设置错误，应设置为应用标题2样式、宋体、五号、倾斜、段前段后间距0.5行</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="网络安全公司需要黑客的参与" Define1="字体|字号|样式|段前距(行)|段后距(行)|倾斜" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[字体：等线|字号：10.5|倾斜：1|样式：标题 2|段前距：0.5行|段后距：0.5行]]></Value>
+                        <ValueDesc>Word.docx中"网络安全公司需要黑客的参与"格式设置错误，应设置为应用标题2样式、宋体、五号、倾斜、段前段后间距0.5行</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="黑客技术和网络安全是分不开的" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[一]]></Value>
+                        <ValueDesc>Word.docx中"黑客技术和网络安全是分不开的"自动编号样式设置错误，应设置为"（一）"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="网络安全公司需要黑客的参与" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[五]]></Value>
+                        <ValueDesc>Word.docx中"网络安全公司需要黑客的参与"自动编号样式设置错误，应设置为"（五）"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumber_TrailingCharacter" PropKeyDesc="编号列表的插入字符类型" Para="-1" Find="全世界对黑客技术的研究显得严重不足" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[空格]]></Value>
+                        <ValueDesc>Word.docx中"全世界对黑客技术的研究显得严重不足"编号和后面文字分隔设置错误，应设置为使用空格分隔</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumber_TrailingCharacter" PropKeyDesc="编号列表的插入字符类型" Para="-1" Find="网络安全公司需要黑客的参与" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[空格]]></Value>
+                        <ValueDesc>Word.docx中"网络安全公司需要黑客的参与"编号和后面文字分隔设置错误，应设置为使用空格分隔</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="无须讳言" Define1="首行缩进|段前距(行)|段后距(行)|行距(磅)" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[缩进：2|单倍行距|段前距：0.5行|段后距：0.5行]]></Value>
+                        <ValueDesc>Word.docx中"无须讳言"格式设置错误，应设置为首行缩进2字符，段前和段后间距为0.5行，单倍行距</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="再厉害的黑客" Define1="首行缩进|段前距(行)|段后距(行)|行距(磅)" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[缩进：2|单倍行距|段前距：0.5行|段后距：0.5行]]></Value>
+                        <ValueDesc>Word.docx中"再厉害的黑客"格式设置错误，应设置为首行缩进2字符，段前和段后间距为0.5行，单倍行距</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="引言" Define1="样式|大纲级别" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[样式：正文|大纲级别：wdOutlineLevel1]]></Value>
+                        <ValueDesc>Word.docx中"引言"设置错误，应设置样式为正文，大纲级别为1级</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="索引" Define1="样式|大纲级别" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[样式：正文|大纲级别：wdOutlineLevel1]]></Value>
+                        <ValueDesc>Word.docx中"索引"设置错误，应设置样式为正文，大纲级别为1级</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面文档设置" WepType="Document">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1.5">
+                    <FindParams PropKey="TableOfContentsCustomAttr" PropKeyDesc="目录自定义属性" Count="1" Find="引言.*黑客技术属科学技术的范畴.*全世界对黑客技术的研究显得严重不足.*应该辨证地看待黑客技术.*网络安全公司需要黑客的参与.*未来信息战的可能性是存在的.*索引" Define1="目录域结果"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc>Word.docx中目录设置错误，应设置为包含标题1、标题2、"引言"、"索引"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsTwoTextInOnePage" PropKeyDesc="两个文本是否在同一页" Para="-1" Define1="发展有中国特色的网络安全" Define2="破坏能力"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[false]]></Value>
+                        <ValueDesc>Word.docx中目录位于独立的页面内设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="AdjustedPageNumber" PropKeyDesc="页面数" Para="-1" Find="发展有中国特色的网络安全"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[3]]></Value>
+                        <ValueDesc>Word.docx中目录位于独立的页面内设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">3</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FooterPageShapeStyle" PropKeyDesc="页脚对象名称" Define8="0"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[Group]]></Value>
+                        <Value><![CDATA[组]]></Value>
+                        <ValueDesc>Word.docx中插入“马赛克2”页码设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRuleGroup LogicOper="Or" FullScore="1" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="StartingNumber" PropKeyDesc="页脚页码起始编号" SectionsNum="-1" Define7="内容：黑客软件的人|段落：1##100" Define8="1"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[1]]></Value>
+                            <ValueDesc>Word.docx中正文的起始页码设置错误，应设置为1</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="1">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="RangeTextPageNumber" PropKeyDesc="文字所在页码" SectionsNum="-1" Define7="内容：黑客软件的人|段落：1##100"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[1]]></Value>
+                            <ValueDesc>正文“黑客软件的人”所在页的页码设置错误，应为1</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="1">0</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+                <MarkRuleGroup LogicOper="Or" FullScore="1" NotLeaf="1">
+                    <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="1">
+                        <MarkRule FullScore="-1">
+                            <FindParams PropKey="SectionNumber" PropKeyDesc="获取指定内容的节点" SectionsNum="-1" Define7="目录" Define8="2"></FindParams>
+                            <StdAnswer AnsType="0">
+                                <Value><![CDATA[1]]></Value>
+                                <ValueDesc>Word.docx中目录设置错误，应设置为位于第1节</ValueDesc>
+                            </StdAnswer>
+                            <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                        </MarkRule>
+                        <MarkRule FullScore="-1">
+                            <FindParams PropKey="FooterFields" PropKeyDesc="页脚域代码" SectionsNum="-1" HeaderFooterIndex="2" Define7="目录" Define8="2"></FindParams>
+                            <StdAnswer AnsType="0">
+                                <Value><![CDATA[PAGE]]></Value>
+                                <ValueDesc>Word.docx中目录页码设置错误，应设置为无页码</ValueDesc>
+                            </StdAnswer>
+                            <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">7</OperatorParam>
+                        </MarkRule>
+                    </MarkRuleGroup>
+                    <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="1">
+                        <MarkRule FullScore="-1">
+                            <FindParams PropKey="SectionNumber" PropKeyDesc="获取指定内容的节点" SectionsNum="-1" Define7="目录" Define8="2"></FindParams>
+                            <StdAnswer AnsType="0">
+                                <Value><![CDATA[1]]></Value>
+                                <ValueDesc>Word.docx中目录设置错误，应设置为位于第1节</ValueDesc>
+                            </StdAnswer>
+                            <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="1">2</OperatorParam>
+                        </MarkRule>
+                        <MarkRule FullScore="-1">
+                            <FindParams PropKey="FooterFields" PropKeyDesc="页脚域代码" SectionsNum="-1" Define7="目录" Define8="2"></FindParams>
+                            <StdAnswer AnsType="0">
+                                <Value><![CDATA[PAGE]]></Value>
+                                <ValueDesc>Word.docx中目录页码设置错误，应设置为无页码</ValueDesc>
+                            </StdAnswer>
+                            <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">7</OperatorParam>
+                        </MarkRule>
+                    </MarkRuleGroup>
+                </MarkRuleGroup>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FootnotesNumber" PropKeyDesc="脚注编号" Find="传输控制协议/网际协议" Define1="起始编号"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1]]></Value>
+                        <ValueDesc>Word.docx中脚注编号设置错误，应设置为连续编号</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FootnotesNumber" PropKeyDesc="脚注编号" Find="故意攻击网络协议的缺陷" Define1="起始编号|编号规则"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1|wdRestartContinuous]]></Value>
+                        <ValueDesc>Word.docx中脚注编号设置错误，应设置为连续编号</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="4" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetFieldCodeOfAll" PropKeyDesc="获取所有域代码" Find="XE" Define1="XE.*Hacker||XE.*bug||XE.*SCOUnix||XE.*cnns||XE.*Newsweek"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true|true|true|true|true]]></Value>
+                        <ValueDesc>Word.docx中标记索引项并插入索引设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetFieldResultOfAll" PropKeyDesc="获取所有域结果" Find="INDEX" Define1="bug.*2||Cisco.*3||D.O.S.*7||Hacker.*1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true|true|true|true]]></Value>
+                        <ValueDesc>Word.docx中标记索引项并插入索引设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="4">
+                    <FindParams PropKey="GetFieldCodeOfAll" PropKeyDesc="获取所有域代码" Find="XE" Define1="XE.*Internet"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[false]]></Value>
+                        <ValueDesc>Word.docx中未删除"Internet"索引</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+    <ScorePointGroup FileName="Word繁体.docx" OfficeType="1" ParseType="1">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面文档设置" WepType="Document">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FindFiles" PropKeyDesc="查找文件是否存在" Find="Word.docx" ExtendDefine="Word繁体.docx"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc>未找到文件Word繁体.docx</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="4" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsExists" PropKeyDesc="是否存在指定文本" Para="-1" Count="20" Find="黑客"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc>Word繁体.docx中内容错误，应存在第20处文本"黑客"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsExists" PropKeyDesc="是否存在指定文本" Para="-1" Find="這裏要討論"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc>Word繁体.docx中内容错误，应存在文本"這裏要討論"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsExists" PropKeyDesc="是否存在指定文本" Para="-1" Find="會利用微軟的安全"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc>Word繁体.docx中内容错误，应存在文本"會利用微軟的安全"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+    <ScorePointGroup FileName="word.docx" OfficeType="1" ParseType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面文档设置" WepType="Document">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="SdtAliasLst" PropKeyDesc="文档属性引用"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[标题|标题||]]></Value>
+                        <Value><![CDATA[标题|标题|]]></Value>
+                        <ValueDesc>为文档插入“镶边”型封面设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

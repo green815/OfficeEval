@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Local tools and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+node_modules/
+
+# Office temporary files
+~$*
+
+# Logs
+*.log
+*.err
+
+# Evaluator scratch/junctions
+eval/engines/_tmp_eval/
+eval/engines/questions
+eval/engines/word_questions
+eval/engines/excel_questions
+eval/engines/ppt_questions
+
+# Agent and evaluation outputs
+results/*/
+results/*.json
+!results/eval_gt.json
+!results/eval_gpt-5.5.json
+!results/README.md
+data/**/output/
+data/**/evaluation_result.txt

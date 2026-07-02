@@ -1,0 +1,486 @@
+<QuestItem QuestCode="XXXXXXX" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Excel.xlsx" ParseType="1" OfficeType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Wookbook" PropKeyDesc="工作表" SheetName="销售情况" SheetNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[工作表Sheet1重命名错误，应设置为"销售情况"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Wookbook" PropKeyDesc="工作表" SheetName="平均单价" SheetNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[工作表Sheet2重命名错误，应设置为"平均单价"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WorkSheetTabColor" PropKeyDesc="工作表标签颜色" SheetName="销售情况" SheetNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255]]></Value>
+                        <ValueDesc><![CDATA[工作表【销售情况】标签颜色设置错误，应设为标准的"红色"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WorkSheetTabColor" PropKeyDesc="工作表标签颜色" SheetName="平均单价" SheetNum="1" SheetNameAlias="2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[10498160]]></Value>
+                        <ValueDesc><![CDATA[工作表【平均单价】标签颜色设置错误，应设为标准的"紫色"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="FormulaNames" PropKeyDesc="公式名称" SheetName="平均单价" Row="A1"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[商品均价 平均单价!B3:C7]]></Value>
+                        <Value><![CDATA[商品均价 sheet2!B3:C7]]></Value>
+                        <ValueDesc><![CDATA[工作表"平均单价"中，B3:C7定义名称错误，应设置为"商品均价"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings=":：">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="销售情况" Row="A3" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[序号]]></Value>
+                        <ValueDesc><![CDATA[工作表"销售情况"中，在"店铺"列左侧插入一个空列错误（应设置A3为序号）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="Alignment" PropKeyDesc="段落的对齐方式(WdParagraphAlignment常量)" SheetName="销售情况" Row="A4"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[-4108]]></Value>
+                        <ValueDesc><![CDATA[工作表"销售情况"中，"店铺"列单元格对齐方式错误（居中）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="销售情况" Row="A4|A8|A20|A45|A64|A75|A82" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1|5|17|42|61|72|79]]></Value>
+                        <ValueDesc><![CDATA[工作表"销售情况"中，"店铺"列数据错误（以001、002、003……的格式填充序号列）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="Alignment" PropKeyDesc="段落的对齐方式(WdParagraphAlignment常量)" SheetName="销售情况" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[7]]></Value>
+                        <ValueDesc><![CDATA[工作表"销售情况"中，将第1行中的标题内容对齐方式错误（跨列居中）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="单元格显示格式" SheetName="销售情况" Row="A1" Define1="单元格字体"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[宋体]]></Value>
+                        <ValueDesc><![CDATA[工作表"销售情况"中，A1单元格字体错误（不为宋体）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="单元格显示格式" SheetName="销售情况" Row="A1" Define1="单元格字体"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0]]></Value>
+                        <ValueDesc><![CDATA[工作表"销售情况"中，A1单元格字体颜色错误（不为黑色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="单元格显示格式" SheetName="销售情况" Row="A1" Define1="单元格字号"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[11]]></Value>
+                        <ValueDesc><![CDATA[工作表"销售情况"中，A1单元格字号错误（大于11磅）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">1</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="3" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindFormulaLst" PropKeyDesc="公式查找" SheetName="销售情况" Row="F4|F18|F28|F40|F54|F65|F81" Find="商品均价"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[工作表"销售情况"中，F列的销售额公式错误（包含商品均价）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="销售情况" Row="F4|F18|F28|F40|F54|F65|F81" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[910462|1183601|953724|64196|119623|96996|487799]]></Value>
+                        <ValueDesc><![CDATA[工作表"销售情况"中，F列的销售额计算错误（抽查F4|F18|F28|F40|F54|F65|F81的值为910462|1183601|953724|64196|119623|96996|487799）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FindNumberFormatLst" PropKeyDesc="数字格式设置" SheetName="销售情况" Row="F4|F18|F28|F40|F54|F65|F81" Find="#,##0.00_"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[工作表"销售情况"中，F列的销售额数字格式错误（应设置为保留两位小数、使用千位分隔符#,##0.00_）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0" IgnorePuncStrings="_&quot;">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="单元格的值" SheetName="销售情况" Row="F4|F18|F28|F40|F54|F65|F81"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[910,462.00|1,183,600.60|953,723.81|64,196.30|119,622.80|96,996.20|487,799.28]]></Value>
+                        <ValueDesc><![CDATA[工作表"销售情况"中，F列的销售额数值错误（抽查F4|F18|F28|F40|F54|F65|F81的值是910,462.00|1,183,600.60|953,723.81|64,196.30|119,622.80|96,996.20|487,799.）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="验证筛选" WepType="ParaFont">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellRowHeightOfRange" PropKeyDesc="单元格行高" SheetName="销售情况" Row="A3:F83" Define1="介于16.7-35"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[工作表"销售情况"中，行高设置错误（应设置为16.7-35之间）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellColWidthOfRange" PropKeyDesc="单元格列宽" SheetName="销售情况" Row="A3:B3|C3:D3|E3:E3" Define1="介于7.3-20"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True]]></Value>
+                        <ValueDesc><![CDATA[工作表"销售情况"中，列高设置错误（应设置为7.3-20之间）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="3" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="单元格显示格式" SheetName="销售情况" Row="A3:F3|A15:F15|A27:F27|A49:F49|A55:F55|A83:F83" Define1="显示填充色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[15261367|15261367|15261367|15261367|15261367|15261367]]></Value>
+                        <ValueDesc><![CDATA[工作表"销售情况"中，A3:F83的条件格式设置错误（A3:F3|A15:F15|A27:F27|A49:F49|A55:F55|A83:F83填充颜色"水绿色,强调文字颜色5,淡色60%"）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsFormatConditionsFormula" PropKeyDesc="格式条件公式" SheetName="销售情况" SheetNameAlias="2" Row="G15" Range="G15"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0]]></Value>
+                        <ValueDesc><![CDATA[工作表"销售情况"中，A3:F83的条件格式设置错误（偶数行G15不填色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="单元格显示格式" SheetName="销售情况" Row="G3|G15|G27|G46|G58|G82" Define1="显示填充色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[16777215|16777215|16777215|16777215|16777215|16777215]]></Value>
+                        <ValueDesc><![CDATA[工作表"销售情况"中，A3:F83的条件格式设置错误（偶数行G3|G15|G27|G46|G58|G82不填色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="透视分析" SheetNameAlias="3" Row="A5|B5|C5|D5" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[门店|销量|销售额（元）|销售额排名]]></Value>
+                        <ValueDesc><![CDATA[工作表"透视分析"中，A5:D5单元格内容设置错误（应设置为门店|销量|销售额（元）|销售额排名）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="()（）">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="透视分析" SheetNameAlias="3" Row="B3|A6|A7|A8|B6|B9|B10" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[笔记本|上地店|西直门店|亚运村店|820|1050|3730]]></Value>
+                        <Value><![CDATA[打印机|上地店|西直门店|亚运村店|3283|2883|9656]]></Value>
+                        <Value><![CDATA[键盘|上地店|西直门店|亚运村店|2509|2847|10492]]></Value>
+                        <Value><![CDATA[鼠标|上地店|西直门店|亚运村店|2618|2544|9863]]></Value>
+                        <Value><![CDATA[台式机|上地店|西直门店|亚运村店|1055|1426|5108]]></Value>
+                        <ValueDesc><![CDATA[工作表"透视分析"中，门店、销量列值A6:B10单元格值错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="透视分析" SheetNameAlias="3" Row="B3|D6|D7|D8|D9|D10" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[笔记本|4|3|2|1]]></Value>
+                        <Value><![CDATA[打印机|1|3|4|2]]></Value>
+                        <Value><![CDATA[键盘|3|4|2|1]]></Value>
+                        <Value><![CDATA[鼠标|1|3|4|2]]></Value>
+                        <Value><![CDATA[台式机|4|3|2|1]]></Value>
+                        <ValueDesc><![CDATA[工作表"透视分析"中，各商品名称对应的销售额排名列D6:D9计算错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="透视分析" SheetNameAlias="3" Row="B3|C6|C7|C8|C9|C10" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[笔记本|3732894|4097079|4370218|4779926|16980116]]></Value>
+                        <Value><![CDATA[打印机|3776993|2095006|1920134|3316805|11108938]]></Value>
+                        <Value><![CDATA[键盘|440079|437272|463582|499364|1840297]]></Value>
+                        <Value><![CDATA[鼠标|286802|265001|249993|278695|1080492]]></Value>
+                        <Value><![CDATA[台式机|4073598|4795648|5347804|5506114|19723163]]></Value>
+                        <ValueDesc><![CDATA[工作表"透视分析"中，各商品名称对应的销售额列C6:C9计算错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="PivotTableStyle" PropKeyDesc="表格样式" SheetName="透视分析" SheetNameAlias="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[]]></Value>
+                        <ValueDesc><![CDATA[工作表"透视分析"中，透视表样式错误（应设置为更改透视表的样式，和原来不一致即可)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="DisplayGridlines" PropKeyDesc="是否显示网格线" SheetName="透视分析" SheetNum="1" SheetNameAlias="3"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[False]]></Value>
+                        <ValueDesc><![CDATA[工作表"透视分析"中，工作表的网格线错误（应设置为不显示工作表的网格线)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetChartTitleFormula" PropKeyDesc="图表标题公式" SheetName="透视分析" FndChartIndex="1" SheetNameAlias="3" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[=]]></Value>
+                        <ValueDesc><![CDATA[工作表"透视分析"中，图表标题公式错误（应设置为包含'=')]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetChartTitleFormula" PropKeyDesc="图表标题公式" SheetName="透视分析" FndChartIndex="1" SheetNameAlias="3" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[G1]]></Value>
+                        <ValueDesc><![CDATA[工作表"透视分析"中，图表标题公式错误（应设置为包含'G1')]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="ChartType" PropKeyDesc="图表类型" SheetName="透视分析" FndChartIndex="1" SheetNameAlias="3" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[xl3DPieExploded]]></Value>
+                        <Value><![CDATA[xl3DPie]]></Value>
+                        <ValueDesc><![CDATA[工作表"透视分析"中，图表类型错误（应设置为三维饼图)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="ChartCustomProperties" PropKeyDesc="图表自定义属性" SheetName="透视分析" FndChartIndex="1" SortIndexNum="0" Define1="数据点：选项|第一扇区起始角度"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第一扇区起始角度:0]]></Value>
+                        <ValueDesc><![CDATA[工作表"透视分析"中，图表第一扇区起始角度错误（应设置为不等于0)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">7</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="ChartCustomProperties" PropKeyDesc="图表自定义属性" SheetName="透视分析" FndChartIndex="1" SortIndexNum="0" Define1="系列：选项|饼图分离程度"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[饼图分离程度:0]]></Value>
+                        <ValueDesc><![CDATA[工作表"透视分析"中，图表饼图分离程度错误（应设置为不等于0)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">7</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="ChartFormat" PropKeyDesc="图表格式" SheetName="透视分析" FndChartIndex="1" SortIndexNum="0" Define1="系列：|三维格式：顶部棱台宽度"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[顶部棱台宽度:0]]></Value>
+                        <ValueDesc><![CDATA[工作表"透视分析"中，图表三维格式顶部棱台宽度错误（应设置为不等于0)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">7</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="ChartFormat" PropKeyDesc="图表格式" SheetName="透视分析" FndChartIndex="1" SortIndexNum="0" Define1="系列：|三维格式：顶部棱台高度"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[顶部棱台高度:0]]></Value>
+                        <ValueDesc><![CDATA[工作表"透视分析"中，图表三维格式顶部棱台高度错误（应设置为不等于0)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">7</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="ChartFormat" PropKeyDesc="图表格式" SheetName="透视分析" FndChartIndex="1" SortIndexNum="0" Define1="系列：|三维格式：底部棱台宽度"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[底部棱台宽度:0]]></Value>
+                        <ValueDesc><![CDATA[工作表"透视分析"中，图表三维格式底部棱台宽度错误（应设置为不等于0)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">7</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="ChartFormat" PropKeyDesc="图表格式" SheetName="透视分析" FndChartIndex="1" SortIndexNum="0" Define1="系列：|三维格式：底部棱台高度"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[底部棱台高度:0]]></Value>
+                        <ValueDesc><![CDATA[工作表"透视分析"中，图表三维格式底部棱台高度错误（应设置为不等于0)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">7</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="SeriesPointsDataLabelStyle" PropKeyDesc="显示数据标签" SheetName="透视分析" FndChartIndex="1" PointsFormat="百分比" SheetNameAlias="3" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[工作表"透视分析"中，图表数据标签错误（应设置为显示百分比)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="SeriesPointsDataLabelStyle" PropKeyDesc="显示数据标签" SheetName="透视分析" FndChartIndex="1" PointsFormat="类别名称" SheetNameAlias="3" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[工作表"透视分析"中，图表数据标签错误（应设置为类别名称)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="SeriesPointsDataLabelStyle" PropKeyDesc="显示数据标签" SheetName="透视分析" FndChartIndex="1" PointsFormat="标签位置" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[数据标签外]]></Value>
+                        <ValueDesc><![CDATA[工作表"透视分析"中，图表数据标签位置错误（应设置为数据标签外)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="SeriesPointsDataLabelStyle" PropKeyDesc="显示数据标签" SheetName="透视分析" FndChartIndex="1" PointsFormat="分隔符" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[分行符]]></Value>
+                        <Value><![CDATA[1]]></Value>
+                        <ValueDesc><![CDATA[工作表"透视分析"中，图表数据标签错误（应设置为有分行符)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="SeriesPointsDataLabelStyle" PropKeyDesc="显示数据标签" SheetName="透视分析" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0.00%]]></Value>
+                        <ValueDesc><![CDATA[工作表"透视分析"中，图表数据标签类型错误（应设置为数据标签百分比型,保留2位小数0.00%)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="ShowAllFieldButtons" PropKeyDesc="是否隐藏所有字段按钮" SheetName="透视分析" FndChartIndex="1" SheetNameAlias="3" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[False]]></Value>
+                        <ValueDesc><![CDATA[工作表"透视分析"中，数据透视图的字段按钮设置错误（应设置为不显示所有字段按钮)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetHasLegend" PropKeyDesc="图例放置的位置" SheetName="透视分析" FndChartIndex="1" SheetNameAlias="3" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[]]></Value>
+                        <ValueDesc><![CDATA[工作表"透视分析"中，数据透视图的图例设置错误（应设置为不显示图例)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="ChartFill" PropKeyDesc="图表绘图区填充" SheetName="透视分析" FndChartIndex="1" SortIndexNum="0" Define1="图表区：填充类型"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[图片或纹理填充]]></Value>
+                        <ValueDesc><![CDATA[工作表"透视分析"中，数据透视图的纹理背景设置错误（应设置为为图表区添加一个纹理背景)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

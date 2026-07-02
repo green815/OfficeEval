@@ -1,0 +1,393 @@
+<QuestItem QuestCode="XXXXXXX" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Excel.xlsx" ParseType="1" OfficeType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Alignment" PropKeyDesc="段落的对齐方式(WdParagraphAlignment常量)" SheetName="差旅费报销" SheetNameAlias="4" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[7]]></Value>
+                        <ValueDesc><![CDATA[【差旅费报销】A1:K1单元格设置错误，应设置为跨列居中对齐]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ExcelStyleDesc" PropKeyDesc="风格描述" SheetName="差旅费报销" SheetNameAlias="4" Find="表格标题:字号|颜色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[16|12611584]]></Value>
+                        <ValueDesc><![CDATA[ 【差旅费报销】表格标题的单元格样式中字号，颜色设置错误，应设置为字号为16，颜色为标准蓝色]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ExcelCellStyle" PropKeyDesc="区域公式" SheetName="差旅费报销" SheetNameAlias="4" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[表格标题]]></Value>
+                        <ValueDesc><![CDATA[【差旅费报销】A1单元格样式应用错误，应使用新建的"表格标题"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="3">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="差旅费报销" SheetNameAlias="4" Row="I7|I9|I16|I20" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1100|1717|1884|1586]]></Value>
+                        <ValueDesc><![CDATA[【差旅费报销】I3:I22使用公式计算住宿费的实际报销金额错误（抽查I7|I9|I16|I20单元格的值1100|1717|1884|1586）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="3">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="差旅费报销" SheetNameAlias="4" Row="J6|J13|J17|J21" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1560|720|960|840]]></Value>
+                        <ValueDesc><![CDATA[【差旅费报销】J3:J22使用公式计算每位员工的补助金额错误（抽查J6|J13|J17|J21单元格的值[1560|720|960|840]]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="差旅费报销" SheetNameAlias="4" Row="K4|K7|K12|K19" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2848|4680|2477|1968]]></Value>
+                        <ValueDesc><![CDATA[【差旅费报销】K3:K22使用公式计算每位员工的报销金额错误（抽查K4|K7|K12|K19单元格的值[2848|4680|2477|1968]]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsFormatConditionsFormula" PropKeyDesc="格式条件公式" SheetName="差旅费报销" SheetNameAlias="4" Row="I3" Range="I22"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0]]></Value>
+                        <ValueDesc><![CDATA[【差旅费报销】未在单元格区域I3:I22使用条件格式]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="1">1</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat_ColorLst" PropKeyDesc="显示颜色" SheetName="差旅费报销" SheetNameAlias="4" Row="I7"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255]]></Value>
+                        <ValueDesc><![CDATA[【差旅费报销】I3:I22使用条件格式设置错误，应用标准红色字体（判断I7为红色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat_ColorLst" PropKeyDesc="显示颜色" SheetName="差旅费报销" SheetNameAlias="4" Row="I3|I4|I6|I8|I9|I10|I12|I13|I14|I17|I20"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255]]></Value>
+                        <ValueDesc><![CDATA[【差旅费报销】I3:I22使用条件格式设置错误，应用标准红色字体（判断I3|I4|I6|I8|I9|I10|I12|I13|I14|I17|I20为红色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">7</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="3" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsFormatConditionsFormula" PropKeyDesc="格式条件公式" SheetName="差旅费报销" SheetNameAlias="4" Row="A3" Range="F22"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0]]></Value>
+                        <ValueDesc><![CDATA[【差旅费报销】未在单元格区域A3:F22使用条件格式]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="1">1</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat_ColorLst" PropKeyDesc="显示颜色" SheetName="差旅费报销" SheetNameAlias="4" Row="A3:K3|A6:K6|A13:K13|A15:A15|A20:K20"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[5287936|5287936|5287936|5287936|5287936]]></Value>
+                        <ValueDesc><![CDATA[【差旅费报销】A3:K3|A6:K6|A13:K13|A15:A15|A20:K20使用条件格式对出差天数大于等于5天的记录行应用标准绿色字体,优先应用第⑥项中的规则--错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat_ColorLst" PropKeyDesc="显示颜色" SheetName="差旅费报销" SheetNameAlias="4" Row="I7"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[5287936]]></Value>
+                        <ValueDesc><![CDATA[【差旅费报销】(I7)使用条件格式对出差天数大于等于5天的记录行应用标准绿色字体,优先应用第⑥项中的规则--错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">7</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat_ColorLst" PropKeyDesc="显示颜色" SheetName="差旅费报销" SheetNameAlias="4" Row="A4:K4|A5:K5|A12:K12|A14:K14"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[12611584]]></Value>
+                        <ValueDesc><![CDATA[【差旅费报销】(A4:K4|A5:K5|A12:K12|A14:K14)使用条件格式对出差天数大于等于5天的记录行应用标准绿色字体,优先应用第⑥项中的规则--错误（字体应该不是绿色)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">7</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ExcelCellStyle" PropKeyDesc="区域公式" SheetName="费用合计" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[表格标题]]></Value>
+                        <ValueDesc><![CDATA[【费用合计】A1单元格样式应用错误--正确答案：应用表格标题]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ExcelCellStyle" PropKeyDesc="区域公式" SheetName="车辆使用费报销" SheetNameAlias="5" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[表格标题]]></Value>
+                        <ValueDesc><![CDATA[【车辆使用费报销】A1单元格样式应用错误--正确答案：应用表格标题]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Alignment" PropKeyDesc="段落的对齐方式(WdParagraphAlignment常量)" SheetName="费用合计" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[7]]></Value>
+                        <ValueDesc><![CDATA[【费用合计】A1:F1单元格对齐方式错误--正确的是设置跨列居中对齐]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Alignment" PropKeyDesc="段落的对齐方式(WdParagraphAlignment常量)" SheetName="车辆使用费报销" SheetNameAlias="5" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[7]]></Value>
+                        <ValueDesc><![CDATA[【车辆使用费报销】A1:H1单元格对齐方式错误--正确的是设置跨列居中对齐]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="费用合计" Row="C4|C5" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[79482|0]]></Value>
+                        <ValueDesc><![CDATA[【费用合计】C4|C5单元格值错误，正确的值是79482|0]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindFormulaLst" PropKeyDesc="公式查找" SheetName="费用合计" Row="C4|C5"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[=差旅费报销!K23|=车辆使用费报销!H21]]></Value>
+                        <ValueDesc><![CDATA[【费用合计】C4|C5单元格中公式错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="费用合计" Row="C6" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[79482]]></Value>
+                        <ValueDesc><![CDATA[【费用合计】C6单元格值错误，正确值是79482]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindFormulaLst" PropKeyDesc="公式查找" SheetName="费用合计" Row="C6" Find="SUM"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[【费用合计】C6公式中未包含SUM，正确的是使用SUM函数计算]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Hyperlinks" PropKeyDesc="查找单元格内容" SheetName="费用合计" Row="D4" Define1="要显示的文字"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[填写请点击]]></Value>
+                        <ValueDesc><![CDATA[【费用合计】D4超链接内容错误，正确的是包含"填写请点击"]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Hyperlinks" PropKeyDesc="查找单元格内容" SheetName="费用合计" Row="D4" Define1="地址"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[差旅费报销!]]></Value>
+                        <ValueDesc><![CDATA[【费用合计】D4超链接的地址错误，应链接到：差旅费报销!]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Hyperlinks" PropKeyDesc="查找单元格内容" SheetName="费用合计" Row="D4" Define1="地址"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[A3]]></Value>
+                        <ValueDesc><![CDATA[【费用合计】D4超链接地址错误，应链接到差旅费报销表的A3单元格]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="验证筛选" WepType="ParaFont">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="DataValidationContent" PropKeyDesc="数据验证" SheetName="费用合计" Row="B2"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[市场部]]></Value>
+                        <Value><![CDATA[物流部]]></Value>
+                        <Value><![CDATA[财务部]]></Value>
+                        <Value><![CDATA[行政部]]></Value>
+                        <Value><![CDATA[采购部]]></Value>
+                        <ValueDesc><![CDATA[【费用合计】B2数据有效性序列内容错误，应输入"市场部,物流部,财务部,行政部,采购部"(注意逗号是英文的)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncWordStrings="市">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="费用合计" Row="B2|D5" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[行政部|填写请点击]]></Value>
+                        <Value><![CDATA[物流部|填写请点击]]></Value>
+                        <Value><![CDATA[市场部|无需填写]]></Value>
+                        <Value><![CDATA[财务部|无需填写]]></Value>
+                        <Value><![CDATA[采购部|无需填写]]></Value>
+                        <ValueDesc><![CDATA[【费用合计】B2|D5中的内容为"行政部"或"物流部"，显示的文本为"填写请点击！"，否则显示文本"无需填写！"--错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindFormulaLst" PropKeyDesc="公式查找" SheetName="费用合计" Row="D5" Find="HYPERLINK"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[【费用合计】D5公式中未包含HYPERLINK，正确的是需要包含HYPERLINK]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindFormulaLst" PropKeyDesc="公式查找" SheetName="费用合计" Row="D5" Find="#车辆使用费报销!|[Excel.xlsx]车辆使用费报销!"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[【费用合计】D5公式中包含#车辆使用费报销!，正确的是需要包含]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindFormulaLst" PropKeyDesc="公式查找" SheetName="费用合计" Row="D5" Find="A3"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[【费用合计】D5公式中未包含车辆使用费报销!A3]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindFormulaLst" PropKeyDesc="公式查找" SheetName="费用合计" Row="D5" Find="IF"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[【费用合计】D5公式中未包含IF，正确的是使用IF函数]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1.5">
+                    <FindParams PropKey="ShapeProperties" PropKeyDesc="形状属性" SheetName="差旅费报销" SheetNameAlias="0" Row="A1" Range="C1" Define1="msoShapeLeftArrow" Define2="文本框|内容|超链接"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[内容:返回主表|超链接:费用合计!A1]]></Value>
+                        <ValueDesc><![CDATA[【差旅费报销】A1:C1左箭头形状内容错误，正确的是"返回主表"，并跳转到"费用合计"工作表的单元格A1]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1.5">
+                    <FindParams PropKey="ShapeProperties" PropKeyDesc="形状属性" SheetName="车辆使用费报销" SheetNameAlias="0" Row="A1" Range="C1" Define1="msoShapeLeftArrow" Define2="文本框|内容|超链接"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[内容:返回主表|超链接:费用合计!A1]]></Value>
+                        <ValueDesc><![CDATA[【车辆使用费报销】A1:C1左箭头形状内容错误，正确的是"返回主表"，并跳转到"费用合计"工作表的单元格A1]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="3" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsLocked" PropKeyDesc="是否锁定" SheetName="差旅费报销" SheetNameAlias="4" Row="A3"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[False]]></Value>
+                        <ValueDesc><![CDATA['差旅费报销'A3~H22解除锁定设置错误，正确的是解除锁定]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsLocked" PropKeyDesc="是否锁定" SheetName="差旅费报销" SheetNameAlias="4" Row="I3"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA['差旅费报销'I3~K22设置锁定错误，正确的是设置为锁定]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ExcelProtect" PropKeyDesc="是否锁定" SheetName="差旅费报销" SheetNameAlias="4"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc><![CDATA[工作表"差旅费报销"保护工作表错误，正确的是需要设置保护工作表]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ActivateSheetName" PropKeyDesc="激活表" SheetNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[费用合计]]></Value>
+                        <ValueDesc><![CDATA[活动工作表设置错误，正确的是设置"费用合计"为活动工作表]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="DisplayWorkbookTabs" PropKeyDesc="显示工作簿选项卡" SheetNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[False]]></Value>
+                        <ValueDesc><![CDATA[取消显示工作表标签设置错误，正确的是需要设置取消显示工作表标签]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

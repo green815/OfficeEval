@@ -1,0 +1,854 @@
+<QuestItem QuestCode="A265026H001001_jy_16111701" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Word.docx" OfficeType="1" ParseType="1">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="自定义" WepType="Custom">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams WepType="PageSetup" PropKey="PageNums" PropKeyDesc="文档页数"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[9]]></Value>
+                        <ValueDesc>页面数量设置错误，应设置为不超过9页</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="1">4</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams WepType="ParaFind" PropKey="IsExists" PropKeyDesc="是否存在指定文本" Para="-1" Find="长期以来石化装置的跑冒滴漏现象长期存在并难以避免"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc>未找到文本'长期以来石化装置的跑冒滴漏现象长期存在并难以避免'</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams WepType="ParaFind" PropKey="IsExists" PropKeyDesc="是否存在指定文本" Para="-1" Find="就法兰密封设计规范而言"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc>未找到文本'就法兰密封设计规范而言'</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="形状" WepType="Shape">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CanvasShapeWidth_CM" PropKeyDesc="画布宽度(单位：厘米)" ShapeNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[7.8]]></Value>
+                        <ValueDesc>画布宽度设置错误，应设置为不大于7.8cm</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">4</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CanvasShapeHeight_CM" PropKeyDesc="画布高度(单位：厘米)" ShapeNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[6.9]]></Value>
+                        <ValueDesc>画布高度设置错误，应设置为小于6.9cm</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">4</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="文档查找与替换" WepType="TextFrameFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Left" PropKeyDesc="绘图层水平位置(以磅为单位)" Find_TextFrameNum="2" Count="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[7]]></Value>
+                        <ValueDesc>在图4中插入文本框设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">1</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsExists" PropKeyDesc="指定文本框是否存在" Find_TextFrameNum="-1" Count="1" Find="螺栓组按标记两两相对同时上紧"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc>在图4中插入文本框设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="文档查找与替换" WepType="TextFrameFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="LockAnchor" PropKeyDesc="绘图层的锁定范围" Find_TextFrameNum="-1" Count="1" Para="-1" Find="螺栓组按标记两两相对同时上紧"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[-1]]></Value>
+                        <ValueDesc>未设置将文本框始终与图片锁定在一起</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="LinkedOLEObject" PropKeyDesc="链接的OLE对象信息" TableNo="1" LinkedExcelName="表1-螺栓预紧应力表.xlsx" CellsType="-1" Define1="是否自动更新"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[是否自动更新：True]]></Value>
+                        <ValueDesc>插入的Excel对象设置错误，应设置成可自动更新</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="LinkedOLEObject" PropKeyDesc="链接的OLE对象信息" TableNo="1" LinkedExcelName="表1-螺栓预紧应力表.xlsx" CellsType="-1" Define1="宽(范围)：6.2-7.2|高(范围):11-12"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[宽（6.2-7.2）：True|高（11-12）：True]]></Value>
+                        <ValueDesc>插入的Excel对象设置错误，应设置成高11.4厘米、宽6.85厘米</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsExistsTableWithRowsColumnsCount" PropKeyDesc="判断指定表格的行列数" Row="9" Col="4" TableNo="2" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc>紫色文本文字转换成表格设置错误，应设置为9行4列的表格</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellText" PropKeyDesc="指定单元格内容" Row="1" Col="1" TableNo="2" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[密封应用要求]]></Value>
+                        <ValueDesc>表格第1行第1列单元格内容错误，应为"密封应用要求"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellText" PropKeyDesc="指定单元格内容" Row="3" Col="2" TableNo="2" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[感觉法]]></Value>
+                        <ValueDesc>表格第3行第2列单元格内容错误，应为"感觉法"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellText" PropKeyDesc="指定单元格内容" Row="5" Col="1" TableNo="2" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[载荷控制误差]]></Value>
+                        <ValueDesc>表格第5行第1列单元格内容错误，应为"载荷控制误差"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="HasTab_Style" PropKeyDesc="指定表格是否存在样式" TableNo="2" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc>未为表2套用表格样式</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellParagraphFormatAlignment" PropKeyDesc="指定单元格段落对齐方式" Row="2" Col="1" TableNo="2" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdAlignParagraphCenter]]></Value>
+                        <ValueDesc>表格第2行第1列单元格对齐方式设置错误，应设置为垂直水平均居中排列</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellParagraphFormatAlignment" PropKeyDesc="指定单元格段落对齐方式" Row="3" Col="1" TableNo="2" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdAlignParagraphCenter]]></Value>
+                        <ValueDesc>表格第3行第1列单元格对齐方式设置错误，应设置为垂直水平均居中排列</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCellParagraphFormatAlignment" PropKeyDesc="指定单元格段落对齐方式" Row="5" Col="4" TableNo="2" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdAlignParagraphCenter]]></Value>
+                        <ValueDesc>表格第5行第4列单元格对齐方式设置错误，应设置为垂直水平均居中排列</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="FindBeforeAfterCharacter" PropKeyDesc="查找指定字符及指定前后位数字符检测" Para="-1" Find="法兰接头的紧固"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[4法兰接头的紧固]]></Value>
+                            <ValueDesc>标题1"法兰接头的紧固"自动编号设置错误，应设置为4</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">7</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="法兰接头的紧固" Define1="样式|字体|字号|加粗|对齐|段前距(行)|段后距(行)|行距"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[字体：黑体|字号：14|加粗：0|对齐：wdAlignParagraphLeft|样式：标题 1|行距：12磅|段前距：0.2行|段后距：0.2行]]></Value>
+                            <ValueDesc>标题1'法兰接头的紧固'字体格式设置错误，应设置为黑体四号字、不加粗、左对齐、段前段后间距0.2行，行距最小值12磅</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="法兰接头的紧固"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[4]]></Value>
+                            <ValueDesc>标题1"法兰接头的紧固"自动编号设置错误，应设置为4</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="StyleProperties" PropKeyDesc="样式字体或段落属性" Find="标题1" Define1="多级列表|编号对#齐方式|编号位置|编号文本缩#进位置"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[编号对齐方式：wdListLevelAlignLeft|编号位置：0|文本缩进位置：0.9]]></Value>
+                            <ValueDesc>标题1样式多级列表设置错误，应设置为左侧对齐位置0，文本缩进0.9厘米</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+                <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="法兰接头的紧固" Define1="样式|字体|字号|加粗|对齐|段前距(行)|段后距(行)|行距"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[字体：黑体|字号：14|加粗：0|对齐：wdAlignParagraphLeft|样式：标题 1|行距：12磅|段前距：0.2行|段后距：0.2行]]></Value>
+                            <ValueDesc>标题1'法兰接头的紧固'字体属性设置错误，应设置为黑体四号字、不加粗、左对齐、段前段后间距0.2行，行距最小值12磅</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="法兰接头的紧固"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[4]]></Value>
+                            <ValueDesc>标题1"法兰接头的紧固"自动编号设置错误，应设置为4</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="StyleProperties" PropKeyDesc="样式字体或段落属性" Find="标题1" Define1="多级列表|编号对#齐方式|编号位置|编号文本缩#进位置"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[编号对齐方式：wdListLevelAlignLeft|编号位置：0|文本缩进位置：0.9]]></Value>
+                            <ValueDesc>标题1样式多级列表设置错误，应设置为左侧对齐位置0，文本缩进0.9厘米</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="FindBeforeAfterCharacter" PropKeyDesc="查找指定字符及指定前后位数字符检测" Para="-1" Find="螺栓预紧扭矩值的计算"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[4.3螺栓预紧扭矩值的计算]]></Value>
+                            <ValueDesc>标题2"螺栓预紧扭矩值的计算"自动编号设置错误，应设置为4.3</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">7</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="螺栓预紧扭矩值的计算" Define1="样式|字体|字号|加粗|段前距(磅)|段后距(磅)|行距"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[字体：黑体|字号：12|加粗：0|样式：标题 2|行距：12磅|段前距：6磅|段后距：3磅]]></Value>
+                            <ValueDesc>标题2'螺栓预紧扭矩值的计算'字体属性设置错误，应设置为黑体小四号字、不加粗段前6磅，段后3磅，行距最小值12磅</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="螺栓预紧扭矩值的计算"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[4.3]]></Value>
+                            <ValueDesc>标题2"螺栓预紧扭矩值的计算"自动编号设置错误，应设置为4.3</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="StyleProperties" PropKeyDesc="样式字体或段落属性" Find="标题2" Define1="多级列表|编号对#齐方式|编号位置|编号文本缩#进位置"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[编号对齐方式：wdListLevelAlignLeft|编号位置：0|文本缩进位置：0.9]]></Value>
+                            <ValueDesc>标题2样式多级列表设置错误，应设置为左侧对齐位置0，文本缩进0.9厘米</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+                <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="螺栓预紧扭矩值的计算" Define1="样式|字体|字号|加粗|段前距(磅)|段后距(磅)|行距"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[字体：黑体|字号：12|加粗：0|样式：标题 2|行距：12磅|段前距：6磅|段后距：3磅]]></Value>
+                            <ValueDesc>标题2'螺栓预紧扭矩值的计算'字体属性设置错误，应设置为黑体小四号字、不加粗段前6磅，段后3磅，行距最小值12磅</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="螺栓预紧扭矩值的计算"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[4.3]]></Value>
+                            <ValueDesc>标题2"螺栓预紧扭矩值的计算"自动编号设置错误，应设置为4.3</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="StyleProperties" PropKeyDesc="样式字体或段落属性" Find="标题2" Define1="多级列表|编号对#齐方式|编号位置|编号文本缩#进位置"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[编号对齐方式：wdListLevelAlignLeft|编号位置：0|文本缩进位置：0.9]]></Value>
+                            <ValueDesc>标题2样式多级列表设置错误，应设置为左侧对齐位置0，文本缩进0.9厘米</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="FindBeforeAfterCharacter" PropKeyDesc="查找指定字符及指定前后位数字符检测" Para="-1" Find="理论计算公式"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[4.3.1理论计算公式]]></Value>
+                            <ValueDesc>标题3"理论计算公式"自动编号设置错误，应设置为4.3.1</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">7</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="理论计算公式" Define1="样式|字体|字号|加粗|段前距(磅)|段后距(磅)|行距"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[字体：黑体|字号：10.5|加粗：0|样式：标题 3|行距：12磅|段前距：6磅|段后距：3磅]]></Value>
+                            <ValueDesc>标题3'理论计算公式'字体属性设置错误，应设置为黑体五号字、不加粗、段前6磅，段后3磅，行距最小值12磅</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="理论计算公式"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[4.3.1]]></Value>
+                            <ValueDesc>标题3"理论计算公式"自动编号设置错误，应设置为4.3.1</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="StyleProperties" PropKeyDesc="样式字体或段落属性" Find="标题2" Define1="多级列表|编号对#齐方式|编号位置|编号文本缩#进位置"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[编号对齐方式：wdListLevelAlignLeft|编号位置：0|文本缩进位置：0.9]]></Value>
+                            <ValueDesc>标题3样式多级列表设置错误，应设置为左侧对齐位置0.75厘米，文本缩进2厘米</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+                <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="理论计算公式" Define1="样式|字体|字号|加粗|段前距(磅)|段后距(磅)|行距"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[字体：黑体|字号：10.5|加粗：0|样式：标题 3|行距：12磅|段前距：6磅|段后距：3磅]]></Value>
+                            <ValueDesc>标题3'理论计算公式'字体格式设置错误，应设置为黑体五号字、不加粗、段前6磅，段后3磅，行距最小值12磅</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="理论计算公式"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[4.3.1]]></Value>
+                            <ValueDesc>标题3"理论计算公式"自动编号设置错误，应设置为4.3.1</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="StyleProperties" PropKeyDesc="样式字体或段落属性" Find="标题2" Define1="多级列表|编号对#齐方式|编号位置|编号文本缩#进位置"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[编号对齐方式：wdListLevelAlignLeft|编号位置：0|文本缩进位置：0.9]]></Value>
+                            <ValueDesc>标题3样式多级列表设置错误，应设置为左侧对齐位置0.75厘米，文本缩进2厘米</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="StyleProperties" PropKeyDesc="样式字体或段落属性" Find="正文1" Define1="字体NameFarEast|西文Ascii|字号|对齐|首行缩进|段后距(磅)|行距"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[字体：宋体|西文字体：Times New Roman|字号：10.5|对齐：wdAlignParagraphJustify|缩进：2|行距：1.25倍|段后距：6磅]]></Value>
+                        <ValueDesc>正文1样式字体属性设置错误，应设置为中文字体宋体、西文字体Times New Roman、字号10.5、两端对齐、首行缩进2字符、1.25倍行距、段后6磅</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="StyleProperties" PropKeyDesc="样式字体或段落属性" Find="正文2" Define1="字体NameFarEast|西文Ascii|字号|对齐|首行缩进|段后距(磅)|行距"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[字体：楷体|西文字体：Times New Roman|字号：11|对齐：wdAlignParagraphJustify|缩进：2|行距：1.25倍|段后距：3磅]]></Value>
+                        <ValueDesc>正文2样式字体属性设置错误，应设置为中文字体楷体、西文字体Times New Roman、字号11磅、两端对齐、首行缩进2字符、1.25倍行距、段后3磅</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsFieldSequenceExist" PropKeyDesc="题注是否存在" Find="图"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc>为图片添加题注设置错误，未找到第1处题注"图"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsFieldSequenceExist" PropKeyDesc="题注是否存在" Count="3" Find="图"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc>为图片添加题注设置错误，未找到第3处题注"图"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsFieldSequenceExist" PropKeyDesc="题注是否存在" Count="5" Find="图"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc>为图片添加题注设置错误，未找到第5处题注"图"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsFieldSequenceExist" PropKeyDesc="题注是否存在" Find="表"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc>为表格添加题注设置错误，未找到第1处题注"表"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsFieldSequenceExist" PropKeyDesc="题注是否存在" Count="2" Find="表"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc>为表格添加题注设置错误，未找到第2处题注"表"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图片格式" WepType="FormatPicture">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="PicKeepWithNext" PropKeyDesc="图片段落与下段同页" Define1="InlineShapes" Define2="001"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1]]></Value>
+                        <ValueDesc>题注段落始终与相关图片在同一页面中设置错误，应设置图片段落与下段同页</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="ASME法兰密封设计体系" Define1="样式|字体|字号|加粗|对齐"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[字体：宋体|字号：9|加粗：1|对齐：wdAlignParagraphCenter|样式：题注]]></Value>
+                        <ValueDesc>题注"ASME法兰密封设计体系"格式设置错误，应设置为宋体加粗、小五号字、居中</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="螺栓编号方法图例" Define1="样式|字体|字号|加粗|对齐"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[字体：宋体|字号：9|加粗：1|对齐：wdAlignParagraphCenter|样式：题注]]></Value>
+                        <ValueDesc>题注"螺栓编号方法图例"格式设置错误，应设置为宋体加粗、小五号字、居中</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="PaperSize" PropKeyDesc="纸张大小(WdPaperSize常量)"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdPaperA4]]></Value>
+                        <ValueDesc>纸张大小设置错误，应设置为
+A4</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="MirrorMargins" PropKeyDesc="对称页边距"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1]]></Value>
+                        <ValueDesc>未设置对称页边距</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Page_TopMargin" PropKeyDesc="页面上边距"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2.5]]></Value>
+                        <ValueDesc>上边距设置错误，应设置为2.5厘米</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Page_BottomMargin" PropKeyDesc="页面下边距"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2.0]]></Value>
+                        <ValueDesc>下边距设置错误，应设置为2厘米</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Page_GutterCm" PropKeyDesc="装订线(单位:厘米)"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1]]></Value>
+                        <ValueDesc>装订线设置错误，应设置为1厘米</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Page_HeaderDistanceCm" PropKeyDesc="页眉距顶端边界(单位:厘米)"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1]]></Value>
+                        <ValueDesc>页眉距离边界设置错误，应设置为1厘米</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Page_FooterDistanceCm" PropKeyDesc="页脚距底部边界(单位:厘米)"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1]]></Value>
+                        <ValueDesc>页脚距离边界设置错误，应设置为1厘米</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindColumns" PropKeyDesc="段落分栏栏数" Para="-1" Find="长期以来石化装置的跑冒滴漏现象长期存在并难以避免"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2]]></Value>
+                        <ValueDesc>自"关键词"所在段落之后分栏设置错误，应分为两栏</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindColumns" PropKeyDesc="段落分栏栏数" Para="-1" Find="法兰密封装配技术分析"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1]]></Value>
+                        <ValueDesc>"关键词"之前的段落"法兰密封装配技术分析"不应设置分栏</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FindColumns" PropKeyDesc="段落分栏栏数" Para="-1" Find="Repair of Pressure Equipment and Piping"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2]]></Value>
+                        <ValueDesc>自"关键词"所在段落之后分栏设置错误，应分为两栏</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRuleGroup LogicOper="Or" FullScore="1" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="FooterPageNumbersStyle" PropKeyDesc="页脚页码编号样式" Define8="0"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[wdPageNumberStyleNumberInDash]]></Value>
+                            <ValueDesc>目录页码格式设置错误，应设置为"-1-、-2-"</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="HeaderProperties" PropKeyDesc="页眉属性(字体|字号|文字颜色|加粗|对齐|页眉类型|内边框|形状)" Define1="页码格式" Define8="0"></FindParams>
+                        <StdAnswer AnsType="1">
+                            <Value><![CDATA[-Page-]]></Value>
+                            <Value><![CDATA[－Page－]]></Value>
+                            <Value><![CDATA[~ Page ~]]></Value>
+                            <ValueDesc>首页页眉的页码格式设置错误，应设置为"-1-、-2-"</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+                <MarkRuleGroup LogicOper="Or" FullScore="1" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="HeaderStartingNumber" PropKeyDesc="页眉页码起始编号" SectionsNum="2" Define8="0"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[15]]></Value>
+                            <ValueDesc>页码起始编号设置错误，应设置为15</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="1">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="1">
+                        <MarkRule FullScore="-1">
+                            <FindParams PropKey="PageNumberRestartNumberingAtSection" PropKeyDesc="页脚页码开头开始" SectionsNum="2" Define8="0"></FindParams>
+                            <StdAnswer AnsType="0">
+                                <Value><![CDATA[false]]></Value>
+                                <ValueDesc>页码起始编号设置错误，应设置为15</ValueDesc>
+                            </StdAnswer>
+                            <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                        </MarkRule>
+                        <MarkRule FullScore="-1">
+                            <FindParams PropKey="HeaderStartingNumber" PropKeyDesc="页眉页码起始编号" Define8="0"></FindParams>
+                            <StdAnswer AnsType="0">
+                                <Value><![CDATA[15]]></Value>
+                                <ValueDesc>页码起始编号设置错误，应设置为15</ValueDesc>
+                            </StdAnswer>
+                            <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="1">0</OperatorParam>
+                        </MarkRule>
+                    </MarkRuleGroup>
+                </MarkRuleGroup>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="DifferentFirstPageHeaderFooter" PropKeyDesc="首页不同"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[1]]></Value>
+                            <ValueDesc>首页页眉设置错误</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="HeaderText" PropKeyDesc="页眉文字" HeaderFooterIndex="2" Define8="0"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[密封技术]]></Value>
+                            <ValueDesc>首页页眉设置错误，应包含文字"密封技术"</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="HeaderText" PropKeyDesc="页眉文字" HeaderFooterIndex="2" Define8="0"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[石油化工设备技术,2016,37]]></Value>
+                            <ValueDesc>首页页眉设置错误，应包含文字"石油化工设备技术,2016,37"</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="HeaderText" PropKeyDesc="页眉文字" HeaderFooterIndex="2" Define8="0"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[Petro-Chemical Equipment Technology]]></Value>
+                            <ValueDesc>首页页眉设置错误，应包含文字"Petro-Chemical Equipment Technology"</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+                <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="DifferentFirstPageHeaderFooter" PropKeyDesc="首页不同"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[0]]></Value>
+                            <ValueDesc>首页页眉设置错误</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="HeaderText" PropKeyDesc="页眉文字" Define8="0"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[密封技术]]></Value>
+                            <ValueDesc>首页页眉设置错误，应包含文字"密封技术"</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="HeaderText" PropKeyDesc="页眉文字" Define8="0"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[石油化工设备技术,2016,37]]></Value>
+                            <ValueDesc>首页页眉设置错误，应包含文字"石油化工设备技术,2016,37"</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams PropKey="HeaderText" PropKeyDesc="页眉文字" Define8="0"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[Petro-Chemical Equipment Technology]]></Value>
+                            <ValueDesc>首页页眉设置错误，应包含文字"Petro-Chemical Equipment Technology"</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="HeaderText" PropKeyDesc="页眉文字" SectionsNum="2" Define8="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2016年第37卷第4期]]></Value>
+                        <ValueDesc>奇数页页眉内容错误，应包含文字"2016年第37卷第4期"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="HeaderText" PropKeyDesc="页眉文字" SectionsNum="2" Define8="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[张铁钢]]></Value>
+                        <ValueDesc>奇数页页眉内容错误，应包含文字"张铁钢"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="HeaderText" PropKeyDesc="页眉文字" SectionsNum="2" Define8="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[法兰密封装配技术分析]]></Value>
+                        <ValueDesc>奇数页页眉内容错误，应包含文字"法兰密封装配技术分析"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="HeaderText" PropKeyDesc="页眉文字" SectionsNum="2" HeaderFooterIndex="3" Define8="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[密封技术]]></Value>
+                        <ValueDesc>偶数页页眉内容错误，应包含文字"密封技术"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="HeaderText" PropKeyDesc="页眉文字" SectionsNum="2" HeaderFooterIndex="3" Define8="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2016年第37卷第4期]]></Value>
+                        <ValueDesc>偶数页页眉内容错误，应包含文字"2016年第37卷第4期"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+    <ScorePointGroup FileName="Word.docx" OfficeType="1" ParseType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图片格式" WepType="FormatPicture">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="PicShpPropExtCx" PropKeyDesc="图片属性水平扩展位置" PictureName="图4.jpg"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[4968000-5731200]]></Value>
+                        <ValueDesc>插入"图4.jpg"设置错误，应设置缩放为原大小的75%</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">8</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="PicShpPropExtCy" PropKeyDesc="图片属性垂直扩展位置" PictureName="图4.jpg"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[3423600-3679200]]></Value>
+                        <ValueDesc>插入"图4.jpg"设置错误，应设置缩放为原大小的75%</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">8</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格设置" WepType="TableTestRowCol">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="TableLayout" PropKeyDesc="是否自动重调尺寸以适应内容" TableNo="2" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc>表2始终与页面等宽设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="TableWidth" PropKeyDesc="获取表宽度" TableNo="2" CellsType="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[100%]]></Value>
+                        <ValueDesc>表2始终与页面等宽设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面文档设置" WepType="Document">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindFieldCodeCount" PropKeyDesc="指定域代码个数" Find="REF_REF"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[8]]></Value>
+                        <ValueDesc>题注交叉引用设置错误，应设置为共有8处交叉引用</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0" IgnorePuncStrings="&quot;">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindFieldCodeCount" PropKeyDesc="指定域代码个数" Find="SEQ 图"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[5]]></Value>
+                        <ValueDesc>插入自动更新的图注设置错误，应设共有5处图注</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0" IgnorePuncStrings="&quot;">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindFieldCodeCount" PropKeyDesc="指定域代码个数" Find="SEQ 表"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2]]></Value>
+                        <ValueDesc>插入自动更新的表注设置错误，应共有2处表注</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0" IgnorePuncStrings="&quot;">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面文档设置" WepType="Document">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetOfficeMath" PropKeyDesc="获取Office公式"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[T=F2pπ+μ]]></Value>
+                        <ValueDesc>插入公式错误，应包含文字"T=F2pπ+μ"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0" IgnorePuncStrings="&quot;()（）">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetOfficeMath" PropKeyDesc="获取Office公式"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[cosβ+Deμn]]></Value>
+                        <ValueDesc>插入公式错误，应包含文字"cosβ+Deμn"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0" IgnorePuncStrings="&quot;()（）">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

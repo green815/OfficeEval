@@ -1,0 +1,528 @@
+<QuestItem QuestCode="XXXXXXX" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Excel.xlsx" ParseType="1" OfficeType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="第1周" Row="C9|D18|E26|F35"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0|0|0|0]]></Value>
+                        <ValueDesc><![CDATA[【第1周】C、D、E、F四个销量列的空白单元格中输入数字0操作错误（抽查C9|D18|E26|F35单元格的值0|0|0|0）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="第2周" SheetNameAlias="2" Row="C9|D18|E26|F35 "></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0|0|0|0]]></Value>
+                        <ValueDesc><![CDATA[【第2周】C、D、E、F四个销量列的空白单元格中输入数字0操作错误（抽查C9|D18|E26|F35 单元格的值0|0|0|0]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="第3周" SheetNameAlias="3" Row="C98|D83|E64|F49"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0|0|0|0]]></Value>
+                        <ValueDesc><![CDATA[【第3周】C、D、E、F四个销量列的空白单元格中输入数字0操作错误（抽查C98|D83|E64|F49单元格的值0|0|0|0]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="第4周" SheetNameAlias="4" Row="C98|D83|E64|F49"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0|0|0|0]]></Value>
+                        <ValueDesc><![CDATA[【第4周】C、D、E、F四个销量列的空白单元格中输入数字0操作错误（抽查C98|D83|E64|F49单元格的值0|0|0|0]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="第1周" Row="G2|G3|G4|G5|G6|G102|G103|G104|G105|G106" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[40|98|30|50|40|247|190|69|41|76]]></Value>
+                        <ValueDesc><![CDATA[【第1周】G列周销量合计值计算错误（抽查G2|G3|G4|G5|G6|G102|G103|G104|G105|G106单元格的值40|98|30|50|40|247|190|69|41|76]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="HasFormulaLst" PropKeyDesc="单元格是否有公式" SheetName="第1周" Row="G2|G3|G4|G5|G6|G102|G103|G104|G105|G106"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True|True|True|True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[【第1周】G列周销量合计值未使用公式计算，正确的是使用公式计算单元格值]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="第2周" SheetNameAlias="2" Row="G2|G3|G4|G5|G6|G143|G144|G145|G146|G147" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[8|10|5|3|2|0|0|72|15|64]]></Value>
+                        <ValueDesc><![CDATA[【第2周】G列周销量合计值计算错误（抽查G2|G3|G4|G5|G6|G143|G144|G145|G146|G147单元格的值8|10|5|3|2|0|0|72|15|64]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="HasFormulaLst" PropKeyDesc="单元格是否有公式" SheetName="第2周" SheetNameAlias="2" Row="G2|G3|G4|G5|G6|G143|G144|G145|G146|G147"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True|True|True|True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[【第2周】G列周销量合计值未使用公式计算，正确的是使用公式计算单元格值]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="第3周" SheetNameAlias="3" Row="G2|G3|G4|G5|G6|G94|G95|G96|G97|G98" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[55|15|35|4|83|17|305|1|1|3]]></Value>
+                        <ValueDesc><![CDATA[【第3周】G列周销量合计值计算错误（抽查G2|G3|G4|G5|G6|G94|G95|G96|G97|G98单元格的值55|15|35|4|83|17|305|1|1|3]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="HasFormulaLst" PropKeyDesc="单元格是否有公式" SheetName="第3周" SheetNameAlias="3" Row="G2|G3|G4|G5|G6|G94|G95|G96|G97|G98"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True|True|True|True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[【第3周】G列周销量合计值未使用公式计算，正确的是使用公式计算单元格值]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="第4周" SheetNameAlias="4" Row="G2|G3|G4|G5|G6|G110|G111|G112|G113|G114" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[5|0|1|300|20|0|310|45|15|85]]></Value>
+                        <ValueDesc><![CDATA[【第4周】G列周销量合计值计算错误（抽查G2|G3|G4|G5|G6|G110|G111|G112|G113|G114单元格的值5|0|1|300|20|0|310|45|15|85]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="HasFormulaLst" PropKeyDesc="单元格是否有公式" SheetName="第4周" SheetNameAlias="4" Row="G2|G3|G4|G5|G6|G110|G111|G112|G113|G114"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True|True|True|True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[【第4周】G列周销量合计值未使用公式计算，正确的是使用公式计算单元格值]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="第1周" Row="H2|H3|H4|H5|H6|H102|H103|H104|H105|H106" Find="格式|0.00"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[58.00|367.50|258.75|25.00|92.00|296.40|1045.00|70.73|53.30|418.00]]></Value>
+                        <ValueDesc><![CDATA[【第1周】H列销售总额计算错误（抽查H2|H3|H4|H5|H6|H102|H103|H104|H105|H106单元格的值58.00|367.50|258.75|25.00|92.00|296.40|1045.00|70.73|53.30|418.00]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="HasFormulaLst" PropKeyDesc="单元格是否有公式" SheetName="第1周" Row="H2|H3|H4|H5|H6|H102|H103|H104|H105|H106"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True|True|True|True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[【第1周】H列销售总额未使用公式计算]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="第2周" SheetNameAlias="2" Row="H2|H3|H4|H5|H6|H143|H144|H145|H146|H147" Find="格式|0.00"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[69.40|6.50|9.75|11.13|53.35|0.00|0.00|66.60|19.50|352.00]]></Value>
+                        <ValueDesc><![CDATA[【第2周】H列销售总额计算错误（抽查H2|H3|H4|H5|H6|H143|H144|H145|H146|H147单元格的值69.40|6.50|9.75|11.13|53.35|0.00|0.00|66.60|19.50|352.00]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="HasFormulaLst" PropKeyDesc="单元格是否有公式" SheetName="第2周" SheetNameAlias="2" Row="H2|H3|H4|H5|H6|H143|H144|H145|H146|H147"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True|True|True|True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[【第2周】H列销售总额未使用公式计算]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="第3周" SheetNameAlias="3" Row="H2|H3|H4|H5|H6|H94|H95|H96|H97|H98" Find="格式|0.00"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[231.00|19.50|28.88|36.40|99.60|50.15|808.25|6.50|42.68|13.35]]></Value>
+                        <ValueDesc><![CDATA[【第3周】H列销售总额计算错误（抽查H2|H3|H4|H5|H6|H94|H95|H96|H97|H98单元格的值231.00|19.50|28.88|36.40|99.60|50.15|808.25|6.50|42.68|13.35]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="HasFormulaLst" PropKeyDesc="单元格是否有公式" SheetName="第3周" SheetNameAlias="3" Row="H2|H3|H4|H5|H6|H94|H95|H96|H97|H98"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True|True|True|True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[【第3周】H列销售总额未使用公式计算]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="第4周" SheetNameAlias="4" Row="G2|G3|G4|G5|G6|G110|G111|G112|G113|G114" Find="格式|0.00"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[5.00|0.00|1.25|300.00|20.00|0.00|310.00|45.00|15.00|85.00]]></Value>
+                        <ValueDesc><![CDATA[【第4周】H列销售总额计算错误（抽查G2|G3|G4|G5|G6|G110|G111|G112|G113|G114单元格的值5.00|0.00|1.25|300.00|20.00|0.00|310.00|45.00|15.00|85.00]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="HasFormulaLst" PropKeyDesc="单元格是否有公式" SheetName="第4周" SheetNameAlias="4" Row="H2|H3|H4|H5|H6|H110|H111|H112|H113|H114"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True|True|True|True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA[【第4周】H列销售总额未使用公式计算]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FormulaNames" PropKeyDesc="公式名称" SheetName="第1周" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第1周 第1周!A1:H106]]></Value>
+                        <ValueDesc><![CDATA[第1周工作表数据区域定义公式名称错误（正确的名称是第1周，引用位置是第1周!$A$1:$H$106）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings=":：">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FormulaNames" PropKeyDesc="公式名称" SheetName="第2周" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第2周 第2周!A1:H147]]></Value>
+                        <ValueDesc><![CDATA[第2周工作表数据区域定义公式名称错误（正确的名称是第2周，引用位置是第2周!$A$1:$H$147）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings=":：">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FormulaNames" PropKeyDesc="公式名称" SheetName="第3周" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第3周 第3周!A1:H98]]></Value>
+                        <ValueDesc><![CDATA[第3周工作表数据区域定义公式名称错误（正确的名称是第3周，引用位置是第3周!$A$1:$H$98）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings=":：">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="FormulaNames" PropKeyDesc="公式名称" SheetName="第4周" Row="A1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第4周 第4周!A1:H114]]></Value>
+                        <ValueDesc><![CDATA[第4周工作表数据区域定义公式名称错误（正确的名称是第4周，引用位置是第4周!$A$1:$H$114）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings=":：">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="月销售合计" SheetNameAlias="6" Row="A1|B1|G1|H1"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[名称|类别|四部销量|月销量]]></Value>
+                        <Value><![CDATA[名称|平均单价|月销量|月销售额]]></Value>
+                        <ValueDesc><![CDATA[【月销售合计】A1|B1|G1|H1单元格的值错误，（正确的是名称|类别|四部销量|月销量）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="4">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="月销售合计" SheetNameAlias="6" Row="A10|H10|A40|H40|A80|H80|A120|H120|A150|H150"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[菜花|60|红薯|487|皮蛋|2|苋菜|4|紫甘蓝|221]]></Value>
+                        <ValueDesc><![CDATA[【月销售合计】A10|H10|A40|H40|A80|H80|A120|H120|A150|H150单元格的值合并错误（正确的是：菜花|60|红薯|487|皮蛋|2|苋菜|4|紫甘蓝|221]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="4">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="月销售合计" SheetNameAlias="6" Row="A10|G10|A40|G40|A80|G80|A120|G120|A150|G150"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[菜花|60|红薯|487|皮蛋|2|苋菜|4|紫甘蓝|221]]></Value>
+                        <ValueDesc><![CDATA[【月销售合计】A10|G10|A40|G40|A80|G80|A120|G120|A150|G150单元格的值错误，正确的是：菜花|60|红薯|487|皮蛋|2|苋菜|4|紫甘蓝|221]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="月销售合计" SheetNameAlias="6" Row="C10|C40|C80|C120|C150" Find="格式|0.000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1.617|4.192|10.400|3.300|0.920]]></Value>
+                        <ValueDesc><![CDATA[【月销售合计】平均单价列计算错误（抽查C10|C40|C80|C120|C150单元格的值1.617|4.192|10.400|3.300|0.920]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="月销售合计" SheetNameAlias="6" Row="B10|B40|B80|B120|B150" Find="格式|0.000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1.617|4.192|10.400|3.300|0.920]]></Value>
+                        <ValueDesc><![CDATA[【月销售合计】平均单价列计算错误（抽查B10|B40|B80|B120|B150单元格的值1.617|4.192|10.400|3.300|0.920]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="月销售合计" SheetNameAlias="6" Row="B1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[类别]]></Value>
+                        <ValueDesc><![CDATA[【月销售合计】在A、B两列之间插入一个空行，列标题输入"类别"设置错误（正确的是B1单元格的值：类别）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="表格" WepType="Table">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="ExcelTableStyle" PropKeyDesc="表格样式" SheetName="月销售合计" FindTableIndex="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[]]></Value>
+                        <ValueDesc><![CDATA["月销售合计"工作表数据区域未套用一个表格格式（正确的是套用表格样式）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="RowHeight" PropKeyDesc="行高" SheetName="月销售合计" SheetNameAlias="6" Row="A10" Range="A10"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[13.5]]></Value>
+                        <ValueDesc><![CDATA[月销售合计行高设置错误(抽查第10行的行高不等于13.5)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="RowHeight" PropKeyDesc="行高" SheetName="月销售合计" SheetNameAlias="6" Row="A101" Range="A101"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[13.5]]></Value>
+                        <ValueDesc><![CDATA[月销售合计行高设置错误(抽查第101行的行高不等于13.5)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="RowHeight" PropKeyDesc="行高" SheetName="月销售合计" SheetNameAlias="6" Row="A149" Range="A149"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[13.5]]></Value>
+                        <ValueDesc><![CDATA[月销售合计行高设置错误(抽查第149行的行高不等于13.5)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="ColWidth" PropKeyDesc="列宽" SheetName="月销售合计" SheetNameAlias="6" Row="I1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[10]]></Value>
+                        <ValueDesc><![CDATA[月销售合计列宽设置错误(抽查I列列宽大于等于10)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">2</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FreezePanesPosition" PropKeyDesc="冻结窗格" SheetName="月销售合计" SheetNameAlias="6" Row="F4"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[B2]]></Value>
+                        <ValueDesc><![CDATA[工作表【月销售合计】锁定工作表的第1行和第1列，使之始终可见设置错误（正确设置是冻结首行首列：B2）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings=":：">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="Wookbook" PropKeyDesc="工作表" SheetName="品种目录" SheetNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc><![CDATA[在工作簿"Excel.xlsx"的最右侧创建一个名为"品种目录"的工作表设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="WorkSheetTabColor" PropKeyDesc="工作表标签颜色" SheetName="品种目录" SheetNum="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[255]]></Value>
+                        <ValueDesc><![CDATA[工作表【品种目录】标签颜色设置错误，应设置为红色]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="品种目录" SheetNameAlias="7" Row="A2|A10|A30|A50|A140"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[001|009|029|049|139]]></Value>
+                        <ValueDesc><![CDATA[【品种目录】"编号"列保持原格式设置错误（抽查A2|A10|A30|A50|A140单元格的值001|009|029|049|139(A列中数据为3位数字)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="单元格的值" SheetName="品种目录" SheetNameAlias="7" Row="A2|A10|A30|A50|A140"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[001|009|029|049|139]]></Value>
+                        <ValueDesc><![CDATA[【品种目录】"编号"列保持原格式设置错误（抽查A2|A10|A30|A50|A140单元格的值001|009|029|049|139(A列中数据为3位数字)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="品种目录" SheetNameAlias="7" Row="B12|C12|D12|B106|C106|D106"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[樱桃萝卜|胡萝卜|根菜类|葱头|洋葱|葱蒜类]]></Value>
+                        <ValueDesc><![CDATA[【品种目录】B12|C12|D12|B106|C106|D106单元格的值导入错误（正确的是樱桃萝卜|胡萝卜|根菜类|葱头|洋葱|葱蒜类]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="3.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="月销售合计" SheetNameAlias="6" Row="B2|B10|B40|B80|B119|B150"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[其他|甘蓝类|薯芋类|其他|其他|甘蓝类]]></Value>
+                        <ValueDesc><![CDATA[【月销售合计】B列类别列计算错误（抽查B2|B10|B40|B80|B119|B150单元格的值其他|甘蓝类|薯芋类|其他|其他|甘蓝类]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="数据透视" SheetNameAlias="5" Row="A3"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[类别]]></Value>
+                        <ValueDesc><![CDATA[【数据透视】A3单元格的值错误，应设置为类别]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="数据透视" SheetNameAlias="5" Row="B3"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[月销售额（元）]]></Value>
+                        <Value><![CDATA[月销售额(元)]]></Value>
+                        <ValueDesc><![CDATA[【数据透视】B3单元格的值输入错误，应设置为：月销售额（元）（这边括号不分全角半角)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="数据透视" SheetNameAlias="5" Row="C3"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[月销量（斤）]]></Value>
+                        <Value><![CDATA[月销量(斤)]]></Value>
+                        <ValueDesc><![CDATA[【数据透视】C3单元格的值设置错误，应设置为:月销量（斤）（这边括号不分全角半角)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="数据透视表" WepType="PivotTable">
+            <MarkRuleGroup LogicOper="And" FullScore="1.5" NotLeaf="0">
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="PivotSortOrder" PropKeyDesc="排序" SheetName="数据透视" SheetNameAlias="5" ExcelFieldName="类别"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[降序]]></Value>
+                        <ValueDesc><![CDATA[【数据透视】按月销售额由高到低进行排序设置错误，正确的是：降序]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0">
+                    <FindParams PropKey="PivotSortField" PropKeyDesc="排序字段" SheetName="数据透视" SheetNameAlias="5" ExcelFieldName="类别"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[月销售额]]></Value>
+                        <ValueDesc><![CDATA[【数据透视】排序字段设置错误，应设置为【月销售额（元）】 ]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="数据透视" SheetNameAlias="5" Row="B5|B8|B10|B20|B25|B38" Find="格式|0.000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[16281.950|898.800|677.000|57.750|13861.338|376.145]]></Value>
+                        <ValueDesc><![CDATA[【数据透视】设置仅"茄果类"展开、其他类折叠错误（抽查B5/B8/B10/B20/B25/B38数据16281.950|898.800|677.000|57.750|13861.338|376.145，]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FindNumberFormatLst" PropKeyDesc="数字格式设置" SheetName="数据透视" SheetNameAlias="5" Row="B4|B9|B17|C4|C9|C17" Find="#,##0.00"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True|True|True|True|True|True]]></Value>
+                        <ValueDesc><![CDATA['数据透视'B列、C列数字格式设置错误，应设置为保留二位小数、使用千位分隔符(抽查B4|B9|B17|C4|C9|C17)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0" IgnorePuncStrings="_&quot;">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="单元格的值" SheetName="数据透视" SheetNameAlias="5" Row="B4|B9|B17|C4|C9|C17"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value><![CDATA[23,857.72|883.00|137.13|11,040.50|540.00|25.00]]></Value>
+                        <Value><![CDATA[23,857.72|6,662.50|2,398.25|11,040.50|1,787.00|2,140.00]]></Value>
+                        <ValueDesc><![CDATA[数据透视中B4|B9|B17|C4|C9|C17单元格的值设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

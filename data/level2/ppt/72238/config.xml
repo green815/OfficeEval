@@ -1,0 +1,365 @@
+<QuestItem QuestCode="******" SubjectType="MsOffice">
+  <ScorePointGroup FileName="PPT.pptx" OfficeType="3" ParseType="1">
+    <ScorePointDefine IsSingleMarkRule="1" WepName="背景" WepType="Transition">
+      <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+        <MarkRule FullScore="0.5">
+          <FindParams PropKey="BackgroundStyle" PropKeyDesc="幻灯片的背景样式" SlideNum="3"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[msoBackgroundStylePreset4]]></Value>
+            <ValueDesc><![CDATA[幻灯片3,背景样式设置错误,应为"样式4"]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+        </MarkRule>
+      </MarkRuleGroup>
+      <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+    </ScorePointDefine>
+    <ScorePointDefine IsSingleMarkRule="1" WepName="幻灯片查找" WepType="SlideFind">
+      <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+        <MarkRule FullScore="-1">
+          <FindParams PropKey="ShapeCustomAttr" PropKeyDesc="查找图形属性" Define1="特定版式：#空白#|特定类型：msoShapeRoundedRectangle#圆角矩形" Define2="形状填充|形状轮廓：形状边框类型"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[形状填充 - 纯色:14277081|形状边框：无线条]]></Value>
+            <ValueDesc><![CDATA[空白版式,插入圆角矩形,其填充颜色为"白色，文字1，深色15%"，并取消边框]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+        </MarkRule>
+        <MarkRule FullScore="-1">
+          <FindParams PropKey="ShapeCustomAttr" PropKeyDesc="查找图形属性" Define1="特定版式：#空白#|特定类型：msoShapeRoundedRectangle#圆角矩形" Define2="大小和位置：Top、Height、幻灯片等宽|文本框对齐方式"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[Top：2.9|Height：15.0|幻灯片等宽：True]]></Value>
+            <ValueDesc><![CDATA[空白版式,插入的圆角矩形和幻灯片等宽，高度为15厘米，在幻灯片中水平居中对齐，到幻灯片上边缘的距离为2.9厘米]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+        </MarkRule>
+      </MarkRuleGroup>
+      <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+    </ScorePointDefine>
+    <ScorePointDefine IsSingleMarkRule="1" WepName="幻灯片查找" WepType="SlideFind">
+      <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+        <MarkRule FullScore="2">
+          <FindParams PropKey="ShapeCustomAttr" PropKeyDesc="查找图形属性" TextCharactor="认识立体图形####初识圆锥####┊####圆锥的组成要素####练习与总结" Define1="特定版式：#空白#" Define2="内容"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[True|True|True|True|True]]></Value>
+            <ValueDesc><![CDATA[空白版式，插入文本“认识立体图形”、“初识圆锥”、“圆锥的组成要素”、“练习与总结”]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+        </MarkRule>
+        <MarkRule FullScore="2">
+          <FindParams PropKey="ShapeCustomAttr" PropKeyDesc="查找图形属性" SlideNum="5" TextCharactor="认识立体图形####初识圆锥####┊####圆锥的组成要素####练习与总结" Define1="主母版+母版版式+幻灯片" Define2="内容"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[True|True|True|True|True]]></Value>
+            <ValueDesc><![CDATA[幻灯片5，插入文本“认识立体图形”、“初识圆锥”、“圆锥的组成要素”、“练习与总结”]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+        </MarkRule>
+      </MarkRuleGroup>
+      <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+    </ScorePointDefine>
+    <ScorePointDefine IsSingleMarkRule="1" WepName="幻灯片查找" WepType="SlideFind">
+      <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+        <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="1">
+          <MarkRule FullScore="-1">
+            <FindParams PropKey="ShapeCustomAttr" PropKeyDesc="查找图形属性" TextCharactor="初识" Define1="特定版式：#空白#" Define2="超链接"></FindParams>
+            <StdAnswer AnsType="0">
+              <Value><![CDATA[,3,]]></Value>
+              <ValueDesc><![CDATA[空白版式,"初识圆锥"所在的文本框超链接设置错误,应链接到第3张幻灯片]]></ValueDesc>
+            </StdAnswer>
+            <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+          </MarkRule>
+          <MarkRule FullScore="-1">
+            <FindParams PropKey="ShapeCustomAttr" PropKeyDesc="查找图形属性" TextCharactor="组成要素" Define1="特定版式：#空白#" Define2="超链接"></FindParams>
+            <StdAnswer AnsType="0">
+              <Value><![CDATA[,5, ]]></Value>
+              <ValueDesc><![CDATA[空白版式,"圆锥的组成要素"所在的文本框超链接设置错误,应链接到第5张幻灯片]]></ValueDesc>
+            </StdAnswer>
+            <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+          </MarkRule>
+          <MarkRule FullScore="-1">
+            <FindParams PropKey="ShapeCustomAttr" PropKeyDesc="查找图形属性" TextCharactor="练习" Define1="特定版式：#空白#" Define2="超链接"></FindParams>
+            <StdAnswer AnsType="0">
+              <Value><![CDATA[,9,]]></Value>
+              <ValueDesc><![CDATA[空白版式,"练习与总结"所在的文本框超链接设置错误,应链接到第9张幻灯片]]></ValueDesc>
+            </StdAnswer>
+            <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+          </MarkRule>
+        </MarkRuleGroup>
+        <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="1">
+          <MarkRule FullScore="-1">
+            <FindParams PropKey="ShapeCustomAttr" PropKeyDesc="查找图形属性" SlideNum="3" TextCharactor="初识" Define1="主母版+母版版式+幻灯片" Define2="超链接"></FindParams>
+            <StdAnswer AnsType="0">
+              <Value><![CDATA[,3,]]></Value>
+              <ValueDesc><![CDATA[幻灯片3,"初识圆锥"所在的文本框超链接设置错误,应链接到第3张幻灯片]]></ValueDesc>
+            </StdAnswer>
+            <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+          </MarkRule>
+          <MarkRule FullScore="-1">
+            <FindParams PropKey="ShapeCustomAttr" PropKeyDesc="查找图形属性" SlideNum="6" TextCharactor="组成要素" Define1="主母版+母版版式+幻灯片" Define2="超链接"></FindParams>
+            <StdAnswer AnsType="0">
+              <Value><![CDATA[,5, ]]></Value>
+              <ValueDesc><![CDATA[幻灯片6,"圆锥的组成要素"所在的文本框超链接设置错误,应链接到第5张幻灯片]]></ValueDesc>
+            </StdAnswer>
+            <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+          </MarkRule>
+          <MarkRule FullScore="-1">
+            <FindParams PropKey="ShapeCustomAttr" PropKeyDesc="查找图形属性" SlideNum="8" TextCharactor="练习" Define1="主母版+母版版式+幻灯片" Define2="超链接"></FindParams>
+            <StdAnswer AnsType="0">
+              <Value><![CDATA[,9,]]></Value>
+              <ValueDesc><![CDATA[幻灯片8,"练习与总结"所在的文本框超链接设置错误,应链接到第9张幻灯片]]></ValueDesc>
+            </StdAnswer>
+            <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+          </MarkRule>
+        </MarkRuleGroup>
+      </MarkRuleGroup>
+      <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+    </ScorePointDefine>
+    <ScorePointDefine IsSingleMarkRule="1" WepName="幻灯片查找" WepType="SlideFind">
+      <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+        <MarkRule FullScore="-1">
+          <FindParams PropKey="SlideFontName" PropKeyDesc="字体名称" SlideNum="1" TextFrame="-1" TextCharactor="有趣的"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[宋体]]></Value>
+            <ValueDesc><![CDATA[幻灯片1,设置文本‘有趣的圆锥’的字体（不包含宋体）]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">7</OperatorParam>
+        </MarkRule>
+        <MarkRule FullScore="-1">
+          <FindParams PropKey="ShapeCustomAttr" PropKeyDesc="查找图形属性" SlideNum="1" TextCharactor="有趣的" Define1="幻灯片" Define2="文本效果：阴影：阴影样式|阴影-X|阴影-Y|阴影-模糊"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[阴影-预设样式：msoShadowStyleMixed msoShadowMixed|阴影-X：2.079952|阴影-Y：2.079952|阴影-模糊：5]]></Value>
+            <ValueDesc><![CDATA[幻灯片1,设置文本"有趣的圆锥"的艺术字效果]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">7</OperatorParam>
+        </MarkRule>
+      </MarkRuleGroup>
+      <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+    </ScorePointDefine>
+    <ScorePointDefine IsSingleMarkRule="1" WepName="SmartArt图形" WepType="SmartArt">
+      <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+        <MarkRule FullScore="-1">
+          <FindParams PropKey="SmartArtLayout" PropKeyDesc="SmartArt布局名称" SlideNum="2" SmartArtNum="1"></FindParams>
+          <StdAnswer AnsType="1">
+            <Value><![CDATA[线型列表]]></Value>
+            <Value><![CDATA[Lined List]]></Value>
+            <ValueDesc><![CDATA[幻灯片2,SmartArt布局名称设置错误,应为线型列表]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+        </MarkRule>
+        <MarkRule FullScore="-1">
+          <FindParams PropKey="SmartArtNodeText" PropKeyDesc="指定节点文字信息" SlideNum="2" SmartArtNum="1" SmartArtNodeNum="1"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[知识提要]]></Value>
+            <ValueDesc><![CDATA[幻灯片2,SmartArt节点1文本错误,应为"知识提要"]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+        </MarkRule>
+      </MarkRuleGroup>
+      <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+    </ScorePointDefine>
+    <ScorePointDefine IsSingleMarkRule="1" WepName="幻灯片查找" WepType="SlideFind">
+      <MarkRuleGroup LogicOper="And" FullScore="3" NotLeaf="0">
+        <MarkRule FullScore="-1">
+          <FindParams PropKey="ShapeCustomAttr" PropKeyDesc="查找图形属性" SlideNum="1" Define1="幻灯片|特定类型：msoShapeOval#椭圆" Define2="形状效果：顶部棱台类型|顶部棱台宽度|顶部棱台高度"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[顶部棱台类型:msoBevelAngle|顶部棱台宽度:150|顶部棱台高度:300]]></Value>
+            <ValueDesc><![CDATA[幻灯片1,圆锥(通过插入一个内置的形状形成圆锥)的顶部的棱台效果设置错误,应为"角度"]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+        </MarkRule>
+        <MarkRule FullScore="-1">
+          <FindParams PropKey="ShapeCustomAttr" PropKeyDesc="查找图形属性" SlideNum="1" Define1="幻灯片|特定类型：msoShapeOval#椭圆" Define2="大小和位置：宽高相差"></FindParams>
+          <StdAnswer AnsType="1">
+            <Value><![CDATA[宽高相差：0]]></Value>
+            <Value><![CDATA[宽高相差：0.1]]></Value>
+            <Value><![CDATA[宽高相差：0.2]]></Value>
+            <ValueDesc><![CDATA[幻灯片1,圆锥的宽度与高度设置错误,应设置宽高相等（误差小于等于0.2）]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+        </MarkRule>
+        <MarkRule FullScore="-1">
+          <FindParams PropKey="ShapeCustomAttr" PropKeyDesc="查找图形属性" SlideNum="1" Define1="幻灯片|特定类型：msoShapeOval#椭圆" Define2="形状效果：三维旋转|X旋转设置|Y旋转设置"></FindParams>
+          <StdAnswer AnsType="1">
+            <Value><![CDATA[X旋转：True]]></Value>
+            <Value><![CDATA[Y旋转：True]]></Value>
+            <ValueDesc><![CDATA[幻灯片1,插入形状的三维旋转设置错误,应设置X旋转与Y旋转(例如X旋转180°、Y旋转120°)]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+        </MarkRule>
+      </MarkRuleGroup>
+      <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+    </ScorePointDefine>
+    <ScorePointDefine IsSingleMarkRule="1" WepName="图片查找" WepType="ShapePicExist">
+      <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+        <MarkRule FullScore="1">
+          <FindParams PropKey="PicEffects_ArtisticEffect" PropKeyDesc="图片效果属性" SlideNum="3" PicFrame="3"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[msoEffectBackgroundRemoval]]></Value>
+            <ValueDesc><![CDATA[幻灯片3,第3张图片无白色背景（删除背景）]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+        </MarkRule>
+        <MarkRule FullScore="1">
+          <FindParams PropKey="PicEffects_ArtisticEffect" PropKeyDesc="图片效果属性" SlideNum="3" PicFrame="2"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[msoEffectBackgroundRemoval]]></Value>
+            <ValueDesc><![CDATA[幻灯片3,第2张图片无白色背景（删除背景）]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+        </MarkRule>
+        <MarkRule FullScore="1">
+          <FindParams PropKey="PicEffects_ArtisticEffect" PropKeyDesc="图片效果属性" SlideNum="3" PicFrame="1"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[msoEffectBackgroundRemoval]]></Value>
+            <ValueDesc><![CDATA[幻灯片3,第1张图片无白色背景（删除背景）]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+        </MarkRule>
+      </MarkRuleGroup>
+      <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+    </ScorePointDefine>
+    <ScorePointDefine IsSingleMarkRule="1" WepName="表格" WepType="Table">
+      <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+        <MarkRule FullScore="-1">
+          <FindParams PropKey="Cell_Props" PropKeyDesc="单元格属性" SlideNum="6" TableNum="1" Row="2" Col="2" Define1="填充色"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[无填充]]></Value>
+            <ValueDesc><![CDATA[幻灯片6,表格填充颜色设置错误,应为无背景色（无填充颜色）]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+        </MarkRule>
+        <MarkRule FullScore="-1">
+          <FindParams PropKey="Cell" PropKeyDesc="表格中单元格的文字" SlideNum="6" TableNum="1" Row="1" Col="2"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[圆锥]]></Value>
+            <ValueDesc><![CDATA[幻灯片6,表格(1,2)单元格内容错误,应为"圆锥"]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+        </MarkRule>
+        <MarkRule FullScore="-1">
+          <FindParams PropKey="TableCellHorizontalAlign" PropKeyDesc="获取指定序号的表格中文字段落水平对齐方式" SlideNum="6" TableNum="1" Row="2" Col="1"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[ppAlignCenter]]></Value>
+            <ValueDesc><![CDATA[幻灯片6,文本在单元格(2,1)中对齐方式设置错误,应为水平居中对齐]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+        </MarkRule>
+        <MarkRule FullScore="-1">
+          <FindParams PropKey="TableCellVerticalAlign" PropKeyDesc="获取指定序号的表格中文字段落垂直对齐方式" SlideNum="6" TableNum="1" Row="3" Col="2"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[msoAnchorMiddle]]></Value>
+            <ValueDesc><![CDATA[幻灯片6,文本在单元格(3,2)中对齐方式设置错误,应为垂直居中对齐]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+        </MarkRule>
+        <MarkRule FullScore="-1">
+          <FindParams PropKey="Cell_LineStyleVisible" PropKeyDesc="表格单元格中的表格边框" SlideNum="6" TableNum="1" Row="1" Col="1" CellsType="1"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[0]]></Value>
+            <ValueDesc><![CDATA[幻灯片6,表格第一行无上边框]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+        </MarkRule>
+        <MarkRule FullScore="-1">
+          <FindParams PropKey="Cell_LineStyleVisible" PropKeyDesc="表格单元格中的表格边框" SlideNum="6" TableNum="1" Row="1" Col="1" CellsType="2"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[0]]></Value>
+            <ValueDesc><![CDATA[幻灯片6,表格第一列无左边框]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+        </MarkRule>
+        <MarkRule FullScore="-1">
+          <FindParams PropKey="Cell_LineStyleVisible" PropKeyDesc="表格单元格中的表格边框" SlideNum="6" TableNum="1" Row="1" Col="1" CellsType="3"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[1]]></Value>
+            <ValueDesc><![CDATA[幻灯片6,表格第一行有下边框]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+        </MarkRule>
+      </MarkRuleGroup>
+      <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+    </ScorePointDefine>
+    <ScorePointDefine IsSingleMarkRule="1" WepName="幻灯片查找" WepType="SlideFind">
+      <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+        <MarkRule FullScore="-1">
+          <FindParams PropKey="ShapeCustomAttr" PropKeyDesc="查找图形属性" SlideNum="7" TextCharactor="顶点####底面####侧面####高" Define1="幻灯片|特定类型：msoShapeBevel|msoShapeFrame、棱台" Define2="判断位置：宽相同|高相同|Left相同"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[宽相同：True|高相同：True|Left相同：True]]></Value>
+            <ValueDesc><![CDATA[幻灯片7,四个图形形状大小一样且距幻灯片左侧边距一样]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+        </MarkRule>
+        <MarkRule FullScore="-1">
+          <FindParams PropKey="ShapeCustomAttr" PropKeyDesc="查找图形属性" SlideNum="7" TextCharactor="顶点####底面####侧面####高" Define1="幻灯片|特定类型：msoShapeBevel|msoShapeFrame、棱台" Define2="判断距离：纵向分布"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[纵向分布：True]]></Value>
+            <ValueDesc><![CDATA[幻灯片7,四个图形排列设置错误,应为纵向分布]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+        </MarkRule>
+      </MarkRuleGroup>
+      <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+    </ScorePointDefine>
+    <ScorePointDefine IsSingleMarkRule="1" WepName="幻灯片查找" WepType="SlideFind">
+      <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+        <MarkRule FullScore="-1">
+          <FindParams PropKey="ShapeCustomAttr" PropKeyDesc="查找图形属性" SlideNum="7" TextCharactor="底面是圆形" Define1="幻灯片" Define2="动画：触发器"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[对象‘底面’启动效果]]></Value>
+            <ValueDesc><![CDATA[幻灯片7触发器设置错误,应单击形状"底面"时,包含文本"底面是圆形"的圆圈出现]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+        </MarkRule>
+        <MarkRule FullScore="-1">
+          <FindParams PropKey="ShapeCustomAttr" PropKeyDesc="查找图形属性" SlideNum="7" TextCharactor="侧面是扇形" Define1="幻灯片" Define2="动画：触发器"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[对象‘侧面’启动效果]]></Value>
+            <ValueDesc><![CDATA[幻灯片7触发器设置错误,应单击形状"侧面"时，包含文本"侧面是扇形"的扇形出现]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+        </MarkRule>
+        <MarkRule FullScore="-1">
+          <FindParams PropKey="ShapeCustomAttr" PropKeyDesc="查找图形属性" SlideNum="7" Define1="幻灯片|特定类型：msoLine" Define2="动画：触发器"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[对象‘高’启动效果]]></Value>
+            <ValueDesc><![CDATA[幻灯片7触发器设置错误,应单击形状"高"时,圆锥中的横竖两条直线同时出现]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+        </MarkRule>
+      </MarkRuleGroup>
+      <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+    </ScorePointDefine>
+    <ScorePointDefine IsSingleMarkRule="1" WepName="幻灯片查找" WepType="SlideFind">
+      <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+        <MarkRule FullScore="-1">
+          <FindParams PropKey="SlidesFindTextCharactorBulletCharacter" PropKeyDesc="幻灯片中项目符号的Unicode字符值" SlideNum="8" TextCharactor="表面积"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[9650]]></Value>
+            <ValueDesc><![CDATA[幻灯片8,文本"表面积"前项目符号设置错误,应添加字符代码为"25B2"的项目符号]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+        </MarkRule>
+        <MarkRule FullScore="-1">
+          <FindParams PropKey="SlidesFindTextCharactorBulletCharacter" PropKeyDesc="幻灯片中项目符号的Unicode字符值" SlideNum="8" TextCharactor="体积"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[9650]]></Value>
+            <ValueDesc><![CDATA[幻灯片8,文本"体积"前项目符号设置错误,应添加字符代码为"25B2"的项目符号]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+        </MarkRule>
+      </MarkRuleGroup>
+      <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+    </ScorePointDefine>
+    <ScorePointDefine IsSingleMarkRule="1" WepName="幻灯片查找" WepType="SlideFind">
+      <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+        <MarkRule FullScore="1">
+          <FindParams PropKey="ShapeCustomAttr" PropKeyDesc="查找图形属性" SlideNum="8" Define1="幻灯片|" Define2="读取文本"></FindParams>
+          <StdAnswer AnsType="0">
+            <Value><![CDATA[=𝑙2−𝑟2]]></Value>
+            <ValueDesc><![CDATA[幻灯片8,公式插入错误]]></ValueDesc>
+          </StdAnswer>
+          <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+        </MarkRule>
+      </MarkRuleGroup>
+      <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+    </ScorePointDefine>
+  </ScorePointGroup>
+</QuestItem>

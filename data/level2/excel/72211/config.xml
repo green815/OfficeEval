@@ -1,0 +1,616 @@
+<QuestItem QuestCode="*******" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Excel.xlsx" ParseType="1" OfficeType="2">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Text值)" SheetName="第一学期期末成绩" Row="A1|A25|A62|A85|A100|A113|A121"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>序号|024|061|084|099|112|120</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，插入的序号列内容错误（标准答案：A1|A25|A62|A85|A100|A113|A121单元格值：序号|024|061|084|099|112|120）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindNumberFormatLst" PropKeyDesc="指定的单元格是否存在指定的数字格式" SheetName="第一学期期末成绩" Row="A1|A25|A62|A85|A100|A113|A121" Find="000"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>Flase|True|True|True|True|True|True</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，序号列数字格式显示为"001、002、003……"设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0" IgnorePuncStrings="_&quot;">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindNumberFormatLst" PropKeyDesc="指定的单元格是否存在指定的数字格式" SheetName="第一学期期末成绩" Row="B2|B12|B62|B85|B100|B113|B121" Find="@"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>True|True|True|True|True|True|True</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，将B列"学号"数据设为文本格式设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0" IgnorePuncStrings="_&quot;">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindNumberFormatLst" PropKeyDesc="指定的单元格是否存在指定的数字格式" SheetName="第一学期期末成绩" Row="E2|F25|G62|H85|J113|M121" Find="0.00"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>True|True|True|True|True|True</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，将所有成绩列的数字格式设为显示两位小数的数值设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="0" ValueType="0" IgnorePuncStrings="_&quot;">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.25">
+                    <FindParams PropKey="RowHeight" PropKeyDesc="获取工作表指定范围单元格的行高" SheetName="第一学期期末成绩" Row="B2" Range="B100"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>14.25</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，加大行高设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="2">1</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.25">
+                    <FindParams PropKey="NotFont" PropKeyDesc="获取指定单元格的字体名称" SheetName="第一学期期末成绩" Row="A2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>等线</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，改变字体设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="第一学期期末成绩" Row="A1:O121" Define1="CustomBorder:左边框颜#色|右边框颜#色|上边框颜#色|下边框颜#色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>上边框颜色：6299648|下边框颜色：6299648|左边框颜色：6299648|右边框颜色：6299648</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，为数据区域添加标准深蓝色的内外边框线设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="第一学期期末成绩" Row="A1:O121" Define1="CustomBorder:左边框线型|左边框线宽|右边框线型|右边框线宽"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>左边框线型：1|左边框线宽：2|右边框线型：1|右边框线宽：2</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，为数据区域添加标准深蓝色的内外边框线设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="IsFormatConditionsFormula" PropKeyDesc="指定范围内格式条件数量" SheetName="第一学期期末成绩" Row="A1" Range="O121"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>3</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，A1:O121条件格式设置错误（标准答案：条件格式数量为3）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="1">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="条件格式" WepType="FormatCondition">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="FormatConditionsInteriorColor" PropKeyDesc="获取条件格式的填充颜色" SheetName="第一学期期末成绩" Row="A1" Range="O121" Find_FormatConditionsIndex="-1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>10086143</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，数据区域的奇数行填充"金色,个性色4,淡色60%"设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="第一学期期末成绩" Row="E36" Define1="显示填充色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>16777215</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，将语文、数学、英语三科中不低于110分的成绩所在的单元格以一种颜色填充设置错误（标准答案：检查E36单元格的填充色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="第一学期期末成绩" Row="E36" Define1="显示填充色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>10086143</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，将语文、数学、英语三科中不低于110分的成绩所在的单元格以一种颜色填充设置错误（标准答案：检查E36单元格的填充色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="第一学期期末成绩" Row="E36" Define1="显示填充色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>255</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，将语文、数学、英语三科中不低于110分的成绩所在的单元格以一种颜色填充设置错误（标准答案：检查E36单元格的填充色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="第一学期期末成绩" Row="E110" Define1="显示填充色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>16777215</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，将语文、数学、英语三科中不低于110分的成绩所在的单元格以一种颜色填充设置错误（标准答案：检查E110单元格的填充色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="第一学期期末成绩" Row="E110" Define1="显示填充色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>10086143</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，将语文、数学、英语三科中不低于110分的成绩所在的单元格以一种颜色填充设置错误（标准答案：检查E110单元格的填充色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="第一学期期末成绩" Row="E110" Define1="显示填充色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>255</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，将语文、数学、英语三科中不低于110分的成绩所在的单元格以一种颜色填充设置错误（标准答案：检查E110单元格的填充色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="第一学期期末成绩" Row="F114" Define1="显示填充色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>16777215</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，将语文、数学、英语三科中不低于110分的成绩所在的单元格以一种颜色填充设置错误（标准答案：检查F114单元格的填充色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="第一学期期末成绩" Row="F114" Define1="显示填充色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>10086143</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，将语文、数学、英语三科中不低于110分的成绩所在的单元格以一种颜色填充设置错误（标准答案：检查F114单元格的填充色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="第一学期期末成绩" Row="F114" Define1="显示填充色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>255</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，将语文、数学、英语三科中不低于110分的成绩所在的单元格以一种颜色填充设置错误（标准答案：检查F114单元格的填充色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="第一学期期末成绩" Row="G22" Define1="显示填充色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>16777215</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，将语文、数学、英语三科中不低于110分的成绩所在的单元格以一种颜色填充设置错误（标准答案：检查G22单元格的填充色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="第一学期期末成绩" Row="G22" Define1="显示填充色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>10086143</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，将语文、数学、英语三科中不低于110分的成绩所在的单元格以一种颜色填充设置错误（标准答案：检查G22单元格的填充色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="第一学期期末成绩" Row="G22" Define1="显示填充色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>255</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，将语文、数学、英语三科中不低于110分的成绩所在的单元格以一种颜色填充设置错误（标准答案：检查G22单元格的填充色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="第一学期期末成绩" Row="G8" Define1="显示填充色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>16777215</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，将语文、数学、英语三科中不低于110分的成绩所在的单元格以一种颜色填充设置错误（标准答案：检查G8单元格的填充色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="第一学期期末成绩" Row="G8" Define1="显示填充色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>10086143</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，将语文、数学、英语三科中不低于110分的成绩所在的单元格以一种颜色填充设置错误（标准答案：检查G8单元格的填充色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="第一学期期末成绩" Row="G8" Define1="显示填充色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>255</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，将语文、数学、英语三科中不低于110分的成绩所在的单元格以一种颜色填充设置错误（标准答案：检查G8单元格的填充色）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="第一学期期末成绩" Row="H14" Define1="字体显示颜色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>0</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，H14单元格条件格式字体颜色设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="第一学期期末成绩" Row="H111" Define1="字体显示颜色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>0</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，H111单元格条件格式字体颜色设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="第一学期期末成绩" Row="I16" Define1="字体显示颜色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>0</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，I16单元格条件格式字体颜色设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="第一学期期末成绩" Row="I56" Define1="字体显示颜色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>0</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，I56单元格条件格式字体颜色设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="第一学期期末成绩" Row="J56" Define1="字体显示颜色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>0</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，J56单元格条件格式字体颜色设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="第一学期期末成绩" Row="J69" Define1="字体显示颜色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>0</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，J69单元格条件格式字体颜色设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="第一学期期末成绩" Row="K36" Define1="字体显示颜色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>0</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，K36单元格条件格式字体颜色设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="CellDisplayFormat" PropKeyDesc="获取工作表指定范围单元格的显示格式" SheetName="第一学期期末成绩" Row="K120" Define1="字体显示颜色"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>0</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，K120单元格条件格式字体颜色设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="3">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="第一学期期末成绩" Row="D2|D25|D62|D85|D100|D113|D121" Define1="="></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>3班|3班|1班|4班|2班|1班|4班</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，班级列公式计算错误（标准答案：D2|D25|D62|D85|D100|D113|D121的值3班|3班|1班|4班|2班|1班|4班）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="第一学期期末成绩" Row="L3|L35|L72|L95|L101|L115|L120" Define1="=SUM"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>623|616|523|521|713.5|580|596</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，Sum函数计算每一个学生的总分错误（标准答案：L3|L35|L72|L95|L101|L115|L120的值623|616|523|521|713.5|580|596）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="第一学期期末成绩" Row="M2|M26|M65|M89|M100|M110|M121" Find="格式|0.00" Define1="=Average"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>82.57|82.14|90.29|78.43|94.50|102.00|94.00</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，Average函数计算每一个学生的平均分错误（标准答案：M2|M26|M65|M89|M100|M110|M121的值82.57|82.14|90.29|78.43|94.50|102.00|94.00）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Text值)" SheetName="第一学期期末成绩" Row="N3|N35|N72|N95|N101|N115|N120"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>第52名|第58名|第117名|第118名|第5名|第80名|第68名</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，N列"年级排名(普通）"计算错误（标准答案：N3|N35|N72|N95|N101|N115|N120值第52名|第58名|第117名|第118名|第5名|第80名|第68名）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="1.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="第一学期期末成绩" Row="N3|N35|N72|N95|N101|N115|N120" Find="格式|0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>52|58|117|118|5|80|68</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，N列"年级排名(普通）"计算错误（标准答案：N3|N35|N72|N95|N101|N115|N120值52|58|117|118|5|80|68）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="4">
+                    <FindParams PropKey="GetCellTextLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Text值)" SheetName="第一学期期末成绩" Row="O2|O23|O65|O89|O100|O110|O121"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>第60名|第32名|第29名|第74名|第17名|第2名|第19名</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，O列"年级排名(中式)"计算错误（标准答案：O2|O23|O65|O89|O100|O110|O121值第60名|第32名|第29名|第74名|第17名|第2名|第19名）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="3">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="第一学期期末成绩" Row="O2|O23|O65|O89|O100|O110|O121" Find="格式|0.00"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>60.00|32.00|29.00|74.00|17.00|2.00|19.00</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，O列"年级排名(中式)"计算错误（标准答案：O2|O23|O65|O89|O100|O110|O121值60.00|32.00|29.00|74.00|17.00|2.00|19.00）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="Wookbook" PropKeyDesc="指定工作表是否存在" SheetName="分类汇总" SheetNum="1" SheetNameAlias="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>true</Value>
+                        <ValueDesc><![CDATA[复制工作表"第一学期期末成绩"，并重新命名为"分类汇总"设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="单元格的值" SheetName="分类汇总" SheetNameAlias="2" Row="N2|O2" Find="格式|0.00"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>|</Value>
+                        <ValueDesc><![CDATA[各单元格的值]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="工作表" WepType="WorksheetTab">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="WorkSheetTabColor" PropKeyDesc="获取工作表的选项卡颜色" SheetName="分类汇总" SheetNameAlias="2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>未设置标签颜色</Value>
+                        <ValueDesc><![CDATA["分类汇总"工作表标签的颜色设置错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="3">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="分类汇总" SheetNameAlias="2" Row="E32|F32|G32|H32|I32|J32|K32|E94|F125|G126" Find="格式|0.00"></FindParams>
+                    <StdAnswer AnsType="1">
+                        <Value>94.65|91.93|92.57|82.50|81.23|78.93|80.83|89.58|96.47|93.26</Value>
+                        <Value>92.02|96.47|95.13|83.03|85.20|83.70|79.20|90.77|91.93|93.26</Value>
+                        <ValueDesc><![CDATA[在"分类汇总"工作表中，单元格数据复制错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="GetCellValueLst" PropKeyDesc="获取工作表指定范围单元格中指定公式的单元格值(Value2值)" SheetName="第一学期期末成绩" Row="D32|D63|D94|D125|D126" Find="格式|0.00"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>3班|1班|4班</Value>
+                        <ValueDesc><![CDATA[在"第一学期期末成绩"工作表中，班级列单元格格式错误（标准答案：数值型)]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="IsExistChartOfRange" PropKeyDesc="判断指定的图表是否在指定的单元格区域内" SheetName="柱状分析图" FndChartIndex="1" SheetNameAlias="3" SortIndexNum="0" Define1="A1:N33"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>true</Value>
+                        <ValueDesc><![CDATA[图表未移动到工作表"柱状分析图"的A1:M30单元格区域内]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SeriesValue" PropKeyDesc="获取图表上指定系列上的数据值" SheetName="柱状分析图" FndChartIndex="1" Find_SeriesIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>94.65,91.93,92.57,82.5,81.23,78.93,80.83</Value>
+                        <ValueDesc><![CDATA[在"柱状分析图"工作表中，图表的第1个系列值错误（标准答案：94.65,91.93,92.57,82.5,81.23,78.93,80.83）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SeriesValue" PropKeyDesc="获取图表上指定系列上的数据值" SheetName="柱状分析图" FndChartIndex="1" Find_SeriesIndex="2" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>90.77,98.73,92.68,80.05,86,85.27,83.57</Value>
+                        <ValueDesc><![CDATA[在"柱状分析图"工作表中，图表的第2个系列值错误（标准答案：90.77,98.73,92.68,80.05,86,85.27,83.57）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SeriesValue" PropKeyDesc="获取图表上指定系列上的数据值" SheetName="柱状分析图" FndChartIndex="1" Find_SeriesIndex="3" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>89.58,96.05,92.67,83.63,79.37,81.8,83.27</Value>
+                        <ValueDesc><![CDATA[在"柱状分析图"工作表中，图表的第3个系列值错误（标准答案：89.58,96.05,92.67,83.63,79.37,81.8,83.27）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="SeriesValue" PropKeyDesc="获取图表上指定系列上的数据值" SheetName="柱状分析图" FndChartIndex="1" Find_SeriesIndex="4" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>92.02,96.47,95.13,83.03,85.2,83.7,79.2</Value>
+                        <ValueDesc><![CDATA[在"柱状分析图"工作表中，图表的第4个系列值错误（标准答案：92.02,96.47,95.13,83.03,85.2,83.7,79.2）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="SeriesXValues" PropKeyDesc="获取图表上指定系列上的X值" SheetName="柱状分析图" FndChartIndex="1" Find_SeriesIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>语文,数学,英语,物理,化学,地理,历史</Value>
+                        <ValueDesc><![CDATA[在"柱状分析图"工作表中，图表的行值错误（标准答案：语文,数学,英语,物理,化学,地理,历史）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="ChartCustomProperties" PropKeyDesc="获取图表的相关属性" SheetName="柱状分析图" FndChartIndex="1" Find_SeriesIndex="5" SheetNameAlias="3" SortIndexNum="0" Define1="系列：选项|系列绘制在"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>系列绘制在:次坐标轴</Value>
+                        <ValueDesc><![CDATA[在"柱状分析图"工作表中，图表的次坐标轴数据错误（标准答案：年级平均分）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1">
+                    <FindParams PropKey="ChartFill" PropKeyDesc="获取指定图表元素填充格式属性" SheetName="柱状分析图" FndChartIndex="1" Find_SeriesIndex="5" Find_SeriesPoints="1" SheetNameAlias="3" SortIndexNum="0" Define1="数据标签：线条"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value></Value>
+                        <ValueDesc><![CDATA[在"柱状分析图"工作表中，图表的年级平均分系列数据标签显示错误]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">5</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetMinimumScale" PropKeyDesc="获取图表的数值轴上的最小值" SheetName="柱状分析图" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>50</Value>
+                        <ValueDesc><![CDATA[在"柱状分析图"工作表中，图表的主要坐标轴最小刻度设置错误（标准答案：50）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="GetMaximumScale" PropKeyDesc="获取图表的数值轴上的最大值" SheetName="柱状分析图" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>110</Value>
+                        <ValueDesc><![CDATA[在"柱状分析图"工作表中，图表的主要坐标轴最大刻度设置错误（标准答案：110）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.25">
+                    <FindParams PropKey="GetChartTitle" PropKeyDesc="获取图表的标题内容" SheetName="柱状分析图" FndChartIndex="1" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>各班各科平均成绩比较</Value>
+                        <ValueDesc><![CDATA[在"柱状分析图"工作表中，图表的标题设置错误（标准答案：各班各科平均成绩比较）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图表" WepType="Chart">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.25">
+                    <FindParams PropKey="GetHasLegend" PropKeyDesc="获取图表的图例放置的位置" SheetName="柱状分析图" FndChartIndex="1" SheetNameAlias="3" SortIndexNum="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value>xlLegendPositionBottom</Value>
+                        <ValueDesc><![CDATA[在"柱状分析图"工作表中，图表的图例位置设置错误（标准答案：底部）]]></ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>

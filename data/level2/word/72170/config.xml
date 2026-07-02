@@ -1,0 +1,582 @@
+<QuestItem QuestCode="XXXX" SubjectType="MsOffice">
+    <ScorePointGroup FileName="Word.docx" OfficeType="1" ParseType="1">
+        <ScorePointDefine IsSingleMarkRule="1" WepName="文档查找与替换" WepType="TextFrameFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Alignment" PropKeyDesc="文本框中对齐方式" Find_TextFrameNum="-1" Count="1" Para="-1" Find="供应链中的库存管理研究"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdAlignParagraphCenter]]></Value>
+                        <ValueDesc>封面论文题目对齐方式设置错误，应设置为居中对齐</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Alignment" PropKeyDesc="文本框中对齐方式" Find_TextFrameNum="-1" Count="1" Para="-1" Find="林楚楠"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdAlignParagraphCenter]]></Value>
+                        <ValueDesc>封面作者姓名对齐方式设置错误，应设置为居中对齐</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="Alignment" PropKeyDesc="文本框中对齐方式" Find_TextFrameNum="-1" Count="1" Para="-1" Find="2012级企业管理专业"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdAlignParagraphCenter]]></Value>
+                        <ValueDesc>封面作者专业对齐方式设置错误，应设置为居中对齐</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="文档查找与替换" WepType="TextFrameFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="WrapFormat" PropKeyDesc="形状周围环绕文字换行类型" Find_TextFrameNum="-1" Count="1" Para="-1" Find="供应链中的库存管理研究"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdWrapSquare]]></Value>
+                        <ValueDesc>封面文本框的环绕方式设置错误，应设置为四周型</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="文档查找与替换" WepType="TextFrameFind">
+            <MarkRuleGroup LogicOper="Or" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="TextPositionRelativeToPage" PropKeyDesc="文本框居中对齐" Find_TextFrameNum="-1" Count="1" Para="-1" Find="供应链中的库存管理研究" RelativeObj="页面"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc>封面文本框在页面中的对齐方式设置错误，应设置为左右居中</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="0.5">
+                    <FindParams PropKey="TextPositionRelativeToPage" PropKeyDesc="文本框居中对齐" Find_TextFrameNum="-1" Count="1" Para="-1" Find="供应链中的库存管理研究"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc>封面文本框在页面中的对齐方式设置错误，应设置为左右居中</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="图片格式" WepType="FormatPicture">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="WrapFormat" PropKeyDesc="图片文字环绕类型" Define3="仅环绕方式"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdWrapTight]]></Value>
+                        <ValueDesc>"图片1.jpg"的环绕方式设置错误，应设置为紧密型</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0" IgnorePuncStrings="|">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ReflectionType" PropKeyDesc="图片反射的光照的方向"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[msoReflectionType]]></Value>
+                        <ValueDesc>"图片1.jpg"应用一种映像效果设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="自定义" WepType="Custom">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams WepType="ParaFind" PropKey="SectionNumber" PropKeyDesc="节号" Para="-1" Find="目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[2]]></Value>
+                        <ValueDesc>目录位置错误，应设置位于第2节</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams WepType="ParaFind" PropKey="SectionNumber" PropKeyDesc="节号" Para="-1" Find="图表目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[3]]></Value>
+                        <ValueDesc>"图表目录"位置错误，应设置位于第3节</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams WepType="ParaFind" PropKey="SectionNumber" PropKeyDesc="节号" Para="-1" Find="并将竞争优势一直保持到今天" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[5]]></Value>
+                        <ValueDesc>"并将竞争优势一直保持到今天"位置错误，应设置位于第5节</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams WepType="ParaFind" PropKey="SectionNumber" PropKeyDesc="节号" Para="-1" Find="并提出了一些控制策略" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[8]]></Value>
+                        <ValueDesc>"并提出了一些控制策略"位置错误，应设置位于第8节</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams WepType="PageSetup" PropKey="PageNumberRestartNumberingAtSection" PropKeyDesc="页脚页码开头开始" SectionsNum="8" HeaderFooterIndex="2" Define7="内容：并提出了一些控制策略|段落：2##100" Define8="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[False]]></Value>
+                        <ValueDesc>第4章'并提出了一些控制策略'页码设置错误，应设置为续前节</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams WepType="ParaFind" PropKey="SectionNumber" PropKeyDesc="节号" Para="-1" Find="华北大学出版社" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[10]]></Value>
+                        <ValueDesc>参考书目'华北大学出版社'位置错误，应设置位于第10节</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams WepType="ParaFind" PropKey="SectionNumber" PropKeyDesc="节号" Para="-1" Find="专业词汇索引" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[11]]></Value>
+                        <ValueDesc>'专业词汇索引'位置错误，应设置位于第11节</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="2">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="库存决策中" Define1="首行缩进|段前距(行)|段后距(行)" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[缩进：2|段前距：0.5行|段后距：0.5行]]></Value>
+                        <ValueDesc>第2章正文文字'库存决策中'设置错误，应设置为首行缩进2字符，段前段后间距0.5行</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="针对供应链库存管理中存在的问题" Define1="首行缩进|段前距(行)|段后距(行)" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[缩进：2|段前距：0.5行|段后距：0.5行]]></Value>
+                        <ValueDesc>第4章正文文字'针对供应链库存管理中存在的问题'设置错误，应设置为首行缩进2字符，段前段后间距0.5行</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="引言" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第1章]]></Value>
+                        <ValueDesc>"引言"自动编号样式错误，应设置为"第1章"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="传统库存管理存在的问题" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[第3章]]></Value>
+                        <ValueDesc>"传统库存管理存在的问题"自动编号样式错误，应设置为"第3章"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="0.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="满足不确定的顾客需求" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[1)]]></Value>
+                        <ValueDesc>"满足不确定的顾客需求"自动编号样式错误，应设置为"1)"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberText" PropKeyDesc="编号列表值的字符串(第一段)" Para="-1" Find="降低单位订购费用与生产准备费用" Define3="不包含目录"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[4)]]></Value>
+                        <ValueDesc>"降低单位订购费用与生产准备费用"自动编号样式错误，应设置为"4)"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaStyle" PropKeyDesc="段落的内置样式的名称" Para="-1" Find="补货时采购商品的相关成本"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[项目符号列表]]></Value>
+                        <ValueDesc>"补货时采购商品的相关成本"段落样式错误,应设置为"项目符号列表"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="ParaNumberStyle" PropKeyDesc="段落列表格式编号样式(WdListNumberStyle常量)" Para="-1" Find="当客户下达订单"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdListNumberStylePictureBullet]]></Value>
+                        <ValueDesc>"当客户下达订单"段落样式错误,应设置为"项目符号列表"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1.5" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="EndnotesProps" PropKeyDesc="脚注属性(位置)" Para="-1" Find="(李四, 2012, 页 456)" Define1="位置"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdEndOfSection]]></Value>
+                        <ValueDesc>'(李四, 2012, 页 456)'尾注位置错误，应设置在节的结尾</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="EndnotesProps" PropKeyDesc="脚注属性(位置)" Para="-1" Find="(许东, 2009, 页 15)" Define1="位置"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdEndOfSection]]></Value>
+                        <ValueDesc>'(许东, 2009, 页 15)'尾注位置错误，应设置在节的结尾</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="EndnotesProps" PropKeyDesc="脚注属性(位置)" Para="-1" Find="(张三, 2010, 页 112)" Define1="位置"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdEndOfSection]]></Value>
+                        <ValueDesc>'(张三, 2010, 页 112)'尾注位置错误，应设置在节的结尾</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="EndnotesProps" PropKeyDesc="脚注属性(位置)" Para="-1" Find="(王五, 2009, 页 276)" Define1="位置"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdEndOfSection]]></Value>
+                        <ValueDesc>'(王五, 2009, 页 276)'尾注位置错误，应设置在节的结尾</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="自定义" WepType="Custom">
+            <MarkRuleGroup LogicOper="Or" FullScore="3" NotLeaf="0">
+                <MarkRuleGroup LogicOper="And" FullScore="3" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams WepType="Document" PropKey="FindTableOfContentAttr" PropKeyDesc="获取目录属性(内容|页码|页码对齐|制表符前导符|级别|标签)" Find="摘要#参考书目#专业词汇索引" Define1="普通目录：显示页码|制表符前导符|显示级别大于等于4级|是否存在"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[显示页码：True|制表符前导符：wdTabLeaderSpaces|显示级别大于等于4级：True|目录是否存在：True]]></Value>
+                            <ValueDesc>目录设置错误，应设置为流行格式，显示级别为4</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams WepType="ParaFind" PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="摘要" Define1="大纲级别" Define3="不包含目录"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[大纲级别：wdOutlineLevel1]]></Value>
+                            <ValueDesc>'摘要'大纲级别设置错误，应设置为1级</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams WepType="ParaFind" PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="专业词汇索引" Define1="大纲级别" Define3="不包含目录"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[大纲级别：wdOutlineLevel1]]></Value>
+                            <ValueDesc>'专业词汇索引'大纲级别设置错误，应设置为1级</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+                <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams WepType="Document" PropKey="FindTableOfContentAttr" PropKeyDesc="获取目录属性(内容|页码|页码对齐|制表符前导符|级别|标签)" Find="摘要#参考书目#专业词汇索引" Define1="普通目录：显示页码|显示级别大于等于4级|是否存在"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[显示页码：True|显示级别大于等于4级：True|目录是否存在：True]]></Value>
+                            <ValueDesc>目录设置错误，应设置为流行格式，显示级别为4</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams WepType="ParaFind" PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="摘要" Define1="大纲级别" Define3="不包含目录"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[大纲级别：wdOutlineLevel1]]></Value>
+                            <ValueDesc>'摘要'大纲级别设置错误，应设置为1级</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams WepType="ParaFind" PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="专业词汇索引" Define1="大纲级别" Define3="不包含目录"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[大纲级别：wdOutlineLevel1]]></Value>
+                            <ValueDesc>'专业词汇索引'大纲级别设置错误，应设置为1级</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+                <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="1">
+                    <MarkRule FullScore="-1">
+                        <FindParams WepType="Document" PropKey="FindTableOfContentAttr" PropKeyDesc="获取目录属性(内容|页码|页码对齐|制表符前导符|级别|标签)" Find="摘要#参考书目#专业词汇索引" Define1="普通目录：显示页码|显示级别大于等于1级|是否存在"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[显示页码：True|显示级别大于等于1级：True|目录是否存在：True]]></Value>
+                            <ValueDesc>目录设置错误，应设置为流行格式，显示级别为4</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams WepType="ParaFind" PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="摘要" Define1="大纲级别" Define3="不包含目录"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[大纲级别：wdOutlineLevel1]]></Value>
+                            <ValueDesc>'摘要'大纲级别设置错误，应设置为1级</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                    <MarkRule FullScore="-1">
+                        <FindParams WepType="ParaFind" PropKey="FindCustomAttr" PropKeyDesc="获取属性值" Para="-1" Find="专业词汇索引" Define1="大纲级别" Define3="不包含目录"></FindParams>
+                        <StdAnswer AnsType="0">
+                            <Value><![CDATA[大纲级别：wdOutlineLevel1]]></Value>
+                            <ValueDesc>'专业词汇索引'大纲级别设置错误，应设置为1级</ValueDesc>
+                        </StdAnswer>
+                        <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">0</OperatorParam>
+                    </MarkRule>
+                </MarkRuleGroup>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="2" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsFieldSequenceExist" PropKeyDesc="题注是否存在" Count="2" Find="SEQ" Define1="内容"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[图2 最优订货批量]]></Value>
+                        <ValueDesc>未找到第2处题注"图2 最优订货批量"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsFieldSequenceExist" PropKeyDesc="题注是否存在" Count="4" Find="SEQ" Define1="内容"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[图4 库存的ABC分类法]]></Value>
+                        <ValueDesc>未找到第4处题注"图4 库存的ABC分类法"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsFieldSequenceExist" PropKeyDesc="题注是否存在" Count="7" Find="SEQ" Define1="内容"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[图7 JMI的管理模式]]></Value>
+                        <ValueDesc>未找到第7处题注"图7 JMI的管理模式"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面文档设置" WepType="Document">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2">
+                    <FindParams PropKey="FindTableOfContentAttr" PropKeyDesc="获取目录属性(内容|页码|页码对齐|制表符前导符|级别|标签)" Find="库存的分类#库存的ABC分类法#JMI的管理模式" Define1="图表目录：显示页码|页码右对齐|包含标签"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[显示页码：True|页码右对齐：True|包含标签：True]]></Value>
+                        <ValueDesc>图表目录设置错误，应设置为正式格式</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="3" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsFieldRefExist" PropKeyDesc="Ref域中是否存在指定字符" Para="-1" Find="图 2"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc>未设置图2交叉引用</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsFieldRefExist" PropKeyDesc="Ref域中是否存在指定字符" Para="-1" Find="图 4"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc>未设置图4交叉引用</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsFieldRefExist" PropKeyDesc="Ref域中是否存在指定字符" Para="-1" Find="图 7"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc>未设置图7交叉引用</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="1.5">
+                    <FindParams PropKey="FieldIndexEntryCount" PropKeyDesc="XE（索引项）域的个数" Para="-1" Find="ABC分类法"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[5]]></Value>
+                        <ValueDesc>将"ABC分类法"都标记为索引项设置错误</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="1">1</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="-1" NotLeaf="0">
+                <MarkRule FullScore="2.5">
+                    <FindParams PropKey="FieldIndexEntryCount" PropKeyDesc="XE（索引项）域的个数" Para="-1" Find="供应链"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0]]></Value>
+                        <ValueDesc>未删除"供应链"的索引项标记</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="1">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FieldIndexEntryCount" PropKeyDesc="XE（索引项）域的个数" Para="-1" Find="供应链"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0]]></Value>
+                        <ValueDesc>未删除"供应链"的索引项标记</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="1">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsTestExistInIndex" PropKeyDesc="指定索引内容是否存在" Find="ABC分类法"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[true]]></Value>
+                        <ValueDesc>索引设置错误，应包含文本"ABC分类法"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面设置" WepType="PageSetup">
+            <MarkRuleGroup LogicOper="And" FullScore="3" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FooterPageNumbersCount" PropKeyDesc="页码数" Define8="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[0]]></Value>
+                        <ValueDesc>页码设置错误，应设置为封面页无页码</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FooterPageNumbersStyle" PropKeyDesc="页脚页码编号样式" SectionsNum="2" Define7="目录" Define8="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdPageNumberStyleUppercaseRoman]]></Value>
+                        <ValueDesc>目录页的页码格式设置错误，应设置为大写罗马数字</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FooterPageNumbersStyle" PropKeyDesc="页脚页码编号样式" SectionsNum="3" Define7="图表目录" Define8="0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdPageNumberStyleUppercaseRoman]]></Value>
+                        <ValueDesc>图表目录页的页码格式设置错误，应设置为大写罗马数字</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="PageNumberRestartNumberingAtSection" PropKeyDesc="页脚页码开头开始" SectionsNum="10" Define7="内容：随着经济全球化和知识经济时代的到来|段落：1##200" Define8="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[True]]></Value>
+                        <ValueDesc>摘要页码设置错误，应设置为页码从1开始</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FooterPageNumbersStyle" PropKeyDesc="页脚页码编号样式" SectionsNum="8" Define7="内容：双方一起确定供应商的订单处理过程|段落：50##200" Define8="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdPageNumberStyleArabic]]></Value>
+                        <ValueDesc>正文页码格式设置错误，应设置为"1、2、3……"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FooterPageNumbersStyle" PropKeyDesc="页脚页码编号样式" SectionsNum="9" Define7="内容：本论文以现代库存管理理论为基础|段落：50##200" Define8="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[wdPageNumberStyleArabic]]></Value>
+                        <ValueDesc>正文页码格式设置错误，应设置为"1、2、3……"</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="PageNumberRestartNumberingAtSection" PropKeyDesc="页脚页码开头开始" SectionsNum="10" Define7="内容：基于丰田生产方式的制造执行系统|段落：1##200" Define8="1"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[False]]></Value>
+                        <ValueDesc>参考书目页码设置错误，应设置为续前节</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="段落查找与替换" WepType="ParaFind">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindBeforeAfterCharacter" PropKeyDesc="查找指定字符及指定前后位数字符检测" Para="-1" Find="一般来说，在以下的情况" Define3="不包含目录" Define4="10-0"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[\r\r]]></Value>
+                        <ValueDesc>未删除所有空行</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">7</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsTextExistOfPage" PropKeyDesc="查找的文本是否在指定的页面" Para="-1" SectionsNum="7" Find="\r\r"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[false]]></Value>
+                        <ValueDesc>未删除所有空行</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="IsTextExistOfPage" PropKeyDesc="查找的文本是否在指定的页面" Para="-1" SectionsNum="9" Find="\r\r"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[false]]></Value>
+                        <ValueDesc>未删除所有空行</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="0" IgnorePunctuations="0" ValueType="0">0</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+        <ScorePointDefine IsSingleMarkRule="1" WepName="页面文档设置" WepType="Document">
+            <MarkRuleGroup LogicOper="And" FullScore="1" NotLeaf="0">
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindTableOfContentAttr" PropKeyDesc="获取目录属性(内容|页码|页码对齐|制表符前导符|级别|标签)" Find="摘要1#传统库存管理存在的问题7" Define1="普通目录：是否存在"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[目录是否存在：True]]></Value>
+                        <ValueDesc>目录页码设置错误，应存在页码</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+                <MarkRule FullScore="-1">
+                    <FindParams PropKey="FindTableOfContentAttr" PropKeyDesc="获取目录属性(内容|页码|页码对齐|制表符前导符|级别|标签)" Find="库存的分类3#JMI的管理模式11" Define1="图表目录：是否存在"></FindParams>
+                    <StdAnswer AnsType="0">
+                        <Value><![CDATA[目录是否存在：True]]></Value>
+                        <ValueDesc>图表目录页码设置错误，应存在页码</ValueDesc>
+                    </StdAnswer>
+                    <OperatorParam CaseSensitive="0" IgnoreAllBlanks="1" IgnorePunctuations="1" ValueType="0">6</OperatorParam>
+                </MarkRule>
+            </MarkRuleGroup>
+            <ScorePointDesc><![CDATA[]]></ScorePointDesc>
+        </ScorePointDefine>
+    </ScorePointGroup>
+</QuestItem>
